@@ -2,3 +2,5 @@ __pycache__/
 .DS_Store
 _site/
 .claude/
+web/index.html
+web/karte.html
