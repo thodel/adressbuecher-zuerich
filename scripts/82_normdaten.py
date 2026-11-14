@@ -62,6 +62,18 @@ def fits(occupation: str, field: str) -> bool:
     return any(re.search(FIT[k], occ) and re.search(FIELD[k], fld) for k in FIT)
 
 
+def full_given(w: dict) -> str:
+    """Alle Vornamen aus dem Label («Johann Ludwig Spyri» → «Johann Ludwig»), Bindestrich als Trenner («Charles-Juste»
+    passt zu «Charles»). Das Feld given nennt oft nur den ersten, und «Johann» passte zu «Joh. Bernhard» Spyri."""
+    first = w["given"].split("|")[0]
+    for fam in sorted(set(w["family"].split("|")), key=len, reverse=True):
+        if fam and w["label"].endswith(" " + fam):
+            g = w["label"][: -len(fam)].strip()
+            if first and fold(g).startswith(fold(first)):
+                return g.replace("-", " ")
+    return first
+
+
 def year(s: str) -> int | None:
     m = re.match(r"-?\d{3,4}", s or "")
     return int(m.group(0)) if m else None
@@ -83,14 +95,16 @@ def main() -> None:
     munis = {r["municipality"] for r in entries if r["municipality"]}
     bfs = {}
     for r in csv.DictReader(io.StringIO(git_show(args.vs, commit, "data/ref/municipalities_1914.csv").decode())):
-        if r["name"] in munis and not r["valid_to"]:
-            bfs.setdefault(r["bfs"], r["name"])
-        elif r["name"] in munis:
-            bfs.setdefault(r["bfs"], r["name"])
+        # Bern und Zürich haben 1914 keine eigene BFS-Nummer in der Tabelle (leer); dann gilt die heutige, aber nur für
+        # die Gemeinde, die heute so heisst (sonst nähme Höngg, 1934 eingemeindet, die 261 von Zürich).
+        code = r["bfs"] or (r["bfs_today"] if r["name"] == r["name_today"] else "")
+        if r["name"] in munis and code:
+            bfs.setdefault(code, r["name"])
     vols = sorted({int(r["volume"]) for r in entries})
 
     # Personen je (Gemeinde, Familienname): [(Quelle, id, Vorname, Name, geb., gest., Jahre am Ort, qid, hls, gnd, Feld)]
     people = defaultdict(list)
+    from_hls = defaultdict(list)  # (HLS-Nummer, Gemeinde) → ihre Einträge in people
     wd_by_hls = {}
     with gzip.open(io.BytesIO(git_show(args.vs, commit, "data/ref/wikidata_persons.csv.gz")), "rt", encoding="utf-8") as fh:
         wd = list(csv.DictReader(fh))
@@ -106,20 +120,29 @@ def main() -> None:
                     if len(toks) < 2:
                         continue
                     w = wd_by_hls.get(h["hls_id"], {})
-                    people[(parts[0], fold(toks[-1]))].append({
+                    people[(parts[0], fold(toks[-1]))].append(hp := {
                         "src": "hls", "given": " ".join(toks[:-1]), "name": h["name"], "birth": year(h["birth"]),
                         "death": year(h["death"]), "from": int(parts[1]), "to": int(parts[2]), "hls": h["hls_id"],
                         "qid": w.get("qid", ""), "gnd": w.get("gnd", ""), "field": h["fields"]})
+                    from_hls[(h["hls_id"], parts[0])].append(hp)
     for w in wd:
         places = {x.split(":")[1] for x in w["places"].split("|") if ":" in x}
         for code in places & set(bfs):
-            given = w["given"].split("|")[0]
+            given = full_given(w)
+            occ = w["occupations"].split("|")[-1] if w["occupations"] else ""
+            if hps := from_hls.get((w["hls_id"], bfs[code])):
+                # dieselbe Person an diesem Ort auch im HLS: Beruf aus beiden (Francis Isoz: HLS «Wirtschaft und Beruf»,
+                # Wikidata «architect»). Die Wikidata-Kopie bleibt, weil sie ohne Jahre am Ort gilt (Otto Dorer, Baden).
+                for hp in hps:
+                    if occ and occ not in hp["field"]:
+                        hp["field"] = f"{hp['field']}|{occ}" if hp["field"] else occ
+                occ = hps[0]["field"]
             for fam in set(w["family"].split("|")):
                 if fam and given:
                     people[(bfs[code], fold(fam))].append({
                         "src": "wikidata", "given": given, "name": w["label"], "birth": year(w["birth"]),
                         "death": year(w["death"]), "from": None, "to": None, "hls": w["hls_id"], "qid": w["qid"],
-                        "gnd": w["gnd"], "field": w["occupations"].split("|")[-1] if w["occupations"] else ""})
+                        "gnd": w["gnd"], "field": occ})
 
     n_sur = Counter((e["volume"], e["municipality"], fold(e["surname"])) for e in entries)
     cand = defaultdict(list)  # (Person-Schlüssel, Band) → [(Punkte, Eintrag)]
@@ -134,6 +157,8 @@ def main() -> None:
             if not fs:
                 continue
             key = p["hls"] or p["qid"]
+            if any(c[1] is e for c in cand[(key, vol)]):
+                continue  # dieselbe Person aus HLS und Wikidata: ein Eintrag zählt nur einmal (HLS zuerst)
             cand[(key, vol)].append((fs, e, p))
     out, stats = {}, Counter()
     for (key, vol), cs in cand.items():
