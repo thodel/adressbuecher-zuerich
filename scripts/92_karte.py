@@ -23,6 +23,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+import site_nav  # noqa: E402  gemeinsame Navigation
 _geo = importlib.import_module("10_geo")
 norm_street, area_of, manual_points, point = _geo.norm_street, _geo.area, _geo.manual_points, _geo.point
 
@@ -98,9 +99,11 @@ select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); ou
 .leaflet-popup-content { font-size: 14px; }
 .leaflet-popup-content b { font-weight: 700; }
 @media (max-width: 600px) { #map { min-height: 65vh; } }
+__NAVCSS__
 </style>
+__CITYBAR__
 <header>
-  <nav class="nav"><a href="./">Zürich: Einträge</a> · <a href="karte.html">Karte</a> · <a href="https://thodel.github.io/vernetzte-schweiz/">Vernetzte Schweiz</a> · <a href="__REPO__">Repo</a></nav>
+  __CITYNAV__
   <h1>Karte: Adressbücher der Stadt Zürich 1859–1914</h1>
   <p class="sub">Stand __DATE__ · Kreisfläche = Zahl der Einträge je Strasse. Lage: heutige Strassenmitte nach OpenStreetMap, nur wenn sie im Quartier des gedruckten Kreises bzw. der alten Gemeinde liegt; Hausnummern werden nicht verortet (1859 und in den Ausgemeinden alte Nummern). __UNPLACED__</p>
 </header>
@@ -187,7 +190,7 @@ def main() -> None:
     placed = total - lost_entries
     unplaced = (f"{fmt(placed)} von {fmt(total)} Einträgen mit Strasse verortet ({len(street) - lost_streets} von {len(street)} Strassen je Gebiet); "
                 f"die übrigen stehen an Strassen ohne Punkt (anderer Name heute, selten gedruckt oder Lesefehler).")
-    html = (TEMPLATE.replace("__MUNI__", json.dumps(M, ensure_ascii=False, separators=(",", ":")))
+    html = (TEMPLATE.replace("__CITYBAR__", site_nav.city_bar('zuerich', 'de')).replace("__CITYNAV__", site_nav.city_nav('Zürich 1859–1914', 'https://github.com/thodel/adressbuecher-zuerich', "map", 'de')).replace("__NAVCSS__", site_nav.CSS).replace("__MUNI__", json.dumps(M, ensure_ascii=False, separators=(",", ":")))
             .replace("__STREETS__", json.dumps(S, ensure_ascii=False, separators=(",", ":")))
             .replace("__VOLS__", json.dumps(VOLS)).replace("__UNPLACED__", unplaced).replace("__REPO__", REPO_URL)
             .replace("__DATE__", date.today().strftime("%d.%m.%Y")))

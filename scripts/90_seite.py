@@ -28,6 +28,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 _geo = importlib.import_module("10_geo")
 norm_street, area_of, manual_points = _geo.norm_street, _geo.area, _geo.manual_points
+import site_nav  # noqa: E402  gemeinsame Navigation und Feldsuche aller Adressbuch-Seiten
 
 CSV_DIR = Path("data/csv")
 REVIEW = Path("data/review/flags.csv")
@@ -134,15 +135,18 @@ def load_rows() -> dict[str, dict[str, list[list[str]]]]:
     out: dict[str, dict[str, list]] = defaultdict(lambda: {k: [] for k, *_ in TABS})
     for key, _label, fname, cols in TABS:
         with (CSV_DIR / fname).open(encoding="utf-8") as fh:
-            for r in csv.DictReader(fh):
-                r["qa_flags"] = " ".join(r.get("qa_flags", "").replace(";", " ").split())
-                r["telefon"] = PHONE.get(r["entry_id"], "")
-                r["street_key"] = norm_street(r["street_raw"]) if r.get("street_raw") else ""
-                r["area"] = area_of(r)
-                r["other_volume"] = OTHER.get(r["entry_id"], "")
-                r["authority"] = AUTH.get(r["entry_id"], "")
-                r["zeitreise"] = ""  # im Browser aus GEO
-                out[r["volume"]][key].append([r.get(c, "") for c in cols])
+            reader = csv.DictReader(fh)
+            csv_rows = list(reader)
+        cols += site_nav.extra_columns(csv_rows, reader.fieldnames, cols + ["district"])  # district = Spalte «Gebiet»  # alle CSV-Angaben durchsuchbar
+        for r in csv_rows:
+            r["qa_flags"] = " ".join(r.get("qa_flags", "").replace(";", " ").split())
+            r["telefon"] = PHONE.get(r["entry_id"], "")
+            r["street_key"] = norm_street(r["street_raw"]) if r.get("street_raw") else ""
+            r["area"] = area_of(r)
+            r["other_volume"] = OTHER.get(r["entry_id"], "")
+            r["authority"] = AUTH.get(r["entry_id"], "")
+            r["zeitreise"] = ""  # im Browser aus GEO
+            out[r["volume"]][key].append([r.get(c, "") for c in cols])
     return out
 
 
@@ -240,10 +244,12 @@ td.act a { color: var(--muted); font-size: 12px; margin-left: 6px; }
 footer { color: var(--muted); font-size: 0.8rem; }
 #toast { position: fixed; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); right: calc(12px + env(safe-area-inset-right, 0px)); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; }
 @media (max-width: 600px) { body { font-size: 14px; } th, td { max-width: 22ch; } td.act input[type="text"] { width: 9ch; } .flagbar .sub { display: none; } .wrap { min-height: 70vh; } input#street { flex: 1 1 140px; } }
+__NAVCSS__
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
+__CITYBAR__
 <header>
-  <nav class="nav"><a href="./">Zürich 1859–1914</a> · <a href="karte.html">Karte</a> · <a href="https://thodel.github.io/adressbuecher-bern/">Bern</a> · <a href="https://thodel.github.io/adressbuecher-lausanne/">Lausanne</a> · <a href="https://thodel.github.io/adressbuecher-aarau/">Aarau</a> · <a href="https://thodel.github.io/adressbuecher-basel/">Basel</a> · <a href="https://thodel.github.io/adressbuecher-baden/">Baden</a> · <a href="https://thodel.github.io/vernetzte-schweiz/">Vernetzte Schweiz</a> · <a href="__REPO__">Repo</a></nav>
+  __CITYNAV__
   <h1>Adressbücher der Stadt Zürich 1859–1914</h1>
   <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1875, 1885, 1900 und 1914.</p>
 </header>
@@ -298,6 +304,7 @@ footer { color: var(--muted); font-size: 0.8rem; }
   <input id="q" type="search" placeholder="Suchen: Name, Beruf, Strasse, Rubrik, ID …" aria-label="Suchen">
   <span class="count" id="count" aria-live="polite"></span>
 </div>
+__FSPANEL__
 <div class="flagbar">
   <span><span class="n" id="nflags">0</span> Flags in diesem Browser · <span id="nreported">0</span> bereits im Repo gemeldet</span>
   <button class="btn primary" id="dl">Flags als CSV herunterladen</button>
@@ -310,6 +317,8 @@ footer { color: var(--muted); font-size: 0.8rem; }
 <footer>Daten CC0 1.0 · Code MIT · Quelle für <a href="https://thodel.github.io/vernetzte-schweiz/">Vernetzte Schweiz 1860–1914</a></footer>
 <div id="toast" hidden></div>
 <script>
+__FSJS__
+const FSTX = __FSTX__;
 const META = __META__;
 const LABELS = __LABELS__;
 const QA = __QA__;
@@ -412,9 +421,10 @@ function syncUrl() {
   if (areaSel.value) p.set('area', areaSel.value); if (conf.value) p.set('conf', conf.value); if (qa.value) p.set('qa', qa.value); if (tel.value) p.set('tel', tel.value); if (skF) p.set('sk', skF);
   if (street.value.trim()) p.set('str', street.value.trim());
   if (q.value.trim()) p.set('q', q.value.trim());
-  history.replaceState(null, '', location.pathname + '?' + p.toString());
+  FS.toParams(p);
+  history.replaceState(null, '', location.pathname + '?' + p.toString() + (location.hash === '#suche' ? '#suche' : ''));
 }
-let seq = 0;
+let seq = 0, fsTab = '';
 function render() {
   for (const b of tabsEl.children) b.setAttribute('aria-selected', b.dataset.k === tab);
   const vs = wanted(), my = ++seq;
@@ -424,6 +434,8 @@ function render() {
     return;
   }
   $('loading').hidden = true;
+  if (tab !== fsTab) { fsTab = tab; FS.refresh(); }
+  const hide = META.tabs[tab].hide;
   const cols = META.tabs[tab].cols, oi = META.tabs[tab].cols.indexOf('other_volume'), all = vs.flatMap(v => VOLS[v + '|' + tab]);
   const ai = cols.indexOf('area'), a = areaSel.value;
   areaList(all, ai);
@@ -439,12 +451,13 @@ function render() {
     && (!a || r[ai] === a)
     && (!t || (t === '1' ? r[pi] === '1' : t === 'link' ? !!r[ti] : r[pi] === '1' && !r[ti]))
     && (!onlyflag.checked || flags[tab + '|' + r[0]] || reported[tab + '|' + r[0]])
-    && (!needle || r.filter((_, i) => i !== oi).join(' ').toLowerCase().includes(needle)));
-  thead.innerHTML = '<tr><th>Flag</th>' + cols.filter(cc => cc !== 'street_key').map(cc => `<th>${esc(LABELS[cc] || cc)}</th>`).join('') + '</tr>';
+    && (!needle || r.filter((_, i) => i !== oi).join(' ').toLowerCase().includes(needle))
+    && FS.test(r, cols));
+  thead.innerHTML = '<tr><th>Flag</th>' + cols.filter(cc => !hide.includes(cc)).map(cc => `<th>${esc(LABELS[cc] || cc)}</th>`).join('') + '</tr>';
   tbody.innerHTML = rows.slice(0, shown).map(r => {
     const key = tab + '|' + r[0];
     const cls = (flags[key] && flags[key].reason ? 'flagged ' : '') + (reported[key] ? 'reported' : '');
-    return `<tr class="${cls}" title="${reported[key] ? esc('gemeldet: ' + reported[key].reason + ' ' + reported[key].note) : ''}">${actCell(r)}${r.map((vv, i) => cols[i] === 'street_key' ? '' : cell(cols[i], vv, r)).join('')}</tr>`;
+    return `<tr class="${cls}" title="${reported[key] ? esc('gemeldet: ' + reported[key].reason + ' ' + reported[key].note) : ''}">${actCell(r)}${r.map((vv, i) => hide.includes(cols[i]) ? '' : cell(cols[i], vv, r)).join('')}</tr>`;
   }).join('');
   more.hidden = rows.length <= shown;
   count.textContent = `${Math.min(shown, rows.length).toLocaleString('de-CH')} von ${rows.length.toLocaleString('de-CH')} Zeilen` + (tab === 'berufe' && vol.value === '1900' ? ' · 1900 hat kein Berufsregister' : '');
@@ -490,6 +503,7 @@ if (P.get('tel')) tel.value = P.get('tel');
 $('skclear').onclick = () => { skF = ''; shown = PAGE; render(); };
 if (P.get('str')) street.value = P.get('str');
 if (P.get('q')) q.value = P.get('q');
+FS.init({ cols: () => META.tabs[tab].cols, skip: ['street_key', 'zeitreise', 'telefon', 'other_volume', 'authority'], labels: LABELS, tx: FSTX, first: 'surname', onChange: () => { shown = PAGE; render(); } });
 render();
 </script>
 </html>
@@ -516,12 +530,18 @@ def main() -> None:
         for k in rows[v]:
             n[k][v] = len(rows[v][k])
     meta = {"volumes": VOLUMES, "files": files,
-            "tabs": {k: {"label": label, "cols": cols, "n": sum(n[k].values())} for k, label, _f, cols in TABS}}
+            "tabs": {k: {"label": label, "cols": cols, "n": sum(n[k].values()),
+                         "hide": cols[cols.index("street_key"):]}  # Schlüssel und weitere CSV-Spalten: nur für die Suche
+                     for k, label, _f, cols in TABS}}
     ti = {k: cols.index("phone_flag") for k, _l, _f, cols in TABS}
     n_tel = sum(1 for v in rows for k in rows[v] for r in rows[v][k] if r[ti[k]] == "1")
     fmt = lambda x: f"{x:,}".replace(",", " ")
     reported = load_flags()
-    html = (TEMPLATE.replace("__META__", json.dumps(meta, ensure_ascii=False))
+    html = (TEMPLATE.replace("__CITYBAR__", site_nav.city_bar("zuerich"))
+            .replace("__CITYNAV__", site_nav.city_nav("Zürich 1859–1914", REPO_URL, "entries"))
+            .replace("__NAVCSS__", site_nav.CSS).replace("__FSPANEL__", site_nav.search_panel())
+            .replace("__FSJS__", site_nav.FIELD_SEARCH_JS).replace("__FSTX__", json.dumps(site_nav.fs_texts(), ensure_ascii=False))
+            .replace("__META__", json.dumps(meta, ensure_ascii=False))
             .replace("__LABELS__", json.dumps(LABELS, ensure_ascii=False))
             .replace("__QA__", json.dumps(QA, ensure_ascii=False))
             .replace("__GEO__", json.dumps(GEO, ensure_ascii=False, separators=(",", ":")))
