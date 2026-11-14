@@ -26,7 +26,7 @@ FIELDS = [
     "dash_prefix", "surname", "surname_inherited", "alliance_name", "maiden_name", "forename", "title",
     "civil_status", "relation", "occupation_raw", "origin_raw", "origin_canton", "address_seq",
     "address_role", "street_raw", "building_no", "phone_flag", "heading", "parse_method",
-    "parse_confidence", "residual", "text", "municipality", "qa_flags",
+    "parse_confidence", "residual", "text", "municipality", "qa_flags", "district",
 ]
 AUTH_FIELDS = [
     "entry_id", "kind", "volume", "surname", "forename", "occupation", "origin", "qid", "label", "birth",
@@ -48,6 +48,15 @@ OUTSIDE = {"Zollikon", "Kilchberg", "Küsnacht", "Rüschlikon", "Adliswil", "Hö
            "Unterengstringen", "Weiningen", "Regensdorf", "Opfikon", "Wallisellen"}
 # 1859: «… Weinhandlung. In Albisrieden.»; Lesefehler des Modells auf den Ort von 1914
 PLACE_ALIAS = {"Oberurdorf": "Urdorf", "Ulstetten": "Altstetten", "Bollikon": "Zollikon", "Weinigen": "Weiningen"}
+# Gebiet innerhalb der Stadt (Spalte district): 1859 Grosse/Kleine Stadt (g/k an der Hausnummer), 1875/1885 die
+# alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.»), 1900 Kreis I–V, 1914 Kreis 1–8 vor der Strasse.
+OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "Aussersihl", "E": "Enge", "Enge": "Enge",
+       "F": "Fluntern", "Fl": "Fluntern", "Fluntern": "Fluntern", "Hi": "Hirslanden", "Hl": "Hirslanden",
+       "Hirs": "Hirslanden", "Hirslanden": "Hirslanden", "Ho": "Hottingen", "Hottingen": "Hottingen",
+       "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
+       "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
+       "W": "Wiedikon", "Wiedikon": "Wiedikon"}
+KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]"}
 IN_PLACE = re.compile(r"\bIn ([A-ZÄÖÜ][a-zäöüß]+)\b")
 SECTIONS = {
     "1859": [("einwohner", 77, 263), ("berufe", 265, 394)],  # Fraktur; davor das Häuserverzeichnis
@@ -109,6 +118,37 @@ def clean_street(street: str, number: str, kreis: bool = True) -> tuple[str, str
     return street, number
 
 
+def kreis_from_text(volume: str, text: str, street: str) -> tuple[str, str]:
+    """1900/1914: («Kreis», «Hausnummer») aus «… 4 Lagerstrasse 24.» im gedruckten Text; leer, wenn nicht zu finden."""
+    if volume not in KREIS or not street:
+        return "", ""
+    head = rf"(?:^|[\s,.;])({KREIS[volume]})\s+{re.escape(street[:5])}"
+    m = re.search(head + r"[^,;\d]*\s(\d+(?:\s?[a-z](?![\w.]))?)", text)  # mit Hausnummer («12 a», nicht «1 u.»)
+    if m:
+        return m.group(1), m.group(2).replace(" ", "")
+    m = re.search(head, text)
+    return (m.group(1), "") if m else ("", "")
+
+
+def district(volume: str, r: dict, number: str, kreis: str) -> str:
+    """Gebiet in der Stadt, wie gedruckt (siehe OLD, KREIS); leer, wenn nichts dasteht."""
+    d = r.get("district", "").strip(" .")
+    if volume == "1859":
+        gk = re.sub(r"[^gk]", "", number) or re.sub(r"[^gk]", "", d if d in ("g", "k") else "")
+        return {"g": "Grosse Stadt", "k": "Kleine Stadt"}.get(gk, "")
+    if volume in ("1875", "1885"):
+        if d in OLD:
+            return OLD[d]
+        text, no = r["text"], number
+        i = text.rfind(no) if no else -1
+        m = re.match(r"[\s.]*([A-ZÄÖÜ][a-zäöü]{0,11})\.?", text[i + len(no):]) if i >= 0 else None
+        return OLD.get(m.group(1), "") if m else ""
+    if volume in KREIS:
+        k = kreis or (d if re.fullmatch(KREIS[volume], d) else "")
+        return f"Kreis {k}" if k else ""
+    return ""
+
+
 def municipality(r: dict) -> str:
     """Gemeinde 1914: Zürich, ausser der Eintrag nennt einen Ort, der 1914 eine eigene Gemeinde war."""
     places = [r.get("district", "").strip(" .").removeprefix("In ")] + IN_PLACE.findall(r.get("text", ""))
@@ -144,6 +184,10 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             stats["ohne Familienname"] += 1
             continue
         street, number = clean_street(r["street"], r["building_no"], kreis=int(volume) >= 1893)
+        kreis, printed_no = kreis_from_text(volume, r["text"], street)
+        if kreis and number == kreis and printed_no and printed_no != kreis:
+            number = printed_no  # das Modell setzte den Kreis als Hausnummer («4 Zeughausstr. 29» → 4)
+            stats["Hausnummer statt Kreis korrigiert"] += 1
         if SAME.match(street):
             street, number = last
             stats["Adresse vom vorigen Eintrag"] += 1
@@ -165,6 +209,7 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             "parse_confidence": "medium" if {"street_rare", "hyphen", "unreadable", "surname_split"} & set(flags)
             else "high",
             "residual": "", "text": r["text"], "municipality": municipality(r), "qa_flags": ";".join(flags),
+            "district": district(volume, r, number, kreis) if municipality(r) == MUNICIPALITY else "",
         })
         stats[sec] += 1
     return out, stats

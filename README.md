@@ -17,7 +17,16 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 ## Dateien
 
 Schema wie [adressbuecher-aarau](https://github.com/thodel/adressbuecher-aarau), dazu die
-Spalten `municipality` (Gemeinde zum Stand 1914) und `qa_flags`.
+Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Gebiet in der Stadt, wie gedruckt):
+
+| Band | `district` | Beispiel |
+|---|---|---|
+| 1859 | Grosse Stadt / Kleine Stadt (g bzw. k an der Hausnummer) | «339 g, gr. Brunngasse» → Grosse Stadt |
+| 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
+| 1900 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
+| 1914 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
+
+Leer, wenn nichts dasteht oder der Eintrag ausserhalb der Stadt liegt (dann steht die Gemeinde in `municipality`).
 
 - `data/csv/04_entries.csv`: Einwohnerverzeichnisse.
 - `data/csv/04_berufe.csv`: Berufsregister; der Beruf steht in `heading`.
@@ -45,7 +54,9 @@ prüft Strasse, Hausnummer und Familienname.
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
-- **1900 und 1914** nennen den Stadtkreis vor der Strasse (1900: I–V, 1914: 1–8); `street_raw` steht ohne ihn.
+- **1900 und 1914** nennen den Stadtkreis vor der Strasse (1900: I–V, 1914: 1–8); `street_raw` steht ohne ihn,
+  `district` mit ihm. 1914 setzte das Modell oft den Kreis als Hausnummer («4 Zeughausstr. 29» → 4); `convert.py`
+  nimmt dann die Nummer aus der gedruckten Zeile (12 015 Einträge).
 - **Ausserhalb der Stadt:** Wer 1914 in einer anderen Gemeinde wohnte («… In Albisrieden.» 1859,
   «…, Zollikon» 1914), bekommt diese Gemeinde (`OUTSIDE` in `scripts/convert.py`). 1859 trifft das 28
   Einwohner, 1914 36.

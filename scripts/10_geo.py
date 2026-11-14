@@ -3,7 +3,8 @@
     python scripts/10_geo.py streets      # Nominatim, 1 Anfrage/s, Cache in web/geo/
     python scripts/10_geo.py todo         # Hand-Liste web/geo/streets_manual.csv
 
-Jeder Eintrag bekommt ein **Gebiet** aus dem gedruckten Text (`area`):
+Jeder Eintrag bekommt ein **Gebiet** (`area`): die Spalte `district` aus scripts/convert.py, ausserhalb der Stadt
+die Gemeinde. Ohne die Spalte gilt dieselbe Regel aus dem gedruckten Text:
 
 - 1859: «g» bzw. «k» an der Hausnummer → Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links).
 - 1875, 1885: die alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.» → Riesbach; Z. = Stadt Zürich).
@@ -103,6 +104,8 @@ def area(r: dict) -> str:
     v, t, st, no = r["volume"], r.get("text", ""), r.get("street_raw", ""), r.get("building_no", "")
     if r.get("municipality", "Zürich") != "Zürich":
         return r["municipality"]
+    if "district" in r:  # Spalte aus scripts/convert.py
+        return r["district"]
     if v == "1859":
         gk = re.sub(r"[^gk]", "", no)
         return {"g": "Grosse Stadt", "k": "Kleine Stadt"}.get(gk, "")

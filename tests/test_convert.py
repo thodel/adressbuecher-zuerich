@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from convert import SAME, clean_street, municipality, own_surname, section_of  # noqa: E402
+from convert import SAME, clean_street, district, kreis_from_text, municipality, own_surname, section_of  # noqa: E402
 
 
 class Street(unittest.TestCase):
@@ -22,6 +22,21 @@ class Street(unittest.TestCase):
 
     def test_phone_marks_are_dropped(self):
         self.assertEqual(clean_street("pl. de la Gare. R T 180", ""), ("pl. de la Gare", ""))
+
+
+class District(unittest.TestCase):
+    def test_kreis_and_number_from_text(self):
+        self.assertEqual(kreis_from_text("1914", "Wenzler, Karl, Maurer, 6 Habsburgstrasse 26.", "Habsburgstrasse"), ("6", "26"))
+        self.assertEqual(kreis_from_text("1914", "Globus, 1 Bahnhofbrücke 1 u. 1 Löwenplatz 41.", "Bahnhofbrücke"), ("1", "1"))
+        self.assertEqual(kreis_from_text("1900", "— Emil, Metzger, III Freischützgasse 1.", "Freischützgasse"), ("III", "1"))
+        self.assertEqual(kreis_from_text("1885", "— Rud., Rennweg 50 Z.", "Rennweg"), ("", ""))
+
+    def test_district_per_volume(self):
+        self.assertEqual(district("1914", {"district": "", "text": ""}, "26", "6"), "Kreis 6")
+        self.assertEqual(district("1900", {"district": "III", "text": ""}, "1", ""), "Kreis III")
+        self.assertEqual(district("1885", {"district": "R.", "text": ""}, "77", ""), "Riesbach")
+        self.assertEqual(district("1875", {"district": "", "text": "Beuret, Schlosser, Wildbachstrasse 27 Riesbach."}, "27", ""), "Riesbach")
+        self.assertEqual(district("1859", {"district": "", "text": ""}, "339 g", ""), "Grosse Stadt")
 
 
 class Municipality(unittest.TestCase):
