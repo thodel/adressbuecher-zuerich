@@ -6,8 +6,9 @@ Schreibt `index.html` und je Band und Reiter `data/<Band>-<Reiter>.json` nach --
 erst, wenn er gebraucht wird (zuerst 1914), weil alle fünf Bände zusammen über 50 MB wären.
 
 Quellen: data/csv/04_entries.csv, 04_berufe.csv, data/review/flags.csv (falls vorhanden), web/telefon.csv,
-web/baende.csv, web/normdaten.csv und web/geo/. Seitenbilder gibt es keine: die Herkunft der Scans ist offen,
-die Seite nennt nur die Seite im PDF.
+web/baende.csv, web/normdaten.csv, web/geo/ und data/csv/01_iiif_*.csv. Seitenbilder kommen über IIIF von der
+Zentralbibliothek Zürich (Zurich Open Platform, CC0); «Seite» = Seite im PDF der ZB = Canvas, je Band
+`data/<Band>-iiif.json` (Bild-IDs in Seitenfolge, lädt erst, wenn jemand eine Seite öffnet).
 
 Spalte «Gebiet» (aus 10_geo.area): 1859 Grosse/Kleine Stadt, 1875/1885 die alte Gemeinde, 1900/1914 der Kreis.
 
@@ -33,6 +34,7 @@ import site_nav  # noqa: E402  gemeinsame Navigation und Feldsuche aller Adressb
 CSV_DIR = Path("data/csv")
 REVIEW = Path("data/review/flags.csv")
 TELEFON = Path("web/telefon.csv")  # aus scripts/80_telefon.py
+IIIF_BASE = "https://zop.zb.uzh.ch/publiciiif/iiif/2/"
 REPO_URL = "https://github.com/thodel/adressbuecher-zuerich"
 VOLUMES = {"1914": "Adressbuch der Stadt Zürich 1914", "1900": "Adressbuch der Stadt Zürich 1900",
            "1885": "Adressbuch Zürich 1885", "1875": "Adressbuch Zürich 1875",
@@ -244,6 +246,13 @@ td.act a { color: var(--muted); font-size: 12px; margin-left: 6px; }
 footer { color: var(--muted); font-size: 0.8rem; }
 #toast { position: fixed; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); right: calc(12px + env(safe-area-inset-right, 0px)); background: var(--fg); color: var(--bg); padding: 8px 14px; border-radius: 8px; font-size: 0.9rem; }
 @media (max-width: 600px) { body { font-size: 14px; } th, td { max-width: 22ch; } td.act input[type="text"] { width: 9ch; } .flagbar .sub { display: none; } .wrap { min-height: 70vh; } input#street { flex: 1 1 140px; } }
+button.pg { font: inherit; color: var(--accent, #0b5cad); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; }
+dialog#viewer { width: min(980px, 96vw); height: min(96vh, 1400px); max-height: 96vh; padding: 0; border: 1px solid var(--line, #ccc); border-radius: 8px; background: var(--bg); color: var(--fg); }
+dialog#viewer::backdrop { background: rgba(0,0,0,.55); }
+#viewer .vbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--line, #ccc); position: sticky; top: 0; background: var(--bg); }
+#viewer .vbar b { margin-right: auto; }
+#viewer .vimg { overflow: auto; height: calc(100% - 52px); text-align: center; }
+#viewer img { max-width: 100%; height: auto; }
 __NAVCSS__
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -254,7 +263,7 @@ __CITYBAR__
   <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1875, 1885, 1900 und 1914.</p>
 </header>
 <section class="note" aria-label="Hinweis zu den Daten">
-  <p><b>Maschinell gelesen, nicht von Hand korrigiert.</b> Der Text stammt vom Sprachmodell qwen3.8 (Universität Bern) und wurde weder nachkorrigiert noch von Hand stichprobenweise geprüft. Rechnen Sie mit Fehlern in Namen und Strassen, besonders 1859 (Fraktur). Seitenbilder sind hier nicht verfügbar; «Seite» ist die Seite im PDF des Bandes.</p>
+  <p><b>Maschinell gelesen, nicht von Hand korrigiert.</b> Der Text stammt vom Sprachmodell qwen3.8 (Universität Bern) und wurde weder nachkorrigiert noch von Hand stichprobenweise geprüft. Rechnen Sie mit Fehlern in Namen und Strassen, besonders 1859 (Fraktur). Ein Klick auf die <b>Seite</b> zeigt das Seitenbild (Zentralbibliothek Zürich) zum Vergleich.</p>
   <details id="about">
     <summary>Über die Daten: Umfang, Lücken, Lizenz</summary>
     <div class="cols">
@@ -283,7 +292,7 @@ __CITYBAR__
           <li><b>Karte damals:</b> Link auf die Siegfriedkarte des Jahres (swisstopo Zeitreise) an der Strasse (Lage nach OpenStreetMap, nur wenn sie im Quartier des gedruckten Kreises bzw. der alten Gemeinde liegt), sonst an der Stadtmitte. Dazu die <a href="karte.html">Karte</a> aller Einträge.</li>
         </ul>
         <h2>Seitenbilder</h2>
-        <ul><li>Die Seite zeigt und verlinkt keine Scans: ihre Herkunft ist nicht geklärt. «Seite» ist die Seite im PDF.</li></ul>
+        <ul><li>Die Scans stammen von der <a href="https://zop.zb.uzh.ch/collections/9e5087c3-e5f8-4b76-a106-3b5fc830a0f7">Zentralbibliothek Zürich (Zurich Open Platform)</a>, dort unter CC0; die Seite lädt sie über IIIF direkt von der ZB. «Seite» ist die Seite im PDF der ZB und zugleich die Bildnummer im IIIF-Manifest. Je Band: __IIIFLIST__</li></ul>
         <h2>Lizenz</h2>
         <ul><li>Die Bücher erschienen vor 1914, ihr Inhalt ist gemeinfrei. Daten <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>, Code <a href="__REPO__/blob/main/LICENSE">MIT</a>. CSV im <a href="__REPO__/tree/main/data/csv">Repo</a>.</li></ul>
       </div>
@@ -312,10 +321,17 @@ __FSPANEL__
   <button class="btn" id="clear">Flags löschen</button>
   <span class="sub">Danach: <code>python scripts/91_merge_flags.py &lt;datei.csv&gt;</code> und committen.</span>
 </div>
-<p class="legend"><b>Seite</b> = Seite im PDF (keine Bilder) · <b>Gebiet</b> = Kreis bzw. alte Gemeinde wie gedruckt · <b>Strasse</b> anklicken filtert · <b>Konfidenz</b>: high = keine Auffälligkeit, medium = ein Hinweis spricht für Prüfung · <b>Hinweise</b>: Maus darüber für Erklärung · <b>☏</b> = Telefon genannt · <b>Telefonbuch</b>: passender Eintrag im PTT-Telefonbuch, Link auf die Person bei Vernetzte Schweiz und aufs Seitenbild; «nummer» = gleiche Nummer und Name, «name» = einzige Person mit Name und Vorname, sonst die Stufe der Verknüpfung von Vernetzte Schweiz · <b>Andere Bände</b>: dieselbe Person in anderen Bänden (automatisch; <b>fett</b> = sicher, normal = wahrscheinlich, <i>kursiv</i> = möglich; Maus darüber zeigt den Eintrag) · <b>Normdaten</b>: ungeprüfte Kandidaten aus HLS und Wikidata · <b>Karte damals</b>: Siegfriedkarte des Jahres bei swisstopo · <b>✓</b> = Flag schon im Repo</p>
+<p class="legend"><b>Seite</b> = Seite im PDF der ZB, anklicken zeigt das Seitenbild · <b>Gebiet</b> = Kreis bzw. alte Gemeinde wie gedruckt · <b>Strasse</b> anklicken filtert · <b>Konfidenz</b>: high = keine Auffälligkeit, medium = ein Hinweis spricht für Prüfung · <b>Hinweise</b>: Maus darüber für Erklärung · <b>☏</b> = Telefon genannt · <b>Telefonbuch</b>: passender Eintrag im PTT-Telefonbuch, Link auf die Person bei Vernetzte Schweiz und aufs Seitenbild; «nummer» = gleiche Nummer und Name, «name» = einzige Person mit Name und Vorname, sonst die Stufe der Verknüpfung von Vernetzte Schweiz · <b>Andere Bände</b>: dieselbe Person in anderen Bänden (automatisch; <b>fett</b> = sicher, normal = wahrscheinlich, <i>kursiv</i> = möglich; Maus darüber zeigt den Eintrag) · <b>Normdaten</b>: ungeprüfte Kandidaten aus HLS und Wikidata · <b>Karte damals</b>: Siegfriedkarte des Jahres bei swisstopo · <b>✓</b> = Flag schon im Repo</p>
 <div class="wrap"><table id="t"><thead></thead><tbody></tbody></table><div class="loading" id="loading" hidden>Band wird geladen …</div><button class="more" id="more" hidden>weitere Zeilen zeigen</button></div>
 <footer>Daten CC0 1.0 · Code MIT · Quelle für <a href="https://thodel.github.io/vernetzte-schweiz/">Vernetzte Schweiz 1860–1914</a></footer>
 <div id="toast" hidden></div>
+<dialog id="viewer" aria-label="Seitenbild">
+  <div class="vbar"><b id="vtitle"></b>
+    <button class="btn" id="vprev" aria-label="vorige Seite">‹ Seite</button><button class="btn" id="vnext" aria-label="nächste Seite">Seite ›</button>
+    <a id="vfull" target="_blank" rel="noopener">volle Grösse ↗</a> · <a id="vzb" target="_blank" rel="noopener">bei der ZB ↗</a>
+    <button class="btn" id="vclose" aria-label="schliessen">✕</button></div>
+  <div class="vimg"><img id="vimg" alt=""></div>
+</dialog>
 <script>
 __FSJS__
 const FSTX = __FSTX__;
@@ -378,7 +394,7 @@ function cell(col, v, r) {
     return `<td><a href="https://map.geo.admin.ch/#/map?lang=de&center=${g[0]},${g[1]}&z=${exact ? 11 : 9}&crosshair=marker&bgLayer=void&layers=ch.swisstopo.zeitreihen@year=${esc(r[1])}" target="_blank" rel="noopener" title="${exact ? 'Strasse' : 'Gemeinde'} auf der Siegfriedkarte ${esc(r[1])} (swisstopo Zeitreise)">${exact ? 'Strasse' : 'Ort'} ${esc(r[1])} ↗</a></td>`;
   }
 
-  if (col === 'page') return `<td class="num" title="Seite im PDF">${esc(v)}</td>`;
+  if (col === 'page') return META.iiif[r[1]] ? `<td class="num"><button type="button" class="pg" data-v="${esc(r[1])}" data-p="${esc(v)}" title="Seitenbild anzeigen (Zentralbibliothek Zürich)">${esc(v)}</button></td>` : `<td class="num" title="Seite im PDF">${esc(v)}</td>`;
   if (col === 'parse_confidence') return `<td><span class="pill ${esc(v)}">${esc(v)}</span></td>`;
   if (col === 'phone_flag') return `<td class="num">${v === '1' ? '<span class="star" title="Telefon">☏</span>' : ''}</td>`;
   if (col === 'street_raw') return `<td>${v ? `<button type="button" class="st" data-s="${esc(v)}" title="nach ${esc(v)} filtern">${esc(v)}</button>` : ''}</td>`;
@@ -400,6 +416,28 @@ function actCell(r) {
   const opts = ['<option value="">— Flag —</option>'].concat(REASONS.map(x => `<option value="${esc(x)}" ${f.reason === x ? 'selected' : ''}>${esc(x)}</option>`)).join('');
   return `<td class="act"><select data-key="${esc(key)}" data-f="reason" aria-label="Grund">${opts}</select> <input type="text" data-key="${esc(key)}" data-f="note" placeholder="Notiz" value="${esc(f.note || '')}" aria-label="Notiz"><a href="${issueUrl(r)}" target="_blank" rel="noopener">Issue</a></td>`;
 }
+// Seitenbild: IIIF der Zentralbibliothek Zürich; Bild-IDs je Band erst beim ersten Öffnen laden
+const IIIF = {};
+function loadIiif(v) { return IIIF[v] ? Promise.resolve(IIIF[v]) : fetch(`data/${v}-iiif.json`).then(r => r.json()).then(d => (IIIF[v] = d)); }
+let cur = null;
+function showPage(v, p) {
+  cur = [v, p];  // sofort setzen: schnelle Klicks auf ‹ › zählen weiter, bevor die Bild-IDs geladen sind
+  loadIiif(v).then(ids => {
+    p = Math.max(1, Math.min(ids.length, p)); cur = [v, p];
+    const base = META.iiif_base + ids[p - 1];
+    $('vtitle').textContent = `Band ${v}, Seite ${p} von ${ids.length}`;
+    $('vimg').src = base + '/full/!1400,2000/0/default.jpg';
+    $('vimg').alt = `Seitenbild ${v}, Seite ${p}`;
+    $('vfull').href = base + '/full/max/0/default.jpg';
+    $('vzb').href = META.iiif[v].handle;
+    if (!$('viewer').open) $('viewer').showModal();
+  }).catch(() => toast('Seitenbild nicht erreichbar'));
+}
+document.addEventListener('click', e => { const b = e.target.closest('button.pg'); if (b) showPage(b.dataset.v, +b.dataset.p); });
+$('vprev').onclick = () => cur && showPage(cur[0], cur[1] - 1);
+$('vnext').onclick = () => cur && showPage(cur[0], cur[1] + 1);
+$('vclose').onclick = () => $('viewer').close();
+$('viewer').addEventListener('keydown', e => { if (e.key === 'ArrowLeft') $('vprev').click(); if (e.key === 'ArrowRight') $('vnext').click(); });
 const areaSel = $('area');
 let areaKey = '';
 function areaList(rows, ai) {
@@ -525,11 +563,21 @@ def main() -> None:
             p.write_text(json.dumps(rows[v][k], ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
             files[f"{v}|{k}"] = len(rows[v][k])
             print(f"{v} {k}: {len(rows[v][k])} → {p} ({p.stat().st_size / 1e6:.1f} MB)")
+    iiif = {}
+    vrows = {r["volume"]: r for r in csv.DictReader((CSV_DIR / "01_iiif_volumes.csv").open(encoding="utf-8"))}
+    ids = {}
+    for r in csv.DictReader((CSV_DIR / "01_iiif_pages.csv").open(encoding="utf-8")):
+        assert r["iiif_image"].startswith(IIIF_BASE) and int(r["page"]) == len(ids.setdefault(r["volume"], [])) + 1
+        ids[r["volume"]].append(r["iiif_image"].removeprefix(IIIF_BASE))
+    for v in VOLUMES:
+        if v in ids:
+            (args.out / "data" / f"{v}-iiif.json").write_text(json.dumps(ids[v], separators=(",", ":")), encoding="utf-8")
+            iiif[v] = {"handle": vrows[v]["handle"], "doi": vrows[v]["doi"], "manifest": vrows[v]["manifest"]}
     n = {k: Counter() for k, *_ in TABS}
     for v in rows:
         for k in rows[v]:
             n[k][v] = len(rows[v][k])
-    meta = {"volumes": VOLUMES, "files": files,
+    meta = {"volumes": VOLUMES, "files": files, "iiif": iiif, "iiif_base": IIIF_BASE,
             "tabs": {k: {"label": label, "cols": cols, "n": sum(n[k].values()),
                          "hide": cols[cols.index("street_key"):]}  # Schlüssel und weitere CSV-Spalten: nur für die Suche
                      for k, label, _f, cols in TABS}}
@@ -553,6 +601,7 @@ def main() -> None:
                                             + (f", {fmt(n['berufe'][v])} im Berufsregister" if n['berufe'][v] else ", kein Berufsregister") + "</li>"
                                             for v in sorted(VOLUMES)))
             .replace("__TELSTAT__", f"{len(PHONE):,} von {n_tel:,} Einträgen mit Telefon haben einen Treffer.".replace(",", "\u202f"))
+            .replace("__IIIFLIST__", " · ".join(f'<a href="{iiif[v]["doi"]}">{v}</a> (<a href="{iiif[v]["manifest"]}">IIIF</a>)' for v in sorted(iiif)))
             .replace("__REPO__", REPO_URL)
             .replace("__DATE__", date.today().strftime("%d.%m.%Y")))
     (args.out / "index.html").write_text(html, encoding="utf-8")

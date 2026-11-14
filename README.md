@@ -82,7 +82,7 @@ ein Telefonnetz, `phone_flag` bleibt darum vor 1880 leer.
 
 <https://thodel.github.io/adressbuecher-zuerich/>: alle Einträge durchsuchbar, mit Filtern nach Band, Gebiet
 (Kreis bzw. alte Gemeinde), Strasse, Konfidenz, Hinweis und Telefon, Flagging je Zeile wie bei Aarau, Basel,
-Baden und Bern. Seitenbilder zeigt und verlinkt die Seite nicht (Herkunft der Scans offen).
+Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
 
 - `python scripts/90_seite.py --out _site` baut sie lokal (`index.html` und je Band und Teil
   `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf lädt); GitHub Actions (`.github/workflows/pages.yml`)
@@ -97,6 +97,18 @@ Baden und Bern. Seitenbilder zeigt und verlinkt die Seite nicht (Herkunft der Sc
 - `scripts/81_baende.py`: dieselbe Person in den anderen Bänden (`web/baende.csv`).
 - `scripts/82_normdaten.py --vs …`: ungeprüfte Kandidaten aus HLS und Wikidata (`web/normdaten.csv`).
 - `scripts/91_merge_flags.py <flags.csv>`: Flags aus der Seite nach `data/review/flags.csv`.
+
+## Seitenbilder
+
+Die PDFs sind die der Zentralbibliothek Zürich ([Zurich Open Platform](https://zop.zb.uzh.ch/collections/9e5087c3-e5f8-4b76-a106-3b5fc830a0f7),
+Adressbücher 1859–1974, dort unter CC0); der Dateiname 9900… ist die Katalognummer. Die Seite lädt die Bilder über
+IIIF direkt von der ZB.
+
+- `data/csv/01_iiif_volumes.csv`: je Band ZOP-UUID, Handle, DOI, Katalognummer, IIIF-Manifest, Lizenz, Zahl der Bilder.
+- `data/csv/01_iiif_pages.csv`: je Seite Canvas und IIIF-Bilddienst. Seite = Seite im PDF = Canvas in derselben Folge;
+  die Zahl der Bilder stimmt bei allen Bänden mit dem PDF überein, und je Band glichen fünf Stichproben (Vorschaubild
+  gegen gerenderte PDF-Seite und ihre Nachbarn) nur der gleichen Seite.
+- Die Tabellen decken auch die nächsten Bände ab (1867, 1920, 1922, 1925, 1930, 1935, 1940, 1945).
 
 ## Lizenz
 
