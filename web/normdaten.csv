@@ -1,6 +1,6 @@
 entry_id,tier,label,life,hls_id,qid,gnd,field,source,note
 1859-berufe-265-010,wahrscheinlich,Heinrich Fick,1822–1895,015802,Q1597215,118683535,Bildung und Wissenschaft|Jurist,wikidata,
-1859-berufe-266-011,wahrscheinlich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,wikidata,
+1859-berufe-266-011,möglich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,wikidata,
 1859-berufe-266-031,wahrscheinlich,Ludwig Hirzel,1838–1897,011660,Q120279,116916567,Hochschullehrer,wikidata,
 1859-berufe-271-006,wahrscheinlich,Julius Stadler,1828–1904,019936,Q23000744,1047114631,Bildung und Wissenschaft|Künste und Literaturen|architecte,wikidata,
 1859-berufe-290-010,möglich,Robert Breitinger,1841–1913,,Q55684024,108944186X,Ingenieur,wikidata,
@@ -34,7 +34,7 @@ entry_id,tier,label,life,hls_id,qid,gnd,field,source,note
 1859-einwohner-217-017,möglich,Gustav Schoch,1833–1899,028940,Q38537847,1016455682,Bildung und Wissenschaft|Wirtschaft und Beruf|Arzt,wikidata,
 1859-einwohner-219-002,wahrscheinlich,Heinrich Schulthess,1813–1898,046243,Q59618315,1017338744,Künste und Literaturen|banquier,wikidata,
 1859-einwohner-227-006,wahrscheinlich,Johann Jakob Sprüngli,1801–1889,012303,Q55680401,1025726502,Künste und Literaturen|Pastor,wikidata,
-1859-einwohner-227-011,wahrscheinlich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,wikidata,
+1859-einwohner-227-011,möglich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,wikidata,
 1859-einwohner-230-005,wahrscheinlich,Leonhard Steiner,1836–1920,012319,Q50810348,1044935634,Künste und Literaturen|Wirtschaft und Beruf|artiste peintre,wikidata,
 1859-einwohner-231-006,wahrscheinlich,Georg Stoll,1818–1904,030372,Q58324869,1061006131,Wirtschaft und Beruf|manager général,wikidata,
 1859-einwohner-238-011,wahrscheinlich,Melchior Ulrich,1802–1893,046381,Q1574548,102243395,Bildung und Wissenschaft|Soziale Bewegungen|Sport|Theologe,wikidata,
@@ -153,8 +153,8 @@ entry_id,tier,label,life,hls_id,qid,gnd,field,source,note
 1875-einwohner-176-065,wahrscheinlich,Friedrich Adolf Siewerdt,1837–1901,032348,Q96381740,,Wirtschaft und Beruf,hls,
 1875-einwohner-179-038,möglich,Johannes Spörri,1837–1921,030930,Q78071703,1081690666,Wirtschaft und Beruf|Seidenweber,hls,
 1875-einwohner-179-053,wahrscheinlich,Christian Sprecher,1810–1883,049004,Q136632858,1081691360,Wirtschaft und Beruf,hls,
-1875-einwohner-180-011,wahrscheinlich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,hls,
-1875-einwohner-180-012,möglich,Johann Ludwig Spyri,1822–1895,044724,Q55678249,141497777,Politik|Religion|Soziale Bewegungen|Wirtschaft und Beruf|pasteur,hls,
+1875-einwohner-180-011,möglich,Johanna Spyri,1827–1901,012304,Q123053,118616455,Schriftsteller,hls,
+1875-einwohner-180-012,möglich,Johann Ludwig Spyri,1822–1895,044724,Q55678249,141497777,Politik|Religion|Soziale Bewegungen|Wirtschaft und Beruf|pasteur,hls,mehrere Personen möglich
 1875-einwohner-180-027,wahrscheinlich,Julius Stadler,1828–1904,019936,Q23000744,1047114631,Bildung und Wissenschaft|Künste und Literaturen|architecte,wikidata,
 1875-einwohner-184-041,wahrscheinlich,Leonhard Steiner,1836–1920,012319,Q50810348,1044935634,Künste und Literaturen|Wirtschaft und Beruf|artiste peintre,hls,
 1875-einwohner-186-043,wahrscheinlich,Georg Stoll,1818–1904,030372,Q58324869,1061006131,Wirtschaft und Beruf|manager général,hls,

@@ -74,6 +74,22 @@ def full_given(w: dict) -> str:
     return first
 
 
+def female_abbrev(entry_forename: str, given: str) -> bool:
+    """«Joh.» im Eintrag, «Johanna» in den Normdaten: die Abkürzung steht ebenso für die männliche Form davor
+    (Johann; auch Henr. → Henriette, Wilh. → Wilhelmina). «Joh. Bernhard» Spyri ist nicht Johanna Spyri."""
+    ta, tb = fold(entry_forename).split(), fold(given).split()
+    if not ta or not tb or len(ta[0]) >= len(tb[0]) or not tb[0].startswith(ta[0]):
+        return False
+    full = tb[0]
+    # Stamm vor -ine/-ette muss ein Name sein (Joseph-ine, Henri-ette), nicht Anto-ine
+    return any(full.endswith(s) and len(full) - len(s) >= (2 if s == "a" else 5) and full[: -len(s)].startswith(ta[0])
+               for s in ("ette", "ine", "a"))
+
+
+FEMALE = re.compile(r"\b(frau|fr\.|wwe|witwe|wittwe|jgfr|jungfer|fraulein|frl|mme|mlle|madame|veuve|vve|demoiselle)\b"
+                    r"|\w(erin|arin|euse|iere|trice|esse)\b")
+
+
 def year(s: str) -> int | None:
     m = re.match(r"-?\d{3,4}", s or "")
     return int(m.group(0)) if m else None
@@ -156,9 +172,13 @@ def main() -> None:
             fs = forename_score(e["forename"], p["given"])
             if not fs:
                 continue
+            if fs == 2 and female_abbrev(e["forename"], p["given"]) and not FEMALE.search(
+                    fold(" ".join((e["title"], e.get("civil_status", ""), e["occupation_raw"], e["heading"])))):
+                fs = 1  # wie eine Initiale; nur wenn der Eintrag selbst eine Frau nennt, gilt die Abkürzung voll
             key = p["hls"] or p["qid"]
             if any(c[1] is e for c in cand[(key, vol)]):
                 continue  # dieselbe Person aus HLS und Wikidata: ein Eintrag zählt nur einmal (HLS zuerst)
+            p = {**p, "ntok": min(len(e["forename"].split()), len(p["given"].split()))}  # passende Vornamen
             cand[(key, vol)].append((fs, e, p))
     out, stats = {}, Counter()
     for (key, vol), cs in cand.items():
@@ -181,16 +201,20 @@ def main() -> None:
             if prev and (prev["tier"] == "wahrscheinlich" or t == "möglich"):
                 if prev["hls_id"] != p["hls"] or prev["qid"] != p["qid"]:
                     prev["tier"] = "möglich"; prev["note"] = "mehrere Personen möglich"
+                    if p["ntok"] > prev["ntok"]:  # «J. L.» Spyri: Johann Ludwig vor Johanna nennen
+                        prev.update(label=p["name"], life=f"{p['birth'] or ''}–{p['death'] or ''}", hls_id=p["hls"],
+                                    qid=p["qid"], gnd=p["gnd"], field=p["field"][:80], source=p["src"], ntok=p["ntok"])
                 continue
             out[e["entry_id"]] = {"entry_id": e["entry_id"], "tier": t, "label": p["name"],
                                   "life": f"{p['birth'] or ''}–{p['death'] or ''}", "hls_id": p["hls"], "qid": p["qid"],
-                                  "gnd": p["gnd"], "field": p["field"][:80], "source": p["src"], "note": ""}
+                                  "gnd": p["gnd"], "field": p["field"][:80], "source": p["src"], "note": "",
+                                  "ntok": p["ntok"]}
     for r in out.values():
         stats[r["tier"]] += 1
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", newline="", encoding="utf-8") as fh:
         fields = ["entry_id", "tier", "label", "life", "hls_id", "qid", "gnd", "field", "source", "note"]
-        w = csv.DictWriter(fh, fieldnames=fields)
+        w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
         w.writerows(sorted(out.values(), key=lambda r: r["entry_id"]))
     (OUT.parent / "normdaten_source.txt").write_text(
