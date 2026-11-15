@@ -1,4 +1,4 @@
-"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1914).
+"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1922).
 
     python scripts/10_geo.py streets      # Nominatim, 1 Anfrage/s, Cache in web/geo/
     python scripts/10_geo.py todo         # Hand-Liste web/geo/streets_manual.csv
@@ -8,11 +8,11 @@ die Gemeinde. Ohne die Spalte gilt dieselbe Regel aus dem gedruckten Text:
 
 - 1859: «g» bzw. «k» an der Hausnummer → Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links).
 - 1875, 1885: die alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.» → Riesbach; Z. = Stadt Zürich).
-- 1900: der Stadtkreis I–V vor der Strasse; 1914: der Kreis 1–8.
+- 1900: der Stadtkreis I–V vor der Strasse; 1914, 1920, 1922: der Kreis 1–8.
 
 Verortet wird je (Gebiet, Strasse), nie die Hausnummer: die Nummern von 1859 (g/k) und die der Ausgemeinden
 1875/1885 sind alte Nummern. Ein Treffer von Nominatim zählt nur, wenn er in einem Quartier liegt, das zum Gebiet
-gehört (Riesbach = Seefeld, Mühlebach, Weinegg …), und der Strassenname passt. 1900 und 1914 tragen schon die
+gehört (Riesbach = Seefeld, Mühlebach, Weinegg …), und der Strassenname passt. 1900, 1914, 1920 und 1922 tragen schon die
 vereinheitlichten Namen nach der Eingemeindung von 1893; dort darf eine Strasse auch knapp im Nachbarquartier
 liegen, solange es in der Stadt nur eine Strasse dieses Namens gibt (`method = stadt`). 1859–1885 nicht:
 gleichnamige Strassen der alten Gemeinden wurden 1893 umbenannt.
@@ -99,6 +99,8 @@ def norm_street(s: str) -> str:
     return s[:1].upper() + s[1:]
 
 
+KREIS_VOLS = {"1900", "1914", "1920", "1922"}  # Bände mit Stadtkreis vor der Strasse
+
 def area(r: dict) -> str:
     """Gebiet des Eintrags aus Band und gedrucktem Text (siehe oben); leer, wenn nichts dasteht."""
     v, t, st, no = r["volume"], r.get("text", ""), r.get("street_raw", ""), r.get("building_no", "")
@@ -114,7 +116,7 @@ def area(r: dict) -> str:
         tail = t[i + len(no):] if i >= 0 else (t[t.find(st) + len(st):] if st and st in t else "")
         m = re.match(r"[\s.]*([A-ZÄÖÜ][a-zäöü]{0,11})\.?", tail)
         return OLD.get(m.group(1), "") if m else ""
-    if v in ("1900", "1914") and st:
+    if v in KREIS_VOLS and st:
         i = t.find(st[:6])
         m = re.search(r"(?:^|[\s,])([IV]{1,3}|[1-8])\s*$", t[:i]) if i > 0 else None
         if m and (v == "1900") == (not m.group(1).isdigit()):
@@ -161,7 +163,7 @@ def entries():
 
 
 def streets_in_data() -> tuple[Counter, dict]:
-    """(Gebiet, Strasse) → Anzahl; dazu je Schlüssel die Bände (für die Regel «nur 1900/1914 grosszügig»)."""
+    """(Gebiet, Strasse) → Anzahl; dazu je Schlüssel die Bände (für die Regel «nur Kreis-Bände grosszügig»)."""
     c, vols = Counter(), {}
     for r in entries():
         if r["street_raw"]:
@@ -212,7 +214,7 @@ def streets(limit: int | None) -> None:
             ok = [r for r in res if want and quartier(r) & want]
             if ok:
                 hit, method = ok[0], "quartier"
-            elif res and (not ar or vols[(ar, st)] <= {"1900", "1914"}):
+            elif res and (not ar or vols[(ar, st)] <= KREIS_VOLS):
                 # Name eindeutig in der Stadt (Punkte höchstens 1.5 km auseinander = dieselbe Strasse)
                 lats, lons = [float(r["lat"]) for r in res], [float(r["lon"]) for r in res]
                 if max(lats) - min(lats) < 0.014 and max(lons) - min(lons) < 0.02:

@@ -1,4 +1,4 @@
-# Adressbücher Zürich 1859–1914
+# Adressbücher Zürich 1859–1922
 
 Einträge der Adressbücher der Stadt Zürich, maschinell gelesen. Quelle für
 [Vernetzte Schweiz 1860–1914](https://thodel.github.io/vernetzte-schweiz/), wo sie mit den
@@ -11,8 +11,11 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | 1885, Orell Füssli | 574 | 27 347 | 7 411 | Einwohner 15–320, Berufe 335–415 |
 | 1900 | 768 | 60 671 | – | Einwohner 33–534 (kein Berufsregister im Band) |
 | 1914 | 1 377 | 64 390 | 17 347 | Einwohner 33–652, Berufe 661–854 |
+| 1920 | 1 482 | 69 064 | 19 157 | Einwohner 31–716, Berufe 717–953 |
+| 1922 | 1 480 | 69 674 | 18 606 | Einwohner 23–726, Berufe 727–956 |
 
-«Vernetzte Schweiz» übernimmt die Bände von 1875 an; 1859 liegt vor ihrem Zeitfenster (1860–1914).
+«Vernetzte Schweiz» übernimmt die Bände 1875–1914; 1859, 1920 und 1922 liegen ausserhalb ihres Zeitfensters (1860–1914).
+1920 und 1922 sind die ersten Bände nach 1914; 1925–1945 werden gelesen und kommen nach.
 
 ## Dateien
 
@@ -24,7 +27,7 @@ Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Geb
 | 1859 | Grosse Stadt / Kleine Stadt (g bzw. k an der Hausnummer) | «339 g, gr. Brunngasse» → Grosse Stadt |
 | 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
 | 1900 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
-| 1914 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
+| 1914, 1920, 1922 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
 
 Leer, wenn nichts dasteht oder der Eintrag ausserhalb der Stadt liegt (dann steht die Gemeinde in `municipality`).
 
@@ -44,6 +47,8 @@ prüft Strasse, Hausnummer und Familienname.
 - **Modell:** `qwen3.8-27b` auf GPUStack der Universität Bern, Seitenbild 2× vergrössert,
   Ausgabe als JSON-Zeilen (Familienname, Allianzname, Vorname, Beruf, Strasse, Hausnummer, Kreis
   bzw. Gemeinde, Telefon). Seiten, deren Ausgabe abbrach, wurden ein zweites Mal gelesen.
+- **1920, 1922:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
+  860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. `qa_flags` markiert Verdachtsfälle
   (seltene Strasse, Trennstrich, zusammengesetzter Name); solche Einträge haben
   `parse_confidence = medium`.
@@ -54,7 +59,7 @@ prüft Strasse, Hausnummer und Familienname.
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
-- **1900 und 1914** nennen den Stadtkreis vor der Strasse (1900: I–V, 1914: 1–8); `street_raw` steht ohne ihn,
+- **1900, 1914, 1920 und 1922** nennen den Stadtkreis vor der Strasse (1900: I–V, sonst 1–8); `street_raw` steht ohne ihn,
   `district` mit ihm. 1914 setzte das Modell oft den Kreis als Hausnummer («4 Zeughausstr. 29» → 4); `convert.py`
   nimmt dann die Nummer aus der gedruckten Zeile (12 015 Einträge).
 - **Ausserhalb der Stadt:** Wer 1914 in einer anderen Gemeinde wohnte («… In Albisrieden.» 1859,
@@ -66,6 +71,8 @@ prüft Strasse, Hausnummer und Familienname.
 - **1914:** 11 Seiten des Einwohnerverzeichnisses (S. 62, 70, 97, 120, 353, 374, 397, 413, 477, 532, 587)
   brechen in der Lesung vor dem Seitenende ab, auch im zweiten Versuch mit doppeltem Tokenbudget an derselben
   Stelle; es fehlen dort die letzten Einträge der Seite.
+- **1920:** ebenso 8 Seiten (S. 316, 711, 715, 720, 797, 870, 877, 885); **1922:** 15 Seiten (S. 45, 117, 193,
+  391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941).
 - **1859:** Fraktur; die Lesung ist nicht geprüft. Hausnummern sind die alten Nummern mit «g» (Grosse
   Stadt) und «k» (Kleine Stadt).
 - Zeilen ohne bestimmbaren Familiennamen fehlen: lange Firmennamen (mehr als vier Wörter vor dem ersten
@@ -88,7 +95,7 @@ Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
   `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf lädt); GitHub Actions (`.github/workflows/pages.yml`)
   baut und veröffentlicht sie bei jedem Push.
 - Karte: `python scripts/92_karte.py --out _site/karte.html` (Kreise je Strasse).
-- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1875/1885 alte Gemeinde, 1900/1914
+- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1875/1885 alte Gemeinde, 1900–1922
   Kreis) und die Strassenpunkte aus OpenStreetMap, nur wenn sie im Quartier des Gebiets liegen
   (`web/geo/streets.csv`); offene Strassen von Hand in `web/geo/streets_manual.csv` (`10_geo.py todo`).
   Hausnummern werden nicht verortet.
@@ -112,6 +119,7 @@ IIIF direkt von der ZB.
 
 ## Lizenz
 
-Die Bücher sind vor 1914 erschienen; ihr Inhalt ist gemeinfrei (URG Art. 2 Abs. 1, Art. 29 Abs. 2).
+Die Bücher bis 1914 sind gemeinfrei (URG Art. 2 Abs. 1, Art. 29 Abs. 2). Die Scans aller Bände, auch 1920 und
+1922, gibt die Zentralbibliothek Zürich unter CC0 frei.
 Die Daten in `data/` stehen unter [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/),
 der Code unter MIT. Die Scans selbst liegen nicht in diesem Repo.
