@@ -10,7 +10,7 @@ web/baende.csv, web/normdaten.csv, web/geo/ und data/csv/01_iiif_*.csv. Seitenbi
 Zentralbibliothek Zürich (Zurich Open Platform, CC0); «Seite» = Seite im PDF der ZB = Canvas, je Band
 `data/<Band>-iiif.json` (Bild-IDs in Seitenfolge, lädt erst, wenn jemand eine Seite öffnet).
 
-Spalte «Gebiet» (aus 10_geo.area): 1859 Grosse/Kleine Stadt, 1875/1885 die alte Gemeinde, 1900–1922 der Kreis.
+Spalte «Gebiet» (aus 10_geo.area): 1859 Grosse/Kleine Stadt, 1867–1885 die alte Gemeinde, 1900–1922 der Kreis.
 
 Reiter, Suche, Filter und Flagging je Zeile wie bei Aarau, Basel und Baden: ein Flag wird im Browser
 gespeichert und als CSV exportiert; `scripts/91_merge_flags.py` mischt ihn nach data/review/flags.csv.
@@ -40,6 +40,7 @@ VOLUMES = {"1914": "Adressbuch der Stadt Zürich 1914",  # zuerst: Standardband 
            "1922": "Adressbuch der Stadt Zürich 1922", "1920": "Adressbuch der Stadt Zürich 1920",
            "1900": "Adressbuch der Stadt Zürich 1900",
            "1885": "Adressbuch Zürich 1885", "1875": "Adressbuch Zürich 1875",
+           "1867": "Adressbuch der Stadt Zürich und Umgebung 1867",
            "1859": "Adressbuch der Stadt Zürich und Umgebung 1859"}
 
 TABS = [
@@ -167,7 +168,7 @@ TEMPLATE = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Adressbücher Zürich 1859–1922</title>
-<meta name="description" content="Einträge der Adressbücher der Stadt Zürich 1859, 1875, 1885, 1900, 1914, 1920 und 1922, maschinell gelesen mit qwen3.8, durchsuchbar nach Name, Beruf, Strasse und Kreis, verknüpft mit dem Telefonbuch.">
+<meta name="description" content="Einträge der Adressbücher der Stadt Zürich 1859, 1867, 1875, 1885, 1900, 1914, 1920 und 1922, maschinell gelesen mit qwen3.8, durchsuchbar nach Name, Beruf, Strasse und Kreis, verknüpft mit dem Telefonbuch.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap">
 <style>
 /* Layout: Werkzeug wie Aarau/Basel/Baden — Kopf mit Hinweis und Filtern, darunter eine Tabelle, die den Rest füllt. */
@@ -262,10 +263,10 @@ __CITYBAR__
 <header>
   __CITYNAV__
   <h1>Adressbücher der Stadt Zürich 1859–1922</h1>
-  <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1875, 1885, 1900, 1914, 1920 und 1922.</p>
+  <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1867, 1875, 1885, 1900, 1914, 1920 und 1922.</p>
 </header>
 <section class="note" aria-label="Hinweis zu den Daten">
-  <p><b>Maschinell gelesen, nicht von Hand korrigiert.</b> Der Text stammt vom Sprachmodell qwen3.8 (Universität Bern) und wurde weder nachkorrigiert noch von Hand stichprobenweise geprüft. Rechnen Sie mit Fehlern in Namen und Strassen, besonders 1859 (Fraktur). Ein Klick auf die <b>Seite</b> zeigt das Seitenbild (Zentralbibliothek Zürich) zum Vergleich.</p>
+  <p><b>Maschinell gelesen, nicht von Hand korrigiert.</b> Der Text stammt vom Sprachmodell qwen3.8 (Universität Bern) und wurde weder nachkorrigiert noch von Hand stichprobenweise geprüft. Rechnen Sie mit Fehlern in Namen und Strassen, besonders 1859 und 1867 (Fraktur). Ein Klick auf die <b>Seite</b> zeigt das Seitenbild (Zentralbibliothek Zürich) zum Vergleich.</p>
   <details id="about">
     <summary>Über die Daten: Umfang, Lücken, Lizenz</summary>
     <div class="cols">
@@ -275,6 +276,7 @@ __CITYBAR__
         <h2>Gebiet</h2>
         <ul>
           <li><b>1859:</b> «g» bzw. «k» an der Hausnummer = Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links). Es sind die alten Hausnummern.</li>
+          <li><b>1867:</b> die Ausgemeinde, wenn der Eintrag sie nennt («… 235 Enge», «In Riesbach»); Einträge in der Stadt selbst haben kein Gebiet.</li>
           <li><b>1875, 1885:</b> die alte Gemeinde hinter der Hausnummer (A. Aussersihl, E. Enge, F. Fluntern, Hi. Hirslanden, Ho. Hottingen, O. Oberstrass, R. Riesbach, U. Unterstrass, W. Wiedikon, Z. Zürich). Sie gehören seit 1893 zur Stadt; die Hausnummern sind die der alten Gemeinde.</li>
           <li><b>1900:</b> Stadtkreis I–V, <b>1914, 1920, 1922:</b> Kreis 1–8. Wer ausserhalb wohnte, hat seine Gemeinde (Zollikon, Kilchberg …).</li>
         </ul>
@@ -303,7 +305,7 @@ __CITYBAR__
 </section>
 <div class="toolbar">
   <div class="tabs" role="tablist" id="tabs"></div>
-  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1859">1859</option><option value="">alle Bände (gross)</option></select>
+  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände (gross)</option></select>
   <select id="area" aria-label="Gebiet"><option value="">alle Gebiete</option></select>
   <select id="conf" aria-label="Konfidenz"><option value="">alle Konfidenzen</option><option value="high">high</option><option value="medium">medium</option></select>
   <select id="qa" aria-label="Hinweis"><option value="">alle Hinweise</option><option value="-">ohne Hinweis</option></select>

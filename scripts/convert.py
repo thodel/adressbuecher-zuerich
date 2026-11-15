@@ -48,7 +48,7 @@ OUTSIDE = {"Zollikon", "Kilchberg", "Küsnacht", "Rüschlikon", "Adliswil", "Hö
            "Unterengstringen", "Weiningen", "Regensdorf", "Opfikon", "Wallisellen"}
 # 1859: «… Weinhandlung. In Albisrieden.»; Lesefehler des Modells auf den Ort von 1914
 PLACE_ALIAS = {"Oberurdorf": "Urdorf", "Ulstetten": "Altstetten", "Bollikon": "Zollikon", "Weinigen": "Weiningen"}
-# Gebiet innerhalb der Stadt (Spalte district): 1859 Grosse/Kleine Stadt (g/k an der Hausnummer), 1875/1885 die
+# Gebiet innerhalb der Stadt (Spalte district): 1859 Grosse/Kleine Stadt (g/k an der Hausnummer), 1867 die Ausgemeinde im Text, 1875/1885 die
 # alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.»), 1900 Kreis I–V, 1914–1922 Kreis 1–8 vor der Strasse.
 OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "Aussersihl", "E": "Enge", "Enge": "Enge",
        "F": "Fluntern", "Fl": "Fluntern", "Fluntern": "Fluntern", "Hi": "Hirslanden", "Hl": "Hirslanden",
@@ -57,9 +57,17 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
 KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]"}  # Kreise 1–8 bis 1934
+# 1867: die Ausgemeinde steht als Wort im Text («… 235 Enge», «In Riesbach»), mit Fraktur-Lesefehlern
+# (ſ → f, ß: «Oberstraf», «Auferfchl.», «Außerfihl»).
+OLD_1867 = [(re.compile(p), n) for p, n in (
+    (r"\bAu[sßf]{0,2}e?r[sßf]*c?h?i?h?l\b|\bAu[sßf]+er[sßfz]+ih?l\b", "Aussersihl"), (r"\bEnge\b", "Enge"),
+    (r"\bFluntern\b", "Fluntern"), (r"\bHirslanden\b", "Hirslanden"), (r"\bHottingen\b", "Hottingen"),
+    (r"\bOberstra[sßf]{1,2}e?\b", "Oberstrass"), (r"\bRiesb(?:ach|\.)", "Riesbach"),
+    (r"\bUnterstra[sßf]{1,2}e?\b", "Unterstrass"), (r"\bWiedikon\b", "Wiedikon"))]
 IN_PLACE = re.compile(r"\bIn ([A-ZÄÖÜ][a-zäöüß]+)\b")
 SECTIONS = {
     "1859": [("einwohner", 77, 263), ("berufe", 265, 394)],  # Fraktur; davor das Häuserverzeichnis
+    "1867": [("einwohner", 61, 151), ("berufe", 152, 222)],  # Fraktur (Hintermeister, 2. Aufl.)
     "1875": [("einwohner", 9, 222), ("berufe", 225, 272)],
     "1885": [("einwohner", 15, 320), ("berufe", 335, 415)],
     "1900": [("einwohner", 33, 534)],  # ohne Berufsregister
@@ -139,6 +147,11 @@ def district(volume: str, r: dict, number: str, kreis: str) -> str:
     if volume == "1859":
         gk = re.sub(r"[^gk]", "", number) or re.sub(r"[^gk]", "", d if d in ("g", "k") else "")
         return {"g": "Grosse Stadt", "k": "Kleine Stadt"}.get(gk, "")
+    if volume == "1867":
+        for rx, name in OLD_1867:
+            if rx.search(r["text"]) or rx.search(d):
+                return name
+        return ""
     if volume in ("1875", "1885"):
         if d in OLD:
             return OLD[d]

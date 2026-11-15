@@ -7,6 +7,7 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | Band | Seiten | Einwohner | Berufsregister | Teile (Seiten im PDF) |
 |---|---:|---:|---:|---|
 | 1859, D. Hintermeister (Fraktur) | 454 | 4 506 | 3 652 | Einwohner 77–263, Berufe 265–394 |
+| 1867, D. Hintermeister, 2. Aufl. (Fraktur) | 232 | 5 981 | 6 730 | Einwohner 61–151, Berufe 152–222 |
 | 1875, Orell Füssli | 418 | 15 507 | 4 237 | Einwohner 9–222, Berufe 225–272 |
 | 1885, Orell Füssli | 574 | 27 347 | 7 411 | Einwohner 15–320, Berufe 335–415 |
 | 1900 | 768 | 60 671 | – | Einwohner 33–534 (kein Berufsregister im Band) |
@@ -14,7 +15,7 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | 1920 | 1 482 | 69 064 | 19 157 | Einwohner 31–716, Berufe 717–953 |
 | 1922 | 1 480 | 69 674 | 18 606 | Einwohner 23–726, Berufe 727–956 |
 
-«Vernetzte Schweiz» übernimmt die Bände 1875–1914; 1859, 1920 und 1922 liegen ausserhalb ihres Zeitfensters (1860–1914).
+«Vernetzte Schweiz» übernimmt die Bände 1867–1914; 1859, 1920 und 1922 liegen ausserhalb ihres Zeitfensters (1860–1914).
 1920 und 1922 sind die ersten Bände nach 1914; 1925–1945 werden gelesen und kommen nach.
 
 ## Dateien
@@ -25,6 +26,7 @@ Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Geb
 | Band | `district` | Beispiel |
 |---|---|---|
 | 1859 | Grosse Stadt / Kleine Stadt (g bzw. k an der Hausnummer) | «339 g, gr. Brunngasse» → Grosse Stadt |
+| 1867 | Ausgemeinde als Wort im Text (Stadt selbst: leer) | «629 Hornaugasse, Riesbach» → Riesbach |
 | 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
 | 1900 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
 | 1914, 1920, 1922 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
@@ -47,6 +49,8 @@ prüft Strasse, Hausnummer und Familienname.
 - **Modell:** `qwen3.8-27b` auf GPUStack der Universität Bern, Seitenbild 2× vergrössert,
   Ausgabe als JSON-Zeilen (Familienname, Allianzname, Vorname, Beruf, Strasse, Hausnummer, Kreis
   bzw. Gemeinde, Telefon). Seiten, deren Ausgabe abbrach, wurden ein zweites Mal gelesen.
+- **1867:** dasselbe Modell, auf tei; Seitenbilder 1600 px breit von der ZB (IIIF), ohne Vergrösserung.
+  Alle 162 Seiten endeten sauber.
 - **1920, 1922:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
   860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. `qa_flags` markiert Verdachtsfälle
@@ -55,7 +59,7 @@ prüft Strasse, Hausnummer und Familienname.
 
 ## Gemeinden
 
-- **1859, 1875 und 1885** nennen die Stadt und die Ausgemeinden (1875: Aussersihl, Enge, Fluntern,
+- **1859, 1867, 1875 und 1885** nennen die Stadt und die Ausgemeinden (1875: Aussersihl, Enge, Fluntern,
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
@@ -73,6 +77,8 @@ prüft Strasse, Hausnummer und Familienname.
   Stelle; es fehlen dort die letzten Einträge der Seite.
 - **1920:** ebenso 8 Seiten (S. 316, 711, 715, 720, 797, 870, 877, 885); **1922:** 15 Seiten (S. 45, 117, 193,
   391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941).
+- **1867:** Fraktur wie 1859; typische Lesefehler «R» für «N» und «f» für «ſ» («Riederdorfstrasse»,
+  «Oberstraf», «Auferfchl.» für Aussersihl).
 - **1859:** Fraktur; die Lesung ist nicht geprüft. Hausnummern sind die alten Nummern mit «g» (Grosse
   Stadt) und «k» (Kleine Stadt).
 - Zeilen ohne bestimmbaren Familiennamen fehlen: lange Firmennamen (mehr als vier Wörter vor dem ersten
@@ -95,7 +101,7 @@ Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
   `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf lädt); GitHub Actions (`.github/workflows/pages.yml`)
   baut und veröffentlicht sie bei jedem Push.
 - Karte: `python scripts/92_karte.py --out _site/karte.html` (Kreise je Strasse).
-- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1875/1885 alte Gemeinde, 1900–1922
+- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1867–1885 alte Gemeinde, 1900–1922
   Kreis) und die Strassenpunkte aus OpenStreetMap, nur wenn sie im Quartier des Gebiets liegen
   (`web/geo/streets.csv`); offene Strassen von Hand in `web/geo/streets_manual.csv` (`10_geo.py todo`).
   Hausnummern werden nicht verortet.
