@@ -49,14 +49,14 @@ OUTSIDE = {"Zollikon", "Kilchberg", "Küsnacht", "Rüschlikon", "Adliswil", "Hö
 # 1859: «… Weinhandlung. In Albisrieden.»; Lesefehler des Modells auf den Ort von 1914
 PLACE_ALIAS = {"Oberurdorf": "Urdorf", "Ulstetten": "Altstetten", "Bollikon": "Zollikon", "Weinigen": "Weiningen"}
 # Gebiet innerhalb der Stadt (Spalte district): 1859 Grosse/Kleine Stadt (g/k an der Hausnummer), 1875/1885 die
-# alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.»), 1900 Kreis I–V, 1914 Kreis 1–8 vor der Strasse.
+# alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.»), 1900 Kreis I–V, 1914–1922 Kreis 1–8 vor der Strasse.
 OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "Aussersihl", "E": "Enge", "Enge": "Enge",
        "F": "Fluntern", "Fl": "Fluntern", "Fluntern": "Fluntern", "Hi": "Hirslanden", "Hl": "Hirslanden",
        "Hirs": "Hirslanden", "Hirslanden": "Hirslanden", "Ho": "Hottingen", "Hottingen": "Hottingen",
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]"}
+KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]"}  # Kreise 1–8 bis 1934
 IN_PLACE = re.compile(r"\bIn ([A-ZÄÖÜ][a-zäöüß]+)\b")
 SECTIONS = {
     "1859": [("einwohner", 77, 263), ("berufe", 265, 394)],  # Fraktur; davor das Häuserverzeichnis
@@ -64,6 +64,9 @@ SECTIONS = {
     "1885": [("einwohner", 15, 320), ("berufe", 335, 415)],
     "1900": [("einwohner", 33, 534)],  # ohne Berufsregister
     "1914": [("einwohner", 33, 652), ("berufe", 661, 854)],
+    # nach dem Zeitfenster von «Vernetzte Schweiz»; Grenzen aus den Kolumnentiteln, von Hand geprüft
+    "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],
+    "1922": [("einwohner", 23, 726), ("berufe", 727, 956)],
 }
 
 # Zürich hat erst seit 1880 ein Telefonnetz; 1875 steht vor «Siehe Inserat» eine Hand, die das Modell
