@@ -1,4 +1,4 @@
-"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1922).
+"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1925).
 
     python scripts/10_geo.py streets      # Nominatim, 1 Anfrage/s, Cache in web/geo/
     python scripts/10_geo.py todo         # Hand-Liste web/geo/streets_manual.csv
@@ -8,7 +8,7 @@ die Gemeinde. Ohne die Spalte gilt dieselbe Regel aus dem gedruckten Text:
 
 - 1859: «g» bzw. «k» an der Hausnummer → Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links).
 - 1875, 1885: die alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.» → Riesbach; Z. = Stadt Zürich).
-- 1900: der Stadtkreis I–V vor der Strasse; 1914, 1920, 1922: der Kreis 1–8.
+- 1900: der Stadtkreis I–V vor der Strasse; 1914–1925: der Kreis 1–8.
 
 Verortet wird je (Gebiet, Strasse), nie die Hausnummer: die Nummern von 1859 (g/k) und die der Ausgemeinden
 1875/1885 sind alte Nummern. Ein Treffer von Nominatim zählt nur, wenn er in einem Quartier liegt, das zum Gebiet
@@ -99,7 +99,7 @@ def norm_street(s: str) -> str:
     return s[:1].upper() + s[1:]
 
 
-KREIS_VOLS = {"1900", "1914", "1920", "1922"}  # Bände mit Stadtkreis vor der Strasse
+KREIS_VOLS = {"1900", "1914", "1920", "1922", "1925"}  # Bände mit Stadtkreis vor der Strasse
 
 def area(r: dict) -> str:
     """Gebiet des Eintrags aus Band und gedrucktem Text (siehe oben); leer, wenn nichts dasteht."""
@@ -156,9 +156,14 @@ def query(params: dict, cache: dict) -> list:
     return cache[key]
 
 
+def register_files(kind: str) -> list[Path]:
+    """Die Dateien eines Verzeichnisses, je Band eine: kind = «entries» (Einwohner) oder «berufe»."""
+    return sorted(CSV_DIR.glob(f"04_{kind}_*.csv"))
+
+
 def entries():
-    for f in ("04_entries.csv", "04_berufe.csv"):
-        with (CSV_DIR / f).open(encoding="utf-8") as fh:
+    for f in (*register_files("entries"), *register_files("berufe")):
+        with f.open(encoding="utf-8") as fh:
             yield from csv.DictReader(fh)
 
 

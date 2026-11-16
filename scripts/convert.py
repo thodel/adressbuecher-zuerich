@@ -2,7 +2,7 @@
 
     python scripts/convert.py
 
-Schreibt data/csv/04_entries.csv (Einwohner), 04_berufe.csv (Berufsregister), 03_sections.csv
+Schreibt je Band data/csv/04_entries_<Band>.csv (Einwohner) und 04_berufe_<Band>.csv (Berufsregister), 03_sections.csv
 (welche Seiten in welchen Teil gehen) und 10_authority_links.csv (leer: Normdaten verknüpft
 «Vernetzte Schweiz» über die Einheiten, nicht dieses Repo).
 
@@ -56,7 +56,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]"}  # Kreise 1–8 bis 1934
+KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]"}  # Kreise 1–8 bis 1934
 # 1867: die Ausgemeinde steht als Wort im Text («… 235 Enge», «In Riesbach»), mit Fraktur-Lesefehlern
 # (ſ → f, ß: «Oberstraf», «Auferfchl.», «Außerfihl»).
 OLD_1867 = [(re.compile(p), n) for p, n in (
@@ -75,7 +75,13 @@ SECTIONS = {
     # nach dem Zeitfenster von «Vernetzte Schweiz»; Grenzen aus den Kolumnentiteln, von Hand geprüft
     "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],
     "1922": [("einwohner", 23, 726), ("berufe", 727, 956)],
+    "1925": [("einwohner", 33, 910), ("berufe", 911, 1132)],
 }
+# Ab 1925 steht der Allianzname (Frauenname) in Klammern nach dem Vornamen: «Huber, Rudolf (Glanzmann), …»,
+# nicht mehr am Familiennamen («Hirt-Guyer»). Das Modell legte ihn mal in origin, mal in den Vornamen, mal
+# als Familiennamen ab; er wird darum aus der gedruckten Zeile genommen. «(gesch. Peter)» bleibt Zivilstand.
+ALLIANCE_PAREN_FROM = 1925
+ALLIANCE_PAREN = re.compile(r"^[\s—–*☎§-]*(?:[^,(]+,\s*)?[^,(]*?\(([A-ZÄÖÜ][\wäöüéèçàô'’-]+(?:[- ][A-ZÄÖÜ][\wäöüéèçàô'’-]+)?)\)")
 
 # Zürich hat erst seit 1880 ein Telefonnetz; 1875 steht vor «Siehe Inserat» eine Hand, die das Modell
 # als ☎ liest.
@@ -180,6 +186,7 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
     pages = Counter(int(r["page"]) for r in rows)
     out, stats = [], Counter()
     last = ("", "")  # Adresse des vorigen Eintrags, für «m. a.» (même adresse)
+    prev_surname = ""
     for r in rows:
         page, seq = int(r["page"]), int(r["seq"])
         sec = section_of(volume, page)
@@ -196,6 +203,18 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             stats["Querverweis oder Vorbemerkung"] += 1
             continue
         surname = own_surname(r)
+        alliance, forename, origin, civil = r["alliance_name"], r["forename"], r["origin"], r["civil_status"]
+        m = ALLIANCE_PAREN.match(r["text"]) if int(volume) >= ALLIANCE_PAREN_FROM else None
+        if m:
+            alliance = m.group(1)
+            forename = re.sub(rf"\s*\({re.escape(alliance)}\)", "", forename)
+            origin = "" if origin.strip("() ") == alliance else origin
+            civil = "" if civil.strip("() ") == alliance else civil
+            if r["dash_prefix"] == "1" and surname == alliance and prev_surname:
+                surname = prev_surname  # das Modell nahm den Allianznamen als Familiennamen
+                stats["Allianzname statt Familienname korrigiert"] += 1
+            stats["Allianzname aus Klammer"] += 1
+        prev_surname = surname or prev_surname
         if not surname or len(surname.split()) > 4:
             stats["ohne Familienname"] += 1
             continue
@@ -216,9 +235,9 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             "entry_type": "firma" if firm else "person", "citizen_flag": "",
             "dash_prefix": r["dash_prefix"], "surname": surname,
             "surname_inherited": "1" if r["dash_prefix"] == "1" and DASH.match(r["text"]) else "",
-            "alliance_name": r["alliance_name"], "maiden_name": "", "forename": r["forename"].strip(" .,"),
-            "title": r["title"], "civil_status": r["civil_status"], "relation": "",
-            "occupation_raw": r["occupation"], "origin_raw": r["origin"], "origin_canton": "",
+            "alliance_name": alliance, "maiden_name": "", "forename": forename.strip(" .,"),
+            "title": r["title"], "civil_status": civil, "relation": "",
+            "occupation_raw": r["occupation"], "origin_raw": origin, "origin_canton": "",
             "address_seq": "1", "address_role": "", "street_raw": street, "building_no": number,
             "phone_flag": "1" if int(volume[:4]) >= PHONE_FROM and (r["phone"].strip() or "☎" in r["text"] or r["text"].lstrip().startswith("§")) else "", "heading": r["heading"],
             "parse_method": METHOD,
@@ -240,7 +259,13 @@ def main() -> None:
         sections += [{"volume": volume, "section": n, "page_from": a, "page_to": b} for n, a, b in SECTIONS[volume]]
         print(volume, dict(sorted(stats.items())))
     CSV.mkdir(parents=True, exist_ok=True)
-    for name, rows, fields in (("04_entries.csv", entries, FIELDS), ("04_berufe.csv", berufe, FIELDS),
+    # je Band eine Datei: zusammen wären es über 100 MB, die Grenze von GitHub; 80–82 lesen alle 04_*.csv
+    for old in (*CSV.glob("04_entries*.csv"), *CSV.glob("04_berufe*.csv")):
+        old.unlink()
+    files = [(f"04_entries_{v}.csv", [r for r in entries if r["volume"] == v], FIELDS) for v in SECTIONS]
+    files += [(f"04_berufe_{v}.csv", [r for r in berufe if r["volume"] == v], FIELDS) for v in SECTIONS
+              if any(n == "berufe" for n, *_ in SECTIONS[v])]
+    for name, rows, fields in (*files,
                                ("03_sections.csv", sections, ["volume", "section", "page_from", "page_to"]),
                                ("10_authority_links.csv", [], AUTH_FIELDS)):
         with open(CSV / name, "w", newline="", encoding="utf-8") as f:
