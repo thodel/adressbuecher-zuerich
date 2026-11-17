@@ -5,7 +5,10 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from convert import SAME, clean_street, district, kreis_from_text, municipality, own_surname, section_of  # noqa: E402
+from collections import Counter  # noqa: E402
+
+from convert import (CIRCLED, MUNICIPALITY, PHONE_LEAD, SAME, clean_street, district, kreis_from_text,  # noqa: E402
+                     municipality, own_surname, section_of, street_kreis)
 
 
 class Street(unittest.TestCase):
@@ -70,3 +73,23 @@ class Sections(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Circled1930(unittest.TestCase):
+    def test_circled_digit_is_the_kreis(self):
+        text = "— Karl G. (Neukomm), Glasermeister, ③ Badenerstrasse 437.".translate(CIRCLED)
+        self.assertEqual(kreis_from_text("1930", text, "Badenerstrasse"), ("3", "437"))
+
+    def test_phone_only_at_line_start(self):
+        self.assertTrue(PHONE_LEAD.search("☎— Jakob J. (Maspero), Malermeister, ☎ Fliederstr. 11."))
+        self.assertTrue(PHONE_LEAD.search("☎Acar A.-G., Handel in Werkzeugen, 2 Bleicherweg 5."))
+        self.assertTrue(PHONE_LEAD.search("Gross, E., 4 Hohlstrasse 123. Tel. S 3405."))
+        self.assertFalse(PHONE_LEAD.search("— Luise (Krieg), Wwe., ☎ Badenerstr. 362."))
+
+    def test_kreis_from_street_only_when_unambiguous(self):
+        row = lambda st, d: {"street_raw": st, "district": d, "municipality": MUNICIPALITY, "qa_flags": ""}  # noqa: E731
+        out = [row("Näfgasse", "Kreis 8")] * 3 + [row("Seestrasse", "Kreis 2")] * 3 + [row("Seestrasse", "Kreis 8")] * 3
+        lost = [row("Näfgasse", ""), row("Seestrasse", "")]
+        street_kreis(out + lost, Counter())
+        self.assertEqual([r["district"] for r in lost], ["Kreis 8", ""])
+        self.assertEqual(lost[0]["qa_flags"], "kreis_aus_strasse")

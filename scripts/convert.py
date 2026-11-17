@@ -56,7 +56,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]"}  # Kreise 1–8 bis 1934
+KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]"}  # Kreise 1–8 bis 1934
 # 1867: die Ausgemeinde steht als Wort im Text («… 235 Enge», «In Riesbach»), mit Fraktur-Lesefehlern
 # (ſ → f, ß: «Oberstraf», «Auferfchl.», «Außerfihl»).
 OLD_1867 = [(re.compile(p), n) for p, n in (
@@ -76,6 +76,7 @@ SECTIONS = {
     "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],
     "1922": [("einwohner", 23, 726), ("berufe", 727, 956)],
     "1925": [("einwohner", 33, 910), ("berufe", 911, 1132)],
+    "1930": [("einwohner", 42, 1072), ("berufe", 1073, 1308)],
 }
 # Ab 1925 steht der Allianzname (Frauenname) in Klammern nach dem Vornamen: «Huber, Rudolf (Glanzmann), …»,
 # nicht mehr am Familiennamen («Hirt-Guyer»). Das Modell legte ihn mal in origin, mal in den Vornamen, mal
@@ -86,6 +87,15 @@ ALLIANCE_PAREN = re.compile(r"^[\s—–*☎§-]*(?:[^,(]+,\s*)?[^,(]*?\(([A-ZÄ
 # Zürich hat erst seit 1880 ein Telefonnetz; 1875 steht vor «Siehe Inserat» eine Hand, die das Modell
 # als ☎ liest.
 PHONE_FROM = 1880
+
+# Ab 1930 steht der Kreis als eingekreiste Ziffer vor der Strasse («③ Badenerstrasse 437»). Das Modell schrieb
+# sie mal als Ziffer, mal als ③, und in rund jedem neunten Eintrag als ☎. Darum: ①–⑧ zählen als Ziffer; Abonnent
+# ist nur, wer ☎ (oder §) am Zeilenanfang oder «Tel.» hat; ein ☎ vor der Strasse ist ein verlesener Kreis.
+# Dessen Ziffer ist verloren; der Kreis kommt dann aus der Strasse, wenn sie im selben Band in einem Kreis liegt.
+CIRCLED_FROM = 1930
+CIRCLED = str.maketrans("①②③④⑤⑥⑦⑧⑨", "123456789")
+PHONE_LEAD = re.compile(r"^\s*(?:[—–-]\s*)?[☎§]|\bTel\.")
+STREET_KREIS_MIN, STREET_KREIS_SHARE = 3, 0.9  # so oft im Band mit Kreis belegt, so einheitlich
 
 MIN_ENTRIES = 10  # weniger Einträge auf einer Seite: Inserat oder Zwischenseite
 NOT_ENTRY = re.compile(r"siehe auch|voir aussi|^\(?(?:Siehe|Voir)\b|Abkürzungen|Abréviations|"
@@ -187,7 +197,10 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
     out, stats = [], Counter()
     last = ("", "")  # Adresse des vorigen Eintrags, für «m. a.» (même adresse)
     prev_surname = ""
+    circled = int(volume) >= CIRCLED_FROM
     for r in rows:
+        if circled:
+            r = {**r, "text": r["text"].translate(CIRCLED), "district": r["district"].translate(CIRCLED)}
         page, seq = int(r["page"]), int(r["seq"])
         sec = section_of(volume, page)
         if not sec:
@@ -228,6 +241,13 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             stats["Adresse vom vorigen Eintrag"] += 1
         last = (street, number)
         flags = [f for f in r["qa_flags"].split(";") if f]
+        if circled:
+            phone = bool(PHONE_LEAD.search(r["text"]))
+            if street and re.search(r"(?<=.)☎\s*" + re.escape(street[:5]), r["text"]):
+                flags.append("kreis_als_telefon")
+                stats["Kreis als ☎ gelesen"] += 1
+        else:
+            phone = int(volume[:4]) >= PHONE_FROM and bool(r["phone"].strip() or "☎" in r["text"] or r["text"].lstrip().startswith("§"))
         firm = bool(FIRM.search(f"{surname} {r['forename']} {r['text'][:60]}")) and not WIDOW.search(r["text"])
         out.append({
             "entry_id": f"{volume}-{sec}-{page:03d}-{seq:03d}", "volume": volume, "page": page,
@@ -239,7 +259,7 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             "title": r["title"], "civil_status": civil, "relation": "",
             "occupation_raw": r["occupation"], "origin_raw": origin, "origin_canton": "",
             "address_seq": "1", "address_role": "", "street_raw": street, "building_no": number,
-            "phone_flag": "1" if int(volume[:4]) >= PHONE_FROM and (r["phone"].strip() or "☎" in r["text"] or r["text"].lstrip().startswith("§")) else "", "heading": r["heading"],
+            "phone_flag": "1" if phone else "", "heading": r["heading"],
             "parse_method": METHOD,
             "parse_confidence": "medium" if {"street_rare", "hyphen", "unreadable", "surname_split"} & set(flags)
             else "high",
@@ -247,7 +267,28 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             "district": district(volume, r, number, kreis) if municipality(r) == MUNICIPALITY else "",
         })
         stats[sec] += 1
+    if circled:
+        street_kreis(out, stats)
     return out, stats
+
+
+def street_kreis(out: list[dict], stats: Counter) -> None:
+    """Kreis aus der Strasse, wo er unlesbar war: nur, wenn die Strasse im Band einheitlich in einem Kreis liegt."""
+    seen: dict[str, Counter] = {}
+    for r in out:
+        if r["district"] and r["street_raw"]:
+            seen.setdefault(r["street_raw"], Counter())[r["district"]] += 1
+    for r in out:
+        if r["district"] or not r["street_raw"] or r["municipality"] != MUNICIPALITY:
+            continue
+        c = seen.get(r["street_raw"])
+        if not c:
+            continue
+        top, k = c.most_common(1)[0]
+        if k >= STREET_KREIS_MIN and k / sum(c.values()) >= STREET_KREIS_SHARE:
+            r["district"] = top
+            r["qa_flags"] = ";".join(f for f in (r["qa_flags"], "kreis_aus_strasse") if f)
+            stats["Kreis aus der Strasse"] += 1
 
 
 def main() -> None:

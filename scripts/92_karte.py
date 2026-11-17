@@ -7,7 +7,7 @@ eine Seite mit Leaflet: Kreise je Strasse, Fläche nach Zahl der Einträge, wäh
 nach Band, Verzeichnis und «nur mit Telefon». Ein Klick führt zu den Einträgen auf der Hauptseite.
 
 Strassenpunkte: OpenStreetMap (heutige Strassenmitte), verortet je Gebiet (1859 Grosse/Kleine Stadt,
-1875/1885 alte Gemeinde, 1900–1925 Kreis; siehe 10_geo.py), sonst von Hand (web/geo/streets_manual.csv).
+1875/1885 alte Gemeinde, 1900–1930 Kreis; siehe 10_geo.py), sonst von Hand (web/geo/streets_manual.csv).
 Dieselbe Strasse am selben Punkt aus mehreren Gebieten bzw. Bänden ist ein Kreis. Strassen ohne Punkt
 fehlen auf der Karte und werden gezählt; nie verortet wird die Hausnummer.
 """
@@ -31,7 +31,7 @@ CSV_DIR = Path("data/csv")
 GEO = Path("web/geo")
 TELEFON = Path("web/telefon.csv")
 REPO_URL = "https://github.com/thodel/adressbuecher-zuerich"
-VOLS = ["1859", "1867", "1875", "1885", "1900", "1914", "1920", "1922", "1925"]
+VOLS = ["1859", "1867", "1875", "1885", "1900", "1914", "1920", "1922", "1925", "1930"]
 
 
 def counts():
@@ -68,8 +68,8 @@ TEMPLATE = r"""<!doctype html>
 <html lang="de">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Karte Zürich 1859–1925</title>
-<meta name="description" content="Karte der Einträge der Adressbücher der Stadt Zürich 1859–1925 nach Strasse.">
+<title>Karte Zürich 1859–1930</title>
+<meta name="description" content="Karte der Einträge der Adressbücher der Stadt Zürich 1859–1930 nach Strasse.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
@@ -105,11 +105,11 @@ __NAVCSS__
 __CITYBAR__
 <header>
   __CITYNAV__
-  <h1>Karte: Adressbücher der Stadt Zürich 1859–1925</h1>
+  <h1>Karte: Adressbücher der Stadt Zürich 1859–1930</h1>
   <p class="sub">Stand __DATE__ · Kreisfläche = Zahl der Einträge je Strasse. Lage: heutige Strassenmitte nach OpenStreetMap, nur wenn sie im Quartier des gedruckten Kreises bzw. der alten Gemeinde liegt; Hausnummern werden nicht verortet (1859 und in den Ausgemeinden alte Nummern). __UNPLACED__</p>
 </header>
 <div class="toolbar">
-  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1925">1925</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände</option></select>
+  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände</option></select>
   <select id="tab" aria-label="Verzeichnis"><option value="">Einwohner und Berufsregister</option><option value="e">Einwohner</option><option value="b">Berufsregister</option></select>
   <label><input type="checkbox" id="tel"> nur mit Telefon ☏</label>
   <input type="checkbox" id="showMuni" hidden>
@@ -191,7 +191,7 @@ def main() -> None:
     placed = total - lost_entries
     unplaced = (f"{fmt(placed)} von {fmt(total)} Einträgen mit Strasse verortet ({len(street) - lost_streets} von {len(street)} Strassen je Gebiet); "
                 f"die übrigen stehen an Strassen ohne Punkt (anderer Name heute, selten gedruckt oder Lesefehler).")
-    html = (TEMPLATE.replace("__CITYBAR__", site_nav.city_bar('zuerich', 'de')).replace("__CITYNAV__", site_nav.city_nav('Zürich 1859–1925', 'https://github.com/thodel/adressbuecher-zuerich', "map", 'de')).replace("__NAVCSS__", site_nav.CSS).replace("__MUNI__", json.dumps(M, ensure_ascii=False, separators=(",", ":")))
+    html = (TEMPLATE.replace("__CITYBAR__", site_nav.city_bar('zuerich', 'de')).replace("__CITYNAV__", site_nav.city_nav('Zürich 1859–1930', 'https://github.com/thodel/adressbuecher-zuerich', "map", 'de')).replace("__NAVCSS__", site_nav.CSS).replace("__MUNI__", json.dumps(M, ensure_ascii=False, separators=(",", ":")))
             .replace("__STREETS__", json.dumps(S, ensure_ascii=False, separators=(",", ":")))
             .replace("__VOLS__", json.dumps(VOLS)).replace("__UNPLACED__", unplaced).replace("__REPO__", REPO_URL)
             .replace("__DATE__", date.today().strftime("%d.%m.%Y")))
