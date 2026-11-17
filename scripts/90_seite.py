@@ -10,7 +10,7 @@ web/baende.csv.gz, web/normdaten.csv, web/geo/ und data/csv/01_iiif_*.csv. Seite
 Zentralbibliothek Zürich (Zurich Open Platform, CC0); «Seite» = Seite im PDF der ZB = Canvas, je Band
 `data/<Band>-iiif.json` (Bild-IDs in Seitenfolge, lädt erst, wenn jemand eine Seite öffnet).
 
-Spalte «Gebiet» (aus 10_geo.area): 1859 Grosse/Kleine Stadt, 1867–1885 die alte Gemeinde, 1900–1930 der Kreis.
+Spalte «Gebiet» (aus 10_geo.area): 1859 Grosse/Kleine Stadt, 1867–1885 die alte Gemeinde, 1900–1935 der Kreis.
 
 Reiter, Suche, Filter und Flagging je Zeile wie bei Aarau, Basel und Baden: ein Flag wird im Browser
 gespeichert und als CSV exportiert; `scripts/91_merge_flags.py` mischt ihn nach data/review/flags.csv.
@@ -39,7 +39,7 @@ TELEFON = Path("web/telefon.csv")  # aus scripts/80_telefon.py
 IIIF_BASE = "https://zop.zb.uzh.ch/publiciiif/iiif/2/"
 REPO_URL = "https://github.com/thodel/adressbuecher-zuerich"
 VOLUMES = {"1914": "Adressbuch der Stadt Zürich 1914",  # zuerst: Standardband der Seite
-           "1930": "Adressbuch der Stadt Zürich 1930", "1925": "Adressbuch der Stadt Zürich 1925", "1922": "Adressbuch der Stadt Zürich 1922", "1920": "Adressbuch der Stadt Zürich 1920",
+           "1935": "Adressbuch der Stadt Zürich 1935", "1930": "Adressbuch der Stadt Zürich 1930", "1925": "Adressbuch der Stadt Zürich 1925", "1922": "Adressbuch der Stadt Zürich 1922", "1920": "Adressbuch der Stadt Zürich 1920",
            "1900": "Adressbuch der Stadt Zürich 1900",
            "1885": "Adressbuch Zürich 1885", "1875": "Adressbuch Zürich 1875",
            "1867": "Adressbuch der Stadt Zürich und Umgebung 1867",
@@ -178,8 +178,8 @@ TEMPLATE = r"""<!doctype html>
 <html lang="de">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Adressbücher Zürich 1859–1930</title>
-<meta name="description" content="Einträge der Adressbücher der Stadt Zürich 1859, 1867, 1875, 1885, 1900, 1914, 1920, 1922, 1925 und 1930, maschinell gelesen mit qwen3.8, durchsuchbar nach Name, Beruf, Strasse und Kreis, verknüpft mit dem Telefonbuch.">
+<title>Adressbücher Zürich 1859–1935</title>
+<meta name="description" content="Einträge der Adressbücher der Stadt Zürich 1859, 1867, 1875, 1885, 1900, 1914, 1920, 1922, 1925, 1930 und 1935, maschinell gelesen mit qwen3.8, durchsuchbar nach Name, Beruf, Strasse und Kreis, verknüpft mit dem Telefonbuch.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap">
 <style>
 /* Layout: Werkzeug wie Aarau/Basel/Baden — Kopf mit Hinweis und Filtern, darunter eine Tabelle, die den Rest füllt. */
@@ -273,8 +273,8 @@ __NAVCSS__
 __CITYBAR__
 <header>
   __CITYNAV__
-  <h1>Adressbücher der Stadt Zürich 1859–1930</h1>
-  <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1867, 1875, 1885, 1900, 1914, 1920, 1922, 1925 und 1930.</p>
+  <h1>Adressbücher der Stadt Zürich 1859–1935</h1>
+  <p class="sub">Stand __DATE__ · Einwohnerverzeichnisse und Berufsregister der Bände 1859, 1867, 1875, 1885, 1900, 1914, 1920, 1922, 1925, 1930 und 1935.</p>
 </header>
 <section class="note" aria-label="Hinweis zu den Daten">
   <p><b>Maschinell gelesen, nicht von Hand korrigiert.</b> Der Text stammt vom Sprachmodell qwen3.8 (Universität Bern) und wurde weder nachkorrigiert noch von Hand stichprobenweise geprüft. Rechnen Sie mit Fehlern in Namen und Strassen, besonders 1859 und 1867 (Fraktur). Ein Klick auf die <b>Seite</b> zeigt das Seitenbild (Zentralbibliothek Zürich) zum Vergleich.</p>
@@ -289,14 +289,14 @@ __CITYBAR__
           <li><b>1859:</b> «g» bzw. «k» an der Hausnummer = Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links). Es sind die alten Hausnummern.</li>
           <li><b>1867:</b> die Ausgemeinde, wenn der Eintrag sie nennt («… 235 Enge», «In Riesbach»); Einträge in der Stadt selbst haben kein Gebiet.</li>
           <li><b>1875, 1885:</b> die alte Gemeinde hinter der Hausnummer (A. Aussersihl, E. Enge, F. Fluntern, Hi. Hirslanden, Ho. Hottingen, O. Oberstrass, R. Riesbach, U. Unterstrass, W. Wiedikon, Z. Zürich). Sie gehören seit 1893 zur Stadt; die Hausnummern sind die der alten Gemeinde.</li>
-          <li><b>1900:</b> Stadtkreis I–V, <b>1914–1930:</b> Kreis 1–8. Wer ausserhalb wohnte, hat seine Gemeinde (Zollikon, Kilchberg …).</li>
+          <li><b>1900:</b> Stadtkreis I–V, <b>1914–1930:</b> Kreis 1–8, <b>1935:</b> Kreis 1–11 (Eingemeindung 1934: Kreis 9 Altstetten und Albisrieden, 10 Höngg und Wipkingen, 11 Affoltern, Oerlikon, Seebach und Schwamendingen; Witikon kam zu Kreis 7). Wer ausserhalb wohnte, hat seine Gemeinde (Zollikon, Kilchberg …).</li>
         </ul>
       </div>
       <div>
         <h2>Nicht enthalten</h2>
         <ul>
           <li>Inserate, Vorspann, Behörden, Vereine, Strassen- und Häuserverzeichnisse, Warenverzeichnis, Querverweise.</li>
-          <li>1914: auf 11 Seiten bricht die Lesung vor dem Seitenende ab (S. 62, 70, 97, 120, 353, 374, 397, 413, 477, 532, 587), 1920 auf 8 (S. 316, 711, 715, 720, 797, 870, 877, 885), 1922 auf 15 (S. 45, 117, 193, 391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941), 1925 auf 17 (S. 33, 60, 89, 129, 152, 305, 553, 586, 588, 601, 606, 745, 808, 810, 873, 919, 1047), 1930 auf 15 (S. 312, 435, 469, 483, 509, 714, 831, 923, 983, 1013, 1071, 1171, 1221, 1307, 1308). 1930 steht der Kreis als eingekreiste Ziffer, die das Modell oft als ☎ las; dann kommt der Kreis aus der Strasse (Flag «kreis_aus_strasse»). 1900 hat kein Berufsregister.</li>
+          <li>1914: auf 11 Seiten bricht die Lesung vor dem Seitenende ab (S. 62, 70, 97, 120, 353, 374, 397, 413, 477, 532, 587), 1920 auf 8 (S. 316, 711, 715, 720, 797, 870, 877, 885), 1922 auf 15 (S. 45, 117, 193, 391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941), 1925 auf 17 (S. 33, 60, 89, 129, 152, 305, 553, 586, 588, 601, 606, 745, 808, 810, 873, 919, 1047), 1930 auf 15 (S. 312, 435, 469, 483, 509, 714, 831, 923, 983, 1013, 1071, 1171, 1221, 1307, 1308), 1935 auf 4 (S. 201, 1206, 1443, 1444). 1930 und 1935 steht der Kreis als eingekreiste Ziffer, die das Modell oft als ☎ las; dann kommt der Kreis aus der Strasse (Flag «kreis_aus_strasse»). 1900 hat kein Berufsregister.</li>
         </ul>
         <h2>Telefonbuch</h2>
         <ul><li>Einträge mit Telefon sind, wo möglich, mit dem PTT-Telefonbuch verbunden: zuerst über die gedruckte Nummer und den Familiennamen (höchstens 5 Jahre Abstand), sonst über die Verknüpfung von <a href="https://thodel.github.io/vernetzte-schweiz/">Vernetzte Schweiz</a>, sonst wenn im Telefonbuch der Gemeinde genau eine Person mit diesem Namen und Vornamen steht. __TELSTAT__</li></ul>
@@ -309,14 +309,14 @@ __CITYBAR__
         <h2>Seitenbilder</h2>
         <ul><li>Die Scans stammen von der <a href="https://zop.zb.uzh.ch/collections/9e5087c3-e5f8-4b76-a106-3b5fc830a0f7">Zentralbibliothek Zürich (Zurich Open Platform)</a>, dort unter CC0; die Seite lädt sie über IIIF direkt von der ZB. «Seite» ist die Seite im PDF der ZB und zugleich die Bildnummer im IIIF-Manifest. Je Band: __IIIFLIST__</li></ul>
         <h2>Lizenz</h2>
-        <ul><li>Die Bände bis 1914 sind gemeinfrei; die Scans aller Bände, auch 1920–1930, gibt die Zentralbibliothek Zürich unter CC0 frei. Daten <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>, Code <a href="__REPO__/blob/main/LICENSE">MIT</a>. CSV im <a href="__REPO__/tree/main/data/csv">Repo</a>.</li></ul>
+        <ul><li>Die Bände bis 1914 sind gemeinfrei; die Scans aller Bände, auch 1920–1935, gibt die Zentralbibliothek Zürich unter CC0 frei. Daten <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>, Code <a href="__REPO__/blob/main/LICENSE">MIT</a>. CSV im <a href="__REPO__/tree/main/data/csv">Repo</a>.</li></ul>
       </div>
     </div>
   </details>
 </section>
 <div class="toolbar">
   <div class="tabs" role="tablist" id="tabs"></div>
-  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände (gross)</option></select>
+  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1935">1935</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1920">1920</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände (gross)</option></select>
   <select id="area" aria-label="Gebiet"><option value="">alle Gebiete</option></select>
   <select id="conf" aria-label="Konfidenz"><option value="">alle Konfidenzen</option><option value="high">high</option><option value="medium">medium</option></select>
   <select id="qa" aria-label="Hinweis"><option value="">alle Hinweise</option><option value="-">ohne Hinweis</option></select>
@@ -601,7 +601,7 @@ def main() -> None:
     fmt = lambda x: f"{x:,}".replace(",", " ")
     reported = load_flags()
     html = (TEMPLATE.replace("__CITYBAR__", site_nav.city_bar("zuerich"))
-            .replace("__CITYNAV__", site_nav.city_nav("Zürich 1859–1930", REPO_URL, "entries"))
+            .replace("__CITYNAV__", site_nav.city_nav("Zürich 1859–1935", REPO_URL, "entries"))
             .replace("__NAVCSS__", site_nav.CSS).replace("__FSPANEL__", site_nav.search_panel())
             .replace("__FSJS__", site_nav.FIELD_SEARCH_JS).replace("__FSTX__", json.dumps(site_nav.fs_texts(), ensure_ascii=False))
             .replace("__META__", json.dumps(meta, ensure_ascii=False))

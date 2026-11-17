@@ -7,8 +7,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from collections import Counter  # noqa: E402
 
-from convert import (CIRCLED, MUNICIPALITY, PHONE_LEAD, SAME, clean_street, district, kreis_from_text,  # noqa: E402
-                     municipality, own_surname, section_of, street_kreis)
+from convert import (CIRCLED, KREIS_LEAD_1934, MUNICIPALITY, PHONE_LEAD, SAME, clean_street, district,  # noqa: E402
+                     kreis_from_text, municipality, own_surname, section_of, street_kreis)
 
 
 class Street(unittest.TestCase):
@@ -93,3 +93,25 @@ class Circled1930(unittest.TestCase):
         street_kreis(out + lost, Counter())
         self.assertEqual([r["district"] for r in lost], ["Kreis 8", ""])
         self.assertEqual(lost[0]["qa_flags"], "kreis_aus_strasse")
+
+
+class Kreise1935(unittest.TestCase):
+    """Mit der Eingemeindung 1934 hat Zürich die Kreise 1–11; ⑩ und ⑪ sind zweistellig."""
+
+    def test_two_digit_circled_kreis(self):
+        self.assertEqual("⑩ Limmattalstr. 12".translate(CIRCLED), "10 Limmattalstr. 12")
+        text = "Meier, Hans (Keller), Mechaniker, ⑪ Schaffhauserstr. 410.".translate(CIRCLED)
+        self.assertEqual(kreis_from_text("1935", text, "Schaffhauserstr."), ("11", "410"))
+        self.assertEqual(kreis_from_text("1935", "Graf, Emil, Gärtner, 1 Rennweg 4.", "Rennweg"), ("1", "4"))
+
+    def test_kreis_9_to_11_only_from_1935(self):
+        self.assertEqual(district("1935", {"district": "10", "text": ""}, "5", ""), "Kreis 10")
+        self.assertEqual(district("1930", {"district": "10", "text": ""}, "5", ""), "")
+        self.assertEqual(clean_street("11 Wehntalerstr.", "", kreis_rx=KREIS_LEAD_1934), ("Wehntalerstr", ""))
+        self.assertEqual(clean_street("11 Wehntalerstr.", ""), ("11 Wehntalerstr", ""))
+
+    def test_sections(self):
+        self.assertEqual(section_of("1935", 34), "")
+        self.assertEqual(section_of("1935", 35), "einwohner")
+        self.assertEqual(section_of("1935", 1191), "berufe")
+        self.assertEqual(section_of("1935", 1445), "")

@@ -56,7 +56,11 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]"}  # Kreise 1–8 bis 1934
+KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
+         "1935": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
+# Kreis vor der Strasse, je nach Band (für clean_street): bis 1930 wie bisher, ab 1935 auch 9–11
+KREIS_LEAD_OLD = r"[1-8]|I{1,3}|IV|V"
+KREIS_LEAD_1934 = r"1[01]|[1-9]"
 # 1867: die Ausgemeinde steht als Wort im Text («… 235 Enge», «In Riesbach»), mit Fraktur-Lesefehlern
 # (ſ → f, ß: «Oberstraf», «Auferfchl.», «Außerfihl»).
 OLD_1867 = [(re.compile(p), n) for p, n in (
@@ -77,6 +81,7 @@ SECTIONS = {
     "1922": [("einwohner", 23, 726), ("berufe", 727, 956)],
     "1925": [("einwohner", 33, 910), ("berufe", 911, 1132)],
     "1930": [("einwohner", 42, 1072), ("berufe", 1073, 1308)],
+    "1935": [("einwohner", 35, 1190), ("berufe", 1191, 1444)],  # S. 34: Inserat «La Suisse»
 }
 # Ab 1925 steht der Allianzname (Frauenname) in Klammern nach dem Vornamen: «Huber, Rudolf (Glanzmann), …»,
 # nicht mehr am Familiennamen («Hirt-Guyer»). Das Modell legte ihn mal in origin, mal in den Vornamen, mal
@@ -93,7 +98,7 @@ PHONE_FROM = 1880
 # ist nur, wer ☎ (oder §) am Zeilenanfang oder «Tel.» hat; ein ☎ vor der Strasse ist ein verlesener Kreis.
 # Dessen Ziffer ist verloren; der Kreis kommt dann aus der Strasse, wenn sie im selben Band in einem Kreis liegt.
 CIRCLED_FROM = 1930
-CIRCLED = str.maketrans("①②③④⑤⑥⑦⑧⑨", "123456789")
+CIRCLED = str.maketrans({c: str(i) for i, c in enumerate("①②③④⑤⑥⑦⑧⑨⑩⑪", 1)})  # ⑩ → «10», ⑪ → «11»
 PHONE_LEAD = re.compile(r"^\s*(?:[—–-]\s*)?[☎§]|\bTel\.")
 STREET_KREIS_MIN, STREET_KREIS_SHARE = 3, 0.9  # so oft im Band mit Kreis belegt, so einheitlich
 
@@ -127,12 +132,12 @@ def own_surname(r: dict) -> str:
     return sn
 
 
-def clean_street(street: str, number: str, kreis: bool = True) -> tuple[str, str]:
+def clean_street(street: str, number: str, kreis: bool = True, kreis_rx: str = KREIS_LEAD_OLD) -> tuple[str, str]:
     """Strasse ohne Telefonzeichen, ohne Kreis und ohne doppelte Hausnummer; «Bärenplatz 29» → («Bärenplatz», «29»),
     «4 Lagerstrasse 24» (1914, Kreis 4) → («Lagerstrasse», «24»). Kreise gibt es erst seit 1893; 1875 ist
     «3 Scheunen» (Enge) ein Ortsname."""
     if kreis:
-        street = re.sub(r"^(?:[1-8]|I{1,3}|IV|V)\s+(?=[A-ZÄÖÜa-zäöü])", "", street.strip())
+        street = re.sub(rf"^(?:{kreis_rx})\s+(?=[A-ZÄÖÜa-zäöü])", "", street.strip())
     for _ in range(2):  # «… R T 180»: erst die Telefonnummer, dann das R.
         street = re.sub(r"\s*(?:\bH\.|☎.*|\bT\s?\d+.*|\bR\.?\s*$|\bR?\s?T\.?\s*$)", "", street).strip(" ,.")
     number = number.strip(" ,.")
@@ -231,7 +236,8 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
         if not surname or len(surname.split()) > 4:
             stats["ohne Familienname"] += 1
             continue
-        street, number = clean_street(r["street"], r["building_no"], kreis=int(volume) >= 1893)
+        street, number = clean_street(r["street"], r["building_no"], kreis=int(volume) >= 1893,
+                                      kreis_rx=KREIS_LEAD_1934 if int(volume) >= 1934 else KREIS_LEAD_OLD)
         kreis, printed_no = kreis_from_text(volume, r["text"], street)
         if kreis and number == kreis and printed_no and printed_no != kreis:
             number = printed_no  # das Modell setzte den Kreis als Hausnummer («4 Zeughausstr. 29» → 4)
