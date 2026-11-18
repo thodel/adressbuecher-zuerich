@@ -2,6 +2,8 @@
 
     python3 zh_weekly.py            # vom cron täglich um 01:15 gestartet (siehe crontab.txt)
     python3 zh_weekly.py --status   # Stand ausgeben
+    python3 zh_weekly.py --years 1900-1920   # nur diese Jahrgänge, aufsteigend, ohne Wochenbudget
+                                             # (seit 18.11.2026 so im cron, stündlich; immer nur ein Band)
 
 Je Kalenderwoche (Montag–Sonntag) liest der Lauf je Strom höchstens 10 Bände (queue.csv:
 Strom A ab 1900 sofort, Strom B vor 1900 ab 15.12.2026). Je Band:
@@ -34,6 +36,7 @@ SHARE = Path("/mnt/wbkolleg_dh_1/tei/adressbuch_qwen")
 STATE = HERE / "state.json"
 LOG = HERE / "weekly.log"
 PER_WEEK = 10
+YEARS: tuple[int, int] | None = None            # --years 1900-1920: nur diese Jahrgänge, ohne Wochenbudget
 UA = {"User-Agent": "adressbuecher-zuerich (Universitaet Bern, DH)"}
 TZ = dt.timezone(dt.timedelta(hours=1))         # MEZ; die Woche zählt nach Schweizer Datum
 
@@ -169,6 +172,10 @@ def load_env() -> None:
 
 
 def main() -> None:
+    global YEARS
+    if "--years" in sys.argv:
+        a, _, b = sys.argv[sys.argv.index("--years") + 1].partition("-")
+        YEARS = (int(a), int(b or a))
     load_env()
     st = load_state()
     if "--status" in sys.argv:
@@ -184,14 +191,18 @@ def main() -> None:
     while True:
         today = dt.datetime.now(TZ).date()
         if busy():
-            log("anderer Lesedurchgang aktiv, warte bis morgen"); return
+            log("anderer Lesedurchgang aktiv, warte"); return
         free = os.statvfs("/").f_bavail * os.statvfs("/").f_frsize / 1e9
         if free < 3:
             log(f"nur {free:.1f} GB frei auf /, warte"); return
-        used = {k: sum(1 for s in st.values() if s.get("stream") == k and s.get("week") == week(today)) for k in "AB"}
-        nxt = next((q for q in queue
-                    if q["year"] not in st and used[q["stream"]] < PER_WEEK
-                    and (not q["not_before"] or today >= dt.date.fromisoformat(q["not_before"]))), None)
+        if YEARS:   # Vorrang-Fenster: nur diese Jahrgänge, ohne Wochenbudget, einer nach dem anderen
+            nxt = next((q for q in sorted(queue, key=lambda q: int(q["year"]))
+                        if q["year"] not in st and YEARS[0] <= int(q["year"]) <= YEARS[1]), None)
+        else:
+            used = {k: sum(1 for s in st.values() if s.get("stream") == k and s.get("week") == week(today)) for k in "AB"}
+            nxt = next((q for q in queue
+                        if q["year"] not in st and used[q["stream"]] < PER_WEEK
+                        and (not q["not_before"] or today >= dt.date.fromisoformat(q["not_before"]))), None)
         if not nxt:
             return
         try:

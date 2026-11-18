@@ -12,6 +12,13 @@ Zusammen 59 Bände (`queue.csv`): Strom A in etwa vier Wochen, Strom B in drei. 
 Zentralbibliothek Zürich (Zurich Open Platform, CC0); `zop_liste.csv` ist ihre Liste mit
 PDF und Handle, `make_queue.py` löst die Handles in die IIIF-Manifeste auf.
 
+**Seit 18.11.2026: Vorrang 1900–1920.** Auf Tobias' Wunsch liest tei zuerst nur die Bände 1901–1913
+und 1915–1919 (1900, 1914, 1920 liegen vor), aufsteigend, ohne Wochenbudget und immer nur einen Band
+zur Zeit (`zh_weekly.py --years 1900-1920`, cron stündlich). Die Übernahme auf dem Mac läuft alle
+zwei Stunden, damit jeder gelesene Band gleich danach eingearbeitet wird. Die übrigen Bände von
+Strom A (ab 1921) und Strom B warten, bis das Fenster abgearbeitet ist; dann den cron auf den
+Wochenlauf ohne `--years` zurückstellen.
+
 ## Ablauf
 
 **1. Lesen auf tei** (`zh_weekly.py`, `zh_classify.py`; Kopie in `tei:/home/dh/adressbuch_qwen/weekly/`).
