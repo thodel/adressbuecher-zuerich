@@ -1,4 +1,4 @@
-"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1935).
+"""10_geo.py — Strassen für die Karte verorten (Zürich 1859–1940).
 
     python scripts/10_geo.py streets      # Nominatim, 1 Anfrage/s, Cache in web/geo/
     python scripts/10_geo.py todo         # Hand-Liste web/geo/streets_manual.csv
@@ -8,7 +8,7 @@ die Gemeinde. Ohne die Spalte gilt dieselbe Regel aus dem gedruckten Text:
 
 - 1859: «g» bzw. «k» an der Hausnummer → Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links).
 - 1875, 1885: die alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.» → Riesbach; Z. = Stadt Zürich).
-- 1900: der Stadtkreis I–V vor der Strasse; 1914–1930: der Kreis 1–8; 1935: der Kreis 1–11 (Eingemeindung 1934).
+- 1900: der Stadtkreis I–V vor der Strasse; 1914–1930: der Kreis 1–8; 1935–1940: der Kreis 1–11 (Eingemeindung 1934).
 
 Verortet wird je (Gebiet, Strasse), nie die Hausnummer: die Nummern von 1859 (g/k) und die der Ausgemeinden
 1875/1885 sind alte Nummern. Ein Treffer von Nominatim zählt nur, wenn er in einem Quartier liegt, das zum Gebiet
@@ -103,7 +103,7 @@ def norm_street(s: str) -> str:
     return s[:1].upper() + s[1:]
 
 
-KREIS_VOLS = {"1900", "1914", "1920", "1922", "1925", "1930", "1935"}  # Bände mit Stadtkreis vor der Strasse
+KREIS_VOLS = {"1900", "1914", "1920", "1922", "1925", "1930", "1935", "1940"}  # Bände mit Stadtkreis vor der Strasse
 
 def area(r: dict) -> str:
     """Gebiet des Eintrags aus Band und gedrucktem Text (siehe oben); leer, wenn nichts dasteht."""

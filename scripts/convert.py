@@ -57,7 +57,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
 KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
-         "1935": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
+         "1935": r"1[01]|[1-9]", "1940": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
 # Kreis vor der Strasse, je nach Band (für clean_street): bis 1930 wie bisher, ab 1935 auch 9–11
 KREIS_LEAD_OLD = r"[1-8]|I{1,3}|IV|V"
 KREIS_LEAD_1934 = r"1[01]|[1-9]"
@@ -82,6 +82,9 @@ SECTIONS = {
     "1925": [("einwohner", 33, 910), ("berufe", 911, 1132)],
     "1930": [("einwohner", 42, 1072), ("berufe", 1073, 1308)],
     "1935": [("einwohner", 35, 1190), ("berufe", 1191, 1444)],  # S. 34: Inserat «La Suisse»
+    # S. 28: Inserat «La Suisse», S. 29: Erläuterungen; S. 1314–1318: Inserate und Titel des Branchenregisters;
+    # ab S. 1535 das Häuserverzeichnis (III. Abteilung)
+    "1940": [("einwohner", 30, 1313), ("berufe", 1319, 1532)],
 }
 # Ab 1925 steht der Allianzname (Frauenname) in Klammern nach dem Vornamen: «Huber, Rudolf (Glanzmann), …»,
 # nicht mehr am Familiennamen («Hirt-Guyer»). Das Modell legte ihn mal in origin, mal in den Vornamen, mal

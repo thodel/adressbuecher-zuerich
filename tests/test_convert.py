@@ -115,3 +115,24 @@ class Kreise1935(unittest.TestCase):
         self.assertEqual(section_of("1935", 35), "einwohner")
         self.assertEqual(section_of("1935", 1191), "berufe")
         self.assertEqual(section_of("1935", 1445), "")
+
+
+class Band1940(unittest.TestCase):
+    """1940 wie 1935: Kreise 1–11 als eingekreiste Ziffer; zwischen den Teilen liegen Inserate und ein Titelblatt."""
+
+    def test_kreis(self):
+        text = "Abati, Alois A. (Horisberger), Maurer, ⑨ Altstetterstr. 223.".translate(CIRCLED)
+        self.assertEqual(kreis_from_text("1940", text, "Altstetterstr."), ("9", "223"))
+        self.assertEqual(district("1940", {"district": "11", "text": ""}, "4", ""), "Kreis 11")
+        self.assertEqual(district("1940", {"district": "12", "text": ""}, "4", ""), "")
+
+    def test_sections(self):
+        self.assertEqual(section_of("1940", 28), "")  # Inserat «La Suisse»
+        self.assertEqual(section_of("1940", 29), "")  # Erläuterungen zur Benützung
+        self.assertEqual(section_of("1940", 30), "einwohner")
+        self.assertEqual(section_of("1940", 1313), "einwohner")
+        self.assertEqual(section_of("1940", 1314), "")  # Inserate, Titel «Branchen-Register»
+        self.assertEqual(section_of("1940", 1318), "")
+        self.assertEqual(section_of("1940", 1319), "berufe")
+        self.assertEqual(section_of("1940", 1532), "berufe")
+        self.assertEqual(section_of("1940", 1535), "")  # III. Abteilung: Häuserverzeichnis
