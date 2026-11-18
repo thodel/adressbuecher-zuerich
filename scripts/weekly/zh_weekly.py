@@ -188,6 +188,11 @@ def main() -> None:
     except OSError:
         return                                            # ein Lauf ist schon unterwegs
     queue = list(csv.DictReader(open(HERE / "queue.csv", encoding="utf-8")))
+    # Wir halten die Sperre: ein Band mit Status "läuft" stammt aus einem abgebrochenen Lauf (Neustart von tei).
+    # Neu aufnehmen; run_qwen.py überspringt die schon sauber gelesenen Seiten.
+    for y in [y for y, s in st.items() if s.get("status") == "läuft"]:
+        log(f"{y}: abgebrochener Lauf, nehme den Band wieder auf")
+        del st[y]
     while True:
         today = dt.datetime.now(TZ).date()
         if busy():
