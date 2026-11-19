@@ -3397,7 +3397,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-052-054,1885,52,einwohner,54,54,person,,1,Brüngger,1,,,Hans,,,,Buchdrucker,,,1,,Brunn g,2 Z,,,"qwen3.8-27b, Bild 2x",high,,"— Hans, Buchdrucker, Brunn g. 2 Z.",Zürich,,Zürich
 1885-einwohner-052-055,1885,52,einwohner,55,55,person,,1,Brüngger,1,,,Hans Casp,,,,Schlosser,,,1,,Asylstr,58 Ho,,,"qwen3.8-27b, Bild 2x",high,,"— Hans Casp., Schlosser, Asylstr. 58 Ho.",Zürich,,Hottingen
 1885-einwohner-052-056,1885,52,einwohner,56,56,person,,1,Brüngger,1,,,Heinrich,,,,Anrüster,,,1,,Florastr,45 R,,,"qwen3.8-27b, Bild 2x",high,,"— Heinrich, Anrüster, Florastr. 45 R.",Zürich,,Riesbach
-1885-einwohner-052-057,1885,52,einwohner,57,57,person,,1,Heinr,,,,Heinr,,,,Gastwirth z. Schwanen,,,1,,Schwäneng,2 Z,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Gastwirth z. Schwanen, Schwäneng. 2 Z.",Zürich,,Zürich
+1885-einwohner-052-057,1885,52,einwohner,57,57,person,,1,Brüngger,,,,Heinr,,,,Gastwirth z. Schwanen,,,1,,Schwäneng,2 Z,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Gastwirth z. Schwanen, Schwäneng. 2 Z.",Zürich,,Zürich
 1885-einwohner-052-058,1885,52,einwohner,58,58,person,,1,Brüngger,1,,,Heinr,,,,Taglöhner,,,1,,Hohlstr,57 A,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Taglöhner, Hohlstr. 57 A.",Zürich,,Aussersihl
 1885-einwohner-052-059,1885,52,einwohner,59,59,person,,1,Brüngger,1,,,Jac,,,,Taglöhner,,,1,,Rankstr,91 R,,,"qwen3.8-27b, Bild 2x",high,,"— Jac., Taglöhner, Rankstr. 91 R.",Zürich,,Riesbach
 1885-einwohner-052-060,1885,52,einwohner,60,60,person,,1,Brüngger,1,Baumgartner,,Maria,,Wwe.,,Hadernsammlerin,,,1,,Bremgartnerstr,390 W,,,"qwen3.8-27b, Bild 2x",high,,"— Baumgartner, Maria, Wwe., Hadernsammlerin, Bremgartnerstr. 390 W.",Zürich,,Wiedikon
@@ -6135,7 +6135,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-083-056,1885,83,einwohner,56,56,person,,1,Fischer,1,,,Ludw,,,,Schreiner,,,1,,Stüssihofstatt,11,,,"qwen3.8-27b, Bild 2x",high,,"— Ludw., Schreiner, Stüssihofstatt 11 Z.",Zürich,,Zürich
 1885-einwohner-083-057,1885,83,einwohner,57,57,person,,1,Fischer,1,,,Maria,,,,Part.,,,1,,Waisenhausg,11,,,"qwen3.8-27b, Bild 2x",high,,"— Maria, Part., Waisenhausg. 11 Z.",Zürich,,Zürich
 1885-einwohner-083-058,1885,83,einwohner,58,58,person,,1,Fischer,1,,,Max,,,,Buchh.-Geh.,,,1,,Engehof,44,,,"qwen3.8-27b, Bild 2x",high,,"— Max, Buchh.-Geh., Engehof 44 Z.",Zürich,,Zürich
-1885-einwohner-083-059,1885,83,einwohner,59,59,person,,1,Ottom,,,,Ottom,,,,Agenturen in Baumwolle u. Colonialwaaren,,,1,,Bahnhofstr,38,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Ottom., Agenturen in Baumwolle u. Colonialwaaren, Bahnhofstr. 38 Z.",Zürich,,Zürich
+1885-einwohner-083-059,1885,83,einwohner,59,59,person,,1,Fischer,,,,Ottom,,,,Agenturen in Baumwolle u. Colonialwaaren,,,1,,Bahnhofstr,38,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Ottom., Agenturen in Baumwolle u. Colonialwaaren, Bahnhofstr. 38 Z.",Zürich,,Zürich
 1885-einwohner-083-060,1885,83,einwohner,60,60,person,,1,Fischer,1,,,Paul,,,,Maler,,,1,,Rindermarkt,8,,,"qwen3.8-27b, Bild 2x",high,,"— Paul, Maler, Rindermarkt 8 Z.",Zürich,,Zürich
 1885-einwohner-083-061,1885,83,einwohner,61,61,person,,1,Fischer,1,,,Rich,,,,Schriftsetzer,,,1,,Römerstr,20,,,"qwen3.8-27b, Bild 2x",high,,"— Rich., Schriftsetzer, Römerstr. 20 Ho.",Zürich,,Hottingen
 1885-einwohner-083-062,1885,83,einwohner,62,62,person,,1,Fischer,1,,,Rud,,,,Buchbinder,,,1,,Langg,27,,,"qwen3.8-27b, Bild 2x",high,,"— Rud., Buchbinder, Langg. 27 Hi.",Zürich,,Hirslanden
@@ -6393,7 +6393,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-086-052,1885,86,einwohner,52,52,person,,1,Frei,1,,,Christ,,,,Taglöhner,,,1,,Hohlstr,82,,,"qwen3.8-27b, Bild 2x",high,,"— Christ., Taglöhner, Hohlstr. 82 A.",Zürich,,Aussersihl
 1885-einwohner-086-053,1885,86,einwohner,53,53,person,,0,Frei,,,,Conr,,,,Glaser,,,1,,Langstr,122,,,"qwen3.8-27b, Bild 2x",high,,"Frei, Conr., Glaser, Langstr. 122 A.",Zürich,,Aussersihl
 1885-einwohner-086-054,1885,86,einwohner,54,54,person,,1,Frei,1,,,Conr,,,,Kanzlist,,,1,,Uetlistr,11 c,,,"qwen3.8-27b, Bild 2x",high,,"— Conr., Kanzlist, Uetlistr. 11 c W.",Zürich,,Wiedikon
-1885-einwohner-086-055,1885,86,einwohner,55,55,person,,1,Conr,,,,Conr,,,,Kaufm.,,,1,,Glockeng,10,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Conr., Kaufm., Glockeng. 10 Z.",Zürich,,Zürich
+1885-einwohner-086-055,1885,86,einwohner,55,55,person,,1,Frei,,,,Conr,,,,Kaufm.,,,1,,Glockeng,10,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Conr., Kaufm., Glockeng. 10 Z.",Zürich,,Zürich
 1885-einwohner-086-056,1885,86,einwohner,56,56,person,,1,Frei,1,,,Conr,,,,Kaufmann,,,1,,Schaffhauserstr,37,,,"qwen3.8-27b, Bild 2x",high,,"— Conr., Kaufmann, Schaffhauserstr. 37 U., Bureau Centralhof Z.",Zürich,,Unterstrass
 1885-einwohner-086-057,1885,86,einwohner,57,57,person,,1,Frei,1,,,Conr,,,,Malergeh.,,,1,,Vordeldorf,373,,,"qwen3.8-27b, Bild 2x",high,,"— Conr., Malergeh., Vordeldorf 373 W.",Zürich,,Wiedikon
 1885-einwohner-086-058,1885,86,einwohner,58,58,person,,1,Frei,1,,,Conr,,,,Spezereihdlr.,,,1,,Langstr,208,,,"qwen3.8-27b, Bild 2x",high,,"— Conr., Spezereihdlr., Langstr. 208 A.",Zürich,,Aussersihl
@@ -6435,7 +6435,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-086-094,1885,86,einwohner,94,94,person,,1,Frei,1,,,Gottl,,,,Postcommis,,,1,,Zeughausstr,29,,,"qwen3.8-27b, Bild 2x",high,,"— Gottl., Postcommis, Zeughausstr. 29 A.",Zürich,,Aussersihl
 1885-einwohner-086-095,1885,86,einwohner,95,95,person,,1,Frei,1,,,Gust. Alb,,,,Handlgr.,,,1,,Neufrankeng,24,,,"qwen3.8-27b, Bild 2x",high,,"— Gust. Alb., Handlgr., Neufrankeng. 24 A.",Zürich,,Aussersihl
 1885-einwohner-086-096,1885,86,einwohner,96,96,person,,1,Frei,1,,,Hans,,,,Commis,,,1,,Baderg,3,,,"qwen3.8-27b, Bild 2x",high,,"— Hans, Commis, Baderg. 3 Z.",Zürich,,Zürich
-1885-einwohner-086-097,1885,86,einwohner,97,97,person,,1,Hans,,,,Hans,,,,Journalist u. Stenograph,,,1,,Sihlstr,11,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Hans, Journalist u. Stenograph, Sihlstr. 11 III Z.",Zürich,,Zürich
+1885-einwohner-086-097,1885,86,einwohner,97,97,person,,1,Frei,,,,Hans,,,,Journalist u. Stenograph,,,1,,Sihlstr,11,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Hans, Journalist u. Stenograph, Sihlstr. 11 III Z.",Zürich,,Zürich
 1885-einwohner-086-098,1885,86,einwohner,98,98,person,,1,Frei,1,,,Hs. Heinr,,,,Werkführer,,,1,,Hafnerstr,24,,,"qwen3.8-27b, Bild 2x",high,,"— Hs. Heinr., Werkführer, Hafnerstr. 24 A.",Zürich,,Aussersihl
 1885-einwohner-086-099,1885,86,einwohner,99,99,person,,1,Frei,1,,,Hans Jac,,,,Kostgeber,,,1,,Schoffelg,6,,,"qwen3.8-27b, Bild 2x",high,,"— Hans Jac., Kostgeber, Schoffelg. 6 Z.",Zürich,,Zürich
 1885-einwohner-086-100,1885,86,einwohner,100,100,person,,1,Frei,1,,,Heinr,,,,Ausläufer,,,1,,Napfg,2,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Ausläufer, Napfg. 2 Z.",Zürich,,Zürich
@@ -10852,7 +10852,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-135-084,1885,135,einwohner,84,84,person,,1,Huber,1,,,Gottl,,,,Schneidermstr.,,,1,,Stüssihofstatt,11,,,"qwen3.8-27b, Bild 2x",high,,"— Gottl., Schneidermstr., Stüssihofstatt 11 Z.",Zürich,,Zürich
 1885-einwohner-135-085,1885,135,einwohner,85,85,person,,1,Huber,1,,,Gottl,,,,Schreinerwerkstätte,,,1,,Wohnung i. Altstetten,,,,"qwen3.8-27b, Bild 2x",medium,,"— Gottl., Schreinerwerkstätte, Rämistr., Wohnung i. Altstetten.",Zürich,street_rare,
 1885-einwohner-135-086,1885,135,einwohner,86,86,person,,1,Huber,1,,,Gust. Heinr,,,,Färber,,,1,,Neug,31,,,"qwen3.8-27b, Bild 2x",high,,"— Gust. Heinr., Färber, Neug. 31 A.",Zürich,,Aussersihl
-1885-einwohner-135-087,1885,135,einwohner,87,87,person,,1,Hans,,,,Hans,,,,Soieries en gros,,,1,,Schanzengr,9,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Hans, Soieries en gros, Schanzengr. 9 Z.",Zürich,,Zürich
+1885-einwohner-135-087,1885,135,einwohner,87,87,person,,1,Huber,,,,Hans,,,,Soieries en gros,,,1,,Schanzengr,9,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Hans, Soieries en gros, Schanzengr. 9 Z.",Zürich,,Zürich
 1885-einwohner-135-088,1885,135,einwohner,88,88,person,,1,Huber,1,,,Hs. Heinr,,,,Commis,,,1,,Widderg,4,,,"qwen3.8-27b, Bild 2x",high,,"— Hs. Heinr., Commis, Widderg. 4 Z.",Zürich,,Zürich
 1885-einwohner-135-089,1885,135,einwohner,89,89,person,,1,Huber,1,,,Hans Heinr,,,,Fahrknecht,,,1,,Josefstr,34,,,"qwen3.8-27b, Bild 2x",high,,"— Hans Heinr., Fahrknecht, Josefstr. 34 A.",Zürich,,Aussersihl
 1885-einwohner-135-090,1885,135,einwohner,90,90,person,,1,Huber,1,,,Hans Heinr,,,,Fuhrhalter,,,1,,Sihlstr,371,,,"qwen3.8-27b, Bild 2x",high,,"— Hans Heinr., Fuhrhalter, Sihlstr. 371 W.",Zürich,,Wiedikon
@@ -15355,14 +15355,14 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-185-077,1885,185,einwohner,77,77,person,,1,Meier,1,,,Heinr,,,,Färber,,,1,,Fahrg,5,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Färber, Fahrg. 5 A.",Zürich,,Aussersihl
 1885-einwohner-185-078,1885,185,einwohner,78,78,person,,1,Meier,1,,,Heinr,,,,Färber,,,1,,Friedenstr,81,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Färber, Friedenstr. 81 O.",Zürich,,Oberstrass
 1885-einwohner-185-079,1885,185,einwohner,79,79,person,,1,Meier,1,,,Heinr,,,,Färber,,,1,,Wildbachstr,39,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Färber, Wildbachstr. 39 R.",Zürich,,Riesbach
-1885-einwohner-185-080,1885,185,einwohner,80,80,person,,1,Heinr,,,,Heinr,,,,"Fuhr- u. Pferdehalter, Gasthofbesitzer z. weissen Kreuz",,,1,,Seefeldstr,5,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Fuhr- u. Pferdehalter, Gasthofbesitzer z. weissen Kreuz, Seefeldstr. 5 R.",Zürich,,Riesbach
+1885-einwohner-185-080,1885,185,einwohner,80,80,person,,1,Meier,,,,Heinr,,,,"Fuhr- u. Pferdehalter, Gasthofbesitzer z. weissen Kreuz",,,1,,Seefeldstr,5,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Fuhr- u. Pferdehalter, Gasthofbesitzer z. weissen Kreuz, Seefeldstr. 5 R.",Zürich,,Riesbach
 1885-einwohner-185-081,1885,185,einwohner,81,81,person,,1,Meier,1,,,Heinr,,,,Gärtner,,,1,,Leimg,10,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Gärtner, Leimg. 10 R.",Zürich,,Riesbach
 1885-einwohner-185-082,1885,185,einwohner,82,82,person,,1,Meier,1,,,Heinr,,,,Gärtner,,,1,,Predigerpl,10,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Gärtner, Predigerpl. 10 Z.",Zürich,,Zürich
 1885-einwohner-185-083,1885,185,einwohner,83,83,person,,1,Meier,1,,,Heinr,,,,Handlanger,,,1,,Schaffhauserstr,39,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Handlanger, Schaffhauserstr. 39 U.",Zürich,,Unterstrass
 1885-einwohner-185-084,1885,185,einwohner,84,84,person,,1,Meier,1,,,Heinr,,,,Handlgr.,,,1,,Schneckenmann,2,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Handlgr., Schneckenmann 2 II F.",Zürich,,Fluntern
 1885-einwohner-185-085,1885,185,einwohner,85,85,person,,1,Meier,1,,,Heinr,,,,Heizer,,,1,,Obmannamtsg,3,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Heizer, Obmannamtsg. 3 Z.",Zürich,,Zürich
 1885-einwohner-185-086,1885,185,einwohner,86,86,person,,1,Meier,1,,,Heinr,,,,Jacquardweber,,,1,,Niederdorfstr,84,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Jacquardweber, Niederdorfstr. 84 Z.",Zürich,,Zürich
-1885-einwohner-185-087,1885,185,einwohner,87,87,person,,1,Heinr,,,,Heinr,,,,Kantinier,,,1,,Militärstr,53,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Kantinier, Militärstr. 53 A.",Zürich,,Aussersihl
+1885-einwohner-185-087,1885,185,einwohner,87,87,person,,1,Meier,,,,Heinr,,,,Kantinier,,,1,,Militärstr,53,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Heinr., Kantinier, Militärstr. 53 A.",Zürich,,Aussersihl
 1885-einwohner-185-088,1885,185,einwohner,88,88,person,,1,Meier,1,,,Heinr,,,,Ladendiener,,,1,,Lindenhofg,3,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Ladendiener, Lindenhofg. 3 I Z.",Zürich,,Zürich
 1885-einwohner-185-089,1885,185,einwohner,89,89,person,,1,Meier,1,,,Heinr,,,,Landwirth,,,1,,Wylstr,25,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Landwirth, Wylstr. 25 I W.",Zürich,,Wiedikon
 1885-einwohner-185-090,1885,185,einwohner,90,90,person,,1,Meier,1,,,Heinr,,,,Magaziner,,,1,,Seefeldstr,39,,,"qwen3.8-27b, Bild 2x",high,,"— Heinr., Magaziner, Seefeldstr. 39 R.",Zürich,,Riesbach
@@ -18015,7 +18015,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-215-061,1885,215,einwohner,61,61,person,,1,Pfister,1,,,Conr,,,,Bäckermstr.,,,1,,Schweizerg,10,,,"qwen3.8-27b, Bild 2x",high,,"— Conr., Bäckermstr., Schweizerg. 10 Z.",Zürich,,Zürich
 1885-einwohner-215-062,1885,215,einwohner,62,62,person,,1,Pfister,1,,,Dav. Arn,,,,Maler,,,1,,Militärstr,98,,,"qwen3.8-27b, Bild 2x",high,,"— Dav. Arn., Maler, Militärstr. 98 A.",Zürich,,Aussersihl
 1885-einwohner-215-063,1885,215,einwohner,63,63,person,,1,Pfister,1,,,Dorothe. Sophie,,,,Stickerin,,,1,,Kappeler g,11,,,"qwen3.8-27b, Bild 2x",high,,"— Dorothe. Sophie, Stickerin, Kappeler g. 11 Z.",Zürich,,Zürich
-1885-einwohner-215-064,1885,215,einwohner,64,64,person,,1,E,,,,E,,,,An- und Verkauf von Werthpapieren,,,1,,Stadelhoferpl,4,1,,"qwen3.8-27b, Bild 2x",high,,"☎ E., An- und Verkauf von Werthpapieren, Stadelhoferpl. 4, Bureau Bäreng. 5 I Z.",Zürich,,Zürich
+1885-einwohner-215-064,1885,215,einwohner,64,64,person,,1,Pfister,,,,E,,,,An- und Verkauf von Werthpapieren,,,1,,Stadelhoferpl,4,1,,"qwen3.8-27b, Bild 2x",high,,"☎ E., An- und Verkauf von Werthpapieren, Stadelhoferpl. 4, Bureau Bäreng. 5 I Z.",Zürich,,Zürich
 1885-einwohner-215-065,1885,215,einwohner,65,65,person,,1,Pfister,1,,,Edu,,,,Giesser,,,1,,Wildbachstr,75,,,"qwen3.8-27b, Bild 2x",high,,"— Edu., Giesser, Wildbachstr. 75 R.",Zürich,,Riesbach
 1885-einwohner-215-066,1885,215,einwohner,66,66,person,,1,Pfister,1,,,Elias,,,,Schneider,,,1,,Scheiterg,4,,,"qwen3.8-27b, Bild 2x",high,,"— Elias, Schneider, Scheiterg. 4 Z.",Zürich,,Zürich
 1885-einwohner-215-067,1885,215,einwohner,67,67,person,,1,Pfister,1,,,Elis,,,,Controlgeh. N.-O.-B.,,,1,,Thalacker,50,,,"qwen3.8-27b, Bild 2x",high,,"— Elis., Controlgeh. N.-O.-B., Thalacker 50 Z.",Zürich,,Zürich
@@ -19512,7 +19512,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-232-064,1885,232,einwohner,64,64,person,,1,Rütschi,1,,,Jac,,,,Arb. a. Stadtbauamt,,,1,,Schoffelg,6,,,"qwen3.8-27b, Bild 2x",high,,"— Jac., Sohn, Arb. a. Stadtbauamt, Schoffelg. 6 Z.",Zürich,,Zürich
 1885-einwohner-232-065,1885,232,einwohner,65,65,person,,1,Rütschi,1,,,Reg,,geb. Sigrist,,Part.,,,1,,Predigerpl,10,,,"qwen3.8-27b, Bild 2x",high,,"— Reg., geb. Sigrist, Part., Predigerpl. 10 Z.",Zürich,,Zürich
 1885-einwohner-232-066,1885,232,einwohner,66,66,person,,1,Rütschi,1,Bleuler,,Sal,,,,Kaufm.,,,1,,Tonhallestr,14,,,"qwen3.8-27b, Bild 2x",high,,"— Bleuler, Sal., Kaufm., Tonhallestr. 14 Z.",Zürich,,Zürich
-1885-einwohner-232-067,1885,232,einwohner,67,67,firma,,1,& Co,,Co.,,"& Co., S",,,,Seidenstoff-Fabrication,,,1,,Zeltweg,10,1,,"qwen3.8-27b, Bild 2x",high,,"☎ & Co., S., Seidenstoff-Fabrication, Zeltweg 10 Z.",Zürich,,Zürich
+1885-einwohner-232-067,1885,232,einwohner,67,67,firma,,1,Rütschi,,Co.,,"& Co., S",,,,Seidenstoff-Fabrication,,,1,,Zeltweg,10,1,,"qwen3.8-27b, Bild 2x",high,,"☎ & Co., S., Seidenstoff-Fabrication, Zeltweg 10 Z.",Zürich,,Zürich
 1885-einwohner-232-068,1885,232,einwohner,68,68,person,,0,Rütschi,,,,"Alfred, Arnold",,,,,,,1,,,,,,"qwen3.8-27b, Bild 2x",high,,Alfred Rütschi. Arnold Rütschi.,Zürich,,
 1885-einwohner-232-069,1885,232,einwohner,69,69,person,,1,Rütschi,1,Meier,,J. R,,,,"Seidenwaaren, Robes u. Confections nach Maass",,,1,,Thalg,27,,,"qwen3.8-27b, Bild 2x",high,,"— Meier, J. R., Seidenwaaren, Robes u. Confections nach Maass, Thalg. 27 Z.",Zürich,,Zürich
 1885-einwohner-232-070,1885,232,einwohner,70,70,person,,1,Rütschi,1,Rüegg,,Wwe,,Wwe.,,Part.,,,1,,Plattenstr,44,,,"qwen3.8-27b, Bild 2x",high,,"— Rüegg, Wwe., Part., Plattenstr. 44 III F.",Zürich,,
@@ -22580,7 +22580,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-267-063,1885,267,einwohner,63,63,person,,0,Stäubli,,,,Franz,,,,Maurer,,,1,,Riedtstr,49,,,"qwen3.8-27b, Bild 2x",high,,"Stäubli, Franz, Maurer, Riedtstr. 49 R.",Zürich,,Riesbach
 1885-einwohner-267-064,1885,267,einwohner,64,64,person,,1,Stäubli,1,,,Gust,,,,Wirth u. Bierbrauer z. Drahtschmidli,,,1,,Wipkingerstr,7,,,"qwen3.8-27b, Bild 2x",high,,"— Gust., Wirth u. Bierbrauer z. Drahtschmidli, Wipkingerstr. 7 U.",Zürich,,Unterstrass
 1885-einwohner-267-065,1885,267,einwohner,65,65,person,,1,Stäubli,1,,,Joh. Christ,,,,Maurer,,,1,,Granateng,9,,,"qwen3.8-27b, Bild 2x",high,,"— Joh. Christ., Maurer, Granateng. 9 A.",Zürich,,Aussersihl
-1885-einwohner-267-066,1885,267,einwohner,66,66,person,,1,Maria,,,,Maria,,"geb. Haller, Wwe.",,Speisewirthin,,,1,,Wipkingerstr,7,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Maria, geb. Haller, Wwe., Speisewirthin, Wipkingerstr. 7 U.",Zürich,,Unterstrass
+1885-einwohner-267-066,1885,267,einwohner,66,66,person,,1,Stäubli,,,,Maria,,"geb. Haller, Wwe.",,Speisewirthin,,,1,,Wipkingerstr,7,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Maria, geb. Haller, Wwe., Speisewirthin, Wipkingerstr. 7 U.",Zürich,,Unterstrass
 1885-einwohner-267-067,1885,267,einwohner,67,67,person,,0,Stäubli,,,,Clara,,Frl.,,Part.,,,1,,Seestr,22,,,"qwen3.8-27b, Bild 2x",high,,"Stäubli, Clara, Frl., Part., Seestr. 22 E.",Zürich,,Enge
 1885-einwohner-267-068,1885,267,einwohner,68,68,person,,1,Stäubli,1,,,Gottl,,,,Zimmerges.,,,1,,Uetlistr,20,,,"qwen3.8-27b, Bild 2x",high,,"— Gottl., Zimmerges., Uetlistr. 20 W.",Zürich,,Wiedikon
 1885-einwohner-267-069,1885,267,einwohner,69,69,person,,1,Stäubli,1,,,Jac,,,,Hafner,,,1,,Mirthenstr,14,,,"qwen3.8-27b, Bild 2x",high,,"— Jac., Hafner, Mirthenstr. 14 Ho.",Zürich,,Hottingen
@@ -22590,7 +22590,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-einwohner-267-073,1885,267,einwohner,73,73,person,,1,Stäubli,1,,,Jos,,,,Handlgr.,,,1,,Hafnerstr,53,,,"qwen3.8-27b, Bild 2x",high,,"— Jos., Handlgr., Hafnerstr. 53 A.",Zürich,,Aussersihl
 1885-einwohner-267-074,1885,267,einwohner,74,74,person,,1,Stäubli,1,,,Max,,,,Kaufmann,,,1,,Zeltweg,61,,,"qwen3.8-27b, Bild 2x",high,,"— Max, Kaufmann, Zeltweg 61 Ho.",Zürich,,Hottingen
 1885-einwohner-267-075,1885,267,einwohner,75,75,person,,1,Stäubli,1,,,Rob,,,,Commis,,,1,,Hohlstr,38,,,"qwen3.8-27b, Bild 2x",high,,"— Rob., Commis, Hohlstr. 38 A.",Zürich,,Aussersihl
-1885-einwohner-267-076,1885,267,einwohner,76,76,person,,1,Theod,,,,Theod,,,,Kaufm.,,,1,,Seestr,22,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Theod., Kaufm., Seestr. 22 E.",Zürich,,Enge
+1885-einwohner-267-076,1885,267,einwohner,76,76,person,,1,Stäubli,,,,Theod,,,,Kaufm.,,,1,,Seestr,22,1,,"qwen3.8-27b, Bild 2x",high,,"☎ Theod., Kaufm., Seestr. 22 E.",Zürich,,Enge
 1885-einwohner-267-077,1885,267,einwohner,77,77,person,,1,Stäubli,1,,,Wilh,,,,Zimmermstr.,,,1,,Hinterdorf,264,,,"qwen3.8-27b, Bild 2x",high,,"— Wilh., Zimmermstr., Hinterdorf 264 W.",Zürich,,Wiedikon
 1885-einwohner-267-078,1885,267,einwohner,78,78,person,,0,Stauder,,,,Bertha,,,,Part.,,,1,,Löwenstr,47,,,"qwen3.8-27b, Bild 2x",high,,"Stauder, Bertha, Part., Löwenstr. 47 Z.",Zürich,,Zürich
 1885-einwohner-267-079,1885,267,einwohner,79,79,person,,1,Stauder,1,,,Emil,,,,Generalagentur der Schlesischen Feuerversicher.-Ges.,,,1,,Stockerstr,29,,,"qwen3.8-27b, Bild 2x",high,,"— Emil, Generalagentur der Schlesischen Feuerversicher.-Ges., Stockerstr. 29 E., Bureau Bahnhofstr. 69 Z.",Zürich,,Enge

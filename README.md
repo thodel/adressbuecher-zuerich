@@ -1,4 +1,4 @@
-# Adressbücher Zürich 1859–1940
+# Adressbücher Zürich 1859–1945
 
 Einträge der Adressbücher der Stadt Zürich, maschinell gelesen. Quelle für
 [Vernetzte Schweiz 1860–1914](https://thodel.github.io/vernetzte-schweiz/), wo sie mit den
@@ -15,12 +15,12 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | 1920 | 1 482 | 69 064 | 19 157 | Einwohner 31–716, Berufe 717–953 |
 | 1922 | 1 480 | 69 674 | 18 606 | Einwohner 23–726, Berufe 727–956 |
 | 1925 | 1 698 | 84 186 | 17 436 | Einwohner 33–910, Berufe 911–1132 |
-| 1930 | 1 964 | 93 339 | 18 903 | Einwohner 42–1072, Berufe 1073–1308 |
+| 1930 | 1 964 | 93 340 | 18 903 | Einwohner 42–1072, Berufe 1073–1308 |
 | 1935 | 2 000 | 137 840 | 21 889 | Einwohner 35–1190, Berufe 1191–1444 |
 | 1940 | 2 184 | 156 715 | 20 010 | Einwohner 30–1313, Berufe 1319–1532 |
+| 1945 | 2 290 | 165 803 | 19 909 | Einwohner 29–1395, Berufe 1399–1623 |
 
-«Vernetzte Schweiz» übernimmt die Bände 1867–1914; 1859 und 1920–1940 liegen ausserhalb ihres Zeitfensters (1860–1914).
-1920–1940 sind die ersten Bände nach 1914; 1945 wird gelesen und kommt nach.
+«Vernetzte Schweiz» übernimmt die Bände 1867–1914; 1859 und 1920–1945 liegen ausserhalb ihres Zeitfensters (1860–1914).
 
 ## Dateien
 
@@ -34,7 +34,7 @@ Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Geb
 | 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
 | 1900 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
 | 1914–1930 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
-| 1935, 1940 | Kreis 1–11 vor der Strasse (Eingemeindung 1934) | «⑪ Schaffhauserstr. 410» → Kreis 11 |
+| 1935–1945 | Kreis 1–11 vor der Strasse (Eingemeindung 1934) | «⑪ Schaffhauserstr. 410» → Kreis 11 |
 
 Leer, wenn nichts dasteht oder der Eintrag ausserhalb der Stadt liegt (dann steht die Gemeinde in `municipality`).
 
@@ -75,11 +75,19 @@ prüft Strasse, Hausnummer und Familienname.
   Zwischen den Teilen liegen Inserate und das Titelblatt des Branchenregisters (S. 1314–1318); S. 28 ist ein
   Inserat («La Suisse»), S. 29 sind die Erläuterungen, ab S. 1535 folgt das Häuserverzeichnis. Gelesen wurden
   S. 28–1536; übernommen sind nur die beiden Teile.
-- **1920–1940:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
+- **1945:** wie 1940. Der Kreis als ☎ gelesen in 36 691 Einträgen; 7 478 bekommen ihn aus der Strasse, 712
+  Einwohner in der Stadt bleiben ohne Kreis. Das Telefonzeichen am Zeilenanfang verschluckt oft den Strich der
+  Fortsetzungszeile («☎ Jakob (Lüscher), …» unter «Wild»); `convert.py` behält dann den geerbten Familiennamen,
+  wenn das erste Wort der Zeile der gelesene Vorname ist. Vorher stand in 2 405 Einträgen der Vorname als
+  Familienname, jetzt in 315; dieselbe Regel berichtigt auch ältere Bände (am meisten 1925 und 1930).
+  S. 26 ist ein Inserat («La Suisse»), S. 27 sind die Erläuterungen, S. 28 eine Statistik (älteste Stadtbürger);
+  S. 1396–1398 Inserate und Erläuterungen zum Branchenregister, ab S. 1624 Inserate und das Strassenverzeichnis.
+- **1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
   860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. 1940 hat Claude 20 zufällige Einträge (Seed 1940) mit
   dem Seitenbild verglichen: 18 in allen Feldern richtig (einmal Telefon übersehen und der Kreis der Geschäfts- an
-  der Privatadresse, einmal «Amstüz» für «Amstuz»); im Feld `text` stand viermal ☎ für den Kreis. `qa_flags` markiert Verdachtsfälle
+  der Privatadresse, einmal «Amstüz» für «Amstuz»); im Feld `text` stand viermal ☎ für den Kreis. 1945 ebenso
+  (Seed 1945): 18 von 20 richtig («Hönicg» für «Hönig»; einmal der Vorname als Familienname, seither behoben). `qa_flags` markiert Verdachtsfälle
   (seltene Strasse, Trennstrich, zusammengesetzter Name); solche Einträge haben
   `parse_confidence = medium`.
 
@@ -89,7 +97,7 @@ prüft Strasse, Hausnummer und Familienname.
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
-- **1900 und 1914–1940** nennen den Stadtkreis vor der Strasse (1900: I–V, 1914–1930: 1–8, 1935–1940: 1–11); `street_raw` steht ohne ihn,
+- **1900 und 1914–1945** nennen den Stadtkreis vor der Strasse (1900: I–V, 1914–1930: 1–8, 1935–1945: 1–11); `street_raw` steht ohne ihn,
   `district` mit ihm. 1914 setzte das Modell oft den Kreis als Hausnummer («4 Zeughausstr. 29» → 4); `convert.py`
   nimmt dann die Nummer aus der gedruckten Zeile (12 015 Einträge).
 - **Ausserhalb der Stadt:** Wer 1914 in einer anderen Gemeinde wohnte («… In Albisrieden.» 1859,
@@ -105,7 +113,7 @@ prüft Strasse, Hausnummer und Familienname.
   391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941); **1925:** 17 Seiten (S. 33, 60, 89, 129, 152, 305,
   553, 586, 588, 601, 606, 745, 808, 810, 873, 919, 1047); **1930:** 15 Seiten (S. 312, 435, 469, 483, 509, 714,
   831, 923, 983, 1013, 1071, 1171, 1221, 1307, 1308); **1935:** 4 Seiten (S. 201, 1206, 1443, 1444);
-  **1940:** 3 Seiten (S. 1108, 1409, 1525).
+  **1940:** 3 Seiten (S. 1108, 1409, 1525); **1945:** 20 Seiten (S. 58, 67, 74, 222, 246, 262, 373, 494, 501, 576, 603, 646, 723, 742, 1186, 1195, 1506, 1516, 1562, 1598).
 - **1867:** Fraktur wie 1859; typische Lesefehler «R» für «N» und «f» für «ſ» («Riederdorfstrasse»,
   «Oberstraf», «Auferfchl.» für Aussersihl).
 - **1859:** Fraktur; die Lesung ist nicht geprüft. Hausnummern sind die alten Nummern mit «g» (Grosse
@@ -130,7 +138,7 @@ Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
   `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf lädt); GitHub Actions (`.github/workflows/pages.yml`)
   baut und veröffentlicht sie bei jedem Push.
 - Karte: `python scripts/92_karte.py --out _site/karte.html` (Kreise je Strasse).
-- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1867–1885 alte Gemeinde, 1900–1940
+- `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1867–1885 alte Gemeinde, 1900–1945
   Kreis) und die Strassenpunkte aus OpenStreetMap, nur wenn sie im Quartier des Gebiets liegen
   (`web/geo/streets.csv`); offene Strassen von Hand in `web/geo/streets_manual.csv` (`10_geo.py todo`).
   Hausnummern werden nicht verortet.
@@ -155,7 +163,7 @@ IIIF direkt von der ZB.
 
 ## Lizenz
 
-Die Bücher bis 1914 sind gemeinfrei (URG Art. 2 Abs. 1, Art. 29 Abs. 2). Die Scans aller Bände, auch 1920–1940,
+Die Bücher bis 1914 sind gemeinfrei (URG Art. 2 Abs. 1, Art. 29 Abs. 2). Die Scans aller Bände, auch 1920–1945,
 gibt die Zentralbibliothek Zürich unter CC0 frei.
 Die Daten in `data/` stehen unter [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/),
 der Code unter MIT. Die Scans selbst liegen nicht in diesem Repo.

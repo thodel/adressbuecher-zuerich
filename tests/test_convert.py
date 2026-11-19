@@ -136,3 +136,27 @@ class Band1940(unittest.TestCase):
         self.assertEqual(section_of("1940", 1319), "berufe")
         self.assertEqual(section_of("1940", 1532), "berufe")
         self.assertEqual(section_of("1940", 1535), "")  # III. Abteilung: Häuserverzeichnis
+
+
+class Band1945(unittest.TestCase):
+    """1945 wie 1940; neu geht der Strich der Fortsetzungszeile oft im Telefonzeichen unter («☎ Jakob (…)»)."""
+
+    def test_sections(self):
+        self.assertEqual(section_of("1945", 28), "")  # Statistik: die ältesten Stadtbürger
+        self.assertEqual(section_of("1945", 29), "einwohner")
+        self.assertEqual(section_of("1945", 1395), "einwohner")
+        self.assertEqual(section_of("1945", 1396), "")  # Inserate, Erläuterungen zum Branchenregister
+        self.assertEqual(section_of("1945", 1399), "berufe")
+        self.assertEqual(section_of("1945", 1623), "berufe")
+        self.assertEqual(section_of("1945", 1624), "")  # Inserate, dann das Strassenverzeichnis
+
+    def test_continuation_without_dash_keeps_inherited_surname(self):
+        r = {"dash_prefix": "1", "surname": "Wild", "forename": "Jakob",
+             "text": "☎ Jakob (Lüscher), Automobilhändler, 8 Florastr. 15."}
+        self.assertEqual(own_surname(r), "Wild")
+        r = {"dash_prefix": "1", "surname": "Brunner", "forename": "Fritz E.", "text": "☎ Fritz E., Kaufmann, 3 Im Wyl 4."}
+        self.assertEqual(own_surname(r), "Brunner")
+
+    def test_new_headword_still_replaces_wrongly_inherited_surname(self):
+        r = {"dash_prefix": "1", "surname": "Stenz", "forename": "Emma", "text": "☎Stengelin, Emma, Part., 10 Limmattalstr. 71."}
+        self.assertEqual(own_surname(r), "Stengelin")
