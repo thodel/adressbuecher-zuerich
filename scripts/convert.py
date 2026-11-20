@@ -56,7 +56,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1901": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
+KREIS = {"1900": r"I{1,3}|IV|V", "1901": r"I{1,3}|IV|V", "1902": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
          "1935": r"1[01]|[1-9]", "1940": r"1[01]|[1-9]",
          "1945": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
 # Kreis vor der Strasse, je nach Band (für clean_street): bis 1930 wie bisher, ab 1935 auch 9–11
@@ -79,6 +79,9 @@ SECTIONS = {
     # S. 30–32: Inserate; S. 570 endet mit dem «Avis» der Redaktion; S. 571–576: Inserate und Titel der II. Abteilung
     # (Berufsregister beginnt mit Spaltenseite 3); S. 689: unten Inserate (Orell Füssli), ab S. 690 Inserate, Häuser
     "1901": [("einwohner", 33, 570), ("berufe", 577, 689)],
+    # S. 528 endet mit dem «Avis»; S. 529–536 Inserate und Titel der II. Abteilung (Berufe beginnen mit Spaltenseite 3);
+    # S. 653 unten Inserat (Orell Füssli), ab S. 654 Inserate
+    "1902": [("einwohner", 33, 528), ("berufe", 537, 653)],
     "1914": [("einwohner", 33, 652), ("berufe", 661, 854)],
     # nach dem Zeitfenster von «Vernetzte Schweiz»; Grenzen aus den Kolumnentiteln, von Hand geprüft
     "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],

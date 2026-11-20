@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1902,1,1902-einwohner-066-113,Bielski,A,Zürcher Bettfedern-Magazin,Hohlstrasse,6,Kreis III,,66,0,Familienname «Bielski» gedruckt «Bielinski»
+1902,2,1902-einwohner-100-071,Bürli,Arn,Metzger,Traugottstrasse,7,Kreis III,,100,1,
+1902,3,1902-berufe-625-028,Kopf,Jos,,Hallwylstr,38,Kreis III,,625,1,
+1902,4,1902-berufe-647-154,Gut,Kasp,,Universitätsstr,41,Kreis IV,1,647,1,Telefonzeichen aus dem Gewerbeverband-Zeichen (§) wie in 1901
+1902,5,1902-berufe-613-034,Esslinger,Henriette,,Rennweg,42,Kreis I,,613,1,
+1902,6,1902-einwohner-273-033,Künzli,Jul,Schreiner,Burgweg,12,Kreis V,,273,1,
+1902,7,1902-berufe-617-072,Lindenmann,Heinrich,,Limmatstrasse,206,Kreis III,,617,1,
+1902,8,1902-einwohner-175-094,Grossmann,Hans Jak,Mechaniker,Dienerstrasse,30,Kreis III,,175,1,
+1902,9,1902-einwohner-363-054,Rau,Rob,Lehrer,Forchstrasse,19,Kreis V,,363,1,
+1902,10,1902-einwohner-064-092,Bertschinger,Karol,,Hirschengr,68,Kreis I,1,64,1,Telefonzeichen (§) am Zeilenanfang
+1902,11,1902-einwohner-075-087,Bohrer,Gottl,Handlanger,Hohlstrasse,7,Kreis III,,75,1,
+1902,12,1902-berufe-641-030,Scholl,Gebr,,Fraumünsterstr,8,Kreis I,,641,1,
+1902,13,1902-einwohner-315-048,Meierhofer,Joh,Gas- u. Wasserleitungsmoniteur,Hochstr,69,Kreis V,,315,1,
+1902,14,1902-einwohner-333-053,Müller,Jak. Jos,Bedienter,Zwinglistrasse,8,Kreis III,,333,1,
+1902,15,1902-einwohner-401-027,Schmeisser,Karl Ferd,Schreiner,Müllerstr,75,Kreis III,,401,1,
+1902,16,1902-einwohner-487-024,Wartmann,Jak,Handelsmann,Josefstrasse,122,Kreis III,,487,1,
+1902,17,1902-einwohner-447-071,Stiefel,Alb,Lehrer,Brandschenkestrasse,180,Kreis II,,447,1,
+1902,18,1902-einwohner-345-004,Öchslin,Jak. Friedr,Kaufm.,Kappeler gasse,17,Kreis I,1,345,0,Geschäftsadresse (I Kappelergasse 17) statt der zuerst genannten Wohnung IV Haldenbachstrasse 14; «Kappeler gasse» mit Leerzeichen
+1902,19,1902-einwohner-345-031,Ochsner,Jak,Wagenbauer,Müllerstrasse,56,Kreis III,1,345,1,
+1902,20,1902-einwohner-444-032,Steiger,Jul,Postcommis,Rotwandstrasse,38,Kreis III,,444,1,
