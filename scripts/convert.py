@@ -56,7 +56,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
+KREIS = {"1900": r"I{1,3}|IV|V", "1901": r"I{1,3}|IV|V", "1914": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
          "1935": r"1[01]|[1-9]", "1940": r"1[01]|[1-9]",
          "1945": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
 # Kreis vor der Strasse, je nach Band (für clean_street): bis 1930 wie bisher, ab 1935 auch 9–11
@@ -76,6 +76,9 @@ SECTIONS = {
     "1875": [("einwohner", 9, 222), ("berufe", 225, 272)],
     "1885": [("einwohner", 15, 320), ("berufe", 335, 415)],
     "1900": [("einwohner", 33, 534)],  # ohne Berufsregister
+    # S. 30–32: Inserate; S. 570 endet mit dem «Avis» der Redaktion; S. 571–576: Inserate und Titel der II. Abteilung
+    # (Berufsregister beginnt mit Spaltenseite 3); S. 689: unten Inserate (Orell Füssli), ab S. 690 Inserate, Häuser
+    "1901": [("einwohner", 33, 570), ("berufe", 577, 689)],
     "1914": [("einwohner", 33, 652), ("berufe", 661, 854)],
     # nach dem Zeitfenster von «Vernetzte Schweiz»; Grenzen aus den Kolumnentiteln, von Hand geprüft
     "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],
@@ -110,6 +113,9 @@ PHONE_LEAD = re.compile(r"^\s*(?:[—–-]\s*)?[☎§]|\bTel\.")
 STREET_KREIS_MIN, STREET_KREIS_SHARE = 3, 0.9  # so oft im Band mit Kreis belegt, so einheitlich
 
 MIN_ENTRIES = 10  # weniger Einträge auf einer Seite: Inserat oder Zwischenseite
+# Fusszeile des Berufsregisters («Die mit ‡ Bezeichneten sind Mitglieder des „Gewerbe-Verband Zürich“»); was auf
+# derselben Seite darunter steht, ist ein Inserat (1901, S. 689: Verlagsanzeigen von Orell Füssli).
+FOOTER = re.compile(r"^Die mit .{0,4}Bezeichneten")
 NOT_ENTRY = re.compile(r"siehe auch|voir aussi|^\(?(?:Siehe|Voir)\b|Abkürzungen|Abréviations|"
                        r"alphabetischen Reihenfolge|Telephonzeichen|La lettre R\.", re.I)
 FIRM = re.compile(r"&|\bCie\b|\bC°|\bGebr(?:\.|üder)|\bfrères\b|A\.-?G\.|\bAG\b|S\. ?A\.|Aktiengesellschaft|"
@@ -217,6 +223,10 @@ def municipality(r: dict) -> str:
 def convert(volume: str) -> tuple[list[dict], Counter]:
     rows = list(csv.DictReader(open(QWEN / volume / "entries.csv", encoding="utf-8")))
     pages = Counter(int(r["page"]) for r in rows)
+    footer: dict[int, int] = {}
+    for r in rows:
+        if FOOTER.search(r["text"]):
+            footer.setdefault(int(r["page"]), int(r["seq"]))
     out, stats = [], Counter()
     last = ("", "")  # Adresse des vorigen Eintrags, für «m. a.» (même adresse)
     prev_surname = ""
@@ -231,6 +241,9 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             continue
         if pages[page] < MIN_ENTRIES:
             stats["Inserat- oder Zwischenseite"] += 1
+            continue
+        if page in footer and seq > footer[page]:
+            stats["Inserat unter der Fusszeile"] += 1
             continue
         if NOT_ENTRY.search(r["text"]):
             stats["Querverweis oder Vorbemerkung"] += 1

@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from collections import Counter  # noqa: E402
 
-from convert import (CIRCLED, KREIS_LEAD_1934, MUNICIPALITY, PHONE_LEAD, SAME, clean_street, district,  # noqa: E402
+from convert import (CIRCLED, FOOTER, KREIS_LEAD_1934, MUNICIPALITY, PHONE_LEAD, SAME, clean_street, district,  # noqa: E402
                      kreis_from_text, municipality, own_surname, section_of, street_kreis)
 
 
@@ -170,3 +170,26 @@ class Band1945(unittest.TestCase):
         # der Haupteintrag selbst und Namen ohne Komma bleiben
         self.assertEqual(own_surname({"surname": "Hauser, E.", "dash_prefix": "0", "text": "Hauser, E. (vorm. Mellwig)"}), "Hauser, E.")
         self.assertEqual(own_surname({"surname": "A. & Cie.", "dash_prefix": "1", "forename": "Max", "text": "— Max, Kaufmann"}), "A. & Cie.")
+
+class Band1901(unittest.TestCase):
+    """1901 wie 1900 (Kreis I–V vor der Strasse), dazu das Berufsregister (II. Abteilung) mit Inseraten dazwischen."""
+
+    def test_kreis(self):
+        self.assertEqual(kreis_from_text("1901", "Abbt, Lucie, Spetterin, III Motorenstrasse 1.", "Motorenstrasse"),
+                         ("III", "1"))
+        self.assertEqual(district("1901", {"district": "V", "text": ""}, "8", ""), "Kreis V")
+        self.assertEqual(district("1901", {"district": "6", "text": ""}, "8", ""), "")
+
+    def test_sections(self):
+        self.assertEqual(section_of("1901", 32), "")  # Inserat
+        self.assertEqual(section_of("1901", 33), "einwohner")
+        self.assertEqual(section_of("1901", 570), "einwohner")  # Zwipff, dann das «Avis» der Redaktion
+        self.assertEqual(section_of("1901", 575), "")  # Titel «II. Abteilung»
+        self.assertEqual(section_of("1901", 576), "")  # Inserat
+        self.assertEqual(section_of("1901", 577), "berufe")
+        self.assertEqual(section_of("1901", 689), "berufe")
+        self.assertEqual(section_of("1901", 690), "")  # Inserate, dann das Häuserverzeichnis
+
+    def test_footer(self):
+        self.assertTrue(FOOTER.search("Die mit * Bezeichneten sind Mitglieder des „Gewerbe-Verband Zürich“"))
+        self.assertFalse(FOOTER.search("Neue Bearbeitung nach J. D. Wyss. Von Professor Dr. F. Reuleaux."))
