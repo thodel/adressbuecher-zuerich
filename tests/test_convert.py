@@ -160,3 +160,13 @@ class Band1945(unittest.TestCase):
     def test_new_headword_still_replaces_wrongly_inherited_surname(self):
         r = {"dash_prefix": "1", "surname": "Stenz", "forename": "Emma", "text": "☎Stengelin, Emma, Part., 10 Limmattalstr. 71."}
         self.assertEqual(own_surname(r), "Stengelin")
+
+    def test_firmenkopf_als_familienname(self):
+        # S. 494: «Hauser, E. (vorm. Mellwig)» steht als Familienname in den Fortsetzungszeilen
+        r = {"surname": "Hauser, E.", "dash_prefix": "1", "forename": "Emil", "text": "— Emil, Hilfsarbeiter, 4 Schreinerstr. 43."}
+        self.assertEqual(own_surname(r), "Hauser")
+        r = {"surname": "Hauser, Albert & Cie.", "dash_prefix": "1", "forename": "Fritz", "text": "— Fritz, Maler, 3 Aemtlerstr. 1."}
+        self.assertEqual(own_surname(r), "Hauser")
+        # der Haupteintrag selbst und Namen ohne Komma bleiben
+        self.assertEqual(own_surname({"surname": "Hauser, E.", "dash_prefix": "0", "text": "Hauser, E. (vorm. Mellwig)"}), "Hauser, E.")
+        self.assertEqual(own_surname({"surname": "A. & Cie.", "dash_prefix": "1", "forename": "Max", "text": "— Max, Kaufmann"}), "A. & Cie.")

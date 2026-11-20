@@ -130,6 +130,9 @@ def section_of(volume: str, page: int) -> str:
     return ""
 
 
+FIRM_HEAD = re.compile(r"([A-ZÄÖÜ][a-zäöüéè]+(?:-[A-ZÄÖÜ][a-zäöüéè]+)?), \S")
+
+
 def own_surname(r: dict) -> str:
     """Familienname; ein vom Vorgänger geerbter Name, der zum Text nicht passt, wird ersetzt."""
     sn = LEAD.sub("", r["surname"]).strip()
@@ -141,7 +144,10 @@ def own_surname(r: dict) -> str:
         if first and r.get("forename", "").strip().startswith(first):
             return sn
         return first
-    return sn
+    # «— Emil, Hilfsarbeiter» unter «Hauser, E. (vorm. Mellwig)»: das Modell trägt den Firmenkopf «Hauser, E.» als
+    # Familiennamen durch die Fortsetzungszeilen (1945, S. 494: 55 Zeilen). Der Name ist das Wort vor dem Komma.
+    m = FIRM_HEAD.match(sn) if r["dash_prefix"] == "1" else None
+    return m.group(1) if m else sn
 
 
 def clean_street(street: str, number: str, kreis: bool = True, kreis_rx: str = KREIS_LEAD_OLD) -> tuple[str, str]:
