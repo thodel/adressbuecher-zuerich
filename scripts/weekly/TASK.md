@@ -44,6 +44,12 @@ den Wochenlauf fort, den `README.md` beschreibt. Zeiten in MEZ. Nie einen Schlü
    7. Commit `Zürich <Jahr> (…): Einwohner n, Berufsregister m` mit Pfaden, sauberer Klon, Push.
    8. In `scripts/weekly/ingested.csv` eintragen (Jahr, Datum, Commit, Einträge, Stichprobe).
 3. **Vernetzte Schweiz** (nur wenn ein Band bis 1913 neu ist; einmal je Lauf, nach allen Bänden):
+   Seit 23.11.2026 (bc333e9) liegen die Adressbuch-Einträge dort als `data/norm/ab_entries.csv.gz`, die
+   Blockade über 100 MB ist weg. Der alte lokale Commit für 1903 ist auf dem Branch `zuerich-1903-alt`
+   gesichert und wird nicht mehr gebraucht. Im nächsten Lauf alle übernommenen Bände bis 1913 nachholen,
+   die in `ingested.csv` noch «Vernetzte Schweiz blockiert» oder «80/81/82 stehen aus» haben, auch ohne
+   neuen Band: in Vernetzte Schweiz einlesen und im Zürcher Repo `80_telefon.py`, `81_baende.py`,
+   `82_normdaten.py` für diese Jahre laufen lassen.
    1. In `config/sources.toml` beim Eintrag `zuerich` den Commit heben. Die Dateien je Band
       aufführen: `data/csv/04_entries_<Jahr>.csv` (Einwohner) und `04_berufe_<Jahr>.csv` (Berufe),
       nur Bände 1860–1914.
