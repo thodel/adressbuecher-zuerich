@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1903,1,1903-einwohner-430-068,Stähle,J. Georg,Klaviaturenmacher,n. Beckenhofstr,8:,Kreis IV,,430,1,
+1903,2,1903-einwohner-453-066,Thevoz,Gerard,Prokurist,Obstgartenstrasse,3,Kreis IV,,453,1,
+1903,3,1903-einwohner-138-114,Fischer,Hugo,Geschäfts-Reisender,Stockerstr,49,Kreis II,1,138,0,"phone_flag=1, gedruckt ist das Zeichen des Gewerbe-Verbands (kein Telefon); sonst richtig"
+1903,4,1903-einwohner-202-002,Herter,Joh. Rud,Gärtner,Forchstrasse,340,Kreis V,,202,1,
+1903,5,1903-einwohner-133-106,Fausser,Karl,Schmied,Alderstrasse,45,Kreis V,,133,1,
+1903,6,1903-einwohner-051-096,Bartsch,Hugo,Versich.-Beamter,Dufourstr,95,Kreis V,,51,1,
+1903,7,1903-einwohner-453-053,Thelen,Wilh,Färber,Hardstrasse,324,Kreis III,,453,1,
+1903,8,1903-einwohner-292-028,Manz,Joh,Notariatskandidat,Rieterstrasse,71,Kreis II,,292,1,
+1903,9,1903-einwohner-048-025,Badertscher,& Co,"Velocipedes verschiedener bewährter Systeme, en gros und détail, Velozubehör- und Radsportartikel, Automobile, Schreibmaschinen, Nähmaschinen, Eisenwaren en gros, Holzwarenfabrikation",Goethestrasse,16,Kreis I,1,48,0,"phone_flag=1, gedruckt ist das Zeichen des Gewerbe-Verbands (kein Telefon); sonst richtig"
+1903,10,1903-einwohner-424-019,Spälti,Fridol,Geschäftsrd.,Webergasse,59,Kreis III,,424,0,"Beruf «Geschäftsrd.» gelesen, gedruckt «Geschäftsrsdr.»"
+1903,11,1903-einwohner-312-040,Mettauer,Heinr,Schneider,Sonneggstrasse,33,Kreis IV,,312,1,
+1903,12,1903-einwohner-442-107,Streuli,Ernst,Schlosser,untere Rotstrasse,5,Kreis IV,,442,1,
+1903,13,1903-einwohner-285-062,Lott,Friedrich,Bäckerei,Mühlegasse,19,Kreis I,,285,1,
+1903,14,1903-einwohner-352-067,Probst,Alois,Liegenschaftsagent,Sihlhallenstr,3,Kreis III,,352,1,
+1903,15,1903-einwohner-047-010,Bachmann,H,Xylogr.-Atelier,Löwenplatz,43,Kreis I,,47,1,
+1903,16,1903-einwohner-192-111,Haugwitz,Klara,Part.,Tödistrasse,51,Kreis II,,192,1,
+1903,17,1903-einwohner-146-001,Frei,Rosal,,Riedtlistrasse,15,Kreis IV,,146,1,
+1903,18,1903-einwohner-139-034,Fischer,Karl,Küfer,Seefeldstrasse,40,Kreis V,,139,1,
+1903,19,1903-einwohner-242-003,Keller,Emilie,Part.,Weinbergstrasse,82,Kreis IV,,242,1,
+1903,20,1903-einwohner-384-076,Scheibli,Wolfgang,Sattler,Sihlamtsstrasse,17,Kreis I,,384,1,

@@ -8,7 +8,7 @@ die Gemeinde. Ohne die Spalte gilt dieselbe Regel aus dem gedruckten Text:
 
 - 1859: «g» bzw. «k» an der Hausnummer → Grosse Stadt (rechts der Limmat) bzw. Kleine Stadt (links).
 - 1875, 1885: die alte Gemeinde hinter der Hausnummer («Rankstrasse 77 R.» → Riesbach; Z. = Stadt Zürich).
-- 1900–1902: der Stadtkreis I–V vor der Strasse; 1914–1930: der Kreis 1–8; 1935–1945: der Kreis 1–11 (Eingemeindung 1934).
+- 1900–1903: der Stadtkreis I–V vor der Strasse; 1914–1930: der Kreis 1–8; 1935–1945: der Kreis 1–11 (Eingemeindung 1934).
 
 Verortet wird je (Gebiet, Strasse), nie die Hausnummer: die Nummern von 1859 (g/k) und die der Ausgemeinden
 1875/1885 sind alte Nummern. Ein Treffer von Nominatim zählt nur, wenn er in einem Quartier liegt, das zum Gebiet
@@ -103,7 +103,7 @@ def norm_street(s: str) -> str:
     return s[:1].upper() + s[1:]
 
 
-KREIS_VOLS = {"1900", "1901", "1902", "1914", "1920", "1922", "1925", "1930", "1935", "1940", "1945"}  # Bände mit Stadtkreis vor der Strasse
+KREIS_VOLS = {"1900", "1901", "1902", "1903", "1914", "1920", "1922", "1925", "1930", "1935", "1940", "1945"}  # Bände mit Stadtkreis vor der Strasse
 
 def area(r: dict) -> str:
     """Gebiet des Eintrags aus Band und gedrucktem Text (siehe oben); leer, wenn nichts dasteht."""
@@ -124,7 +124,7 @@ def area(r: dict) -> str:
         i = t.find(st[:6])
         kr = r"[IV]{1,3}|1[01]|[1-9]" if int(v) >= 1934 else r"[IV]{1,3}|[1-8]"  # ab 1934 Kreise 1–11
         m = re.search(rf"(?:^|[\s,])({kr})\s*$", t[:i]) if i > 0 else None
-        if m and (v in ("1900", "1901", "1902")) == (not m.group(1).isdigit()):
+        if m and (v in ("1900", "1901", "1902", "1903")) == (not m.group(1).isdigit()):
             return "Kreis " + m.group(1)
     return ""
 
