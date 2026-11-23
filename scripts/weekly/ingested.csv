@@ -1,3 +1,4 @@
 year,date,commit,entries,berufe,sample_correct,sample_n,note
 1901,2026-11-20,9db327f,62835,11952,18,20,"Einwohner S. 33–570, Berufe S. 577–689; 13 Seiten nicht sauber beendet; S. 607 Telefon bei allen Einträgen gesetzt"
 1902,2026-11-20,144354d,55419,12510,18,20,"Einwohner S. 33–528, Berufe S. 537–653; 14 Seiten nicht sauber beendet; Zeichen am Zeilenanfang ist das Gewerbe-Verbands-Zeichen, phone_flag unzuverlässig"
+1903,2026-11-23,e6d81d2,48434,0,17,20,"Einwohner S. 33–457, kein Berufsregister; 4 Seiten nicht sauber beendet; phone_flag = Gewerbe-Verbands-Zeichen; VS-Commit 2be169e lokal, Push abgelehnt (ab_entries.csv 103 MB > 100 MB); 80/81/82 stehen noch aus"
