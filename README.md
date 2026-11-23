@@ -15,6 +15,7 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | 1902 | 1 062 | 55 419 | 12 510 | Einwohner 33–528, Berufe 537–653 |
 | 1903 | 748 | 48 434 | – | Einwohner 33–457 (kein Berufsregister im Band) |
 | 1904 | 1 028 | 47 210 | 13 454 | Einwohner 33–469, Berufe 479–605 |
+| 1907 | 1 154 | 51 718 | 14 672 | Einwohner 37–526, Berufe 535–680 |
 | 1914 | 1 377 | 64 390 | 17 347 | Einwohner 33–652, Berufe 661–854 |
 | 1920 | 1 482 | 69 068 | 19 157 | Einwohner 31–716, Berufe 717–953 |
 | 1922 | 1 480 | 69 675 | 18 606 | Einwohner 23–726, Berufe 727–956 |
@@ -36,7 +37,7 @@ Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Geb
 | 1859 | Grosse Stadt / Kleine Stadt (g bzw. k an der Hausnummer) | «339 g, gr. Brunngasse» → Grosse Stadt |
 | 1867 | Ausgemeinde als Wort im Text (Stadt selbst: leer) | «629 Hornaugasse, Riesbach» → Riesbach |
 | 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
-| 1900–1904 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
+| 1900–1907 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
 | 1914–1930 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
 | 1935–1945 | Kreis 1–11 vor der Strasse (Eingemeindung 1934) | «⑪ Schaffhauserstr. 410» → Kreis 11 |
 
@@ -104,7 +105,8 @@ prüft Strasse, Hausnummer und Familienname.
   `phone_flag` ist für 1902 (und wohl auch 1901) darum unzuverlässig.
 - **1903:** wie 1900 (Kreis I–V vor der Strasse, Antiqua, kein Berufsregister im Band). Gelesen auf tei im Wochenlauf, Seiten über IIIF der ZB. Einwohner S. 33–457 (Spaltenseite 425 endet mit «Trey»); ab S. 458 das Häuserverzeichnis. Auch hier ist das Zeichen am Zeilenanfang das des Gewerbe-Verbands, `phone_flag` unzuverlässig.
 - **1904:** wie 1901–1903 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 33–469 (unten Inserat, S. 470 «Avis»), Berufsregister S. 479–605 (Spaltenseite 3 bis 129, «Zugjalousienfabrikation»). Das Zeichen am Zeilenanfang ist wieder das des Gewerbe-Verbands, `phone_flag` unzuverlässig. Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
-- **1901–1904 und 1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
+- **1907:** wie 1901–1904 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–526 (Spaltenseite 1 bis 490, «Zwipf»; darunter Inserat), Berufsregister S. 535–680 (Spaltenseite 3 bis 148, «Zuckerwarenfabrik»; ab S. 681 Inserate). Anders als 1901–1906 unterscheidet das Modell hier das Telefonzeichen (Blitz) vom Zeichen des Gewerbe-Verbands (Stern über v); `phone_flag` stimmte in der Stichprobe. 1905 und 1906 sind gelesen, aber noch nicht übernommen (Stichprobe unter 80 %). Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
+- **1901–1904, 1907 und 1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
   860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. 1940 hat Claude 20 zufällige Einträge (Seed 1940) mit
   dem Seitenbild verglichen: 18 in allen Feldern richtig (einmal Telefon übersehen und der Kreis der Geschäfts- an
@@ -112,7 +114,7 @@ prüft Strasse, Hausnummer und Familienname.
   (Seed 1945): 18 von 20 richtig («Hönicg» für «Hönig»; einmal der Vorname als Familienname, seither behoben). Die 20 nachgelesenen Seiten von 1945 (siehe unten) hatten eine eigene Stichprobe, je ein Eintrag pro Seite: 16 von 20 richtig (zweimal das Telefonzeichen übersehen, «Dienstmann-Büro» für «Dienstmänner-Büro», «Hörwieg» und «Bankkommiss.» für «Hörwick» und «Bankcommis»; einmal der Firmenkopf «Hauser, E.» als Familienname, seither behoben).
   1901 (Seed 1901, `data/review/weekly_1901.csv`): 18 von 20 richtig («See-strasse» mit dem Trennstrich der Zeile;
   einmal Telefon auf S. 607, siehe oben). 1902 (Seed 1902, `data/review/weekly_1902.csv`): 18 von 20 richtig («Bielski»
-  für «Bielinski»; bei Öchslin-Regazzoni die Geschäfts- statt der Wohnadresse). 1903 (Seed 1903, `data/review/weekly_1903.csv`): 17 von 20 in allen Feldern richtig (einmal «Geschäftsrd.» für «Geschäftsrsdr.», zweimal `phone_flag` gesetzt, wo das Zeichen des Gewerbe-Verbands steht). 1904 (Seed 1904, `data/review/weekly_1904.csv`): 18 von 20 richtig (zweimal `phone_flag` auf dem Zeichen des Gewerbe-Verbands). `qa_flags` markiert Verdachtsfälle
+  für «Bielinski»; bei Öchslin-Regazzoni die Geschäfts- statt der Wohnadresse). 1903 (Seed 1903, `data/review/weekly_1903.csv`): 17 von 20 in allen Feldern richtig (einmal «Geschäftsrd.» für «Geschäftsrsdr.», zweimal `phone_flag` gesetzt, wo das Zeichen des Gewerbe-Verbands steht). 1904 (Seed 1904, `data/review/weekly_1904.csv`): 18 von 20 richtig (zweimal `phone_flag` auf dem Zeichen des Gewerbe-Verbands). 1907 (Seed 1907, `data/review/weekly_1907.csv`): 16 von 20 in allen Feldern richtig (zweimal der Allianzname falsch bzw. nicht abgetrennt, einmal «Stroh Schneider» und die Geschäfts- statt der Wohnadresse, einmal der Beruf aus der Rubrik «Damen Schneiderinnen» getrennt). `qa_flags` markiert Verdachtsfälle
   (seltene Strasse, Trennstrich, zusammengesetzter Name); solche Einträge haben
   `parse_confidence = medium`.
 
@@ -122,7 +124,7 @@ prüft Strasse, Hausnummer und Familienname.
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
-- **1900–1904 und 1914–1945** nennen den Stadtkreis vor der Strasse (1900–1904: I–V, 1914–1930: 1–8, 1935–1945: 1–11); `street_raw` steht ohne ihn,
+- **1900–1907 und 1914–1945** nennen den Stadtkreis vor der Strasse (1900–1907: I–V, 1914–1930: 1–8, 1935–1945: 1–11); `street_raw` steht ohne ihn,
   `district` mit ihm. 1914 setzte das Modell oft den Kreis als Hausnummer («4 Zeughausstr. 29» → 4); `convert.py`
   nimmt dann die Nummer aus der gedruckten Zeile (12 015 Einträge).
 - **Ausserhalb der Stadt:** Wer 1914 in einer anderen Gemeinde wohnte («… In Albisrieden.» 1859,
@@ -135,7 +137,7 @@ prüft Strasse, Hausnummer und Familienname.
   brechen in der Lesung vor dem Seitenende ab, auch im zweiten Versuch mit doppeltem Tokenbudget an derselben
   Stelle; es fehlen dort die letzten Einträge der Seite.
 - **1901:** ebenso 13 Seiten (S. 35, 49, 93, 121, 316, 321, 372, 381, 429, 504, 578, 615, 645);
-  **1902:** 14 Seiten (S. 49, 97, 117, 147, 154, 282, 339, 348, 370, 375, 417, 475, 481, 516); **1903:** 4 Seiten (S. 49, 183, 276, 336); **1904:** 14 Seiten (S. 61, 103, 129, 139, 157, 259, 267, 305, 321, 401, 409, 426, 482, 593);
+  **1902:** 14 Seiten (S. 49, 97, 117, 147, 154, 282, 339, 348, 370, 375, 417, 475, 481, 516); **1903:** 4 Seiten (S. 49, 183, 276, 336); **1904:** 14 Seiten (S. 61, 103, 129, 139, 157, 259, 267, 305, 321, 401, 409, 426, 482, 593); **1907:** 12 Seiten (S. 53, 113, 168, 217, 250, 266, 341, 416, 473, 519, 601, 632);
   **1920:** 8 Seiten (S. 316, 711, 715, 720, 797, 870, 877, 885); **1922:** 15 Seiten (S. 45, 117, 193,
   391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941); **1925:** 17 Seiten (S. 33, 60, 89, 129, 152, 305,
   553, 586, 588, 601, 606, 745, 808, 810, 873, 919, 1047); **1930:** 15 Seiten (S. 312, 435, 469, 483, 509, 714,

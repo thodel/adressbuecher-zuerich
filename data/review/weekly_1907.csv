@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1907,1,1907-einwohner-332-057,Müller,Heinr,Färber,Münchhaldenstrasse,25,Kreis V,,332,0,"Allianzname «Stäbler» vom Haupteintrag Müller-Stäbler übernommen, gedruckt «— -Stolz» (also Müller-Stolz); qwen las «— Stolz» ohne den Bindestrich"
+1907,2,1907-einwohner-257-087,Knecht,Luise,Schneiderin,Drahtzugstrasse,5,Kreis V,,257,1,
+1907,3,1907-berufe-618-074,Katz,Louis,,Bahnhofstr,79,Kreis I,1,618,1,
+1907,4,1907-berufe-678-034,Wyss,G,Pension Sonnenberg,,,,,678,1,
+1907,5,1907-berufe-560-087,Herter,Jules,,Rämistr,3,Kreis I,1,560,1,
+1907,6,1907-einwohner-484-091,Wanner,Nat,,Usteristrasse,10,Kreis I,,484,1,
+1907,7,1907-einwohner-410-063,Schniter,Max,Kaufmann,Goethestrasse,12,Kreis I,,410,1,
+1907,8,1907-einwohner-396-076,Schiller,Karl E,Commis,Thalgasse,27,Kreis I,,396,1,
+1907,9,1907-einwohner-247-119,Keller,Jak,Lehrer d. freien Schule,Sonneggstr,66,Kreis IV,,247,1,
+1907,10,1907-einwohner-487-044,Weber,J,"Zeichner und Landschaftsmaler, Illustrator der Europ. Wanderbilder",Bärengasse,6,Kreis I,1,487,1,Telefonzeichen (Blitz) richtig erkannt
+1907,11,1907-einwohner-271-092,Kunkler,Jul,Architekt,Klosbachstrasse,134,Kreis V,1,271,1,
+1907,12,1907-einwohner-452-090,Stroh Schneider,Heinr,Posamentier,Seefeld-strasse-Othmarstrasse,11,Kreis V,1,452,0,"Familienname «Stroh Schneider», gedruckt «Strohschneider-Haller»; Beruf «Posamentier» statt gedruckt «Posamenter»; Strasse ist die Geschäfts- statt der Wohnadresse (I Augustinerg. 42)"
+1907,13,1907-einwohner-298-093,Mariotti,Karl Alois,Kaufm.,Schanzeneggstr,3,Kreis II,,298,1,
+1907,14,1907-berufe-563-016,Battaglini,Anna,Damen Schneiderinnen,Seefeldstr,46,Kreis V,,563,0,"Beruf «Damen Schneiderinnen», Rubrik gedruckt «Damenschneiderinnen»"
+1907,15,1907-berufe-570-016,Wiskemann-Knecht,A,Luxuslampen,Bahnhofstr,26,Kreis I,1,570,0,"Familienname «Wiskemann-Knecht» nicht in Familien- und Allianzname getrennt (anders als Herter-Kiesling, Wyss-Henggeler); Kreis I ergänzt, gedruckt ohne Kreis (Centralhof, Bahnhofstr. 26)"
+1907,16,1907-einwohner-343-048,Oberle,Valent,Weichenwärter S.B.B.,Heinrichstr,69,Kreis III,,343,1,
+1907,17,1907-einwohner-061-004,Baur,Gust,Chef d. Stadtbuchhaltg.,Ackerstr,47,Kreis III,,61,1,
+1907,18,1907-einwohner-457-052,Suter,Jul. Arn,Commis,Lagerstrasse,39,Kreis III,,457,1,
+1907,19,1907-einwohner-145-014,Forrer,Joh. Heinr,Betriebschef der Kehrichtverbrennungsanstalt,Josefstrasse,205,Kreis III,1,145,1,
+1907,20,1907-einwohner-297-026,Mahler,Rud,Färber,Josefstrasse,103,Kreis III,,297,1,
