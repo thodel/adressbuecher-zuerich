@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1909,1,1909-einwohner-378-101,Peter,Jak,Buchhalter,Sophienstrasse,12,Kreis V,,378,1,
+1909,2,1909-einwohner-214-098,Heberlein,Marg,Part.,Sonnhaldenstr,3,Kreis V,,214,1,«Frau» als civil_status
+1909,3,1909-einwohner-299-034,Landös,Gust,Wirt,Brauerstrasse,80,Kreis III,,299,1,
+1909,4,1909-einwohner-263-030,Katz,Lazarus,Geschäftsreisender,Morgartenstrasse,5,Kreis III,,263,0,"Allianzname fehlt: gedruckt «— -Bloch» (Katz-Bloch), qwen las «— Bloch» ohne Bindestrich"
+1909,5,1909-berufe-719-071,Götz,Joh,,Limmatquai,28,Kreis I,1,719,1,
+1909,6,1909-einwohner-403-095,Rohrer,Rob,Schlosser,Centralstrasse,68,Kreis III,,403,1,
+1909,7,1909-einwohner-254-096,Isler,Anna,Packerin,Schlossgasse,4,Kreis III,,254,1,
+1909,8,1909-einwohner-417-066,Saner,Emil,Werkmeister in Auto-Garage,Idastrasse,1,Kreis III,,417,1,
+1909,9,1909-einwohner-547-010,Witz,Anna,Part.,Werdgutstrasse,7,Kreis III,,547,1,
+1909,10,1909-einwohner-073-060,Bigali,Friedr. W,Schleifer u. Polierer,Spiegelgasse,9,Kreis I,,73,1,
+1909,11,1909-einwohner-181-040,Goldberg,Jul,Schriftsteller,Zürichbergstr,47,Kreis V,,181,0,"Allianzname «Blachmann» vom Haupteintrag Goldberg-Blachmann übernommen, gedruckt «— -Kanzel» (Goldberg-Kanzel)"
+1909,12,1909-einwohner-296-017,Kutter,Karl,Metallgiesserei u. mechanische Werkstätte,Plattenstrasse,44,Kreis V,1,296,1,"Ausschnitt verfehlt, am Seitenbild oben geprüft"
+1909,13,1909-einwohner-384-058,Photoglob Co.,,Kunsthandlung,Paradeplatz,5,Kreis I,1,384,1,
+1909,14,1909-einwohner-074-029,Billing,Alb,Techniker,Nordstrasse,172,Kreis IV,,74,1,
+1909,15,1909-einwohner-553-004,Zäch,Joh,Güterarb. S.B.B.,Zurlindenstrasse,290,Kreis III,,553,1,
+1909,16,1909-einwohner-448-098,Schuhmacher,Emil Paul,Tapezierer,Gärtnerstr,14,Kreis V,,448,1,
+1909,17,1909-einwohner-059-003,Baumann,Andr,Bleiglasler,Brotgasse,6,Kreis V,,59,0,Beruf «Bleiglasler» statt gedruckt «Bleiglaser»
+1909,18,1909-einwohner-394-043,Reichart,Fritz,"Vertreter des Hauses A. Bächler & Cie., Kreuzlingen.",Dufourstrasse,183,Kreis V,,394,1,
+1909,19,1909-berufe-661-051,Waltisbühl,Anton,Spezialgeschäft für Bureaueinrichtungen. Import und Handel in amerikanischen Möbeln. Bureaux u. Ausstellsräume. Eigene mechanische Möbelfabrik,Bahnhofstr,46,Kreis I,,661,0,Telefonzeichen (Blitz) neben dem Gewerbe-Verbands-Zeichen nicht erkannt; auf S. 661 schreibt qwen den Blitz durchgehend als «*»; zweite Adresse (Fabrik Hardstrasse 221) im Beruf aufgegangen
+1909,20,1909-einwohner-538-114,Widmer,Sophie,Part.,Freiestrasse,105,Kreis V,,538,1,

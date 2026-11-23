@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1910,1,1910-einwohner-116-024,Cagnoni,Giorgio,Coiffeur,Motorenstrasse,18,Kreis III,,116,1,
+1910,2,1910-berufe-677-081,Huber,Emil,,Neumünsterallee,12,Kreis V,1,677,1,
+1910,3,1910-einwohner-322-038,Leisinger,Friedr,Zimmermann,Aemtlerstr,42,Kreis III,,322,1,
+1910,4,1910-einwohner-304-017,Krison,Leander,Kohlenarb.,Jägerg,10,Kreis III,,304,1,
+1910,5,1910-berufe-699-015,Dättwyler,Gottl,,Grünenhofstrasse,7,Kreis V,,699,0,Telefonzeichen (Blitz) neben dem Gewerbe-Verbands-Zeichen nicht erkannt
+1910,6,1910-einwohner-050-005,Assfal,Franz Jos,Kutscher,Centralstrasse,6,Kreis III,,50,0,Familienname «Assfal» statt gedruckt «Assfalg»
+1910,7,1910-einwohner-353-059,Meier,Ulr,Dreher,Schaffhauserstrasse,193,Kreis IV,,353,1,
+1910,8,1910-berufe-751-031,Corrodi,H,Nachfolger von Gujer & Cie.,Marktg,14,Kreis I,1,751,1,"Ausschnitt verfehlt, am Seitenbild geprüft"
+1910,9,1910-berufe-769-021,Schiller,F,,Staffelstr,3,Kreis III,1,769,1,
+1910,10,1910-einwohner-075-074,Bianchi,Antonio,Limonadenfabrikant,Wilhelmstrasse,2,Kreis III,,75,1,
+1910,11,1910-einwohner-361-057,Menezes & Monniot,,Cigarrengeschäft,Kreuzbühlstrasse,1,Kreis V,,361,1,
+1910,12,1910-einwohner-212-074,Habersaat,Alb,Fahrknecht,Badenerstr,232,Kreis III,,212,1,
+1910,13,1910-einwohner-393-063,Obmannamt,,,Hirschengraben,15,Kreis I,,393,1,
+1910,14,1910-einwohner-535-067,Trüb,Anna Barb,Winderin,Wildbachstrasse,64,Kreis V,,535,1,
+1910,15,1910-einwohner-342-101,Maschinenfabrik Com.-Ges. Ferd. Petersen,,Maschinenhandel u. Reparaturwerkstätte,Olgastr,8,Kreis I,1,342,1,
+1910,16,1910-berufe-707-092,Fries,Jos,,Pflanzschulstr,9,Kreis III,,707,1,"Ausschnitt verfehlt, am Seitenbild geprüft"
+1910,17,1910-einwohner-502-114,Stadler,Frieda Anna,Part.,Asylstrasse,114,Kreis V,,502,1,
+1910,18,1910-einwohner-477-041,Schüepp,Joh. Rud,Commis,Zeughausstrasse,29,Kreis III,,477,1,
+1910,19,1910-einwohner-277-025,Kaspar,Ad,Lokomotivheizer,Cementg,23,Kreis III,,277,1,
+1910,20,1910-einwohner-408-040,Phönix,,Generalagentur,Bahnhofstr,84,Kreis I,1,408,1,Firmenname ohne Zusatz «(in Paris)»; Inhaber in Klammern nicht übernommen
