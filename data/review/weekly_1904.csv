@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1904,1,1904-einwohner-327-015,Reutemann,Joh,Gasmonteur,Josefstrasse,107,Kreis III,,327,1,
+1904,2,1904-einwohner-288-035,Mörker,Fritz,Charcutier,Rämistrasse,44,Kreis V,1,288,0,"phone_flag gesetzt, im Druck steht das Zeichen des Gewerbe-Verbands (kein Telefon); Geschäftsadresse I Kappelergasse 13 u. Rindermarkt 9 weggelassen, Wohnung richtig"
+1904,3,1904-einwohner-111-039,Egli,Rud,Kondukteur,Mattengasse,31,Kreis III,,111,1,
+1904,4,1904-berufe-572-068,Hock,Leonh,,Zurlindenstr,19,Kreis III,,572,1,
+1904,5,1904-einwohner-424-027,Vögeli,J,"z. Habanna-Haus, Cigarren- u. Tabakhandlg., Inhaber der früheren Filialen von Max Oettinger",Bahnhofstrasse,90,Kreis I,1,424,0,"phone_flag gesetzt, im Druck steht das Zeichen des Gewerbe-Verbands (kein Telefon)"
+1904,6,1904-einwohner-432-121,Waser,Marie,Rentnerin,Asylstr,55,Kreis V,,432,1,
+1904,7,1904-einwohner-131-112,Frei,Karol,Glätterin,Klosbach,48,Kreis V,,131,1,
+1904,8,1904-einwohner-441-102,Weiss,Anna,,Letzistrasse,13,Kreis IV,,441,1,
+1904,9,1904-einwohner-216-078,Karner,Konr,Magaziner,Rotwandstrasse,65,Kreis III,,216,1,
+1904,10,1904-berufe-561-032,Gradelet,Anna M. J,,Klosbachstrasse,54,Kreis V,,561,1,
+1904,11,1904-berufe-526-051,Pedrazzini,G,,Bahnhofstr,53,Kreis I,,526,1,
+1904,12,1904-einwohner-111-101,Egolf,Rud,Taglöhner,Höschgasse,75,Kreis V,,111,1,
+1904,13,1904-einwohner-055-098,Bech,Isidor,Kellergehilfe,Rennweg,51,Kreis I,,55,1,
+1904,14,1904-berufe-599-089,Hangartner,Jak,,Pflanzschulstrasse,99,Kreis III,,599,1,
+1904,15,1904-einwohner-381-079,Sigg,Anna,,Freiestrasse,121,Kreis V,,381,1,
+1904,16,1904-einwohner-465-025,Zizler,Anna,,Hallwylstrasse,24,Kreis III,,465,1,
+1904,17,1904-einwohner-412-016,Theiler,Heinr,Commis,Klingenstrasse,23,Kreis III,,412,1,
+1904,18,1904-berufe-518-094,Weber,Ed. Otto,Geometer,Waffenplatzstrasse,47,Kreis II,,518,1,
+1904,19,1904-berufe-485-043,Zürcher & Huber,,Automobilfabrik Orion,Hardturmstrasse,281,Kreis III,,485,1,
+1904,20,1904-einwohner-411-076,Thalmann,Jak,Tiefbauamtsarbeiter,Kurvenstrasse,16,Kreis IV,,411,1,
