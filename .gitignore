@@ -4,5 +4,5 @@ _site/
 .claude/
 web/index.html
 web/karte.html
-# gepackt im Repo: web/baende.csv.gz (siehe 90_seite.py load_other)
+# gepackt im Repo: web/baende/<Jahr>.csv.gz (siehe 90_seite.py pack_other)
 web/baende.csv

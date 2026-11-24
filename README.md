@@ -187,8 +187,8 @@ Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
   Hausnummern werden nicht verortet.
 - `scripts/80_telefon.py --vs <vernetzte-schweiz> --commit <sha>`: Einträge mit ☎ → PTT-Telefonbuch
   (`web/telefon.csv`, Commit in `telefon_source.txt`).
-- `scripts/81_baende.py`: dieselbe Person in den anderen Bänden (`web/baende.csv`, im Repo gepackt als
-  `web/baende.csv.gz`; `90_seite.py` packt neu, wenn die .csv neuer ist).
+- `scripts/81_baende.py`: dieselbe Person in den anderen Bänden (`web/baende.csv`, im Repo gepackt je Jahr
+  als `web/baende/<Jahr>.csv.gz`; `90_seite.py` teilt und packt neu, wenn die .csv neuer ist).
 - `scripts/82_normdaten.py --vs …`: ungeprüfte Kandidaten aus HLS und Wikidata (`web/normdaten.csv`).
 - `scripts/91_merge_flags.py <flags.csv>`: Flags aus der Seite nach `data/review/flags.csv`.
 

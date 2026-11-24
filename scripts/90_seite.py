@@ -6,7 +6,7 @@ Schreibt `index.html` und je Band und Reiter `data/<Band>-<Reiter>.json` nach --
 erst, wenn er gebraucht wird (zuerst 1914), weil alle Bände zusammen über 50 MB wären.
 
 Quellen: data/csv/04_entries_<Band>.csv, 04_berufe_<Band>.csv, data/review/flags.csv (falls vorhanden), web/telefon.csv,
-web/baende.csv.gz, web/normdaten.csv, web/geo/ und data/csv/01_iiif_*.csv. Seitenbilder kommen über IIIF von der
+web/baende/<Jahr>.csv.gz, web/normdaten.csv, web/geo/ und data/csv/01_iiif_*.csv. Seitenbilder kommen über IIIF von der
 Zentralbibliothek Zürich (Zurich Open Platform, CC0); «Seite» = Seite im PDF der ZB = Canvas, je Band
 `data/<Band>-iiif.json` (Bild-IDs in Seitenfolge, lädt erst, wenn jemand eine Seite öffnet).
 
@@ -21,7 +21,7 @@ import argparse
 import csv
 import gzip
 import importlib
-import shutil
+import io
 import json
 import sys
 from collections import Counter, defaultdict
@@ -98,18 +98,45 @@ def load_simple(path: str, fields: tuple[str, ...]) -> dict[str, str]:
         return {r["entry_id"]: "|".join(r[k].replace("|", "/") for k in fields) for r in csv.DictReader(fh)}
 
 
+BAENDE_CSV, BAENDE_DIR = Path("web/baende.csv"), Path("web/baende")  # aus scripts/81_baende.py
+
+
+def pack_other() -> None:
+    """web/baende.csv (nicht im Repo) → web/baende/<Jahr>.csv.gz, je Jahr des Eintrags (entry_id beginnt mit dem Jahr).
+
+    81_baende.py, das in allen adressbuecher-* gleich ist, schreibt eine einzige .csv. Gepackt in einer Datei waren es am
+    23.11.2026 schon 96 MB, knapp unter der Grenze von GitHub (100 MB); darum eine Datei je Band. Gepackt wird nur,
+    wenn die .csv neuer ist als alle Teile; Teile ohne Zeilen werden gelöscht. mtime=0, damit gleiche Daten gleiche
+    Bytes geben."""
+    parts = sorted(BAENDE_DIR.glob("*.csv.gz"))
+    if not BAENDE_CSV.exists() or (parts and BAENDE_CSV.stat().st_mtime <= max(q.stat().st_mtime for q in parts)):
+        return
+    with BAENDE_CSV.open(encoding="utf-8", newline="") as fh:
+        rd = csv.reader(fh)
+        head = next(rd)
+        rows: dict[str, list[list[str]]] = defaultdict(list)
+        for r in rd:
+            rows[r[0][:4]].append(r)
+    BAENDE_DIR.mkdir(parents=True, exist_ok=True)
+    for q in parts:
+        if q.name.split(".")[0] not in rows:
+            q.unlink()
+    for year, rs in rows.items():
+        with gzip.GzipFile(BAENDE_DIR / f"{year}.csv.gz", "wb", mtime=0) as gz, \
+                io.TextIOWrapper(gz, encoding="utf-8", newline="") as dst:
+            w = csv.writer(dst)  # \r\n wie DictWriter in 81_baende.py
+            w.writerow(head)
+            w.writerows(rs)
+
+
 def load_other() -> dict[str, str]:
     """entry_id → Treffer in den anderen Bänden, je «Stufe|Band|ID|Text|Belege», getrennt durch «;;».
 
-    Im Repo liegt web/baende.csv.gz (ungepackt über 50 MB); 81_baende.py, das in allen adressbuecher-* gleich ist,
-    schreibt web/baende.csv (nicht im Repo). Ist die .csv neuer, wird die .gz hier daraus neu gepackt."""
-    p, gz = Path("web/baende.csv"), Path("web/baende.csv.gz")
-    if p.exists() and (not gz.exists() or p.stat().st_mtime > gz.stat().st_mtime):
-        with p.open("rb") as src, gzip.GzipFile(gz, "wb", mtime=0) as dst:
-            shutil.copyfileobj(src, dst)
+    Im Repo liegt web/baende/<Jahr>.csv.gz (siehe pack_other)."""
+    pack_other()
     out: dict[str, list[str]] = defaultdict(list)
-    if gz.exists():
-        with gzip.open(gz, "rt", encoding="utf-8") as fh:
+    for gz in sorted(BAENDE_DIR.glob("*.csv.gz")):
+        with gzip.open(gz, "rt", encoding="utf-8", newline="") as fh:
             for r in csv.DictReader(fh):
                 out[r["entry_id"]].append("|".join(r[k].replace("|", "/").replace(";;", ";")
                                                    for k in ("tier", "other_volume", "other_id", "other_text", "evidence")))
