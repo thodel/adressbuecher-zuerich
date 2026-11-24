@@ -19,6 +19,7 @@ Telefonbüchern und den anderen Adressbüchern verknüpft werden.
 | 1909 | 1 237 | 54 173 | 15 607 | Einwohner 37–562, Berufe 573–726 |
 | 1910 | 1 308 | 58 340 | 16 026 | Einwohner 37–602, Berufe 613–773 |
 | 1911 | 1 364 | 60 524 | 16 597 | Einwohner 37–625, Berufe 637–808 |
+| 1913 | 1 332 | 63 302 | 16 737 | Einwohner 33–640, Berufe 649–832 |
 | 1914 | 1 377 | 64 390 | 17 347 | Einwohner 33–652, Berufe 661–854 |
 | 1920 | 1 482 | 69 068 | 19 157 | Einwohner 31–716, Berufe 717–953 |
 | 1922 | 1 480 | 69 675 | 18 606 | Einwohner 23–726, Berufe 727–956 |
@@ -40,7 +41,7 @@ Spalten `municipality` (Gemeinde zum Stand 1914), `qa_flags` und `district` (Geb
 | 1859 | Grosse Stadt / Kleine Stadt (g bzw. k an der Hausnummer) | «339 g, gr. Brunngasse» → Grosse Stadt |
 | 1867 | Ausgemeinde als Wort im Text (Stadt selbst: leer) | «629 Hornaugasse, Riesbach» → Riesbach |
 | 1875, 1885 | alte Gemeinde hinter der Hausnummer | «Rankstrasse 77 R.» → Riesbach |
-| 1900–1911 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
+| 1900–1913 | Kreis I–V vor der Strasse | «III Freischützgasse 1» → Kreis III |
 | 1914–1930 | Kreis 1–8 vor der Strasse | «6 Habsburgstrasse 26» → Kreis 6 |
 | 1935–1945 | Kreis 1–11 vor der Strasse (Eingemeindung 1934) | «⑪ Schaffhauserstr. 410» → Kreis 11 |
 
@@ -112,8 +113,9 @@ prüft Strasse, Hausnummer und Familienname.
 - **1909:** wie 1907 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–562 (Spaltenseite 1 bis 526, «Zylberscher-Bähler»; darunter Inserat), Berufsregister S. 573–726 (Spaltenseite 3 bis 156, «Zuschneide-Schulen»; darunter Inserat). Telefon (Blitz) und Gewerbe-Verband (Stern über v) meist getrennt; auf Berufe-S. 661 las das Modell den Blitz als «*», dort fehlt `phone_flag`.
 - **1910:** wie 1909. Einwohner S. 37–602 (Spaltenseite 1 bis 566, «Zyman-Ostrowiecki»; darunter Inserat), Berufsregister S. 613–773 (Spaltenseite 3 bis 163, «Zuschneide-Schulen»; darunter Inserat).
 - **1911:** wie 1910 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–625 (Spaltenseite 1 bis 589, «Zytt»; darunter Inserat), Berufsregister S. 637–808 (Spaltenseite 3 bis 174, «Zuschneide-Schulen»; darunter Inserat).
+- **1913:** wie 1911 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 33–640 (Spaltenseite 1 bis 608, «Zytt»; darunter Inserat), Berufsregister S. 649–832 (Spaltenseite 3 bis 186, «Zuschneide-Schulen»; darunter Inserat). S. 641–648 sind Inseratseiten.
 - **1908** ist gelesen, aber nicht übernommen (Stichprobe 15 von 20).
-- **1901–1904, 1907, 1909–1911 und 1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
+- **1901–1904, 1907, 1909–1911, 1913 und 1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
   860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. 1940 hat Claude 20 zufällige Einträge (Seed 1940) mit
   dem Seitenbild verglichen: 18 in allen Feldern richtig (einmal Telefon übersehen und der Kreis der Geschäfts- an
@@ -121,7 +123,7 @@ prüft Strasse, Hausnummer und Familienname.
   (Seed 1945): 18 von 20 richtig («Hönicg» für «Hönig»; einmal der Vorname als Familienname, seither behoben). Die 20 nachgelesenen Seiten von 1945 (siehe unten) hatten eine eigene Stichprobe, je ein Eintrag pro Seite: 16 von 20 richtig (zweimal das Telefonzeichen übersehen, «Dienstmann-Büro» für «Dienstmänner-Büro», «Hörwieg» und «Bankkommiss.» für «Hörwick» und «Bankcommis»; einmal der Firmenkopf «Hauser, E.» als Familienname, seither behoben).
   1901 (Seed 1901, `data/review/weekly_1901.csv`): 18 von 20 richtig («See-strasse» mit dem Trennstrich der Zeile;
   einmal Telefon auf S. 607, siehe oben). 1902 (Seed 1902, `data/review/weekly_1902.csv`): 18 von 20 richtig («Bielski»
-  für «Bielinski»; bei Öchslin-Regazzoni die Geschäfts- statt der Wohnadresse). 1903 (Seed 1903, `data/review/weekly_1903.csv`): 17 von 20 in allen Feldern richtig (einmal «Geschäftsrd.» für «Geschäftsrsdr.», zweimal `phone_flag` gesetzt, wo das Zeichen des Gewerbe-Verbands steht). 1904 (Seed 1904, `data/review/weekly_1904.csv`): 18 von 20 richtig (zweimal `phone_flag` auf dem Zeichen des Gewerbe-Verbands). 1907 (Seed 1907, `data/review/weekly_1907.csv`): 16 von 20 in allen Feldern richtig (zweimal der Allianzname falsch bzw. nicht abgetrennt, einmal «Stroh Schneider» und die Geschäfts- statt der Wohnadresse, einmal der Beruf aus der Rubrik «Damen Schneiderinnen» getrennt). 1909 (Seed 1909, `data/review/weekly_1909.csv`): 16 von 20 richtig (zweimal der Allianzname bei «— -Name» fehlend bzw. vom Haupteintrag, «Bleiglasler» für «Bleiglaser», einmal das Telefon neben dem Gewerbe-Verbands-Zeichen übersehen). 1910 (Seed 1910, `data/review/weekly_1910.csv`): 18 von 20 richtig («Assfal» für «Assfalg», einmal das Telefon neben dem Gewerbe-Verbands-Zeichen übersehen). 1911 (Seed 1911, `data/review/weekly_1911.csv`): 19 von 20 richtig («Hausierer» für «Hausiererin»). `qa_flags` markiert Verdachtsfälle
+  für «Bielinski»; bei Öchslin-Regazzoni die Geschäfts- statt der Wohnadresse). 1903 (Seed 1903, `data/review/weekly_1903.csv`): 17 von 20 in allen Feldern richtig (einmal «Geschäftsrd.» für «Geschäftsrsdr.», zweimal `phone_flag` gesetzt, wo das Zeichen des Gewerbe-Verbands steht). 1904 (Seed 1904, `data/review/weekly_1904.csv`): 18 von 20 richtig (zweimal `phone_flag` auf dem Zeichen des Gewerbe-Verbands). 1907 (Seed 1907, `data/review/weekly_1907.csv`): 16 von 20 in allen Feldern richtig (zweimal der Allianzname falsch bzw. nicht abgetrennt, einmal «Stroh Schneider» und die Geschäfts- statt der Wohnadresse, einmal der Beruf aus der Rubrik «Damen Schneiderinnen» getrennt). 1909 (Seed 1909, `data/review/weekly_1909.csv`): 16 von 20 richtig (zweimal der Allianzname bei «— -Name» fehlend bzw. vom Haupteintrag, «Bleiglasler» für «Bleiglaser», einmal das Telefon neben dem Gewerbe-Verbands-Zeichen übersehen). 1910 (Seed 1910, `data/review/weekly_1910.csv`): 18 von 20 richtig («Assfal» für «Assfalg», einmal das Telefon neben dem Gewerbe-Verbands-Zeichen übersehen). 1911 (Seed 1911, `data/review/weekly_1911.csv`): 19 von 20 richtig («Hausierer» für «Hausiererin»). 1913 (Seed 1913, `data/review/weekly_1913.csv`): 16 von 20 richtig, genau an der Schwelle (Allianzname «Weideli» für «Weidelich», «Feldgütlweg» für «Feldgütliweg», «Papierfabriksarbeiter» für «Papierfabrikarbeiter», einmal «I unt. Mühlesteg» ohne abgetrennten Kreis). `qa_flags` markiert Verdachtsfälle
   (seltene Strasse, Trennstrich, zusammengesetzter Name); solche Einträge haben
   `parse_confidence = medium`.
 
@@ -131,7 +133,7 @@ prüft Strasse, Hausnummer und Familienname.
   Hirslanden, Hottingen, Oberstrass, Riesbach, Unterstrass, Wiedikon). Sie sind seit der
   Eingemeindung 1893 Teil der Stadt; `municipality` ist darum überall «Zürich». Die alte Gemeinde
   steht im Text des Eintrags («… Rankstrasse 77 R.»), die Hausnummern sind die der alten Gemeinde.
-- **1900–1911 und 1914–1945** nennen den Stadtkreis vor der Strasse (1900–1911: I–V, 1914–1930: 1–8, 1935–1945: 1–11); `street_raw` steht ohne ihn,
+- **1900–1913 und 1914–1945** nennen den Stadtkreis vor der Strasse (1900–1913: I–V, 1914–1930: 1–8, 1935–1945: 1–11); `street_raw` steht ohne ihn,
   `district` mit ihm. 1914 setzte das Modell oft den Kreis als Hausnummer («4 Zeughausstr. 29» → 4); `convert.py`
   nimmt dann die Nummer aus der gedruckten Zeile (12 015 Einträge).
 - **Ausserhalb der Stadt:** Wer 1914 in einer anderen Gemeinde wohnte («… In Albisrieden.» 1859,
@@ -144,7 +146,7 @@ prüft Strasse, Hausnummer und Familienname.
   brechen in der Lesung vor dem Seitenende ab, auch im zweiten Versuch mit doppeltem Tokenbudget an derselben
   Stelle; es fehlen dort die letzten Einträge der Seite.
 - **1901:** ebenso 13 Seiten (S. 35, 49, 93, 121, 316, 321, 372, 381, 429, 504, 578, 615, 645);
-  **1902:** 14 Seiten (S. 49, 97, 117, 147, 154, 282, 339, 348, 370, 375, 417, 475, 481, 516); **1903:** 4 Seiten (S. 49, 183, 276, 336); **1904:** 14 Seiten (S. 61, 103, 129, 139, 157, 259, 267, 305, 321, 401, 409, 426, 482, 593); **1907:** 12 Seiten (S. 53, 113, 168, 217, 250, 266, 341, 416, 473, 519, 601, 632); **1909:** 14 Seiten (S. 48, 53, 62, 85, 87, 171, 197, 369, 401, 405, 469, 491, 501, 515); **1910:** 17 Seiten (S. 68, 77, 129, 181, 210, 213, 271, 337, 382, 389, 453, 468, 479, 550, 583, 591, 663); **1911:** 17 Seiten (S. 68, 81, 101, 181, 216, 258, 324, 327, 338, 407, 437, 443, 549, 562, 568, 581, 605);
+  **1902:** 14 Seiten (S. 49, 97, 117, 147, 154, 282, 339, 348, 370, 375, 417, 475, 481, 516); **1903:** 4 Seiten (S. 49, 183, 276, 336); **1904:** 14 Seiten (S. 61, 103, 129, 139, 157, 259, 267, 305, 321, 401, 409, 426, 482, 593); **1907:** 12 Seiten (S. 53, 113, 168, 217, 250, 266, 341, 416, 473, 519, 601, 632); **1909:** 14 Seiten (S. 48, 53, 62, 85, 87, 171, 197, 369, 401, 405, 469, 491, 501, 515); **1910:** 17 Seiten (S. 68, 77, 129, 181, 210, 213, 271, 337, 382, 389, 453, 468, 479, 550, 583, 591, 663); **1911:** 17 Seiten (S. 68, 81, 101, 181, 216, 258, 324, 327, 338, 407, 437, 443, 549, 562, 568, 581, 605); **1913:** 7 Seiten (S. 53, 90, 186, 257, 305, 662, 816);
   **1920:** 8 Seiten (S. 316, 711, 715, 720, 797, 870, 877, 885); **1922:** 15 Seiten (S. 45, 117, 193,
   391, 460, 473, 517, 639, 719, 801, 843, 849, 913, 935, 941); **1925:** 17 Seiten (S. 33, 60, 89, 129, 152, 305,
   553, 586, 588, 601, 606, 745, 808, 810, 873, 919, 1047); **1930:** 15 Seiten (S. 312, 435, 469, 483, 509, 714,

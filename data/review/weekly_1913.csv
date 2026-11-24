@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1913,1,1913-berufe-681-060,Bleher,M,,Bleicherweg,47,Kreis II,,681,1,
+1913,2,1913-einwohner-545-008,Stenographen-Bureau des Stenographen-Vereins Zürich,,,Thalacker,50,,,545,1,
+1913,3,1913-einwohner-234-068,Haumesser,Otto,Schreiner,Brauerstr,54,Kreis III,,234,1,
+1913,4,1913-einwohner-213-007,Gschwind,Otto,Architekt,Spyristrasse,17,Kreis IV,,213,1,
+1913,5,1913-einwohner-409-069,Nägeli,Heinr. H,Schlosser,Uetlibergstrasse,103,Kreis III,,409,1,
+1913,6,1913-einwohner-498-089,Schneider,Ernst,Not.-Kanzlist,Werdgässchen,56,Kreis III,,498,1,
+1913,7,1913-berufe-745-072,Ribi & Co.,,,Hornerg,9,Kreis I,,745,1,
+1913,8,1913-einwohner-223-085,Häfeli,Friedr,Zugführer,Schreinerstrasse,43,Kreis III,,223,1,
+1913,9,1913-berufe-674-007,Bollmann,Jacq,,Iunt. Mühlesteg,8,,1,674,0,"gedruckt «I unt. Mühlesteg 8»: Kreis I nicht abgetrennt («Iunt. Mühlesteg»), Kreis fehlt"
+1913,10,1913-einwohner-440-071,Rahm,Hermann,Telegraphist,Eisengasse,16,Kreis I,,440,1,
+1913,11,1913-einwohner-489-071,Schmid,Alb,"Ingenieur, Maschinenfabrik",Zollikerstrasse,154,Kreis V,1,489,1,Geschäfts- und Wohnadresse; Wohnung V Zollikerstrasse 154 richtig gewählt
+1913,12,1913-einwohner-364-047,Marti,Hermine,Bureauangestellte,Zeltweg,30,Kreis V,,364,1,
+1913,13,1913-berufe-772-038,Hesse,H,,Kreuzstr,15,Kreis V,,772,1,
+1913,14,1913-einwohner-206-041,Grauaug,Jul,Theaterdirektor,Dufourstrasse,48,Kreis V,1,206,1,
+1913,15,1913-einwohner-602-100,Weilenmann,Gottfr,Metzger,Hohlstrasse,365,Kreis III,,602,0,Allianzname «Weidelich» als «Weideli» gelesen
+1913,16,1913-einwohner-346-073,Leutert,Wilh,Papierfabriksarbeiter,Rieterstrasse,79,Kreis II,,346,0,"gedruckt «Papierfabrikarbeiter», gelesen «Papierfabriksarbeiter»"
+1913,17,1913-einwohner-461-005,Roth,Konr,Anschläger,Feldgütlweg,9,Kreis III,,461,0,«Feldgütliweg» als «Feldgütlweg» gelesen
+1913,18,1913-einwohner-418-034,Oberholzer,Pauline,Pensionshalterin,Dufourstrasse,4,Kreis V,,418,1,
+1913,19,1913-einwohner-307-013,Klausner,Friedr,Maler,Forchstrasse,282,Kreis V,,307,1,
+1913,20,1913-einwohner-437-041,Potocnik,Robert,Schreiner,Fröhlichstrasse,37,Kreis V,,437,1,
