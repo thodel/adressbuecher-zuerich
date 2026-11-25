@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1915,1,1915-berufe-701-007,Reiser,Konr,Backofenbauer,Lagerstr,39,Kreis 4,,701,1,
+1915,2,1915-einwohner-110-083,Brülmann und Brüllmann,Gottl,Porträtmaler,Lägernstrasse,15,Kreis 6,,110,1,Familienname wie gedruckt als Kopfzeile «Brülmann und Brüllmann» übernommen (beide Schreibungen); als richtig gezählt
+1915,3,1915-einwohner-447-037,Peter,Wilh,Ausläufer,Münsterhof,11,Kreis 1,,447,1,
+1915,4,1915-einwohner-091-060,Bodmer,Helena,,Talacker,39,Kreis 1,1,91,1,
+1915,5,1915-einwohner-533-032,Schulz-Kiffel,Karl Georg Friedr,Sänger am Stadttheater,Sänisstrasse,4,Kreis 8,,533,0,Strasse «Sänisstrasse» statt «Säntisstrasse»; Familienname «Schulz-Kiffel» aus Kopf und Allianzname zusammengesetzt
+1915,6,1915-einwohner-417-111,Müller,Karl Alb,Kaufmann,Nägelistrasse,9,Kreis 7,,417,1,
+1915,7,1915-berufe-799-024,Art. Institut Orell Füssli,,,Bärengasse,6,Kreis 1,1,799,1,
+1915,8,1915-berufe-837-053,Aebi & Co.,Robert,,Werd-mühlepl,2,Kreis 1,,837,0,Strasse «Werd-mühlepl» mit Trennstrich statt «Werdmühlepl»
+1915,9,1915-einwohner-470-086,Riedmann,Joh,Zimmermann,Herbertstrasse,3,Kreis 4,,470,0,Strasse «Herbertstrasse» statt «Herbartstrasse»
+1915,10,1915-einwohner-251-103,Heim,Helene,Krankenpflegerin,Hottingerstrasse,25,Kreis 7,,251,1,
+1915,11,1915-einwohner-101-076,Bossbard,"Dr. jur. & Beringer, J","a. Stadtammann, Inkasso-, Rechts- u. Verwaltungsbureau",Schwizer-gasse,14,Kreis 1,1,101,0,"Familienname «Bossbard» statt «Bosshard», Allianzname «E.» (Vorname), Strasse «Schwizer-gasse» statt «Schweizergasse»"
+1915,12,1915-einwohner-606-044,Verband zürcherischer Seidenfärbereien,,,Bahnhofstrasse,72,Kreis 1,,606,1,
+1915,13,1915-einwohner-460-074,Ramp,Otto,Coiffeur,Nordstrasse,28,Kreis 6,,460,1,
+1915,14,1915-einwohner-654-063,Wocke,Paul O. H,Ingenieur,Granitweg,8,Kreis 6,,654,1,"Allianzname Wolf richtig, im Text ohne Bindestrich"
+1915,15,1915-einwohner-231-078,Gysin,Jak,Kaufmann,Lindenbachstrasse,26,Kreis 6,,231,1,
+1915,16,1915-einwohner-612-074,Vollmer,Friedr. Karl,Packer,Zwinglistrasse,11,Kreis 4,,612,1,
+1915,17,1915-einwohner-227-022,Gull,Sus. Rosa,Arbeitslehrerin,Hallwylstrasse,27,Kreis 4,,227,1,
+1915,18,1915-berufe-882-079,Rentschler & Co.,,Vegetabilien,Konradstrasse,12/14,Kreis 5,1,882,1,"Blitz = Telephon, richtig gesetzt"
+1915,19,1915-einwohner-195-085,Gamper,Rob,Commis,Sihlfeldstrasse,10,Kreis 3,,195,1,
+1915,20,1915-einwohner-195-104,Gams,Helmuth,stud. nat.,Theaterstrasse,12,Kreis 1,,195,1,
