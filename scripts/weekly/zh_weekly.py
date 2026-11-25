@@ -39,6 +39,7 @@ PER_WEEK = 10
 YEARS: tuple[int, int] | None = None            # --years 1900-1920: nur diese Jahrgänge, ohne Wochenbudget
 UA = {"User-Agent": "adressbuecher-zuerich (Universitaet Bern, DH)"}
 TZ = dt.timezone(dt.timedelta(hours=1))         # MEZ; die Woche zählt nach Schweizer Datum
+OTHERS = "run_qwen.py|be_weekly.py"             # solange einer davon läuft, wartet Zürich
 
 
 def log(msg: str) -> None:
@@ -60,8 +61,9 @@ def save_state(st: dict) -> None:
 
 
 def busy() -> bool:
-    """Läuft gerade ein anderer Lesedurchgang auf dem GPU-Dienst?"""
-    r = subprocess.run(["pgrep", "-f", "run_qwen.py"], capture_output=True, text=True)
+    """Läuft gerade ein anderer Lesedurchgang auf dem GPU-Dienst, oder liest der Berner Lauf
+    (adressbuecher-bern/scripts/weekly/be_weekly.py) gerade einen Band?"""
+    r = subprocess.run(["pgrep", "-f", OTHERS], capture_output=True, text=True)
     return bool(r.stdout.strip())
 
 
