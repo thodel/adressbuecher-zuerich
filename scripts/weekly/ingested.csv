@@ -8,4 +8,4 @@ year,date,commit,entries,berufe,sample_correct,sample_n,note
 1910,2026-11-23,582d6a8,58340,16026,18,20,"Einwohner S. 37–602, Berufe S. 613–773; 17 Seiten nicht sauber beendet; Vernetzte Schweiz 02e2ecd, 80/81/82 am 23.11.2026 nachgeholt"
 1911,2026-11-24,c3545ec,60524,16597,19,20,"Einwohner S. 37–625, Berufe S. 637–808; 17 Seiten nicht sauber beendet; Vernetzte Schweiz bbf2771, 80/81/82 am 24.11.2026"
 1913,2026-11-24,8396b7b,63302,16737,16,20,"Einwohner S. 33–640, Berufe S. 649–832; 7 Seiten nicht sauber beendet; Stichprobe genau an der Schwelle (80 %); Vernetzte Schweiz a391e9d, 80/81/82 am 24./25.11.2026"
-1915,2026-11-25,eb5e220,66357,19306,16,20,"Einwohner S. 33–674, Berufe S. 687–908; 15 Seiten nicht sauber beendet; Stichprobe genau an der Schwelle (80 %); ab 1915 nicht nach Vernetzte Schweiz (Zeitfenster bis 1914); 80/81/82 gegen VS a391e9d im selben Commit"
+1915,2026-11-25,90174f8,66357,19306,16,20,"Einwohner S. 33–674, Berufe S. 687–908; 15 Seiten nicht sauber beendet; Stichprobe genau an der Schwelle (80 %); ab 1915 nicht nach Vernetzte Schweiz (Zeitfenster bis 1914); 80/81/82 gegen VS a391e9d im selben Commit"
