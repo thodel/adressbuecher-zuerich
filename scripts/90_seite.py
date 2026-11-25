@@ -39,7 +39,8 @@ REVIEW = Path("data/review/flags.csv")
 TELEFON = Path("web/telefon.csv")  # aus scripts/80_telefon.py
 IIIF_BASE = "https://zop.zb.uzh.ch/publiciiif/iiif/2/"
 REPO_URL = "https://github.com/thodel/adressbuecher-zuerich"
-VOLUMES = {"1914": "Adressbuch der Stadt Zürich 1914",  # zuerst: Standardband der Seite
+DEFAULT_VOLUME = "1914"  # Standardband der Seite (im Menü vorgewählt)
+VOLUMES = {"1914": "Adressbuch der Stadt Zürich 1914",  # Reihenfolge hier egal: das Menü ordnet nach Jahr (vol_options)
            "1945": "Adressbuch der Stadt Zürich 1945", "1940": "Adressbuch der Stadt Zürich 1940", "1935": "Adressbuch der Stadt Zürich 1935", "1930": "Adressbuch der Stadt Zürich 1930", "1925": "Adressbuch der Stadt Zürich 1925", "1922": "Adressbuch der Stadt Zürich 1922", "1920": "Adressbuch der Stadt Zürich 1920",
            "1913": "Adressbuch der Stadt Zürich 1913", "1911": "Adressbuch der Stadt Zürich 1911", "1910": "Adressbuch der Stadt Zürich 1910", "1909": "Adressbuch der Stadt Zürich 1909", "1907": "Adressbuch der Stadt Zürich 1907", "1904": "Adressbuch der Stadt Zürich 1904", "1903": "Adressbuch der Stadt Zürich 1903", "1902": "Adressbuch der Stadt Zürich 1902", "1901": "Adressbuch der Stadt Zürich 1901", "1900": "Adressbuch der Stadt Zürich 1900",
            "1885": "Adressbuch Zürich 1885", "1875": "Adressbuch Zürich 1875",
@@ -145,6 +146,15 @@ def load_other() -> dict[str, str]:
 
 OTHER = load_other()  # 81_baende.py
 AUTH = load_simple("web/normdaten.csv", ("tier", "label", "life", "hls_id", "qid", "gnd", "field", "note"))  # 82_normdaten.py
+
+
+def vol_options(volumes, default: str) -> str:
+    """Die <option> des Bandmenüs: neuester Band zuerst, nach Jahr; der Standardband ist vorgewählt, nicht vorangestellt.
+
+    Bis 25.11.2026 stand das Menü von Hand im HTML, 1914 als Standardband vor 1945."""
+    vs = sorted(volumes, key=lambda v: int(v[:4]), reverse=True)
+    return "".join(f'<option value="{v}"{" selected" if v == default else ""}>{v}</option>' for v in vs) \
+        + '<option value="">alle Bände (gross)</option>'
 
 
 def lv95(lat: float, lon: float) -> tuple[int, int]:
@@ -344,7 +354,7 @@ __CITYBAR__
 </section>
 <div class="toolbar">
   <div class="tabs" role="tablist" id="tabs"></div>
-  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1945">1945</option><option value="1940">1940</option><option value="1935">1935</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1920">1920</option><option value="1913">1913</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1907">1907</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände (gross)</option></select>
+  <select id="vol" aria-label="Band">__VOLOPTS__</select>
   <select id="area" aria-label="Gebiet"><option value="">alle Gebiete</option></select>
   <select id="conf" aria-label="Konfidenz"><option value="">alle Konfidenzen</option><option value="high">high</option><option value="medium">medium</option></select>
   <select id="qa" aria-label="Hinweis"><option value="">alle Hinweise</option><option value="-">ohne Hinweis</option></select>
@@ -632,6 +642,7 @@ def main() -> None:
             .replace("__CITYNAV__", site_nav.city_nav("Zürich 1859–1945", REPO_URL, "entries"))
             .replace("__NAVCSS__", site_nav.CSS).replace("__FSPANEL__", site_nav.search_panel())
             .replace("__FSJS__", site_nav.FIELD_SEARCH_JS).replace("__FSTX__", json.dumps(site_nav.fs_texts(), ensure_ascii=False))
+            .replace("__VOLOPTS__", vol_options(VOLUMES, DEFAULT_VOLUME))
             .replace("__META__", json.dumps(meta, ensure_ascii=False))
             .replace("__LABELS__", json.dumps(LABELS, ensure_ascii=False))
             .replace("__QA__", json.dumps(QA, ensure_ascii=False))
