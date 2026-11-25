@@ -103,7 +103,7 @@ def norm_street(s: str) -> str:
     return s[:1].upper() + s[1:]
 
 
-KREIS_VOLS = {"1900", "1901", "1902", "1903", "1904", "1907", "1909", "1910", "1911", "1913", "1914", "1915", "1920", "1922", "1925", "1930", "1935", "1940", "1945"}  # Bände mit Stadtkreis vor der Strasse
+KREIS_VOLS = {"1900", "1901", "1902", "1903", "1904", "1907", "1909", "1910", "1911", "1913", "1914", "1915", "1916", "1920", "1922", "1925", "1930", "1935", "1940", "1945"}  # Bände mit Stadtkreis vor der Strasse
 
 def area(r: dict) -> str:
     """Gebiet des Eintrags aus Band und gedrucktem Text (siehe oben); leer, wenn nichts dasteht."""

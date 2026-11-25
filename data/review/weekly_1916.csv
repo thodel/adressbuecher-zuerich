@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1916,1,1916-einwohner-093-023,Bollinger,Herm. Gottfr,V. D. M.,Beckenhofstrasse,12,Kreis 6,,93,1,
+1916,2,1916-einwohner-034-076,Äbersold,Maria Margar,Giletmacherin,Müllerstrasse,34,Kreis 4,,34,1,
+1916,3,1916-einwohner-137-015,Dietliker,Emilie,Part.,Birmensdorferstr,187,Kreis 3,,137,1,"«geb. Stutz» steht nur im Text, kein eigenes Feld"
+1916,4,1916-einwohner-153-019,Eisenegger-Gemperle,Herm,Stadtbauamtsarbeiter,Birmensdorferstrasse,201,Kreis 3,,153,1,
+1916,5,1916-einwohner-271-020,Hornauer-Hess,Joh. Friedr,Schreiner,Birchstrasse,16,Kreis 6,,271,1,
+1916,6,1916-einwohner-249-027,Heine-Meier,Alb,Coiffeur,Dufourstrasse,72,Kreis 8,,249,1,
+1916,7,1916-einwohner-270-032,Höpner,Claudine Fanny,Lehrerin,Talstrasse,20,Kreis 1,,270,0,Familienname «Höpner» statt «Höpfner»
+1916,8,1916-einwohner-133-079,Denzler,Joh,Lokomotivführer S.B.B.,Dienerstr,75,Kreis 4,,133,1,
+1916,9,1916-einwohner-400-013,Michel-Amberger,Luise K. D,Pension Florhof,Florhofgasse,4,Kreis 1,1,400,1,phone_flag steht auf dem Zeichen des Gewerbe-Verbands (kein Telefon gedruckt); wie 1915 nicht als Fehler gezählt
+1916,10,1916-einwohner-139-085,Dombon-Richard,Jean M,Färber,Habsburgstr,30,Kreis 6,,139,1,
+1916,11,1916-einwohner-196-084,Gehringer-Strupler,H,"Hottinger Bazar, Kolonialwaren und Delikatessen, Salzwage",Klosbachstr,104,Kreis 7,1,196,1,phone_flag steht auf dem Zeichen des Gewerbe-Verbands; wie 1915 nicht als Fehler gezählt
+1916,12,1916-einwohner-130-061,Dändliker,Aline,Seidenweberin,Seestrasse,406,Kreis 2,,130,1,
+1916,13,1916-berufe-801-058,Krauss,"E., vorm. Wilh. Krauss",,Stampfenbachstrasse,46 u. 48,Kreis 6,1,801,0,"Vorname mit Firmenzusatz «E., vorm. Wilh. Krauss» statt «E.»; Telefonzeichen am Zeilenanfang im Ausschnitt nicht sichtbar"
+1916,14,1916-einwohner-080-086,Binder,Anna,Verkäuferin,Bergstrasse,158,Kreis 7,,80,1,
+1916,15,1916-einwohner-226-016,Gutknecht,Sus,Verkäuferin,Elisabethenstrasse,3,Kreis 4,,226,1,"im Text «Rückstuhl», gedruckt «Ruckstuhl»; nur im Text, kein eigenes Feld"
+1916,16,1916-einwohner-616-046,Wegmann,Hedwig,Bureaulistin,Freigutstrasse,24,Kreis 2,,616,1,
+1916,17,1916-berufe-783-077,Kull,Fritz,Möbelhandlungen,Zeughausstr,23,Kreis 4,,783,1,
+1916,18,1916-einwohner-170-063,Fischer,Klara,Part.,Drahtzugstrasse,17,Kreis 7,,170,1,
+1916,19,1916-einwohner-535-020,Seitz,Leon Herm,Coiffeur p. Dames,Alfred Escherstrasse,4,Kreis 2,,535,0,"Familienname «Seitz» statt «Seilaz» (vom Kopfeintrag «Seilaz, Léon» geerbt)"
+1916,20,1916-einwohner-317-098,Klein,Lidus,Violonistin,Apollostrasse,9,Kreis 7,,317,1,
