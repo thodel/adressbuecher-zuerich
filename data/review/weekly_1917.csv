@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1917,1,1917-einwohner-321-090,Koller,Kastor Heinr,Handlanger,Feldstrasse,130,Kreis 4,,321,1,
+1917,2,1917-einwohner-117-090,Cavadini,Wilh,Bauunternehmer u. Wirt,Seefeldstr,177,Kreis 8,,117,1,
+1917,3,1917-einwohner-216-073,Guck,Wilhelm Fr,"Grundstücks-Börse, Geschäfts-Verkaufs-Börse, Verlag der „Grundstücks-Börse“ und Liegenschaften-Vermittlungsgeschäft",Bahnhofstrasse,40,Kreis 1,1,216,1,Zeichen am Zeilenanfang ist das des Gewerbe-Verbands (phone_flag wie 1916 nicht gezählt)
+1917,4,1917-einwohner-236-103,Hatt,Gottl,Kaminfegermeister,Moosstrasse,7,Kreis 2,1,236,1,
+1917,5,1917-berufe-817-056,Hafner,Charles,Rechtsanwalt,Rennweg,,Kreis 1,,817,1,Beruf aus der Rubrik «Rechtsanwälte»
+1917,6,1917-einwohner-046-006,Bader,,Stahlspänefabrik u. Fabrik chemisch-technischer Produkte,Bellerivestrasse,5,Kreis 8,1,46,0,Firma «Bader & Laengin»: Teilhaber «Laengin» als Allianzname statt Firmenname «Bader & Laengin»; Zeichen am Zeilenanfang ist das des Gewerbe-Verbands
+1917,7,1917-berufe-710-059,Davidsohn,G,,Bertastr,31,Kreis 3,,710,1,
+1917,8,1917-einwohner-220-094,Gut,Mina,Part.,Sonneggstrasse,61,Kreis 6,,220,1,
+1917,9,1917-einwohner-173-120,Frei,Luise,,Neptunstrasse,41,Kreis 7,,173,1,"«Part.» im Zivilstand statt im Beruf (Regel von convert.py, wie in den anderen Bänden)"
+1917,10,1917-einwohner-162-061,Ferienheim Enge,,,Grütlistrasse,46,Kreis 2,,162,1,
+1917,11,1917-einwohner-632-033,Wettstein,Reg. Paulina,,Rotachstrasse,9,Kreis 3,,632,1,"«geb. Kägi, Part.» im Zivilstand (Regel von convert.py)"
+1917,12,1917-berufe-717-004,Bethge,Maria,,Turnerstr,27,Kreis 6,,717,1,
+1917,13,1917-einwohner-150-053,Endriss,Friedr,Bäckermeister,Werdstrasse,60,Kreis 4,1,150,1,Zeichen am Zeilenanfang ist das des Gewerbe-Verbands (phone_flag nicht gezählt)
+1917,14,1917-einwohner-457-042,Rebsamen,A,"Nähmaschinenfabrik, Filiale Zürich",Talacker,48,Kreis 1,1,457,1,Zeichen am Zeilenanfang ist das des Gewerbe-Verbands (phone_flag nicht gezählt)
+1917,15,1917-einwohner-181-034,Fröhlich,Jak,Geometer,Feldeggstrasse,35,Kreis 8,,181,1,
+1917,16,1917-einwohner-101-003,Bruhne,Leonore,Kindergärtnerin,Badenerstrasse,285,Kreis 3,,101,1,
+1917,17,1917-einwohner-480-024,Ruess,Jos,Buchhändler,Konradstrasse,25,Kreis 5,,480,1,
+1917,18,1917-einwohner-616-109,Weber,Marg,Part.,Gasometerstr,36,Kreis 5,,616,1,
+1917,19,1917-einwohner-159-069,Fay,Berta,,Martastr,120,Kreis 3,,159,0,"Beruf «Spetterin» mit «geb. Bachmann» im Zivilstand, Beruf leer"
+1917,20,1917-einwohner-591-057,Trudel,Emil,Rohseide,Seefeldstrasse,152,Kreis 8,1,591,1,"Wohnadresse 8 Seefeldstrasse 152 statt Geschäft 1 Maneggplatz 1, richtig; Zeichen = Gewerbe-Verband"
