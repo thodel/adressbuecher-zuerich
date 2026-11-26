@@ -56,7 +56,7 @@ OLD = {"Z": "Zürich", "Zürich": "Zürich", "A": "Aussersihl", "Aussersihl": "A
        "O": "Oberstrass", "Oberstr": "Oberstrass", "Oberstrass": "Oberstrass", "R": "Riesbach", "Riesb": "Riesbach",
        "Riesbach": "Riesbach", "U": "Unterstrass", "Unterstr": "Unterstrass", "Unterstrass": "Unterstrass",
        "W": "Wiedikon", "Wiedikon": "Wiedikon"}
-KREIS = {"1900": r"I{1,3}|IV|V", "1901": r"I{1,3}|IV|V", "1902": r"I{1,3}|IV|V", "1903": r"I{1,3}|IV|V", "1904": r"I{1,3}|IV|V", "1907": r"I{1,3}|IV|V", "1909": r"I{1,3}|IV|V", "1910": r"I{1,3}|IV|V", "1911": r"I{1,3}|IV|V", "1913": r"I{1,3}|IV|V", "1914": r"[1-8]", "1915": r"[1-8]", "1916": r"[1-8]", "1917": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
+KREIS = {"1900": r"I{1,3}|IV|V", "1901": r"I{1,3}|IV|V", "1902": r"I{1,3}|IV|V", "1903": r"I{1,3}|IV|V", "1904": r"I{1,3}|IV|V", "1907": r"I{1,3}|IV|V", "1909": r"I{1,3}|IV|V", "1910": r"I{1,3}|IV|V", "1911": r"I{1,3}|IV|V", "1913": r"I{1,3}|IV|V", "1914": r"[1-8]", "1915": r"[1-8]", "1916": r"[1-8]", "1917": r"[1-8]", "1918": r"[1-8]", "1920": r"[1-8]", "1922": r"[1-8]", "1925": r"[1-8]", "1930": r"[1-8]",
          "1935": r"1[01]|[1-9]", "1940": r"1[01]|[1-9]",
          "1945": r"1[01]|[1-9]"}  # Kreise 1–8 bis 1933; mit der Eingemeindung 1934 Kreise 1–11
 # Kreis vor der Strasse, je nach Band (für clean_street): bis 1930 wie bisher, ab 1935 auch 9–11
@@ -102,6 +102,7 @@ SECTIONS = {
     "1915": [("einwohner", 33, 674), ("berufe", 687, 908)],
     "1916": [("einwohner", 33, 659), ("berufe", 669, 862)],
     "1917": [("einwohner", 25, 664), ("berufe", 673, 882)],
+    "1918": [("einwohner", 31, 700), ("berufe", 709, 922)],
     # nach dem Zeitfenster von «Vernetzte Schweiz»; Grenzen aus den Kolumnentiteln, von Hand geprüft
     "1920": [("einwohner", 31, 716), ("berufe", 717, 953)],
     "1922": [("einwohner", 23, 726), ("berufe", 727, 956)],
