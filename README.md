@@ -185,13 +185,19 @@ ein Telefonnetz, `phone_flag` bleibt darum vor 1880 leer.
 
 ## Seite
 
-<https://thodel.github.io/adressbuecher-zuerich/>: alle Einträge durchsuchbar, mit Filtern nach Band, Gebiet
-(Kreis bzw. alte Gemeinde), Strasse, Konfidenz, Hinweis und Telefon, Flagging je Zeile wie bei Aarau, Basel,
-Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten).
+<https://thodel.github.io/adressbuecher-zuerich/>: Suche über alle Bände (Liste, Karte, Facetten Band, Teil, Gebiet,
+Strasse und Beruf, Zeitstrahl) mit einer Seite je Eintrag (Seitenbild, Telefonbuch, Normdaten, andere Bände).
+`scripts/89_suche.py` mit dem gemeinsamen `scripts/site_search.py`; der Index liegt in `s/`.
 
-- `python scripts/90_seite.py --out _site` baut sie lokal (`index.html` und je Band und Teil
-  `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf lädt); GitHub Actions (`.github/workflows/pages.yml`)
-  baut und veröffentlicht sie bei jedem Push.
+Korrekturmodus: <https://thodel.github.io/adressbuecher-zuerich/korrektur/>, alle Einträge je Band mit Filtern nach
+Band, Gebiet (Kreis bzw. alte Gemeinde), Strasse, Konfidenz, Hinweis und Telefon, Flagging je Zeile wie bei Aarau,
+Basel, Baden und Bern. Ein Klick auf die Seite zeigt das Seitenbild (siehe unten). Alte Links mit `?tab=`/`?vol=`
+leiten von der Startseite dorthin weiter.
+
+- Alles wie auf Pages bauen: `python scripts/90_seite.py --out _site/korrektur`, dann
+  `python scripts/92_karte.py --out _site/karte.html` und `python scripts/89_suche.py --out _site`.
+  90_seite.py schreibt `index.html` und je Band und Teil `data/<Band>-<Teil>.json`, die die Seite erst bei Bedarf
+  lädt; GitHub Actions (`.github/workflows/pages.yml`) baut und veröffentlicht alles bei jedem Push.
 - Karte: `python scripts/92_karte.py --out _site/karte.html` (Kreise je Strasse).
 - `scripts/10_geo.py`: das Gebiet je Eintrag (1859 Grosse/Kleine Stadt, 1867–1885 alte Gemeinde, 1900–1945
   Kreis) und die Strassenpunkte aus OpenStreetMap, nur wenn sie im Quartier des Gebiets liegen
