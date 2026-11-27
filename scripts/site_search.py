@@ -21,7 +21,7 @@ Geschrieben wird nach `out/`:
 
 Ein Eintrag (dict) hat mindestens `id`, `vol`, `year`, `part`; dazu nach Bedarf `name`, `forename`, `alliance`,
 `occupation`, `street`, `no`, `area`, `origin`, `title`, `text` (gelesene Zeile), `page`, `page_url`, `lat`/`lon`
-(Strasse), `place` (Ort für die Karte, wenn keine Strasse da ist, z. B. die Gemeinde), `fields` (weitere Spalten als [[Spalte, Wert], …], beschriftet über `labels`), `links`
+(Strasse), `point` ([lat, lon] des Hauses, für die Karte der Eintragsseite), `place` (Ort für die Karte, wenn keine Strasse da ist, z. B. die Gemeinde), `fields` (weitere Spalten als [[Spalte, Wert], …], beschriftet über `labels`), `links`
 ([[Art, Text, URL, Notiz], …]; Art tel, vs, wd, hls, mg, img, ext), `related` ([[Band, Stufe, entry_id], …]).
 Helfer für die gemeinsamen Zellformate der Seiten (Telefon, Normdaten, andere Bände): `std_links()`.
 """
@@ -138,7 +138,7 @@ def build(out: Path, *, city: dict, records: list[dict], labels: dict[str, str] 
     recs = [r for r in records if r.get("id")]
     seen = set()
     recs = [r for r in recs if not (r["id"] in seen or seen.add(r["id"]))]
-    recs.sort(key=lambda r: (fold(r.get("name", "")).strip(" -—*.,") or "~", fold(r.get("forename", "")), r["year"], r["id"]))
+    recs.sort(key=lambda r: (re.sub(r"^[^a-z]+", "", fold(r.get("name", ""))) or "~", fold(r.get("forename", "")), r["year"], r["id"]))
     n = len(recs)
 
     vols = sorted({(r["year"], r["vol"]) for r in recs})
@@ -217,7 +217,8 @@ def build(out: Path, *, city: dict, records: list[dict], labels: dict[str, str] 
                          r.get("alliance", ""), r.get("occupation", ""), r.get("street", ""), r.get("no", ""),
                          r.get("area", ""), r.get("page", ""), r.get("text", ""), r.get("page_url", ""),
                          [[k, v] for k, v in r.get("fields", []) if v not in ("", None)], r.get("links", []),
-                         r.get("related", []), cs[i], r.get("title", ""), r.get("origin", "")])
+                         r.get("related", []), cs[i], r.get("title", ""), r.get("origin", ""),
+                         [round(float(x), 6) for x in r["point"]] if r.get("point") else None])
             ids[fnv(r["id"])][r["id"]] = i
         _gz(s / "r" / f"{b // block}.json.gz", rows)
     for sh, obj in ids.items():
@@ -545,7 +546,7 @@ function rowName(r) { return [r[3], r[5] && r[5] !== r[3] ? r[5] : ''].filter(Bo
 function addr(r) { return [r[7], r[8]].filter(Boolean).join(' '); }
 function korrUrl(r) {
   const v = M.volumes[r[1]], p = M.parts[r[2]];
-  return (M.city.korr || 'korrektur/').replace('{id}', encodeURIComponent(r[0])).replace('{vol}', encodeURIComponent(v.k)).replace('{part}', encodeURIComponent(p.k));
+  return (M.city.korr || 'korrektur/').replace('{id}', encodeURIComponent(r[0].split('#')[0])).replace('{vol}', encodeURIComponent(v.k)).replace('{part}', encodeURIComponent(p.k));
 }
 function lv95(lat, lon) {
   const p = (lat * 3600 - 169028.66) / 10000, l = (lon * 3600 - 26782.5) / 10000;
@@ -710,7 +711,7 @@ async function renderList() {
   }).join('') + '</ol>' + pager;
 }
 function renderMap() {
-  if (!leafletReady()) return;
+  if (!leafletReady() || !M.streets.some(x => x[1] != null)) return;
   if (!map) {
     map = baseMap('map', { preferCanvas: true });
     map.setView(M.city.center || [46.8, 8.2], 14);
@@ -769,6 +770,7 @@ function searchPage() {
       <div class="res"><div id="list"><p class="loading">${esc(T.loading)}</p></div><div class="mapbox"><div id="map"></div><p class="mapnote" id="mapnote"></p></div></div>
     </section></div>`;
   if (matchMedia('(max-width: 900px)').matches) $('fbox').open = false;
+  if (!M.streets.some(x => x[1] != null)) { document.querySelector('.res').classList.add('nomap'); document.querySelector('.mapbox').hidden = true; }
   readUrl();
   $('q').value = st.q; $('fn').value = st.n; $('fv').value = st.vn; $('fb').value = st.b; $('fs').value = st.s;
   if (st.n || st.vn || st.b || st.s) $('more').open = true;
@@ -810,7 +812,8 @@ async function entryPage() {
   const hit = id ? await byId(id) : null;
   if (!hit) { app.innerHTML = `<p class="crumbs"><a href="./">${esc(T.e_back)}</a></p><h1>${esc(T.e_notfound)}</h1><p>${esc(id)}</p>`; return; }
   const [ix, r] = hit;
-  const v = M.volumes[r[1]], p = M.parts[r[2]], s = r[16] ? M.streets[r[16] - 1] : null;
+  const v = M.volumes[r[1]], p = M.parts[r[2]], s0 = r[16] ? M.streets[r[16] - 1] : null;
+  const s = r[19] ? [s0 ? s0[0] : addr(r), r[19][0], r[19][1]] : s0;  // Haus vor Strasse
   const name = rowName(r) || '—';
   document.title = `${name}${r[4] ? ', ' + r[4] : ''} · ${v.year} · ${M.city.name}`;
   const L_ = M.labels || {};
@@ -822,7 +825,7 @@ async function entryPage() {
   const pageHtml = r[12] ? `<a href="${esc(r[12])}" target="_blank" rel="noopener">${esc(T.e_page)} ↗</a>` : '';
   const zeit = s && s[1] != null ? (() => { const [e, n] = lv95(s[1], s[2]); return `https://map.geo.admin.ch/#/map?lang=${M.city.lang}&center=${e},${n}&z=11&crosshair=marker&bgLayer=void&layers=ch.swisstopo.zeitreihen@year=${v.year}`; })() : '';
   const issue = `${M.city.repo}/issues/new?title=${encodeURIComponent('Flag ' + r[0])}&labels=review&body=${encodeURIComponent(`ID: ${r[0]}\nBand ${v.label}, ${T.e_pdf} ${r[10]}\n\n${T.e_read}:\n${r[11]}\n\nProblem:\n`)}`;
-  const streetQ = r[7] ? `./?str=${encodeURIComponent(s ? s[0] : r[7])}` : '';
+  const streetQ = r[7] ? `./?str=${encodeURIComponent(s0 ? s0[0] : r[7])}` : '';
   app.innerHTML = `<p class="crumbs"><a href="./" id="back">${esc(T.e_back)}</a></p>
   <section class="hero" style="padding-top:12px"><p class="kicker">${esc(v.label)} · ${esc(p.label)}${r[10] ? ` · ${esc(T.e_pdf)} ${esc(r[10])}` : ''}</p>
     <h1>${esc(name)}${r[4] ? `<span style="font-weight:400">, ${esc(r[4])}</span>` : ''}</h1>
@@ -836,7 +839,7 @@ async function entryPage() {
   </div><div>
     <div class="card"><h2>${esc(T.e_map)}</h2>${s && s[1] != null ? '<div id="emap"></div>' : `<p class="muted">${esc(T.e_nogeo)}</p>`}
       <ul class="links" style="margin-top:8px">${zeit ? `<li><a href="${esc(zeit)}" target="_blank" rel="noopener">${esc(T.e_zeit)} ${esc(v.year)} ↗</a></li>` : ''}
-      ${streetQ ? `<li><a href="${esc(streetQ)}">${esc(T.e_street_all)}: ${esc(s ? s[0] : r[7])}</a></li>` : ''}
+      ${streetQ ? `<li><a href="${esc(streetQ)}">${esc(T.e_street_all)}: ${esc(s0 ? s0[0] : r[7])}</a></li>` : ''}
       ${r[3] ? `<li><a href="./?name=${encodeURIComponent(r[3])}${r[4] ? '&vorname=' + encodeURIComponent(r[4].split(/[\s,]/)[0]) : ''}">${esc(T.e_name_all)}: ${esc(r[3])}${r[4] ? ' ' + esc(r[4].split(/[\s,]/)[0]) : ''}</a></li>` : ''}</ul></div>
     ${linkHtml ? `<div class="card tel"><h2>${esc(T.e_links)}</h2>${linkHtml}</div>` : ''}
     <div class="card korr"><h2>${esc(T.e_korr)}</h2><p style="font-size:.92rem">${esc(T.e_korr_p)}</p>
