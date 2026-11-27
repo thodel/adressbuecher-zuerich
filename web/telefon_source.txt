@@ -1,2 +1,2 @@
-web/telefon.csv aus thodel/vernetzte-schweiz @ 10399fc3bcf1357ab5eaa7a8cf8945fc2b1730c4
+web/telefon.csv aus thodel/vernetzte-schweiz @ 40e4237c554a623bce3e05770f9b3722e70bc229
 (data/norm/ptt_entries.csv.gz, links/ptt_ab.csv.gz, links/entities.csv.gz) mit scripts/80_telefon.py
