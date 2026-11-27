@@ -1,0 +1,21 @@
+seed,n,entry_id,surname,forename,occupation_raw,street_raw,building_no,district,phone_flag,iiif_page,all_fields_correct,note
+1919,1,1919-einwohner-473-057,Piffaretti,Maria,Spezereihandlung,Fröhlichstrasse,42,Kreis 8,,473,1,
+1919,2,1919-einwohner-160-011,Eichenberger,Marg,,Germaniastrasse,64,Kreis 6,,160,1,
+1919,3,1919-einwohner-565-002,Schwyzer,Marie,Telephonistin,Cramerstr,12,Kreis 4,,565,1,
+1919,4,1919-einwohner-157-027,Egli,Joh. Kasp,Tagl.,Geissbergfussweg,6,Kreis 6,,157,1,
+1919,5,1919-einwohner-676-050,Wipfli,Jos,Kernmacher,Rötelseig,6,Kreis 6,,676,0,«Rötelseig» für «Rötelsteig»
+1919,6,1919-einwohner-270-026,Hess,Emil,Buchbinder,Sandstrasse,8,Kreis 3,,270,1,
+1919,7,1919-einwohner-218-102,Goiser,Ad,Coiffeurgeschäft,Seefeldstrasse,52,Kreis 8,,218,1,
+1919,8,1919-berufe-898-047,Carjell,Max,,Hirschenplatz,1,Kreis 1,,898,0,"Hausnummer 1 gesetzt, gedruckt nur Kreis 1 «Hirschenplatz» ohne Nummer"
+1919,9,1919-einwohner-388-080,Lutz,Emilie,Seidenhasplerin,Badenerstrasse,8,Kreis 4,,388,1,
+1919,10,1919-einwohner-682-077,Wuhrmann,Ad. Gust,Fräser,Maschinenstr,53,Kreis 5,,682,1,
+1919,11,1919-berufe-904-039,Schönenberger,Karl,Generalagentur,Talstr,20,Kreis 1,1,904,0,Firmeneintrag «Badische Assekuranz-Gesellschaft in Mannheim»: Generalagent Karl Schönenberger als Familienname; phone_flag auf dem Gewerbe-Verbands-Zeichen
+1919,12,1919-berufe-877-111,Levy,Leon,,Badenerstr,21,Kreis 4,,877,1,
+1919,13,1919-einwohner-196-106,Fröschle,Theod,Kaufmann,Bodmerstrasse,10,Kreis 2,,196,1,
+1919,14,1919-einwohner-322-048,Keck,Georg,Schuhmacher,Niederdorfstrasse,24,Kreis 1,,322,1,"text «-Georg» ohne Gedankenstrich, Felder richtig"
+1919,15,1919-einwohner-525-073,Scherer,Walter,Monteur,Moritzstrasse,15,Kreis 6,,525,1,"text «— Candrea» ohne Bindestrich, Felder richtig"
+1919,16,1919-einwohner-283-057,Holzmann,Ad,Musikalienhändler,Mühlebachstrasse,84,Kreis 8,,283,1,"«alt Musikalienhändler»: «alt» im Zivilstand, Beruf ohne «alt» (Information erhalten, als richtig gezählt)"
+1919,17,1919-einwohner-416-009,Meier,Rob,Installateur,Baurstrasse,24,Kreis 8,,416,0,"gedruckt «— -Zingg», Allianzname «Wullschleger» (vom falschen Eintrag)"
+1919,18,1919-einwohner-339-104,Koch,Arrigo Arturo,Vertreter,Schützengasse,1,Kreis 1,,339,1,
+1919,19,1919-einwohner-534-053,Schmid,Ida,Part.,Badenerstrasse,5,Kreis 4,,534,1,
+1919,20,1919-einwohner-344-068,König,Jul,Commis,Rütistrasse,49,Kreis 7,,344,1,

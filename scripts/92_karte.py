@@ -32,7 +32,7 @@ CSV_DIR = Path("data/csv")
 GEO = Path("web/geo")
 TELEFON = Path("web/telefon.csv")
 REPO_URL = "https://github.com/thodel/adressbuecher-zuerich"
-VOLS = ["1859", "1867", "1875", "1885", "1900", "1901", "1902", "1903", "1904", "1907", "1909", "1910", "1911", "1913", "1914", "1915", "1916", "1917", "1918", "1920", "1922", "1925", "1930", "1935", "1940", "1945"]
+VOLS = ["1859", "1867", "1875", "1885", "1900", "1901", "1902", "1903", "1904", "1907", "1909", "1910", "1911", "1913", "1914", "1915", "1916", "1917", "1918", "1919", "1920", "1922", "1925", "1930", "1935", "1940", "1945"]
 
 
 def counts():
@@ -110,7 +110,7 @@ __CITYBAR__
   <p class="sub">Stand __DATE__ · Kreisfläche = Zahl der Einträge je Strasse. Lage: heutige Strassenmitte nach OpenStreetMap, nur wenn sie im Quartier des gedruckten Kreises bzw. der alten Gemeinde liegt; Hausnummern werden nicht verortet (1859 und in den Ausgemeinden alte Nummern). __UNPLACED__</p>
 </header>
 <div class="toolbar">
-  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1945">1945</option><option value="1940">1940</option><option value="1935">1935</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1920">1920</option><option value="1913">1913</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1907">1907</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände</option></select>
+  <select id="vol" aria-label="Band"><option value="1914">1914</option><option value="1945">1945</option><option value="1940">1940</option><option value="1935">1935</option><option value="1930">1930</option><option value="1925">1925</option><option value="1922">1922</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1920">1920</option><option value="1913">1913</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1907">1907</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option><option value="1900">1900</option><option value="1885">1885</option><option value="1875">1875</option><option value="1867">1867</option><option value="1859">1859</option><option value="">alle Bände</option></select>
   <select id="tab" aria-label="Verzeichnis"><option value="">Einwohner und Berufsregister</option><option value="e">Einwohner</option><option value="b">Berufsregister</option></select>
   <label><input type="checkbox" id="tel"> nur mit Telefon ☏</label>
   <input type="checkbox" id="showMuni" hidden>
