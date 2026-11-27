@@ -1,0 +1,21 @@
+n,entry_id,surname,forename,alliance_name,occupation_raw,street_raw,building_no,district,phone_flag,qa_flags,text,page,iiif_image
+1,1906-berufe-526-060,Schneider,Konr,,,Seefeldstr,153,Kreis V,,,"*Schneider, Konr., V Seefeldstr. 153.",526,https://zop.zb.uzh.ch/publiciiif/iiif/2/9d19ce84-a948-4f5b-bf26-ba08c80ee6b4
+2,1906-einwohner-061-089,Bergmann,Ferd,Mayer,Photograph,Kreuzplatz,4,Kreis V,,,"— Mayer, Ferd., Photograph, V Kreuzplatz 4.",61,https://zop.zb.uzh.ch/publiciiif/iiif/2/269564ca-588a-4627-ab34-a099313a6e00
+3,1906-berufe-560-051,Ramspeck,C,,Klaviervermietung und -Handel,ob. Mühleg,27,Kreis I,,,"Ramspeck, C., I ob. Mühleg. 27.",560,https://zop.zb.uzh.ch/publiciiif/iiif/2/faf76837-b3cb-46c2-a80c-161c39c6ab1f
+4,1906-einwohner-240-045,Klein,Arthur,,Musiker,Minervastrasse,29,Kreis V,,,"— Arthur, Musiker, V Minervastrasse 29.",240,https://zop.zb.uzh.ch/publiciiif/iiif/2/2a77105e-6eb4-467c-87dd-58d4fae711dc
+5,1906-einwohner-241-057,Klingler,Sal,,Briefträger,Ritterstrasse,10,Kreis V,,,"— Sal., Briefträger, V Ritterstrasse 10.",241,https://zop.zb.uzh.ch/publiciiif/iiif/2/dda1b611-d1cb-4b26-98da-dc3d4e1aabce
+6,1906-einwohner-137-026,Frei und Frey,Alb,,Part.,Kalkbreitestrasse,1,Kreis III,,,"— Alb., Part., III Kalkbreitestrasse 1.",137,https://zop.zb.uzh.ch/publiciiif/iiif/2/4da790f1-dffc-4881-a4d6-bf708edf845c
+7,1906-einwohner-315-101,Nägeli,Emil,Amberger,Kaufm.,Bellariastr,32,Kreis II,1,,"☎ - Amberger, Emil, Kaufm., II Bellariastr. 32.",315,https://zop.zb.uzh.ch/publiciiif/iiif/2/918e8b4d-6af0-4b40-9925-0161dd27005a
+8,1906-einwohner-160-020,Götz,Joh,Rüegg,Kaufmann,Neptunstrasse,57,Kreis V,,,"— -Rüegg, Joh., Kaufmann, V Neptunstrasse 57.",160,https://zop.zb.uzh.ch/publiciiif/iiif/2/5343cc66-67c6-4745-9240-8b4c025b2ac5
+9,1906-berufe-593-076,Wolffsbrück,Clementina,,Klavier,Brandschenkestrasse,47,Kreis II,,,"Wolffsbrück, Clementina, II Brandschenkestrasse 47. (Klavier.)",593,https://zop.zb.uzh.ch/publiciiif/iiif/2/5dde682b-e72e-4605-b8ae-bf49abd6dfe8
+10,1906-einwohner-145-087,Furrer,Marie,,Huppenmacherin,Glockengasse,16,Kreis I,,hyphen,"— Marie, geb. Schlosser, Huppenmacherin, I Glocken-gasse 16.",145,https://zop.zb.uzh.ch/publiciiif/iiif/2/0c269496-ecc5-412b-b18e-5feb4db0a3ed
+11,1906-einwohner-287-060,Meier,Frau,,"Milch-, Käse-, Butter- und Speisereigeschäft",Scheitergasse,5,Kreis I,,,"— Frau, Milch-, Käse-, Butter- und Speisereigeschäft, I Scheitergasse 5.",287,https://zop.zb.uzh.ch/publiciiif/iiif/2/ff9a0745-ba93-4229-8458-646d8c39d7f3
+12,1906-einwohner-334-066,Pignolet,Jul. Emil,Sacher,Buchhändler,Dienerstrasse,18,Kreis III,,,"Pignolet-Sacher, Jul. Emil, Buchhändler, III Dienerstrasse 18.",334,https://zop.zb.uzh.ch/publiciiif/iiif/2/35677181-d050-4e39-9357-2568c798183a
+13,1906-einwohner-216-096,Hurt,Joh,,Bankabwart,Bahnhofstrasse,42,Kreis I,,,"Hurt, Joh., Bankabwart, I Bahnhofstrasse 42.",216,https://zop.zb.uzh.ch/publiciiif/iiif/2/7153601f-32f3-4672-add0-5b8244dbfe73
+14,1906-berufe-634-021,Heinzler,Ed,,,Hardstr,240,Kreis III,,,"Heinzler, Ed., III Hardstr. 240.",634,https://zop.zb.uzh.ch/publiciiif/iiif/2/6babf0f9-dfb6-4109-b4d7-21bf63e40706
+15,1906-einwohner-192-110,Hengstler,M. Magdal,,,Haldelistrasse,5,Kreis V,,,"— M. Magdal., Wwe., V Haldelistrasse 5.",192,https://zop.zb.uzh.ch/publiciiif/iiif/2/49e4acda-753f-4cd7-add4-7518e56839f4
+16,1906-einwohner-111-037,Dreifuss,Moritz,,Kaufmann,Brandschenkestrasse,49,Kreis II,,,"— Moritz, Kaufmann, II Brandschenkestrasse 49.",111,https://zop.zb.uzh.ch/publiciiif/iiif/2/a4a429b7-c41e-4a1e-b833-3e0a9a283d64
+17,1906-berufe-632-130,Briemle,Jak,,,Luisenstr,12,Kreis III,,street_rare,"Briemle, Jak., III Luisenstr. 12.",632,https://zop.zb.uzh.ch/publiciiif/iiif/2/d24fcda0-48be-4a28-a85b-1d28f1013bd6
+18,1906-einwohner-345-024,Richner,Emil,,Handlanger,Kasernenstrasse,67,Kreis III,,,"— Emil, Handlanger, III Kasernenstrasse 67.",345,https://zop.zb.uzh.ch/publiciiif/iiif/2/24188ac9-226a-45c1-be9a-728d215fcdf3
+19,1906-einwohner-175-068,Hablützel,Konr,,Maschinist,Flühgasse,17,Kreis V,,,"— Konr., Maschinist, V Flühgasse 17.",175,https://zop.zb.uzh.ch/publiciiif/iiif/2/a4cbc6aa-721c-4cc8-8e53-3a21258c3310
+20,1906-einwohner-132-113,Fischer,Sus,,,Bergstrasse,16,Kreis V,,,"— Sus., geb. Wintsch, Part., V Bergstrasse 16.",132,https://zop.zb.uzh.ch/publiciiif/iiif/2/78374a45-d276-447f-b3b6-682c9699a0c5

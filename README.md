@@ -108,23 +108,38 @@ prüft Strasse, Hausnummer und Familienname.
 - **1902:** wie 1901 (Kreis I–V vor der Strasse, Antiqua, Berufsregister als II. Abteilung). Gelesen auf tei im
   Wochenlauf, Seiten über IIIF der ZB. S. 528 endet mit dem «Avis» der Redaktion, S. 529–536 sind Inserate und das
   Titelblatt der II. Abteilung; unter der Fusszeile von S. 653 stehen Verlagsinserate, die `convert.py` weglässt;
-  ab S. 654 Inserate. Das Zeichen am Zeilenanfang (vom Modell als § oder ☎ gelesen)
-  wird wie 1901 als Telefon gewertet (`phone_flag`); in den Seitenbildern von 1902 ist es aber das Zeichen der Mitglieder
-  des Gewerbe-Verbands Zürich (Fusszeile: «Die mit ‡ Bezeichneten …»), ein Telefonzeichen ist dort nicht zu sehen.
-  `phone_flag` ist für 1902 (und wohl auch 1901) darum unzuverlässig.
-- **1903:** wie 1900 (Kreis I–V vor der Strasse, Antiqua, kein Berufsregister im Band). Gelesen auf tei im Wochenlauf, Seiten über IIIF der ZB. Einwohner S. 33–457 (Spaltenseite 425 endet mit «Trey»); ab S. 458 das Häuserverzeichnis. Auch hier ist das Zeichen am Zeilenanfang das des Gewerbe-Verbands, `phone_flag` unzuverlässig.
-- **1904:** wie 1901–1903 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 33–469 (unten Inserat, S. 470 «Avis»), Berufsregister S. 479–605 (Spaltenseite 3 bis 129, «Zugjalousienfabrikation»). Das Zeichen am Zeilenanfang ist wieder das des Gewerbe-Verbands, `phone_flag` unzuverlässig. Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
-- **1907:** wie 1901–1904 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–526 (Spaltenseite 1 bis 490, «Zwipf»; darunter Inserat), Berufsregister S. 535–680 (Spaltenseite 3 bis 148, «Zuckerwarenfabrik»; ab S. 681 Inserate). Anders als 1901–1906 unterscheidet das Modell hier das Telefonzeichen (Blitz) vom Zeichen des Gewerbe-Verbands (Stern über v); `phone_flag` stimmte in der Stichprobe. 1905 und 1906 sind gelesen, aber noch nicht übernommen (Stichprobe unter 80 %). Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
+  ab S. 654 Inserate. Zum Zeichen am Zeilenanfang siehe «Telefon und Gewerbe-Verband» unten.
+- **1903:** wie 1900 (Kreis I–V vor der Strasse, Antiqua, kein Berufsregister im Band). Gelesen auf tei im Wochenlauf, Seiten über IIIF der ZB. Einwohner S. 33–457 (Spaltenseite 425 endet mit «Trey»); ab S. 458 das Häuserverzeichnis.
+- **1904:** wie 1901–1903 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 33–469 (unten Inserat, S. 470 «Avis»), Berufsregister S. 479–605 (Spaltenseite 3 bis 129, «Zugjalousienfabrikation»). Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
+- **1907:** wie 1901–1904 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–526 (Spaltenseite 1 bis 490, «Zwipf»; darunter Inserat), Berufsregister S. 535–680 (Spaltenseite 3 bis 148, «Zuckerwarenfabrik»; ab S. 681 Inserate). Telefon, Treffer im anderen Band und Normdaten folgen, sobald Vernetzte Schweiz den Band übernommen hat.
 - **1909:** wie 1907 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–562 (Spaltenseite 1 bis 526, «Zylberscher-Bähler»; darunter Inserat), Berufsregister S. 573–726 (Spaltenseite 3 bis 156, «Zuschneide-Schulen»; darunter Inserat). Telefon (Blitz) und Gewerbe-Verband (Stern über v) meist getrennt; auf Berufe-S. 661 las das Modell den Blitz als «*», dort fehlt `phone_flag`.
 - **1910:** wie 1909. Einwohner S. 37–602 (Spaltenseite 1 bis 566, «Zyman-Ostrowiecki»; darunter Inserat), Berufsregister S. 613–773 (Spaltenseite 3 bis 163, «Zuschneide-Schulen»; darunter Inserat).
 - **1911:** wie 1910 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 37–625 (Spaltenseite 1 bis 589, «Zytt»; darunter Inserat), Berufsregister S. 637–808 (Spaltenseite 3 bis 174, «Zuschneide-Schulen»; darunter Inserat).
 - **1913:** wie 1911 (Kreis I–V vor der Strasse, Antiqua). Einwohner S. 33–640 (Spaltenseite 1 bis 608, «Zytt»; darunter Inserat), Berufsregister S. 649–832 (Spaltenseite 3 bis 186, «Zuschneide-Schulen»; darunter Inserat). S. 641–648 sind Inseratseiten.
 - **1915:** wie 1914 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 33–674 (Spaltenseite 1 bis 634, «Zwinscher»; darunter Inserat), Berufsregister S. 687–908 (Spaltenseite 3 bis 196, «Zuschneide-Schulen»; dazwischen Inseratseiten). S. 675–686 sind Inseratseiten. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
-- **1916:** wie 1915 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 33–659 (Spaltenseite 1 bis 627, «Zwinscher-Tempel»; darunter Inserate), Berufsregister S. 669–862 (Spaltenseite 3 bis 196, «Zuschneide-Schulen»). S. 660–668 sind Inseratseiten. Das Zeichen am Zeilenanfang ist meist das des Gewerbe-Verbands (Telefonnummern stehen ausgeschrieben im Text); `phone_flag` ist darum wie 1902–1904 unzuverlässig. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
-- **1917:** wie 1916 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 25–664 (Spaltenseite 1 bis 640, «Zwink»; darunter Zierleiste), Berufsregister S. 673–882 (Spaltenseite 3 bis 212, «Zuschneide-Schulen»; darunter Inserat). S. 665–672 sind Inseratseiten; der Wochenlauf hatte das Berufsregister bis S. 888 gezählt, S. 883–886 sind Inserate, ab S. 887 beginnt das Häuserverzeichnis. Das Zeichen am Zeilenanfang ist meist das des Gewerbe-Verbands; `phone_flag` ist darum wie 1916 unzuverlässig. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
-- **1918:** wie 1917 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 31–700 (Spaltenseite 1 bis 668, «Zwink»; darunter Zierleiste), Berufsregister S. 709–922 (Spaltenseite 3 bis 216, «Zuschneide-Schulen»; darunter Zierleiste). S. 701–708 sind Inseratseiten. Das Zeichen am Zeilenanfang ist meist das des Gewerbe-Verbands; `phone_flag` ist darum wie 1916 und 1917 unzuverlässig. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
-- **1919:** wie 1918 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 33–700 (Spaltenseite 1 bis 668, «Zwink»; darunter Inserat), Berufsregister S. 709–926 (Spaltenseite 3 bis 220, «Zuschneide-Schulen»). S. 701–708 sind Inseratseiten, S. 927 Inserat. Das Zeichen am Zeilenanfang ist meist das des Gewerbe-Verbands; `phone_flag` ist darum wie 1916–1918 unzuverlässig. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
-- **1908** ist gelesen, aber nicht übernommen (Stichprobe 15 von 20).
+- **1916:** wie 1915 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 33–659 (Spaltenseite 1 bis 627, «Zwinscher-Tempel»; darunter Inserate), Berufsregister S. 669–862 (Spaltenseite 3 bis 196, «Zuschneide-Schulen»). S. 660–668 sind Inseratseiten. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
+- **1917:** wie 1916 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 25–664 (Spaltenseite 1 bis 640, «Zwink»; darunter Zierleiste), Berufsregister S. 673–882 (Spaltenseite 3 bis 212, «Zuschneide-Schulen»; darunter Inserat). S. 665–672 sind Inseratseiten; der Wochenlauf hatte das Berufsregister bis S. 888 gezählt, S. 883–886 sind Inserate, ab S. 887 beginnt das Häuserverzeichnis. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
+- **1918:** wie 1917 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 31–700 (Spaltenseite 1 bis 668, «Zwink»; darunter Zierleiste), Berufsregister S. 709–922 (Spaltenseite 3 bis 216, «Zuschneide-Schulen»; darunter Zierleiste). S. 701–708 sind Inseratseiten. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
+- **1919:** wie 1918 (Kreis 1–8 vor der Strasse, Antiqua). Einwohner S. 33–700 (Spaltenseite 1 bis 668, «Zwink»; darunter Inserat), Berufsregister S. 709–926 (Spaltenseite 3 bis 220, «Zuschneide-Schulen»). S. 701–708 sind Inseratseiten, S. 927 Inserat. Liegt ausserhalb des Zeitfensters von Vernetzte Schweiz (1860–1914).
+- **1905, 1906 und 1908** sind gelesen, aber nicht übernommen. Auch mit den Regeln vom 27.11.2026 (unten) ergab eine
+  neue Ziehung (Seed 19052, 19062, 19082) nur 15, 14 und 15 von 20 Einträgen in allen Feldern richtig
+  (`data/review/regeln_2026-11-27/`); es bleiben Lesefehler («Schreinerstrasse» für «Schreinergasse», «Glaserrei»).
+  **1912** fehlen auf tei die Berufe-Seiten 818–828.
+
+### Telefon und Gewerbe-Verband (1901–1917)
+
+Vor vielen Einträgen steht ein kleines Zickzack-Zeichen, das das Modell als ☎ oder § liest. Im **Berufsregister**
+ist es die Mitgliedschaft im Gewerbe-Verband: jede Berufe-Seite von 1901 bis 1917 hat die Fusszeile «Die mit ‡
+Bezeichneten sind Mitglieder des Gewerbe-Verband Zürich» (am Bild geprüft 1901, 1902, 1904–1911, 1913–1917; 1918 und
+1919 ohne Fusszeile). `convert.py` setzt dort `qa_flags` «gewerbeverband» und `phone_flag` nur, wenn eine Nummer
+gedruckt ist («Telephon Nr. 824»). Im **Einwohnerteil** ist dasselbe Zeichen das Telefon: 1905 tragen es 129 von 173
+Ärzten und 95 von 131 Anwälten, aber 22 von 154 Schreinermeistern und keiner von 373 Taglöhnern, und jeder Eintrag mit
+gedruckter Telefonnummer hat es. Frühere Stichproben (1903, 1904) und Hinweise in diesem README hatten das Zeichen
+auch im Einwohnerteil als Gewerbe-Verband gewertet; das war falsch.
+
+Weitere Regeln seit 27.11.2026 für alle Bände: der Allianzname bei «— -Meunier» kommt aus der gedruckten Zeile, wenn das
+Modell den des Haupteintrags weitertrug (1918: 843 Zeilen); Firmen mit «&» werden nicht mehr gekürzt («Birkenbeil &
+Wintsch»; «— & Schermuly» war der Vorname); der Zeilentrennstrich im Beruf fällt weg («Schilder-malerei»).
 - **1901–1904, 1907, 1909–1911, 1913, 1915–1919 und 1920–1945:** dasselbe Modell, gelesen auf tei.dh.unibe.ch; die Seitenbilder kamen direkt von der ZB (IIIF, rund
   860 px breit, also 150 dpi), dann 2× vergrössert wie die anderen Bände.
 - Keine Nachkorrektur und noch keine Stichprobe von Hand. 1940 hat Claude 20 zufällige Einträge (Seed 1940) mit

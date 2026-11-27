@@ -193,3 +193,35 @@ class Band1901(unittest.TestCase):
     def test_footer(self):
         self.assertTrue(FOOTER.search("Die mit * Bezeichneten sind Mitglieder des „Gewerbe-Verband Zürich“"))
         self.assertFalse(FOOTER.search("Neue Bearbeitung nach J. D. Wyss. Von Professor Dr. F. Reuleaux."))
+
+
+class Regeln2026_11(unittest.TestCase):
+    """Regeln vom 27.11.2026: Allianzname aus «— -Name», Firmen mit «&», Zeilentrennstrich, Gewerbe-Verband."""
+
+    def test_alliance_from_printed_line(self):
+        from convert import DASH_ALLIANCE
+        m = DASH_ALLIANCE.match("— -Meunier, C. A., Kaufmann")
+        self.assertEqual(m.group("name"), "Meunier")
+        self.assertEqual(DASH_ALLIANCE.match("— -Hue de Grais, Harald").group("name"), "Hue de Grais")
+        self.assertEqual(DASH_ALLIANCE.match("— -Haag. Gust. Ad.").group("name"), "Haag")
+        self.assertIsNone(DASH_ALLIANCE.match("— Emil, Schreiner"))
+
+    def test_firm_parts(self):
+        from convert import AMP_PART, FIRM_TAIL
+        self.assertEqual(FIRM_TAIL.match(" & Wintsch, III Zeughausstr. 13.").group(1), " & Wintsch")
+        self.assertEqual(FIRM_TAIL.match(" & Cie., I Bahnhofstr.").group(1), " & Cie.")
+        self.assertIsNone(FIRM_TAIL.match(", Jak., Schreiner"))
+        self.assertEqual(AMP_PART.search("— & Schermuly, Tapetenhaus").group(0), "& Schermuly")
+
+    def test_line_break_hyphen_in_occupation(self):
+        from convert import OCC_HYPHEN
+        self.assertEqual(OCC_HYPHEN.sub("", "Schilder-malerei"), "Schildermalerei")
+        for keep in ("Spinnerei-und Weberei-Requisiten", "gros u. mi-gros", "chemisch-technischer Produkte"):
+            self.assertEqual(OCC_HYPHEN.sub("", keep), keep)
+
+    def test_gewerbe_verband_only_in_berufe_1901_1917(self):
+        from convert import GEWERBE_BERUFE, PHONE_NO
+        self.assertEqual(GEWERBE_BERUFE, (1901, 1917))
+        self.assertTrue(PHONE_NO.search("I Kirchgasse 27. Telephon-Nr. 3583."))
+        self.assertTrue(PHONE_NO.search("Tel. 5881"))
+        self.assertIsNone(PHONE_NO.search("Telephonistin, II Freigutstrasse 26."))

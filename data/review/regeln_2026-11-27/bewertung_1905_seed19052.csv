@@ -1,0 +1,21 @@
+n,entry_id,all_fields_correct,note
+1,1905-einwohner-343-038,1,
+2,1905-einwohner-232-011,1,
+3,1905-berufe-513-021,1,
+4,1905-einwohner-065-064,1,
+5,1905-einwohner-161-088,1,
+6,1905-einwohner-492-075,1,
+7,1905-einwohner-200-068,1,
+8,1905-berufe-542-074,0,"occupation_raw falsch: gedruckt «Gas-, Wasser- und sanitäre Artikel en gros. Spezialität: Gasschläuche» statt «Spezialität» (Eintrag in rechter Spalte unter Gas-Schläuche)"
+9,1905-einwohner-178-092,1,
+10,1905-einwohner-139-025,1,
+11,1905-einwohner-401-041,0,street_raw falsch: gedruckt «Schreinergasse» statt «Schreinerstrasse»
+12,1905-einwohner-200-057,0,"surname/alliance falsch: Firma gedruckt «Hofmann & Surber» (surname «Hofmann», alliance «Surber» statt leer); street_raw gedruckt «Molkenstrasse» statt «Mollenstrasse»"
+13,1905-einwohner-108-097,1,
+14,1905-berufe-606-025,0,"Grenzfall occupation_raw: gedruckt «(en gros)» nach der Adresse, Feld leer"
+15,1905-einwohner-377-028,1,
+16,1905-einwohner-167-010,1,
+17,1905-einwohner-310-076,1,
+18,1905-einwohner-105-079,1,
+19,1905-einwohner-063-015,1,
+20,1905-berufe-611-097,0,street_raw falsch: gedruckt «Klosbachstrasse» (Zeilenumbruch Klosbach-/strasse) statt «Klosbach strasse»

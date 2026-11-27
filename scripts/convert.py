@@ -126,6 +126,11 @@ ALLIANCE_PAREN = re.compile(r"^[\s—–*☎§-]*(?:[^,(]+,\s*)?[^,(]*?\(([A-ZÄ
 # Zürich hat erst seit 1880 ein Telefonnetz; 1875 steht vor «Siehe Inserat» eine Hand, die das Modell
 # als ☎ liest.
 PHONE_FROM = 1880
+# Berufsregister 1901–1917: das Zeichen vor dem Namen ist die Mitgliedschaft im Gewerbe-Verband, nicht das Telefon
+# (Fusszeile auf jeder Berufe-Seite, am Bild geprüft 1901–1917; 1918 ohne Fusszeile). Im Einwohnerteil ist es
+# das Telefon: alle Einträge mit gedruckter Telefonnummer tragen es (1905: 103 von 103, 1906: 191, 1908: 334).
+GEWERBE_BERUFE = (1901, 1917)
+PHONE_NO = re.compile(r"\bTel(?:eph(?:on)?)?\.?\s*(?:-?\s*Nr\.?)?\s*\d")
 
 # Ab 1930 steht der Kreis als eingekreiste Ziffer vor der Strasse («③ Badenerstrasse 437»). Das Modell schrieb
 # sie mal als Ziffer, mal als ③, und in rund jedem neunten Eintrag als ☎. Darum: ①–⑧ zählen als Ziffer; Abonnent
@@ -160,6 +165,13 @@ def section_of(volume: str, page: int) -> str:
     return ""
 
 
+# «— -Meunier, C. A.» (Allianzname gedruckt hinter «— -»); «— -Hue de Grais, Harald»; «— -Haag. Gust.»
+DASH_ALLIANCE = re.compile(r"[—–]\s*-\s*(?=(?P<rest>.*))(?P<name>[A-ZÄÖÜ][\w'’]*"
+                           r"(?:-[A-ZÄÖÜ][\w'’]*| (?:de|von|v\.|van|di|du|la|le) [A-ZÄÖÜ][\w'’]*)?)")
+FIRM_TAIL = re.compile(r"(\s*&\s*(?:Cie\.?|Co\.?|[A-ZÄÖÜ][\w'’-]*))(?=[\s,.])")
+# Zeilentrennstrich im Beruf («Schilder-malerei»); nicht vor «und»/«gros» und nicht nach Adjektiven («chemisch-technisch»)
+OCC_HYPHEN = re.compile(r"(?<=[a-zäöüß])(?<!isch)-\s*(?=[a-zäöü]{2})(?!und\b|u\.|oder\b|bis\b|gros\b|détail\b)")
+AMP_PART = re.compile(r"&\s*(?:Cie|Co|Comp|[A-ZÄÖÜ][\w'’-]*)\.?")
 FIRM_HEAD = re.compile(r"([A-ZÄÖÜ][a-zäöüéè]+(?:-[A-ZÄÖÜ][a-zäöüéè]+)?), \S")
 
 
@@ -287,6 +299,29 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
                 surname = prev_surname  # das Modell nahm den Allianznamen als Familiennamen
                 stats["Allianzname statt Familienname korrigiert"] += 1
             stats["Allianzname aus Klammer"] += 1
+        if not m and r["dash_prefix"] == "1":
+            # «— -Meunier» unter «Meier-Merhart»: das Modell trägt den Allianznamen des Haupteintrags weiter
+            # (1905: 740 von 7062 Zeilen). Gedruckt ist der eigene; er gilt, wenn das Gelesene nicht dort steht.
+            dm = DASH_ALLIANCE.match(LEAD.sub("", r["text"]))
+            if dm and not (alliance and dm.group("rest").startswith(alliance)):
+                alliance = dm.group("name")
+                stats["Allianzname aus der Zeile"] += 1
+        if forename.lstrip().startswith("&") and surname and "&" not in surname and len(surname.split()) <= 2:
+            # «— & Schermuly, Tapetenhaus» unter «Kordeuter»: Firma, kein Vorname; «— & Cie., M.»: Firma, Vorname M.
+            tm = AMP_PART.search(LEAD.sub("", r["text"]))
+            if tm:
+                surname = f"{surname} {tm.group(0).strip()}"
+                forename = forename.strip()[len(tm.group(0).strip()):] if forename.strip().startswith(tm.group(0).strip()) \
+                    else re.sub(r"^&[^,]*,?", "", forename.strip())
+                forename = forename.lstrip(" .,")
+                stats["Firma aus dem Vornamen"] += 1
+        elif surname and "&" not in surname and len(surname.split()) <= 2:
+            # «Birkenbeil & Wintsch, III Zeughausstr. 13.»: das Modell kürzte die Firma auf den ersten Namen
+            fm = FIRM_TAIL.match(LEAD.sub("", r["text"])[len(surname):]) \
+                if LEAD.sub("", r["text"]).startswith(surname) else None
+            if fm:
+                surname += fm.group(1)
+                stats["Firma ergänzt"] += 1
         prev_surname = surname or prev_surname
         if not surname or len(surname.split()) > 4:
             stats["ohne Familienname"] += 1
@@ -309,6 +344,13 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
                 stats["Kreis als ☎ gelesen"] += 1
         else:
             phone = int(volume[:4]) >= PHONE_FROM and bool(r["phone"].strip() or "☎" in r["text"] or r["text"].lstrip().startswith("§"))
+            if sec == "berufe" and GEWERBE_BERUFE[0] <= int(volume) <= GEWERBE_BERUFE[1]:
+                # Im Berufsregister steht dasselbe Zeichen für den Gewerbe-Verband (Fusszeile «Die mit ⌇ Bezeichneten
+                # sind Mitglieder des Gewerbe-Verband Zürich»). Telefon nur, wo eine Nummer gedruckt ist.
+                if phone:
+                    flags.append("gewerbeverband")
+                    stats["Gewerbe-Verband statt Telefon"] += 1
+                phone = bool(PHONE_NO.search(r["text"]))
         firm = bool(FIRM.search(f"{surname} {r['forename']} {r['text'][:60]}")) and not WIDOW.search(r["text"])
         out.append({
             "entry_id": f"{volume}-{sec}-{page:03d}-{seq:03d}", "volume": volume, "page": page,
@@ -318,7 +360,7 @@ def convert(volume: str) -> tuple[list[dict], Counter]:
             "surname_inherited": "1" if r["dash_prefix"] == "1" and DASH.match(r["text"]) else "",
             "alliance_name": alliance, "maiden_name": "", "forename": forename.strip(" .,"),
             "title": r["title"], "civil_status": civil, "relation": "",
-            "occupation_raw": r["occupation"], "origin_raw": origin, "origin_canton": "",
+            "occupation_raw": OCC_HYPHEN.sub("", r["occupation"]), "origin_raw": origin, "origin_canton": "",
             "address_seq": "1", "address_role": "", "street_raw": street, "building_no": number,
             "phone_flag": "1" if phone else "", "heading": r["heading"],
             "parse_method": METHOD,

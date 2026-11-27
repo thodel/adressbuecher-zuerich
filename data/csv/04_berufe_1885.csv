@@ -595,18 +595,18 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-342-005,1885,342,berufe,5,5,person,,0,Murbach,,,,G,,,,,,,1,,Niklausg,7 u. 9,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Murbach, G., Niklausg. 7 u. 9 U.",Zürich,,Unterstrass
 1885-berufe-342-006,1885,342,berufe,6,6,firma,,0,Rötschi,,,,Gebrüder,,,,,,,1,,Mühlebachstr,82,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Rötschi, Gebrüder, Mühlebachstr. 82 R.",Zürich,,Riesbach
 1885-berufe-342-007,1885,342,berufe,7,7,person,,0,Sponagel,,,,T,,,,Agentur,,,1,,Bahnhofpl,71,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Sponagel, T., Bahnhofpl. 71. (Agentur.)",Zürich,,
-1885-berufe-342-008,1885,342,berufe,8,8,firma,,0,Aebli,,,,,,,,,,,1,,Tonhallestr,4,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Aebli & Schniter, Tonhallestr. 4 Z.",Zürich,,Zürich
-1885-berufe-342-009,1885,342,berufe,9,9,firma,,0,Baur,,,,,,,,,,,1,,Seefeldstr,163,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Baur & Nabholz, Seefeldstr. 163 R.",Zürich,,Riesbach
+1885-berufe-342-008,1885,342,berufe,8,8,firma,,0,Aebli & Schniter,,,,,,,,,,,1,,Tonhallestr,4,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Aebli & Schniter, Tonhallestr. 4 Z.",Zürich,,Zürich
+1885-berufe-342-009,1885,342,berufe,9,9,firma,,0,Baur & Nabholz,,,,,,,,,,,1,,Seefeldstr,163,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Baur & Nabholz, Seefeldstr. 163 R.",Zürich,,Riesbach
 1885-berufe-342-010,1885,342,berufe,10,10,person,,0,Blum,,,,Joh,,,,,,,1,,Wildbachstr,55,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Blum, Joh., Wildbachstr. 55 R.",Zürich,,Riesbach
 1885-berufe-342-011,1885,342,berufe,11,11,person,,0,Born,,,,E,,,,,,,1,,mittl. Forchstr,15 a,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Born, E., mittl. Forchstr. 15 a II.",Zürich,,
 1885-berufe-342-012,1885,342,berufe,12,12,person,,0,Bosshard,,,,Arn,,,,,,,1,,Schützenng,14,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Bosshard, Arn., Schützenng. 14 Z.",Zürich,,Zürich
 1885-berufe-342-013,1885,342,berufe,13,13,person,,0,Bosshard,,,,Jul,,,,,,,1,,Aegertenstr,397,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Bosshard, Jul., Aegertenstr. 397 W.",Zürich,,Wiedikon
 1885-berufe-342-014,1885,342,berufe,14,14,person,,0,Däniker,,Baumberger,,Ludw,,,,,,,1,,Zähringerstr,32,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Däniker-Baumberger, Ludw., Zähringerstr. 32 Z.",Zürich,,Zürich
 1885-berufe-342-015,1885,342,berufe,15,15,person,,0,Decapitano,,,,G. A,,,,,,,1,,Zeughausstr,23,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Decapitano, G. A., Zeughausstr. 23 A.",Zürich,,Aussersihl
-1885-berufe-342-016,1885,342,berufe,16,16,firma,,0,Ehrensberger,,,,,,,,Dohlenbauten,,,1,,Röslistr,68 a,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Ehrensberger & Burkhart, Röslistr. 68 a U. (Dohlenbauten.)",Zürich,,Unterstrass
+1885-berufe-342-016,1885,342,berufe,16,16,firma,,0,Ehrensberger & Burkhart,,,,,,,,Dohlenbauten,,,1,,Röslistr,68 a,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Ehrensberger & Burkhart, Röslistr. 68 a U. (Dohlenbauten.)",Zürich,,Unterstrass
 1885-berufe-342-017,1885,342,berufe,17,17,person,,0,Egolf,,,,Heinr,,,,,,,1,,z. Frieden,254,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",medium,,"Egolf, Heinr., z. Frieden 254 O.",Zürich,street_rare,Oberstrass
 1885-berufe-342-018,1885,342,berufe,18,18,person,,0,Fietz,,Leuthold,,E,,,,,,,1,,Dahliastr,14,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Fietz-Leuthold, E., Dahliastr. 14 R.",Zürich,,Riesbach
-1885-berufe-342-019,1885,342,berufe,19,19,firma,,0,Frey,,,,,,,,,,,1,,Badenerstr,126,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Frey & Lauffer, Badenerstr. 126 A.",Zürich,,Aussersihl
+1885-berufe-342-019,1885,342,berufe,19,19,firma,,0,Frey & Lauffer,,,,,,,,,,,1,,Badenerstr,126,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Frey & Lauffer, Badenerstr. 126 A.",Zürich,,Aussersihl
 1885-berufe-342-021,1885,342,berufe,21,21,person,,0,Gohl,,,,Joh,,,,,,,1,,Werdstr,31,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Gohl, Joh., Werdstr. 31 A.",Zürich,,Aussersihl
 1885-berufe-342-022,1885,342,berufe,22,22,person,,0,Grether,,,,Alb,,,,,,,1,,Eidmattstr,,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Grether, Alb., Eidmattstr. Hi.",Zürich,,Hirslanden
 1885-berufe-342-023,1885,342,berufe,23,23,person,,0,Gull,,,,Gottl,,,,,,,1,,Bleicherweg,36,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Gull, Gottl., Bleicherweg 36 Z.",Zürich,,Zürich
@@ -616,9 +616,9 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-342-027,1885,342,berufe,27,27,person,,0,Hirzel,,Koch,,G,,,,,,,1,,Seefeldstr,27,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Hirzel-Koch, G., Seefeldstr. 27 R.",Zürich,,Riesbach
 1885-berufe-342-028,1885,342,berufe,28,28,person,,0,Huber,,,,Jac,,,,,,,1,,Pestalozzistr,2,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Huber, Jac., Pestalozzistr. 2 F.",Zürich,,Fluntern
 1885-berufe-342-029,1885,342,berufe,29,29,person,,0,Keller,,,,Heinr. Theod,,,,,,,1,,Klosbach,61,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Keller, Heinr. Theod., Klosbach 61 Ho.",Zürich,,Hottingen
-1885-berufe-342-030,1885,342,berufe,30,30,firma,,0,Knöpflí,,,,,,,,,,,1,,Langg,192,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Knöpflí & Meyer, Langg. 192 A.",Zürich,,Aussersihl
+1885-berufe-342-030,1885,342,berufe,30,30,firma,,0,Knöpflí & Meyer,,,,,,,,,,,1,,Langg,192,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Knöpflí & Meyer, Langg. 192 A.",Zürich,,Aussersihl
 1885-berufe-342-031,1885,342,berufe,31,31,person,,0,Kuhn,,,,Ferd,,,,,,,1,,n. Beckenhofstr,35,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Kuhn, Ferd., n. Beckenhofstr. 35 U.",Zürich,,Unterstrass
-1885-berufe-342-032,1885,342,berufe,32,32,firma,,0,Locher,,,,,,,,,,,1,,Thalg,12,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Locher & Cie., Thalg. 12 Z.",Zürich,,Zürich
+1885-berufe-342-032,1885,342,berufe,32,32,firma,,0,Locher & Cie.,,,,,,,,,,,1,,Thalg,12,1,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"☎Locher & Cie., Thalg. 12 Z.",Zürich,,Zürich
 1885-berufe-342-033,1885,342,berufe,33,33,firma,,0,Maag,,,,Gebrüder,,,,,,,1,,Dienerstr,5,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Maag, Gebrüder, Dienerstr. 5 A.",Zürich,,Aussersihl
 1885-berufe-342-034,1885,342,berufe,34,34,person,,0,Mollet,,Köchlin,,Theod,,,,,,,1,,Gartenhofstr,32,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Mollet-Köchlin, Theod., Gartenhofstr. 32 A.",Zürich,,Aussersihl
 1885-berufe-342-035,1885,342,berufe,35,35,person,,0,Müller,,Baur,,Casp,,,,,,,1,,Langg,19,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Müller-Baur, Casp., Langg. 19 Hi.",Zürich,,Hirslanden
@@ -636,25 +636,25 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-342-047,1885,342,berufe,47,47,person,,0,Wachter,,,,Alois,,,,,,,1,,Rothwandstr,5,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Wachter, Alois, Rothwandstr. 5 A.",Zürich,,Aussersihl
 1885-berufe-342-048,1885,342,berufe,48,48,person,,0,Wachter,,,,Ant,,,,,,,1,,Pflanzschulstr,29,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Wachter, Ant., Pflanzschulstr. 29 A.",Zürich,,Aussersihl
 1885-berufe-342-049,1885,342,berufe,49,49,person,,0,Walder,,,,Conr,,,,,,,1,,Utostr,29,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Walder, Conr., Utostr. 29 E.",Zürich,,Enge
-1885-berufe-342-050,1885,342,berufe,50,50,firma,,0,Waller,,,,,,,,,,,1,,Seehofg,5,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Waller & Boller, Seehofg. 5 R.",Zürich,,Riesbach
+1885-berufe-342-050,1885,342,berufe,50,50,firma,,0,Waller & Boller,,,,,,,,,,,1,,Seehofg,5,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Waller & Boller, Seehofg. 5 R.",Zürich,,Riesbach
 1885-berufe-342-051,1885,342,berufe,51,51,person,,0,Weber,,,,Rud,,,,,,,1,,Zweierstr,22,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Weber, Rud., Zweierstr. 22 A.",Zürich,,Aussersihl
-1885-berufe-342-052,1885,342,berufe,52,52,firma,,0,Widmer,,,,,,,,,,,1,,Florastr,56,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Widmer & Ritter, Florastr. 56 R.",Zürich,,Riesbach
+1885-berufe-342-052,1885,342,berufe,52,52,firma,,0,Widmer & Ritter,,,,,,,,,,,1,,Florastr,56,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Widmer & Ritter, Florastr. 56 R.",Zürich,,Riesbach
 1885-berufe-342-053,1885,342,berufe,53,53,person,,0,Wild,,,,Jac,,,,,,,1,,Stadelhoferstr,3,,Baumeister & Baugeschäfte.,"qwen3.8-27b, Bild 2x",high,,"Wild, Jac., Stadelhoferstr. 3 Z.",Zürich,,Zürich
-1885-berufe-342-054,1885,342,berufe,54,54,firma,,0,Ziegler,,,,,,,,,,,1,,Zähringerstr,44,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Ziegler & Bosshard, Zähringerstr. 44 Z.",Zürich,,Zürich
-1885-berufe-342-055,1885,342,berufe,55,55,firma,,0,Zschokke,,,,,,,,,,,1,,Seideng,7,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Zschokke & Cie., Seideng. 7 Z.",Zürich,,Zürich
+1885-berufe-342-054,1885,342,berufe,54,54,firma,,0,Ziegler & Bosshard,,,,,,,,,,,1,,Zähringerstr,44,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Ziegler & Bosshard, Zähringerstr. 44 Z.",Zürich,,Zürich
+1885-berufe-342-055,1885,342,berufe,55,55,firma,,0,Zschokke & Cie.,,,,,,,,,,,1,,Seideng,7,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Zschokke & Cie., Seideng. 7 Z.",Zürich,,Zürich
 1885-berufe-342-056,1885,342,berufe,56,56,person,,0,Zupfinger,,Pfrunder,,Carl,,,,,,,1,,Badenerstr,2,,Bauartikel u. Baumaterialien.,"qwen3.8-27b, Bild 2x",high,,"Zupfinger-Pfrunder, Carl, Badenerstr. 2 A.",Zürich,,Aussersihl
 1885-berufe-342-057,1885,342,berufe,57,57,person,,0,Bertschinger,,,,Aug,,,,,,,1,,Glärnischstr,35,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Bertschinger, Aug., Glärnischstr. 35 Z.",Zürich,,Zürich
 1885-berufe-342-058,1885,342,berufe,58,58,person,,0,Bühler,,,,Aug,,,,,,,1,,Fraumünsterstr,23,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Bühler, Aug., Fraumünsterstr. 23 II Z.",Zürich,,Zürich
 1885-berufe-342-059,1885,342,berufe,59,59,person,,0,Feuerlein,,,,Otto,,,,,,,1,,Glärnischstr,34,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Feuerlein, Otto, Glärnischstr. 34 Z.",Zürich,,Zürich
 1885-berufe-342-060,1885,342,berufe,60,60,person,,0,Fischer,,,,Ottom,,,,,,,1,,Bahnhofstr,38,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Fischer, Ottom., Bahnhofstr. 38 Z.",Zürich,,Zürich
-1885-berufe-342-061,1885,342,berufe,61,61,firma,,0,Girard,,,,,,,,,,,1,,Selnaustr,17,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Girard & Cie., Selnaustr. 17 Z.",Zürich,,Zürich
+1885-berufe-342-061,1885,342,berufe,61,61,firma,,0,Girard & Cie.,,,,,,,,,,,1,,Selnaustr,17,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Girard & Cie., Selnaustr. 17 Z.",Zürich,,Zürich
 1885-berufe-342-062,1885,342,berufe,62,62,person,,0,Gut,,,,J,,,,,,,1,,Gessnerallee,50,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Gut, J., Gessnerallee 50 Z.",Zürich,,Zürich
-1885-berufe-342-063,1885,342,berufe,63,63,firma,,0,Kern,,,,,,,,,,,1,,Selnaustr,44,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Kern & Keller, Selnaustr. 44 Z.",Zürich,,Zürich
+1885-berufe-342-063,1885,342,berufe,63,63,firma,,0,Kern & Keller,,,,,,,,,,,1,,Selnaustr,44,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Kern & Keller, Selnaustr. 44 Z.",Zürich,,Zürich
 1885-berufe-342-064,1885,342,berufe,64,64,person,,0,Krauss,,,,G. C,,,,,,,1,,Löwenstr,41,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Krauss, G. C., Löwenstr. 41 Z.",Zürich,,Zürich
-1885-berufe-342-065,1885,342,berufe,65,65,firma,,0,Merkle,,,,,,,,,,,1,,Centralhof,5,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Merkle & Co., Centralhof 5 Z.",Zürich,,Zürich
-1885-berufe-342-066,1885,342,berufe,66,66,firma,,0,Palmert,,,,,,,,,,,1,,Bahnhofstr,12,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Palmert & Cie., Bahnhofstr. 12 Z.",Zürich,,Zürich
+1885-berufe-342-065,1885,342,berufe,65,65,firma,,0,Merkle & Co.,,,,,,,,,,,1,,Centralhof,5,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Merkle & Co., Centralhof 5 Z.",Zürich,,Zürich
+1885-berufe-342-066,1885,342,berufe,66,66,firma,,0,Palmert & Cie.,,,,,,,,,,,1,,Bahnhofstr,12,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Palmert & Cie., Bahnhofstr. 12 Z.",Zürich,,Zürich
 1885-berufe-342-067,1885,342,berufe,67,67,person,,0,Rummel,,,,Max,,,,,,,1,,Tiefenhöfe,8,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Rummel, Max., Tiefenhöfe 8 Z.",Zürich,,Zürich
-1885-berufe-342-068,1885,342,berufe,68,68,firma,,0,Thomann,,,,,,,,,,,1,,Bäreng,13,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Thomann & Leicht, Bäreng. 13 Z.",Zürich,,Zürich
+1885-berufe-342-068,1885,342,berufe,68,68,firma,,0,Thomann & Leicht,,,,,,,,,,,1,,Bäreng,13,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Thomann & Leicht, Bäreng. 13 Z.",Zürich,,Zürich
 1885-berufe-342-069,1885,342,berufe,69,69,person,,0,Wirz,,,,J,,,,,,,1,,Bäreng,5,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Wirz, J., Bäreng. 5 Z.",Zürich,,Zürich
 1885-berufe-342-070,1885,342,berufe,70,70,person,,0,Zeiz,,,,Eug,,,,,,,1,,Bleicherweg,2,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Zeiz, Eug., Bleicherweg 2 Z.",Zürich,,Zürich
 1885-berufe-342-071,1885,342,berufe,71,71,person,,0,Fierz,,,,Heinr,,,,,,,1,,Zürichbergstr,8,1,Handel.,"qwen3.8-27b, Bild 2x",high,,"☎Fierz, Heinr., Zürichbergstr. 8 F.",Zürich,,Fluntern
@@ -671,10 +671,10 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-342-082,1885,342,berufe,82,82,person,,0,Goldschmid,,Peterson,,L,,,,,,,1,,Bäreng,13,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Goldschmid-Peterson, L., Bäreng. 13 Z.",Zürich,,Zürich
 1885-berufe-342-083,1885,342,berufe,83,83,person,,0,Häberlin,,,,Carl,,,,,,,1,,Bahnhofstr,74,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Häberlin, Carl, Bahnhofstr. 74 Z.",Zürich,,Zürich
 1885-berufe-342-084,1885,342,berufe,84,84,person,,0,Hohl,,,,J. C,,,,,,,1,,Löwenstr,47,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Hohl, J. C., Löwenstr. 47 Z.",Zürich,,Zürich
-1885-berufe-342-085,1885,342,berufe,85,85,firma,,0,Kern,,,,,,,,,,,1,,Selnaustr,44,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Kern & Keller, Selnaustr. 44 Z.",Zürich,,Zürich
+1885-berufe-342-085,1885,342,berufe,85,85,firma,,0,Kern & Keller,,,,,,,,,,,1,,Selnaustr,44,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Kern & Keller, Selnaustr. 44 Z.",Zürich,,Zürich
 1885-berufe-342-086,1885,342,berufe,86,86,firma,,0,Müller,,Staub,,,,,,,,,1,,Brandschenkestr,32,1,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Müller-Staub & Cie., Brandschenkestr. 32 Z.",Zürich,,Zürich
-1885-berufe-342-087,1885,342,berufe,87,87,firma,,0,Schmid,,,,,,,,,,,1,,Gessnerallee,40,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Schmid & Berchtold, Gessnerallee 40 Z.",Zürich,,Zürich
-1885-berufe-342-088,1885,342,berufe,88,88,firma,,0,Steiner,,,,,,,,,,,1,,Thalg,32,1,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Steiner & Bryner, Thalg. 32 Z.",Zürich,,Zürich
+1885-berufe-342-087,1885,342,berufe,87,87,firma,,0,Schmid & Berchtold,,,,,,,,,,,1,,Gessnerallee,40,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Schmid & Berchtold, Gessnerallee 40 Z.",Zürich,,Zürich
+1885-berufe-342-088,1885,342,berufe,88,88,firma,,0,Steiner & Bryner,,,,,,,,,,,1,,Thalg,32,1,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Steiner & Bryner, Thalg. 32 Z.",Zürich,,Zürich
 1885-berufe-342-089,1885,342,berufe,89,89,person,,0,Walser,,Pestalozzi,,,,,,,,,1,,Bahnhofstr,47,,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"Walser-Pestalozzi, Bahnhofstr. 47 Z.",Zürich,,Zürich
 1885-berufe-342-090,1885,342,berufe,90,90,person,,0,Wirz,,,,J,,,,,,,1,,Bäreng,5,1,Agentur und Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Wirz, J., Bäreng. 5 Z.",Zürich,,Zürich
 1885-berufe-342-091,1885,342,berufe,91,91,person,,0,Abegg,,,,Louis,,,,,,,1,,Bahnhofstr,44,,Handel.,"qwen3.8-27b, Bild 2x",high,,"Abegg, Louis, Bahnhofstr. 44 Z.",Zürich,,Zürich
@@ -682,8 +682,8 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-342-093,1885,342,berufe,93,93,person,,0,Bernheim,,,,H. J,,,,,,,1,,Bahnhofstr,76,1,Handel.,"qwen3.8-27b, Bild 2x",high,,"☎Bernheim, H. J., Bahnhofstr. 76 Z.",Zürich,,Zürich
 1885-berufe-342-094,1885,342,berufe,94,94,person,,0,Bindschedler,,,,F. R,,,,,,,1,,Zeltweg,36,,Handel.,"qwen3.8-27b, Bild 2x",high,,"Bindschedler, F. R., Zeltweg 36 Ho.",Zürich,,Hottingen
 1885-berufe-342-095,1885,342,berufe,95,95,person,,0,Brupbacher,,,,H,,,,,,,1,,ob. Zäune,26,1,Handel.,"qwen3.8-27b, Bild 2x",high,,"☎Brupbacher, H., ob. Zäune 26 u. Bahnhofstr. 35 Z.",Zürich,,Zürich
-1885-berufe-343-001,1885,343,berufe,1,1,firma,,0,Codelaghi,,Wiedersheim,,,,,,,,,1,,Storcheng,2,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Codelaghi & Wiedersheim, Storcheng. 2 Z.",Zürich,,Zürich
-1885-berufe-343-002,1885,343,berufe,2,2,firma,,0,Dietrich,,Sohn,,,,Frau,,,,,1,,Usteristr,9,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Dietrich & Sohn, Frau, Usteristr. 9 Z.",Zürich,,Zürich
+1885-berufe-343-001,1885,343,berufe,1,1,firma,,0,Codelaghi & Wiedersheim,,Wiedersheim,,,,,,,,,1,,Storcheng,2,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Codelaghi & Wiedersheim, Storcheng. 2 Z.",Zürich,,Zürich
+1885-berufe-343-002,1885,343,berufe,2,2,firma,,0,Dietrich & Sohn,,Sohn,,,,Frau,,,,,1,,Usteristr,9,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Dietrich & Sohn, Frau, Usteristr. 9 Z.",Zürich,,Zürich
 1885-berufe-343-003,1885,343,berufe,3,3,person,,0,Fierz,,,,Heinr,,,,,,,1,,Zürichbergstr,8,1,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎Fierz, Heinr., Zürichbergstr. 8 F.",Zürich,,Fluntern
 1885-berufe-343-004,1885,343,berufe,4,4,person,,0,Freudweiler,,,,J. J,,,,,,,1,,Strehlg,8,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Freudweiler, J. J., Strehlg. 8 Z.",Zürich,,Zürich
 1885-berufe-343-005,1885,343,berufe,5,5,person,,0,Gimpert,,Sprüngli,,Mathilde,,,,,,,1,,Bahnhofstr,48,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Gimpert-Sprüngli, Mathilde, Bahnhofstr. 48 Z.",Zürich,,Zürich
@@ -691,17 +691,17 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-343-007,1885,343,berufe,7,7,person,,0,Hepp,,,,J,,,,,,,1,,Oberdorfg,8,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hepp, J., Oberdorfg. 8 Z.",Zürich,,Zürich
 1885-berufe-343-008,1885,343,berufe,8,8,person,,0,Hirsch's Waarenhalle,,,,,,,,,,,1,,Limmatquai,98,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hirsch's Waarenhalle, Limmatquai 98 Z.",Zürich,,Zürich
 1885-berufe-343-009,1885,343,berufe,9,9,person,,0,Hohl,,,,J. C,,,,,,,1,,Bahnhofstr,73,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hohl, J. C., Bahnhofstr. 73 Z.",Zürich,,Zürich
-1885-berufe-343-010,1885,343,berufe,10,10,firma,,0,Jäger,,Söhne,,J. G,,,,,,,1,,Sonnenquai,20,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Jäger & Söhne, J. G., Sonnenquai 20 Z.",Zürich,,Zürich
+1885-berufe-343-010,1885,343,berufe,10,10,firma,,0,Jäger & Söhne,,Söhne,,J. G,,,,,,,1,,Sonnenquai,20,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Jäger & Söhne, J. G., Sonnenquai 20 Z.",Zürich,,Zürich
 1885-berufe-343-011,1885,343,berufe,11,11,person,,0,Knüsli,,Seel,,,,,,,,,1,,Neumarkt,2,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Knüsli-Seel, Neumarkt 2 Z.",Zürich,,Zürich
 1885-berufe-343-012,1885,343,berufe,12,12,person,,0,Kunz,,Vögeli,,Edu,,,,,,,1,,Limmatquai,14,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Kunz-Vögeli, Edu., Limmatquai 14 Z.",Zürich,,Zürich
 1885-berufe-343-013,1885,343,berufe,13,13,person,,0,Meier,,,,A. H,,,,en gros.,,,1,,Usteristr,14,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Meier, A. H., Usteristr. 14 Z. (en gros.)",Zürich,,Zürich
-1885-berufe-343-014,1885,343,berufe,14,14,firma,,0,Meili,,Briner,,,,,,,,,1,,Fraumünsterstr,27,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 (Centralhof) Z.",Zürich,,Zürich
+1885-berufe-343-014,1885,343,berufe,14,14,firma,,0,Meili & Briner,,Briner,,,,,,,,,1,,Fraumünsterstr,27,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 (Centralhof) Z.",Zürich,,Zürich
 1885-berufe-343-015,1885,343,berufe,15,15,person,,0,Müller,,,,Jac,,,,,,,1,,Oberdorfg,3,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Müller, Jac., z. Sommerau, Oberdorfg. 3 Z.",Zürich,,Zürich
 1885-berufe-343-016,1885,343,berufe,16,16,person,,0,Müller,,Zollinger,,,,,,,,,1,,Zähringerstr,23,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Müller-Zollinger, Zähringerstr. 23 Z.",Zürich,,Zürich
-1885-berufe-343-017,1885,343,berufe,17,17,firma,,0,Rall,,Leuze,,,,,,,,,1,,Rathausquai,6,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Leuze, Rathausquai 6 Z.",Zürich,,Zürich
-1885-berufe-343-018,1885,343,berufe,18,18,firma,,0,Rall,,Passauer,,,,,,,,,1,,Linthescherg,1,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Passauer, Linthescherg. 1 Z.",Zürich,,Zürich
+1885-berufe-343-017,1885,343,berufe,17,17,firma,,0,Rall & Leuze,,Leuze,,,,,,,,,1,,Rathausquai,6,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Leuze, Rathausquai 6 Z.",Zürich,,Zürich
+1885-berufe-343-018,1885,343,berufe,18,18,firma,,0,Rall & Passauer,,Passauer,,,,,,,,,1,,Linthescherg,1,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Passauer, Linthescherg. 1 Z.",Zürich,,Zürich
 1885-berufe-343-019,1885,343,berufe,19,19,person,,0,Ritter,,,,Leonh,,,,,,,1,,Schipfe,45,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ritter, Leonh., Schipfe 45 Z.",Zürich,,Zürich
-1885-berufe-343-020,1885,343,berufe,20,20,firma,,0,Scherer,,Söhne,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
+1885-berufe-343-020,1885,343,berufe,20,20,firma,,0,Scherer & Söhne,,Söhne,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
 1885-berufe-343-021,1885,343,berufe,21,21,person,,0,Schmid,,,,Fridol,,,,,,,1,,Limmatquai,64,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schmid, Fridol., Limmatquai 64 Z.",Zürich,,Zürich
 1885-berufe-343-022,1885,343,berufe,22,22,person,,0,Stahel,,,,,,Wwe.,,,,,1,,Hechtpl,1,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Stahel, Wwe., Hechtpl. 1 Z.",Zürich,,Zürich
 1885-berufe-343-023,1885,343,berufe,23,23,person,,0,Stahel,,Pfister,,Carol,,,,,,,1,,Usteristr,5,,Baumwollwaaren.,"qwen3.8-27b, Bild 2x",high,,"Stahel-Pfister, Carol., Usteristr. 5 Z.",Zürich,,Zürich
@@ -713,10 +713,10 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-343-029,1885,343,berufe,29,29,person,,0,Kindlimann,,,,Sal,,,,,,,1,,Gessnerallee,52,,Baumwollspinnereien.,"qwen3.8-27b, Bild 2x",high,,"Kindlimann, Sal., Gessnerallee 52 Z.",Zürich,,Zürich
 1885-berufe-343-030,1885,343,berufe,30,30,person,,0,Kunz,,,,Heinr,,,,,,,1,,Glärnischstr,29,1,Baumwollspinnereien.,"qwen3.8-27b, Bild 2x",high,,"☎Kunz, Heinr., Glärnischstr. 29 Z.",Zürich,,Zürich
 1885-berufe-343-031,1885,343,berufe,31,31,person,,0,Spinnerei Wollishofen,,,,,,,,,,,1,,Tiefenhöfe,9,1,Baumwollspinnereien.,"qwen3.8-27b, Bild 2x",high,,"☎Spinnerei Wollishofen, Tiefenhöfe 9 Z.",Zürich,,Zürich
-1885-berufe-343-032,1885,343,berufe,32,32,firma,,0,Trümpler,,Gysi,,,,,,,,,1,,Freieckg,10,,Baumwollspinnereien.,"qwen3.8-27b, Bild 2x",high,,"Trümpler & Gysi, Freieckg. 10 Z.",Zürich,,Zürich
+1885-berufe-343-032,1885,343,berufe,32,32,firma,,0,Trümpler & Gysi,,Gysi,,,,,,,,,1,,Freieckg,10,,Baumwollspinnereien.,"qwen3.8-27b, Bild 2x",high,,"Trümpler & Gysi, Freieckg. 10 Z.",Zürich,,Zürich
 1885-berufe-343-033,1885,343,berufe,33,33,firma,,0,Boller,,,,Arn,,,,Fabrik in Dietikon,,,1,,Bleicherweg,40,,Baumwollwebereien.,"qwen3.8-27b, Bild 2x",high,,"Boller, Arn. (Fabrik in Dietikon), Bleicherweg 40 I Z.",Zürich,,Zürich
 1885-berufe-343-034,1885,343,berufe,34,34,person,,0,Guyer,,,,J. Rud,,,,,,,1,,Zeltweg,22,1,Baumwollwebereien.,"qwen3.8-27b, Bild 2x",high,,"☎Guyer, J. Rud., Zeltweg 22 Ho.",Zürich,,Hottingen
-1885-berufe-343-035,1885,343,berufe,35,35,firma,,0,Trümpler,,Gysi,,,,,,,,,1,,Freieckg,10,,Baumwollwebereien.,"qwen3.8-27b, Bild 2x",high,,"Trümpler & Gysi, Freieckg. 10 Z.",Zürich,,Zürich
+1885-berufe-343-035,1885,343,berufe,35,35,firma,,0,Trümpler & Gysi,,Gysi,,,,,,,,,1,,Freieckg,10,,Baumwollwebereien.,"qwen3.8-27b, Bild 2x",high,,"Trümpler & Gysi, Freieckg. 10 Z.",Zürich,,Zürich
 1885-berufe-343-036,1885,343,berufe,36,36,firma,,0,Wild,,,,G,,,,Fabrik in Neuhaus b/Eschenbach,,,1,,Selnaustr,16,,Baumwollwebereien.,"qwen3.8-27b, Bild 2x",high,,"Wild, G., Selnaustr. 16 Z. (Fabrik in Neuhaus b/Eschenbach).",Zürich,,Zürich
 1885-berufe-343-037,1885,343,berufe,37,37,firma,,0,Baumwollspinnerei & -Zwirnerei Nieder-Uster,,,,,,,,,,,1,,Thalg,11,,Baumwollzwirnereien.,"qwen3.8-27b, Bild 2x",high,,"Baumwollspinnerei & -Zwirnerei Nieder-Uster, Thalg. 11 Z.",Zürich,,Zürich
 1885-berufe-343-038,1885,343,berufe,38,38,person,,0,Kunz,,,,Heinr,,,,,,,1,,Glärnischstr,29,1,Baumwollzwirnereien.,"qwen3.8-27b, Bild 2x",high,,"☎Kunz, Heinr., Glärnischstr. 29 Z.",Zürich,,Zürich
@@ -731,8 +731,8 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-343-049,1885,343,berufe,49,49,person,,0,Fisler,,,,Alb,,,,,,,1,,Rennweg,33,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Fisler, Alb., Rennweg 33 Z.",Zürich,,Zürich
 1885-berufe-343-050,1885,343,berufe,50,50,person,,0,Ganter,,,,J,,,,,,,1,,Brunneng,18,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Ganter, J., Brunneng. 18 Z.",Zürich,,Zürich
 1885-berufe-343-051,1885,343,berufe,51,51,person,,0,Guggenbühl,,,,Wilhmc,,,,,,,1,,Oberdorfg,19,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Guggenbühl, Wilhmc., Oberdorfg. 19 Z.",Zürich,,Zürich
-1885-berufe-343-052,1885,343,berufe,52,52,firma,,0,Hess,,Kaufmann,,,,,,,,,1,,Glärnischstr,31,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Hess & Kaufmann, Glärnischstr. 31 Z.",Zürich,,Zürich
-1885-berufe-343-053,1885,343,berufe,53,53,firma,,0,Lerch,,Cie.,,,,,,,,,1,,Widderg,6,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Lerch & Cie., Widderg. 6 Z.",Zürich,,Zürich
+1885-berufe-343-052,1885,343,berufe,52,52,firma,,0,Hess & Kaufmann,,Kaufmann,,,,,,,,,1,,Glärnischstr,31,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Hess & Kaufmann, Glärnischstr. 31 Z.",Zürich,,Zürich
+1885-berufe-343-053,1885,343,berufe,53,53,firma,,0,Lerch & Cie.,,Cie.,,,,,,,,,1,,Widderg,6,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Lerch & Cie., Widderg. 6 Z.",Zürich,,Zürich
 1885-berufe-343-054,1885,343,berufe,54,54,person,,0,Müller,,Zollinger,,Ulr,,,,,,,1,,Zähringerstr,23,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Müller-Zollinger, Ulr., Zähringerstr. 23 Z.",Zürich,,Zürich
 1885-berufe-343-055,1885,343,berufe,55,55,person,,0,Waldeck,,Schulthess,,A,,,,,,,1,,Stadelhoferstr,29,,Bettfedernhandel.,"qwen3.8-27b, Bild 2x",high,,"Waldeck-Schulthess, A., Stadelhoferstr. 29 Z.",Zürich,,Zürich
 1885-berufe-343-056,1885,343,berufe,56,56,person,,0,Billetter,,,,J,,,,,,,1,,Schmidg,2,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Billetter, J., Schmidg. 2 Z.",Zürich,,Zürich
@@ -745,10 +745,10 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-343-063,1885,343,berufe,63,63,person,,0,Kleiner,,,,Marie,,,,,,,1,,Pfalzg,6,1,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Kleiner, Marie, Pfalzg. 6 Z.",Zürich,,Zürich
 1885-berufe-343-064,1885,343,berufe,64,64,person,,0,Mäder,,,,J,,,,,,,1,,Bahnhofstr,106,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Mäder, J., z. Central-Gewerbehalle, Bahnhofstr. 106 Z.",Zürich,,Zürich
 1885-berufe-343-065,1885,343,berufe,65,65,person,,0,Meyer,,Suter,,Jac,,,,,,,1,,Oberdorfg,34,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Meyer-Suter, Jac., Oberdorfg. 34 Z.",Zürich,,Zürich
-1885-berufe-343-066,1885,343,berufe,66,66,firma,,0,Meili,,Briner,,,,,,,,,1,,Fraumünsterstr,27,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 Z.",Zürich,,Zürich
+1885-berufe-343-066,1885,343,berufe,66,66,firma,,0,Meili & Briner,,Briner,,,,,,,,,1,,Fraumünsterstr,27,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 Z.",Zürich,,Zürich
 1885-berufe-343-067,1885,343,berufe,67,67,person,,0,Müller,,Hotz,,Elis,,,,,,,1,,Roseng,3,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Müller-Hotz, Elis., Roseng. 3 Z.",Zürich,,Zürich
 1885-berufe-343-068,1885,343,berufe,68,68,person,,0,Müller,,Zollinger,,Ulr,,,,,,,1,,Zähringerstr,23,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Müller-Zollinger, Ulr., Zähringerstr. 23 Z.",Zürich,,Zürich
-1885-berufe-343-069,1885,343,berufe,69,69,firma,,0,Scherer,,Söhne,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
+1885-berufe-343-069,1885,343,berufe,69,69,firma,,0,Scherer & Söhne,,Söhne,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
 1885-berufe-343-070,1885,343,berufe,70,70,person,,0,Schneider,,,,C,,,,,,,1,,ob. Zäune,24,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schneider, C., ob. Zäune 24 Z.",Zürich,,Zürich
 1885-berufe-343-071,1885,343,berufe,71,71,person,,0,Senn,,,,Elis,,,,,,,1,,Häringspl,5,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Senn, Elis., Häringspl. 5 Z.",Zürich,,Zürich
 1885-berufe-343-072,1885,343,berufe,72,72,person,,0,Stocker u. Weiss,,,,,,,,,,,1,,Höschg,67,,Bettwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Stocker u. Weiss, Frauen, Höschg. 67 R.",Zürich,,Riesbach
@@ -1411,21 +1411,21 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-351-004,1885,351,berufe,4,4,person,,0,Krauss,,,,G. C,,,,Agentur,,,1,,Löwenstr.,41,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Krauss, G. C., Löwenstr. 41 Z. (Agentur.)",Zürich,street_rare,Zürich
 1885-berufe-351-005,1885,351,berufe,5,5,person,,0,Kündig,,Furrer,,Heinr,,,,,,,1,,Mühleg.,29,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Kündig-Furrer, Heinr., Mühleg. 29 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-006,1885,351,berufe,6,6,person,,0,Maurer,,,,F,,,,,,,1,,Augustinerg.,28,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Maurer, F., Augustinerg. 28 Z.",Zürich,street_rare,Zürich
-1885-berufe-351-007,1885,351,berufe,7,7,firma,,0,Maurer,,,,& Cie,,,,,,,1,,Löwenstr.,16 c,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Maurer & Cie., Löwenstr. 16 c Z.",Zürich,street_rare,Zürich
+1885-berufe-351-007,1885,351,berufe,7,7,firma,,0,Maurer & Cie.,,,,,,,,,,,1,,Löwenstr.,16 c,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Maurer & Cie., Löwenstr. 16 c Z.",Zürich,street_rare,Zürich
 1885-berufe-351-008,1885,351,berufe,8,8,person,,0,Meier,,,,Emil,,,,,,,1,,Florastr.,55,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Meier, Emil, Florastr. 55 R.",Zürich,street_rare,Riesbach
 1885-berufe-351-009,1885,351,berufe,9,9,person,,0,Meier,,Schaad,,H,,,,,,,1,,Schifflände,14,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Meier-Schaad, H., Schifflände 14 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-010,1885,351,berufe,10,10,person,,0,Meyer,,,,Andr,,,,,,,1,,Rathausquai,24,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Meyer, Andr., Rathausquai 24 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-011,1885,351,berufe,11,11,person,,0,Nägeli,,,,Alb,,,,,,,1,,Niederdorfstr.,22,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Nägeli, Alb., Niederdorfstr. 22 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-012,1885,351,berufe,12,12,person,,0,Osswald,,,,A,,,,,,,1,,Ottenweg,31,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Osswald, A., Ottenweg 31 R.",Zürich,street_rare,Riesbach
-1885-berufe-351-013,1885,351,berufe,13,13,firma,,0,Palmert,,,,& Cie,,,,,,,1,,Bahnhofstr.,12,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Palmert & Cie., Bahnhofstr. 12 Z.",Zürich,street_rare,Zürich
+1885-berufe-351-013,1885,351,berufe,13,13,firma,,0,Palmert & Cie.,,,,,,,,,,,1,,Bahnhofstr.,12,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Palmert & Cie., Bahnhofstr. 12 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-014,1885,351,berufe,14,14,person,,0,Pfister,,Schellenberg,,,,,,,,,1,,Linthescherpl,,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Pfister-Schellenberg, Linthescherpl. Z.",Zürich,,Zürich
 1885-berufe-351-015,1885,351,berufe,15,15,person,,0,Philipp,,,,L,,,,,,,1,,Seefeldstr,,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Philipp, L., Seefeldstr. R.",Zürich,,Riesbach
 1885-berufe-351-016,1885,351,berufe,16,16,person,,0,Pilgrim,,,,Carl,,,,,,,1,,Asylstr.,45,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Pilgrim, Carl, Asylstr. 45 Ho.",Zürich,street_rare,Hottingen
-1885-berufe-351-017,1885,351,berufe,17,17,firma,,0,Renich,,,,& Cayenz,,,,,,,1,,Fraumünsterstr. 29 II (Centralhof),29,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Renich & Cayenz, Fraumünsterstr. 29 II (Centralhof) Z.",Zürich,street_rare,Zürich
+1885-berufe-351-017,1885,351,berufe,17,17,firma,,0,Renich & Cayenz,,,,,,,,,,,1,,Fraumünsterstr. 29 II (Centralhof),29,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Renich & Cayenz, Fraumünsterstr. 29 II (Centralhof) Z.",Zürich,street_rare,Zürich
 1885-berufe-351-018,1885,351,berufe,18,18,person,,0,Rüegg,,Frank,,,,,,,,,1,,Plattenstr.,36,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Rüegg-Frank, Plattenstr. 36 F.",Zürich,street_rare,Fluntern
 1885-berufe-351-019,1885,351,berufe,19,19,person,,0,Schelldorfer,,,,Joh,,,,,,,1,,Münsterg.,19,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Schelldorfer, Joh., Münsterg. 19 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-020,1885,351,berufe,20,20,firma,,0,Scheuch,,,,Gebrüder,,,,,,,1,,Schützeng.,22,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Scheuch, Gebrüder, Schützeng. 22 Z.",Zürich,street_rare,Zürich
-1885-berufe-351-021,1885,351,berufe,21,21,firma,,0,Stecher,,,,"& Cie., Ant",,,,,,,1,,Rathausquai,18,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Stecher & Cie., Ant., Rathausquai 18 Z.",Zürich,street_rare,Zürich
+1885-berufe-351-021,1885,351,berufe,21,21,firma,,0,Stecher & Cie.,,,,Ant,,,,,,,1,,Rathausquai,18,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Stecher & Cie., Ant., Rathausquai 18 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-022,1885,351,berufe,22,22,person,,0,Steidl,,,,G,,,,Café en gros.,,,1,,Oetenbachg.,28,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Steidl, G., Oetenbachg. 28 Z. (Café en gros.)",Zürich,street_rare,Zürich
 1885-berufe-351-023,1885,351,berufe,23,23,person,,0,Sulzer,,,,Dav,,,,,,,1,,Neumarkt,21,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Sulzer, Dav., Neumarkt 21 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-024,1885,351,berufe,24,24,person,,0,Sykora,,,,Paul,,,,,,,1,,Froschaug.,4,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Sykora, Paul, Froschaug. 4 Z.",Zürich,street_rare,Zürich
@@ -1434,7 +1434,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-351-027,1885,351,berufe,27,27,person,,0,Wagner,,,,Ad,,,,,,,1,,Rindermarkt,4,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Wagner, Ad., Rindermarkt 4 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-028,1885,351,berufe,28,28,person,,0,Waser,,,,Conr. Gottl,,,,,,,1,,Limmatquai 2 u. Bahnhofstr. 46,2 u. 46,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Waser, Conr. Gottl., Limmatquai 2 u. Bahnhofstr. 46 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-029,1885,351,berufe,29,29,person,,0,Weber,,,,Rud,,,,Agentur,,,1,,Usteristr.,5,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Weber, Rud., Usteristr. 5 Z. (Agentur.)",Zürich,street_rare,Zürich
-1885-berufe-351-030,1885,351,berufe,30,30,firma,,0,Weber,,,,& Aldinger,,,,Dépôt,,,1,,Lagerstr.,10,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Weber & Aldinger, Lagerstr. 10 A., Dépôt Löwenstr. 47 Z.",Zürich,street_rare,Aussersihl
+1885-berufe-351-030,1885,351,berufe,30,30,firma,,0,Weber & Aldinger,,,,,,,,Dépôt,,,1,,Lagerstr.,10,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Weber & Aldinger, Lagerstr. 10 A., Dépôt Löwenstr. 47 Z.",Zürich,street_rare,Aussersihl
 1885-berufe-351-031,1885,351,berufe,31,31,person,,0,Wegmann,,,,J. Ed,,,,,,,1,,Bahnhofstr.,74,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Wegmann, J. Ed., Bahnhofstr. 74 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-032,1885,351,berufe,32,32,person,,0,Wernle,,,,Chr,,,,,,,1,,Augustinerg.,17,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Wernle, Chr., Augustinerg. 17 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-033,1885,351,berufe,33,33,person,,0,Willi,,,,F. J,,,,,,,1,,Poststr.,7,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Willi, F. J., Poststr. 7 Z.",Zürich,street_rare,Zürich
@@ -1468,7 +1468,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-351-061,1885,351,berufe,61,61,person,,0,Schober,,,,Th,,,,,,,1,,Napfg.,4,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Schober, Th., Napfg. 4 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-062,1885,351,berufe,62,62,person,,0,Schurter,,,,Emil,,,,,,,1,,Niederdorfstr.,90,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Schurter, Emil, Niederdorfstr. 90 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-063,1885,351,berufe,63,63,person,,0,Schwarz,,,,Joh. Georg,,,,,,,1,,z. Falken,,,Colonialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schwarz, Joh. Georg, z. Falken W.",Zürich,,Wiedikon
-1885-berufe-351-064,1885,351,berufe,64,64,firma,,0,Sprüngli,,,,"& Sohn, Dav",,,,,,,1,,Marktg. 5 u. Bahnhofstr. 21 (Paradepl.),5 u. 21,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 21 (Paradepl.) Z.",Zürich,street_rare,Zürich
+1885-berufe-351-064,1885,351,berufe,64,64,firma,,0,Sprüngli & Sohn,,,,Dav,,,,,,,1,,Marktg. 5 u. Bahnhofstr. 21 (Paradepl.),5 u. 21,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 21 (Paradepl.) Z.",Zürich,street_rare,Zürich
 1885-berufe-351-065,1885,351,berufe,65,65,person,,0,Tobler,,,,Jac,,,,,,,1,,Augustinerg.,30,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Tobler, Jac., Augustinerg. 30 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-066,1885,351,berufe,66,66,person,,0,Vögeli,,,,Ludw,,,,,,,1,,Waagg.,5,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Vögeli, Ludw., Waagg. 5 Z.",Zürich,street_rare,Zürich
 1885-berufe-351-067,1885,351,berufe,67,67,person,,0,Vollenweider,,,,Conr,,,,,,,1,,Schifflände,4,1,Colonialwaaren.,"qwen3.8-27b, Bild 2x",medium,,"☎Vollenweider, Conr., Schifflände 4 Z.",Zürich,street_rare,Zürich
@@ -1767,34 +1767,34 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-354-085,1885,354,berufe,85,85,person,,0,Zimmermann,,,,Georg,,,,,,,1,,Schmidg,5,,Eierhändler.,"qwen3.8-27b, Bild 2x",high,,"Zimmermann, Georg, Schmidg. 5 Z.",Zürich,,Zürich
 1885-berufe-354-086,1885,354,berufe,86,86,firma,,0,Kienast & Cie.,,,,,,,,,,,1,,Eisg,627,1,Eisapparatefabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Kienast & Cie., Eisg. 627 A.",Zürich,,Aussersihl
 1885-berufe-355-001,1885,355,berufe,1,1,firma,,0,Eisfabrik,,,,Zürich,,,,,,,1,,Industriequartier,,1,Eisfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Eisfabrik Zürich, Industriequartier A.",Zürich,,Aussersihl
-1885-berufe-355-002,1885,355,berufe,2,2,firma,,0,Sprüngli,,,,"& Sohn, Dav",,,,,,,1,,Werdmühle g,20,1,Eisfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Sprüngli & Sohn, Dav., Werdmühle g. 20 Z.",Zürich,,Zürich
-1885-berufe-355-003,1885,355,berufe,3,3,firma,,0,Kienast,,,,& Cie,,,,,,,1,,Eisg,627,1,Eishandel.,"qwen3.8-27b, Bild 2x",high,,"☎Kienast & Cie., Eisg. 627 A.",Zürich,,Aussersihl
-1885-berufe-355-004,1885,355,berufe,4,4,firma,,0,Sprüngli,,,,"& Sohn, Dav",,,,,,,1,,Marktg. 5 u. Bahnhofstr,19,1,Eishandel.,"qwen3.8-27b, Bild 2x",medium,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 19 (Paradepl.) Z.",Zürich,street_rare,Zürich
-1885-berufe-355-005,1885,355,berufe,5,5,firma,,0,Fäh,,,,& Schoch,,,,,,,1,,Oberdorf g,22—26,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Fäh & Schoch, Oberdorf g. 22—26 Z.",Zürich,,Zürich
-1885-berufe-355-006,1885,355,berufe,6,6,firma,,0,Schinz,,,,& Bär,,,,,,,1,,"z. Eisenhalle, Waagg",,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Schinz & Bär, z. Eisenhalle, Waagg. Z.",Zürich,,Zürich
-1885-berufe-355-007,1885,355,berufe,7,7,firma,,0,Schoch,,,,"& Cie., Jul",,,,,,,1,,Rüdenpl,5,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Schoch & Cie., Jul., Rüdenpl. 5 Z.",Zürich,,Zürich
+1885-berufe-355-002,1885,355,berufe,2,2,firma,,0,Sprüngli & Sohn,,,,Dav,,,,,,,1,,Werdmühle g,20,1,Eisfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Sprüngli & Sohn, Dav., Werdmühle g. 20 Z.",Zürich,,Zürich
+1885-berufe-355-003,1885,355,berufe,3,3,firma,,0,Kienast & Cie.,,,,,,,,,,,1,,Eisg,627,1,Eishandel.,"qwen3.8-27b, Bild 2x",high,,"☎Kienast & Cie., Eisg. 627 A.",Zürich,,Aussersihl
+1885-berufe-355-004,1885,355,berufe,4,4,firma,,0,Sprüngli & Sohn,,,,Dav,,,,,,,1,,Marktg. 5 u. Bahnhofstr,19,1,Eishandel.,"qwen3.8-27b, Bild 2x",medium,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 19 (Paradepl.) Z.",Zürich,street_rare,Zürich
+1885-berufe-355-005,1885,355,berufe,5,5,firma,,0,Fäh & Schoch,,,,,,,,,,,1,,Oberdorf g,22—26,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Fäh & Schoch, Oberdorf g. 22—26 Z.",Zürich,,Zürich
+1885-berufe-355-006,1885,355,berufe,6,6,firma,,0,Schinz & Bär,,,,,,,,,,,1,,"z. Eisenhalle, Waagg",,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Schinz & Bär, z. Eisenhalle, Waagg. Z.",Zürich,,Zürich
+1885-berufe-355-007,1885,355,berufe,7,7,firma,,0,Schoch & Cie.,,,,Jul,,,,,,,1,,Rüdenpl,5,1,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"☎Schoch & Cie., Jul., Rüdenpl. 5 Z.",Zürich,,Zürich
 1885-berufe-355-008,1885,355,berufe,8,8,person,,0,Wiser,,,,Joh. David,,,,,,,1,,Münsterhof,1,,Eisenhändler.,"qwen3.8-27b, Bild 2x",high,,"Wiser, Joh. David, Münsterhof 1 Z.",Zürich,,Zürich
 1885-berufe-355-009,1885,355,berufe,9,9,person,,0,Bäumlin,,,,J,,,,,,,1,,Langstr. 187 A. u. Seilergr,29,1,Handel mit altem Eisen.,"qwen3.8-27b, Bild 2x",medium,,"☎Bäumlin, J., Langstr. 187 A. u. Seilergr. 29 Z.",Zürich,street_rare,Zürich
 1885-berufe-355-010,1885,355,berufe,10,10,person,,0,Müller,,Denzler,,Casp,,,,,,,1,,Preyerg,28,,Handel mit altem Eisen.,"qwen3.8-27b, Bild 2x",high,,"Müller-Denzler, Casp., Preyerg. 28 Z.",Zürich,,Zürich
 1885-berufe-355-011,1885,355,berufe,11,11,person,,0,Nieth,,,,Jb,,,,,,,1,,Löchli,6,,Handel mit altem Eisen.,"qwen3.8-27b, Bild 2x",high,,"Nieth, Jb., Löchli 6 W.",Zürich,,Wiedikon
-1885-berufe-355-012,1885,355,berufe,12,12,firma,,0,Steiner,,,,& Rüegg,,,,,,,1,,Hinterdorf,448,,Handel mit altem Eisen.,"qwen3.8-27b, Bild 2x",high,,"Steiner & Rüegg, Hinterdorf 448 W.",Zürich,,Wiedikon
+1885-berufe-355-012,1885,355,berufe,12,12,firma,,0,Steiner & Rüegg,,,,,,,,,,,1,,Hinterdorf,448,,Handel mit altem Eisen.,"qwen3.8-27b, Bild 2x",high,,"Steiner & Rüegg, Hinterdorf 448 W.",Zürich,,Wiedikon
 1885-berufe-355-013,1885,355,berufe,13,13,person,,0,Bender,,,,F,,,,,,,1,,Weite Gasse,13,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Bender, F., Weite Gasse 13 Z.",Zürich,,Zürich
-1885-berufe-355-014,1885,355,berufe,14,14,firma,,0,Etzensperger,,,,"& Cie., J",,,,,,,1,,Niederdorfstr,20,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Etzensperger & Cie., J., Niederdorfstr. 20 Z.",Zürich,,Zürich
+1885-berufe-355-014,1885,355,berufe,14,14,firma,,0,Etzensperger & Cie.,,,,J,,,,,,,1,,Niederdorfstr,20,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Etzensperger & Cie., J., Niederdorfstr. 20 Z.",Zürich,,Zürich
 1885-berufe-355-015,1885,355,berufe,15,15,person,,0,Kisling,,,,S,,,,,,,1,,Sonnenquai,30,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Kisling, S., Sonnenquai 30 Z.",Zürich,,Zürich
 1885-berufe-355-016,1885,355,berufe,16,16,person,,0,Knosp,,,,Carl,,,,,,,1,,Strehlg,10,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Knosp, Carl, Strehlg. 10 Z.",Zürich,,Zürich
 1885-berufe-355-017,1885,355,berufe,17,17,person,,0,Morf,,,,Felix,,,,,,,1,,Rennweg,20,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Morf, Felix, Rennweg 20 Z.",Zürich,,Zürich
 1885-berufe-355-018,1885,355,berufe,18,18,person,,0,Reishauer,,,,G,,,,,,,1,,Niederdorfstr,32,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Reishauer, G., Niederdorfstr. 32 Z.",Zürich,,Zürich
-1885-berufe-355-019,1885,355,berufe,19,19,firma,,0,Schoch,,,,"& Cie., Gebr",,,,,,,1,,Münsterhof,8,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schoch & Cie., Gebr., Münsterhof 8 Z.",Zürich,,Zürich
+1885-berufe-355-019,1885,355,berufe,19,19,firma,,0,Schoch & Cie.,,,,Gebr,,,,,,,1,,Münsterhof,8,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schoch & Cie., Gebr., Münsterhof 8 Z.",Zürich,,Zürich
 1885-berufe-355-020,1885,355,berufe,20,20,firma,,0,Schoch,,,,Erh. & Jac,,,,,,,1,,Rathausquai,10,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Schoch, Erh. & Jac., Rathausquai 10 Z.",Zürich,,Zürich
 1885-berufe-355-021,1885,355,berufe,21,21,person,,0,Staub,,,,Dan,,,,,,,1,,Seefeldstr,71,1,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Staub, Dan., Seefeldstr. 71 R.",Zürich,,Riesbach
-1885-berufe-355-022,1885,355,berufe,22,22,firma,,0,Wegmann,,,,"& Sohn, Conr",,,,,,,1,,Storchen,9,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",medium,,"Wegmann & Sohn, Conr., Storchen. 9 Z.",Zürich,street_rare,Zürich
+1885-berufe-355-022,1885,355,berufe,22,22,firma,,0,Wegmann & Sohn,,,,Conr,,,,,,,1,,Storchen,9,,Eisenwaarenhandlungen.,"qwen3.8-27b, Bild 2x",medium,,"Wegmann & Sohn, Conr., Storchen. 9 Z.",Zürich,street_rare,Zürich
 1885-berufe-355-023,1885,355,berufe,23,23,person,,0,Bannwart,,,,A,,,,,,,1,,Claridenstr,36,1,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"☎Bannwart, A. (Spezialität: Engl. u. amerik. Artikel), Claridenstr. 36 Z.",Zürich,,Zürich
 1885-berufe-355-024,1885,355,berufe,24,24,person,,0,Fierz,,,,Carl,,,,,,,1,,Sihlstr,9,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Fierz, Carl, Sihlstr. 9 Z.",Zürich,,Zürich
 1885-berufe-355-025,1885,355,berufe,25,25,firma,,0,Hoffmann,,,,E. J,,,,,,,1,,Stadelhoferstr,10,,Agentur & Commission.,"qwen3.8-27b, Bild 2x",high,,"Hoffmann, E. J., (Berndorfer Metallwaarenfabrik und Email- und Metallwaarenfabrik Zug), Stadelhoferstr. 10 Z.",Zürich,,Zürich
 1885-berufe-355-026,1885,355,berufe,26,26,firma,,0,Bannwart,,,,A,,,,,,,1,,Claridenstr,36,,Eisenwaarenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Bannwart, A., Fabrik in Birmensdorf, Bureau Claridenstr. 36 Z.",Zürich,,Zürich
 1885-berufe-355-027,1885,355,berufe,27,27,person,,0,Schoch,,,,"Söhne, J",,,,,,,1,,Hohlstr,46,,Eisenwaarenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Schoch Söhne, J., Hohlstr. 46 A.",Zürich,,Aussersihl
 1885-berufe-355-028,1885,355,berufe,28,28,firma,,0,Akert,,,,F. & J. Surber,,,,,,,1,,Langg,,,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",high,,"Akert F. & J. Surber, Langg. III.",Zürich,,
-1885-berufe-355-029,1885,355,berufe,29,29,firma,,0,Diener,,,,& Cie,,,,,,,1,,Limmatstr. (Hard),,,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",medium,,"Diener & Cie., Limmatstr. (Hard) A.",Zürich,street_rare,Aussersihl
+1885-berufe-355-029,1885,355,berufe,29,29,firma,,0,Diener & Cie.,,,,,,,,,,,1,,Limmatstr. (Hard),,,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",medium,,"Diener & Cie., Limmatstr. (Hard) A.",Zürich,street_rare,Aussersihl
 1885-berufe-355-030,1885,355,berufe,30,30,firma,,0,Escher,,,,Wyss & Cie,,,,,,,1,,Niederdorfstr,102,,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",high,,"Escher Wyss & Cie., Niederdorfstr. 102 Z.",Zürich,,Zürich
 1885-berufe-355-031,1885,355,berufe,31,31,person,,0,Ganz,,,,Traug,,,,,,,1,,Plattenstr,35,1,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",high,,"☎Ganz, Traug., Plattenstr. 35 F.",Zürich,,Fluntern
 1885-berufe-355-032,1885,355,berufe,32,32,person,,0,Keller,,,,Jac,,,,,,,1,,Schaffhauserstr,29,,Eisen- und Metallgiessereien.,"qwen3.8-27b, Bild 2x",high,,"Keller, Jac., Schaffhauserstr. 29 U.",Zürich,,Unterstrass
@@ -1802,7 +1802,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-355-034,1885,355,berufe,34,34,firma,,0,Schulthess,,,,Gebr,,,,,,,1,,Spiegelg,26,,Eisenmöbelfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Schulthess, Gebr., Spiegelg. 26 Z.",Zürich,,Zürich
 1885-berufe-355-035,1885,355,berufe,35,35,person,,0,Suter,,Strehler,,H,,,,,,,1,,"Werkstätte Industriequartier A., Magazin Schweizerg",14,1,Eisenmöbelfabrikation.,"qwen3.8-27b, Bild 2x",medium,,"☎Suter-Strehler, H., Werkstätte Industriequartier A., Magazin Schweizerg. 14 Z.",Zürich,street_rare,Zürich
 1885-berufe-355-036,1885,355,berufe,36,36,person,,0,Bertossa,,,,Ant,,,,,,,1,,Claridenstr,43,1,Emballeurs.,"qwen3.8-27b, Bild 2x",high,,"☎Bertossa, Ant., Claridenstr. 43 Z.",Zürich,,Zürich
-1885-berufe-355-037,1885,355,berufe,37,37,firma,,0,Durgiai,,,,"& Sohn, P. A",,,,,,,1,,Bleicherweg,16,1,Emballeurs.,"qwen3.8-27b, Bild 2x",high,,"☎Durgiai & Sohn, P. A., Bleicherweg 16 Z.",Zürich,,Zürich
+1885-berufe-355-037,1885,355,berufe,37,37,firma,,0,Durgiai & Sohn,,,,P. A,,,,,,,1,,Bleicherweg,16,1,Emballeurs.,"qwen3.8-27b, Bild 2x",high,,"☎Durgiai & Sohn, P. A., Bleicherweg 16 Z.",Zürich,,Zürich
 1885-berufe-355-038,1885,355,berufe,38,38,firma,,0,Egolf,,,,Gebrüder,,,,,,,1,,Thalg,17,1,Emballeurs.,"qwen3.8-27b, Bild 2x",high,,"☎Egolf, Gebrüder, Thalg. 17 Z.",Zürich,,Zürich
 1885-berufe-355-039,1885,355,berufe,39,39,person,,0,Schuster,,,,Gottfr,,,,,,,1,,Tödistr,42,,Erd-Closets.,"qwen3.8-27b, Bild 2x",high,,"Schuster, Gottfr., Tödistr. 42 Z.",Zürich,,Zürich
 1885-berufe-355-040,1885,355,berufe,40,40,person,,0,Klauser,,Huber,,S,,,,,,,1,,Rennweg,9,,Essigfabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Klauser-Huber, S. Rennweg 9 Z.",Zürich,,Zürich
@@ -1812,7 +1812,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-355-044,1885,355,berufe,44,44,person,,0,Schalch,,,,"Rud., Sohn",,,,,,,1,,Zähringerstr,13,,Etuis-Fabrikation.,"qwen3.8-27b, Bild 2x",high,,"Schalch, Rud., Sohn, Zähringerstr. 13 Z.",Zürich,,Zürich
 1885-berufe-355-045,1885,355,berufe,45,45,person,,0,Sutermeister,,,,Moritz,,,,,,,1,,Feldeggstr,21,,Extincteurfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Sutermeister, Moritz, Feldeggstr. 21 R.",Zürich,,Riesbach
 1885-berufe-355-046,1885,355,berufe,46,46,person,,0,Stierlin,,,,Ludw,,,,,,,1,,Strehlg,4,,Fadenhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"Stierlin, Ludw., Strehlg. 4 Z.",Zürich,,Zürich
-1885-berufe-355-047,1885,355,berufe,47,47,firma,,0,Kiesling,,,,"& Cie., A",,,,,,,1,,Rämistr,3,,Fahnenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Kiesling & Cie., A., Rämistr. 3 Z.",Zürich,,Zürich
+1885-berufe-355-047,1885,355,berufe,47,47,firma,,0,Kiesling & Cie.,,,,A,,,,,,,1,,Rämistr,3,,Fahnenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Kiesling & Cie., A., Rämistr. 3 Z.",Zürich,,Zürich
 1885-berufe-355-048,1885,355,berufe,48,48,person,,0,Benz,,,,J,,,,,,,1,,Brandschenkestr,10,,Fahnenmalerei.,"qwen3.8-27b, Bild 2x",high,,"Benz, J., Brandschenkestr. 10 Z.",Zürich,,Zürich
 1885-berufe-355-049,1885,355,berufe,49,49,person,,0,Gischard,,,,Th,,,,,,,1,,Rennweg,14,,Fahnenmalerei.,"qwen3.8-27b, Bild 2x",high,,"Gischard, Th., Rennweg 14 Z.",Zürich,,Zürich
 1885-berufe-355-050,1885,355,berufe,50,50,person,,0,Abshagen,,,,Wilh,,,,,,,1,,"unt. Drahtschmidli U., Ab-lagen Limmatquai 4 u. Strehlg",25,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Abshagen, Wilh., unt. Drahtschmidli U., Ab-lagen Limmatquai 4 u. Strehlg. 25.",Zürich,street_rare hyphen,
@@ -1820,31 +1820,31 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-355-052,1885,355,berufe,52,52,person,,0,Geipel,,,,C. A,,,,,,,1,,Weinplatz,10,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Geipel, C. A., Weinplatz 10 Z.",Zürich,,Zürich
 1885-berufe-355-053,1885,355,berufe,53,53,person,,0,Hintermeister,,,,H,,,,,,,1,,Hechtpl. u. Bahnhofstr,38,1,Färber.,"qwen3.8-27b, Bild 2x",medium,,"☎Hintermeister, H., Hechtpl. u. Bahnhofstr. 38 Z.",Zürich,street_rare,Zürich
 1885-berufe-355-054,1885,355,berufe,54,54,person,,0,Rathgeb,,,,Heinr,,,,,,,1,,Brauerg,13,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Rathgeb, Heinr., Brauerg. 13 A.",Zürich,,Aussersihl
-1885-berufe-355-055,1885,355,berufe,55,55,firma,,0,Seelig,,,,"& Sohn, C",,,,,,,1,,Wipkingerstr,1 u. 3,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Seelig & Sohn, C., Wipkingerstr. 1 u. 3 U.",Zürich,,Unterstrass
+1885-berufe-355-055,1885,355,berufe,55,55,firma,,0,Seelig & Sohn,,,,C,,,,,,,1,,Wipkingerstr,1 u. 3,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Seelig & Sohn, C., Wipkingerstr. 1 u. 3 U.",Zürich,,Unterstrass
 1885-berufe-355-056,1885,355,berufe,56,56,person,,0,Steinhauser,,,,Ferd,,,,,,,1,,Utostr,37,,Färber.,"qwen3.8-27b, Bild 2x",high,,"Steinhauser, Ferd., Utostr. 37 E.",Zürich,,Enge
-1885-berufe-355-057,1885,355,berufe,57,57,firma,,0,Trüb,,,,"& Sohn, K",,,,,,,1,,Forchstr,69,,Farbholzmühle.,"qwen3.8-27b, Bild 2x",high,,"Trüb & Sohn, K., Forchstr. 69 Hi.",Zürich,,Hirslanden
-1885-berufe-355-058,1885,355,berufe,58,58,firma,,0,Bosch,,,,& Denner,,,,,,,1,,Sihlstr,95,1,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"☎Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
-1885-berufe-355-059,1885,355,berufe,59,59,firma,,0,Egli,,,,& Cie,,,,,,,1,,Kirchg,48,1,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"☎Egli & Cie., Kirchg. 48 Z.",Zürich,,Zürich
+1885-berufe-355-057,1885,355,berufe,57,57,firma,,0,Trüb & Sohn,,,,K,,,,,,,1,,Forchstr,69,,Farbholzmühle.,"qwen3.8-27b, Bild 2x",high,,"Trüb & Sohn, K., Forchstr. 69 Hi.",Zürich,,Hirslanden
+1885-berufe-355-058,1885,355,berufe,58,58,firma,,0,Bosch & Denner,,,,,,,,,,,1,,Sihlstr,95,1,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"☎Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
+1885-berufe-355-059,1885,355,berufe,59,59,firma,,0,Egli & Cie.,,,,,,,,,,,1,,Kirchg,48,1,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"☎Egli & Cie., Kirchg. 48 Z.",Zürich,,Zürich
 1885-berufe-355-060,1885,355,berufe,60,60,person,,0,Finsler,,,,J,,,,,,,1,,Münster g,18,1,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"☎Finsler, J., Münster g. 18 Z.",Zürich,,Zürich
 1885-berufe-355-061,1885,355,berufe,61,61,person,,0,Fissler,,,,Sal,,,,,,,1,,Spiegelg,11,,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"Fissler, Sal., Spiegelg. 11 Z.",Zürich,,Zürich
 1885-berufe-355-062,1885,355,berufe,62,62,person,,0,Gerner,,,,Georg,,,,,,,1,,Rennweg,59,,Farbwaren.,"qwen3.8-27b, Bild 2x",high,,"Gerner, Georg, Rennweg 59 I Z.",Zürich,,
-1885-berufe-356-001,1885,356,berufe,1,1,firma,,0,Hafner,,Ritter,,,,,,,,,1,,Bahnhofstr,74,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hafner & Ritter, Bahnhofstr. 74 Z.",Zürich,,Zürich
-1885-berufe-356-002,1885,356,berufe,2,2,firma,,0,Handschin,,Scheller,,,,,,,,,1,,Neumarkt,6,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Handschin & Scheller, Neumarkt 6 Z.",Zürich,,Zürich
+1885-berufe-356-001,1885,356,berufe,1,1,firma,,0,Hafner & Ritter,,Ritter,,,,,,,,,1,,Bahnhofstr,74,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hafner & Ritter, Bahnhofstr. 74 Z.",Zürich,,Zürich
+1885-berufe-356-002,1885,356,berufe,2,2,firma,,0,Handschin & Scheller,,Scheller,,,,,,,,,1,,Neumarkt,6,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Handschin & Scheller, Neumarkt 6 Z.",Zürich,,Zürich
 1885-berufe-356-003,1885,356,berufe,3,3,person,,0,Killinger,,,,F,,,,,,,1,,Löwenstr,54,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Killinger, F., Löwenstr. 54 Z.",Zürich,,Zürich
 1885-berufe-356-004,1885,356,berufe,4,4,person,,0,Magg,,,,Jos,,,,,,,1,,Seefeldstr,51,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Magg, Jos., Seefeldstr. 51 R.",Zürich,,Riesbach
 1885-berufe-356-005,1885,356,berufe,5,5,person,,0,Meier,,Schaad,,H,,,,,,,1,,Schifflände,14,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Meier-Schaad, H., Schifflände 14 Z.",Zürich,,Zürich
 1885-berufe-356-006,1885,356,berufe,6,6,person,,0,Nachmann,,,,Jos,,,,Agentur,,,1,,Lintheschergasse,20,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Nachmann, Jos., Lintheschergasse 20 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-007,1885,356,berufe,7,7,person,,0,Nahath,,,,Gust,,,,,,,1,,Florhofg,4,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Nahath, Gust., Florhofg. 4 Z.",Zürich,,Zürich
 1885-berufe-356-008,1885,356,berufe,8,8,person,,0,Ostertag,,,,C. A,,,,,,,1,,Stadthauspl,31,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ostertag, C. A., Stadthauspl. 31 Z.",Zürich,,Zürich
-1885-berufe-356-009,1885,356,berufe,9,9,firma,,0,Rebsamen,,Naegely,,,,,,,,,1,,Gessner-Allee,34,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessner-Allee 34 Z.",Zürich,,Zürich
+1885-berufe-356-009,1885,356,berufe,9,9,firma,,0,Rebsamen & Naegely,,Naegely,,,,,,,,,1,,Gessner-Allee,34,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessner-Allee 34 Z.",Zürich,,Zürich
 1885-berufe-356-010,1885,356,berufe,10,10,person,,0,Riggenbach,,,,J,,,,,,,1,,Fortunag,26,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Riggenbach, J., Fortunag. 26 Z.",Zürich,,Zürich
 1885-berufe-356-011,1885,356,berufe,11,11,person,,0,Ris,,Schmid,,Fr,,,,,,,1,,Plattenstr,31,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ris-Schmid, Fr., Plattenstr. 31 F.",Zürich,,Fluntern
 1885-berufe-356-012,1885,356,berufe,12,12,person,,0,Römer,,,,Ad,,,,Agentur,,,1,,Linthescherg,8,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Römer, Ad., Linthescherg. 8 I Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-013,1885,356,berufe,13,13,person,,0,Rümbeli,,,,Ulr,,,,,,,1,,Brunng,6,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rümbeli, Ulr., Brunng. 6 II Z.",Zürich,,Zürich
 1885-berufe-356-014,1885,356,berufe,14,14,person,,0,Scheffer,,,,Georg,,,,,,,1,,Bahnhofstr,69,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Scheffer, Georg, Bahnhofstr. 69 Z.",Zürich,,Zürich
 1885-berufe-356-015,1885,356,berufe,15,15,firma,,0,Schmid,,Frey,,,,,,,,,1,,Rämistr,3,1,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Schmid, Frey & Co., Rämistr. 3 Z.",Zürich,,Zürich
-1885-berufe-356-016,1885,356,berufe,16,16,firma,,0,Sigg,,Schmid,,,,,,en gros,,,1,,Stadelhoferpl,2,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Sigg & Schmid, Stadelhoferpl. 2 Z. (en gros)",Zürich,,Zürich
-1885-berufe-356-017,1885,356,berufe,17,17,firma,,0,Streuli,,Cie.,,J,,,,,,,1,,Sihlhölzli,3,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
+1885-berufe-356-016,1885,356,berufe,16,16,firma,,0,Sigg & Schmid,,Schmid,,,,,,en gros,,,1,,Stadelhoferpl,2,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Sigg & Schmid, Stadelhoferpl. 2 Z. (en gros)",Zürich,,Zürich
+1885-berufe-356-017,1885,356,berufe,17,17,firma,,0,Streuli & Cie.,,Cie.,,J,,,,,,,1,,Sihlhölzli,3,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
 1885-berufe-356-018,1885,356,berufe,18,18,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
 1885-berufe-356-019,1885,356,berufe,19,19,person,,0,Weber,,,,Rob,,,,,,,1,,Rennweg,31,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Weber, Rob., Rennweg 31 Z.",Zürich,,Zürich
 1885-berufe-356-020,1885,356,berufe,20,20,person,,0,Wintsch,,Meyer,,C. M,,,,Agentur,,,1,,Seideng,16,,Farbwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wintsch-Meyer, C. M., Seideng. 16 Z. (Agentur.)",Zürich,,Zürich
@@ -1875,7 +1875,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-356-045,1885,356,berufe,45,45,person,,0,Wohler,,,,Joh,,,,,,,1,,Baderg,3,,Feilträger-Geschäfte.,"qwen3.8-27b, Bild 2x",high,,"Wohler, Joh., Baderg. 3 Z.",Zürich,,Zürich
 1885-berufe-356-046,1885,356,berufe,46,46,person,,0,Alder,,,,"Jac., Sohn",,,,,,,1,,Kuttelg. 10 u. Limmatquai 18 u. 96,"10, 18 u. 96",,Feinschleifereien.,"qwen3.8-27b, Bild 2x",medium,,"Alder, Jac., Sohn, Kuttelg. 10 u. Limmatquai 18 u. 96 Z.",Zürich,street_rare,Zürich
 1885-berufe-356-047,1885,356,berufe,47,47,person,,0,Lang,,,,Alb,,,,,,,1,,Wytikonestr,14,,Feinschleifereien.,"qwen3.8-27b, Bild 2x",high,,"Lang, Alb., Wytikonestr. 14 Hi.",Zürich,,Hirslanden
-1885-berufe-356-048,1885,356,berufe,48,48,firma,,0,Sprüngli,,Sohn,,D,,,,,,,1,,Werdmühleleg,20,1,Feinschleifereien.,"qwen3.8-27b, Bild 2x",high,,"☎ Sprüngli & Sohn, D., Werdmühleleg. 20 Z.",Zürich,,Zürich
+1885-berufe-356-048,1885,356,berufe,48,48,firma,,0,Sprüngli & Sohn,,Sohn,,D,,,,,,,1,,Werdmühleleg,20,1,Feinschleifereien.,"qwen3.8-27b, Bild 2x",high,,"☎ Sprüngli & Sohn, D., Werdmühleleg. 20 Z.",Zürich,,Zürich
 1885-berufe-356-049,1885,356,berufe,49,49,person,,0,Bernheim,,,,Moritz,,,,,,,1,,Beateng,9,,Fellhandel.,"qwen3.8-27b, Bild 2x",high,,"Bernheim, Moritz, Beateng. 9 Z.",Zürich,,Zürich
 1885-berufe-356-050,1885,356,berufe,50,50,person,,0,Braunschweig,,,,J,,jgr.,,,,,1,,Bahnhofstr,66,,Fellhandel.,"qwen3.8-27b, Bild 2x",high,,"Braunschweig jgr., J., Bahnhofstr. 66 III Z.",Zürich,,Zürich
 1885-berufe-356-051,1885,356,berufe,51,51,firma,,0,Digglemann,,,,Gebrüder,,,,,,,1,,Marktg,20,,Fellhandel.,"qwen3.8-27b, Bild 2x",high,,"Digglemann, Gebrüder, Marktg. 20 Z.",Zürich,,Zürich
@@ -1883,28 +1883,28 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-356-053,1885,356,berufe,53,53,person,,0,Schaufenster-Reinigungs-Bureau,,,,,,,,,,,1,,Seefeldstr,13,,Fensterreinigungsgeschäft.,"qwen3.8-27b, Bild 2x",high,,Schaufenster-Reinigungs-Bureau. Seefeldstr. 13 R.,Zürich,,Riesbach
 1885-berufe-356-054,1885,356,berufe,54,54,firma,,0,Fettlaugenmehlfabrik Wiedikon-Zürich,,,,,,,,,,,1,,Zürcherstr,420,,Fettlaugenmehlfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Fettlaugenmehlfabrik Wiedikon-Zürich, Zürcherstr. 420 W.",Zürich,,Wiedikon
 1885-berufe-356-055,1885,356,berufe,55,55,person,,0,Bloch,,,,J,,,,Agentur,,,1,,Zwinglipl,3,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Bloch, J., Zwinglipl. 3 Z. (Agentur.)",Zürich,,Zürich
-1885-berufe-356-056,1885,356,berufe,56,56,firma,,0,Bosch,,Denner,,,,,,Agentur,,,1,,Sihlstr,95,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
+1885-berufe-356-056,1885,356,berufe,56,56,firma,,0,Bosch & Denner,,Denner,,,,,,Agentur,,,1,,Sihlstr,95,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-057,1885,356,berufe,57,57,person,,0,Dressel,,,,C,,,,Agentur,,,1,,Seideng,13,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Dressel, C., Seideng. 13 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-058,1885,356,berufe,58,58,person,,0,Gerig,,,,J. J,,,,,,,1,,Plattenstr,1,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Gerig, J. J., Plattenstr. 1 Ho.",Zürich,,Hottingen
 1885-berufe-356-059,1885,356,berufe,59,59,person,,0,Hardmeier,,Huber,,,,,,,,,1,,Badenerstr,47,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Hardmeier-Huber, Badenerstr. 47 A.",Zürich,,Aussersihl
 1885-berufe-356-060,1885,356,berufe,60,60,person,,0,Hotz,,,,H,,,,,,,1,,Schipfe,16,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Hotz, H., Schipfe 16 Z.",Zürich,,Zürich
 1885-berufe-356-061,1885,356,berufe,61,61,person,,0,Nägeli,,,,"Sohn, Heinr",,,,,,,1,,Niederdorfstr,22,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Nägeli, Sohn, Heinr., Niederdorfstr. 22 Z.",Zürich,,Zürich
 1885-berufe-356-062,1885,356,berufe,62,62,person,,0,Pfister,,Bleuler,,,,,,,,,1,,Leonhardg,6,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Pfister-Bleuler, Leonhardg. 6 Z.",Zürich,,Zürich
-1885-berufe-356-063,1885,356,berufe,63,63,firma,,0,Renich,,Cayenz,,,,,,Agentur,,,1,,Fraumünsterstr,29,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Renich & Cayenz, Fraumünsterstr. 29 (Centralhof) Z. (Agentur.)",Zürich,,Zürich
+1885-berufe-356-063,1885,356,berufe,63,63,firma,,0,Renich & Cayenz,,Cayenz,,,,,,Agentur,,,1,,Fraumünsterstr,29,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Renich & Cayenz, Fraumünsterstr. 29 (Centralhof) Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-064,1885,356,berufe,64,64,person,,0,Scheffer,,,,Georg,,,,Agentur,,,1,,Bahnhofstr,69,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Scheffer, Georg, Bahnhofstr. 69 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-065,1885,356,berufe,65,65,person,,0,Schmid,,,,"jun., Aug",,,,Export,,,1,,Conradstr,2,,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"Schmid jun., Aug., Conradstr. 2 A. (Export.)",Zürich,,Aussersihl
 1885-berufe-356-066,1885,356,berufe,66,66,person,,0,Weber,,,,Rud,,,,Agentur,,,1,,Usteristr,5,1,Fettwaren.,"qwen3.8-27b, Bild 2x",high,,"☎ Weber, Rud., Usteristr. 5 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-356-067,1885,356,berufe,67,67,person,,0,Schweiter,,,,Jac,,,,,,,1,,Vogelsangstr,54,,Feuerwerker.,"qwen3.8-27b, Bild 2x",high,,"Schweiter, Jac., Vogelsangstr. 54 O.",Zürich,,Oberstrass
 1885-berufe-356-068,1885,356,berufe,68,68,person,,0,Finsler,,,,J,,,,,,,1,,Müsterg,18,1,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"☎ Finsler, J., Müsterg. 18 Z.",Zürich,,Zürich
 1885-berufe-356-069,1885,356,berufe,69,69,person,,0,Magg,,,,Jos,,,,,,,1,,Seefeldstr,51,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Magg, Jos., Seefeldstr. 51 R.",Zürich,,Riesbach
-1885-berufe-356-070,1885,356,berufe,70,70,firma,,0,Rebsamen,,Naegely,,,,,,,,,1,,Gessner-Allee,34,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessner-Allee 34 Z.",Zürich,,Zürich
+1885-berufe-356-070,1885,356,berufe,70,70,firma,,0,Rebsamen & Naegely,,Naegely,,,,,,,,,1,,Gessner-Allee,34,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessner-Allee 34 Z.",Zürich,,Zürich
 1885-berufe-356-071,1885,356,berufe,71,71,person,,0,Rümbeli,,,,U,,,,,,,1,,Brunng,6,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Rümbeli, U., Brunng. 6 Z.",Zürich,,Zürich
-1885-berufe-356-072,1885,356,berufe,72,72,firma,,0,Streuli,,Cie.,,J,,,,,,,1,,Sihlhölzli,3,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
+1885-berufe-356-072,1885,356,berufe,72,72,firma,,0,Streuli & Cie.,,Cie.,,J,,,,,,,1,,Sihlhölzli,3,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
 1885-berufe-356-073,1885,356,berufe,73,73,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Firniß-Fabrikation und -Handel.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
 1885-berufe-356-075,1885,356,berufe,75,75,person,,0,Peterhauser,,,,Fr,,,,,,,1,,Löwenstr,16 c,,Flaschenschlüsse (mechan.).,"qwen3.8-27b, Bild 2x",high,,"Peterhauser, Fr., Löwenstr. 16 c Z.",Zürich,,Zürich
 1885-berufe-356-076,1885,356,berufe,76,76,person,,0,Guggenbühl,,,,"jgr., Fritz",,,,,,,1,,Niederdorfstr,4 u. 6,1,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"☎ Guggenbühl jgr., Fritz, Niederdorfstr. 4 u. 6 Z.",Zürich,,Zürich
 1885-berufe-356-077,1885,356,berufe,77,77,firma,,0,Hösli,,,,Gebrüder,,,,Amerikan.,,,1,,Rennweg,16,,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"Hösli, Gebrüder, Rennweg 16 Z. (Amerikan.)",Zürich,,Zürich
-1885-berufe-356-078,1885,356,berufe,78,78,firma,,0,Koller,,Mäder,,,,,,,,,1,,Stüssihofst,3,1,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"☎ Koller & Mäder, Stüssihofst. 3 Z.",Zürich,,Zürich
+1885-berufe-356-078,1885,356,berufe,78,78,firma,,0,Koller & Mäder,,Mäder,,,,,,,,,1,,Stüssihofst,3,1,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"☎ Koller & Mäder, Stüssihofst. 3 Z.",Zürich,,Zürich
 1885-berufe-356-079,1885,356,berufe,79,79,person,,0,Rosenfeld,,,,D,,,,Export,,,1,,Niederdorfstr.-Leonhardg,,1,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",medium,,"☎ Rosenfeld, D., Niederdorfstr.-Leonhardg. Z. (Export.)",Zürich,street_rare,Zürich
 1885-berufe-356-080,1885,356,berufe,80,80,person,,0,Schober,,,,W,,,,,,,1,,Rennweg,3,1,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"☎ Schober, W., Rennweg 3 Z.",Zürich,,Zürich
 1885-berufe-356-081,1885,356,berufe,81,81,person,,0,Weiller,,,,Marc,,,,,,,1,,Gassen,18,,Fleischhandel en gros.,"qwen3.8-27b, Bild 2x",high,,"Weiller, Marc., Gassen 18 Z.",Zürich,,Zürich
@@ -2153,7 +2153,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-359-048,1885,359,berufe,48,48,person,,0,Saladin,,,,Ludw,,,,Pfarrer der christkathol. Gemeinde,,,1,,Glockeng,18,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Saladin, Ludw., Pfarrer der christkathol. Gemeinde, Glockeng. 18 Z.",Zürich,,Zürich
 1885-berufe-359-049,1885,359,berufe,49,49,person,,0,Schaffert,,,,Wilh. Ed,,,,apost. Geistl.,,,1,,Neptunstr,13,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Schaffert, Wilh. Ed., apost. Geistl., Neptunstr. 13 Ho.",Zürich,,Hottingen
 1885-berufe-359-050,1885,359,berufe,50,50,person,,0,Stössel,,,,Rud,,,,apost. kathol. Geistl.,,,1,,Asylstr,13,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Stössel, Rud., apost. kathol. Geistl., Asylstr. 13 Ho.",Zürich,,Hottingen
-1885-berufe-359-051,1885,359,berufe,51,51,person,,0,Stubenvoll,,,,Franz,Dr.,,,Pfarrer d. christ-kathol. Gemeinde,,,1,,Glockeng,18,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",medium,,"Stubenvoll, Dr. Franz, Pfarrer d. christ-kathol. Gemeinde, Glockeng. 18 Z.",Zürich,hyphen,Zürich
+1885-berufe-359-051,1885,359,berufe,51,51,person,,0,Stubenvoll,,,,Franz,Dr.,,,Pfarrer d. christkathol. Gemeinde,,,1,,Glockeng,18,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",medium,,"Stubenvoll, Dr. Franz, Pfarrer d. christ-kathol. Gemeinde, Glockeng. 18 Z.",Zürich,hyphen,Zürich
 1885-berufe-359-052,1885,359,berufe,52,52,person,,0,Studer,,,,Jul,,,,Spitalpfarrer,,,1,,Schönbühlstr,30,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Studer, Jul., Spitalpfarrer, Schönbühlstr. 30 Ho.",Zürich,,Hottingen
 1885-berufe-359-053,1885,359,berufe,53,53,person,,0,Vieli,,,,Georg,,,,II. Vikar d. röm.-kathol. Kirche,,,1,,Werdrstr,57,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Vieli, Georg, II. Vikar d. röm.-kathol. Kirche, Werdrstr. 57 I A.",Zürich,,Aussersihl
 1885-berufe-359-054,1885,359,berufe,54,54,person,,0,Winkler,,,,Edm,,,,Pfarrer in Unterstrass,,,1,,a. Beckenhofstr,40,,Gemeindammänner.,"qwen3.8-27b, Bild 2x",high,,"Winkler, Edm., Pfarrer in Unterstrass, a. Beckenhofstr. 40 U.",Zürich,,Unterstrass
@@ -2273,7 +2273,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-360-102,1885,360,berufe,102,102,person,,0,Wunderly,,,,Joh,,,,,,,1,,Glärnischstr,29,1,Gerbereien.,"qwen3.8-27b, Bild 2x",high,,"☎Wunderly, Joh., Glärnischstr. 29 Z.",Zürich,,Zürich
 1885-berufe-360-103,1885,360,berufe,103,103,person,,0,Carpentier,,,,Ferd,,,,,,,1,,Löwenstr,33,,Geschäftsbücherfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Carpentier, Ferd., Löwenstr. 33 Z.",Zürich,,Zürich
 1885-berufe-361-001,1885,361,berufe,1,1,person,,0,Schubert,,,,Fr,,,,,,,1,,Seefeldstr,47 u. 49,,Geschäftsbücherfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Schubert, Fr., Seefeldstr. 47 u. 49 R.",Zürich,,Riesbach
-1885-berufe-361-003,1885,361,berufe,3,3,firma,,0,Waser,,,,J. H,,,,,,,1,,Limmatquai,68 u. 70,,Geschäftsbücherfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Waser & Cie., J. H., Limmatquai 68 u. 70 Z.",Zürich,,Zürich
+1885-berufe-361-003,1885,361,berufe,3,3,firma,,0,Waser & Cie.,,,,J. H,,,,,,,1,,Limmatquai,68 u. 70,,Geschäftsbücherfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Waser & Cie., J. H., Limmatquai 68 u. 70 Z.",Zürich,,Zürich
 1885-berufe-361-004,1885,361,berufe,4,4,person,,0,Baumann,,Müller,,,,Frau,,,,,1,,Militärstr,285,,Geschirrhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Baumann-Müller, Frau, Militärstr. 285 A.",Zürich,,Aussersihl
 1885-berufe-361-005,1885,361,berufe,5,5,person,,0,BenguereI,,Keller,,Alfr,,,,,,,1,,Gräblig,5,,Geschirrhandlungen.,"qwen3.8-27b, Bild 2x",high,,"BenguereI-Keller, Alfr., Gräblig. 5 Z.",Zürich,,Zürich
 1885-berufe-361-006,1885,361,berufe,6,6,person,,0,Binder,,,,Christe,,,,,,,1,,Stüssihofst,6,,Geschirrhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Binder, Christe., Stüssihofst. 6 Z.",Zürich,,Zürich
@@ -2305,19 +2305,19 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-361-032,1885,361,berufe,32,32,person,,0,Gamber,,,,Johs,,,,,,,1,,Badenerstr,60,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Gamber, Johs., Badenerstr. 60 A.",Zürich,,Aussersihl
 1885-berufe-361-033,1885,361,berufe,33,33,person,,0,Gessner,,,,Conr,,,,,,,1,,Gerechtigkeitsg,31,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Gessner, Conr., Gerechtigkeitsg. 31 Z.",Zürich,,Zürich
 1885-berufe-361-034,1885,361,berufe,34,34,person,,0,Giesker,,,,Ernst,,,,,,,1,,Bleicherweg,72,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Giesker, Ernst, Bleicherweg 72 E. (Agentur.)",Zürich,,Enge
-1885-berufe-361-035,1885,361,berufe,35,35,firma,,0,Gremmer,,,,,,,,,,,1,,Löwenstr,69,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Gremmer & Loosli, Löwenstr. 69 Z.",Zürich,,Zürich
-1885-berufe-361-036,1885,361,berufe,36,36,firma,,0,Gugenheim,,,,Charles,,,,,,,1,,Bahnhofstr,83,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Gugenheim & Cie., Charles, Bahnhofstr. 83 Z. (Commission.)",Zürich,,Zürich
-1885-berufe-361-037,1885,361,berufe,37,37,firma,,0,Hauser,,,,,,,,,,,1,,Bahnhofstr,75,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Hauser & Sobotka, Bahnhofstr. 75 Z.",Zürich,,Zürich
+1885-berufe-361-035,1885,361,berufe,35,35,firma,,0,Gremmer & Loosli,,,,,,,,,,,1,,Löwenstr,69,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Gremmer & Loosli, Löwenstr. 69 Z.",Zürich,,Zürich
+1885-berufe-361-036,1885,361,berufe,36,36,firma,,0,Gugenheim & Cie.,,,,Charles,,,,,,,1,,Bahnhofstr,83,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Gugenheim & Cie., Charles, Bahnhofstr. 83 Z. (Commission.)",Zürich,,Zürich
+1885-berufe-361-037,1885,361,berufe,37,37,firma,,0,Hauser & Sobotka,,,,,,,,,,,1,,Bahnhofstr,75,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Hauser & Sobotka, Bahnhofstr. 75 Z.",Zürich,,Zürich
 1885-berufe-361-038,1885,361,berufe,38,38,person,,0,Kreis,,,,Conr,,,,,,,1,,Tonhaltestr,22,,Getreidehandel.,"qwen3.8-27b, Bild 2x",medium,,"Kreis, Conr., Tonhaltestr. 22 Z. (Hafer.)",Zürich,street_rare,Zürich
-1885-berufe-361-039,1885,361,berufe,39,39,firma,,0,Koch,,,,Jac,,,,,,,1,,Bahnhofstr,73,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Koch & Cie, Jac., Bahnhofstr. 73 Z.",Zürich,,Zürich
+1885-berufe-361-039,1885,361,berufe,39,39,firma,,0,Koch & Cie,,,,Jac,,,,,,,1,,Bahnhofstr,73,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Koch & Cie, Jac., Bahnhofstr. 73 Z.",Zürich,,Zürich
 1885-berufe-361-040,1885,361,berufe,40,40,person,,0,Liebmann,,,,C,,,,,,,1,,Bahnhofstr,106,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Liebmann, C., Bahnhofstr. 106 Z. (Commiss. und Consign.)",Zürich,,Zürich
-1885-berufe-361-041,1885,361,berufe,41,41,firma,,0,Löwenberg,,,,,,,,,,,1,,Gessnerallee,52,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Löwenberg & Stern, Gessnerallee 52 Z. (Agentur.)",Zürich,,Zürich
+1885-berufe-361-041,1885,361,berufe,41,41,firma,,0,Löwenberg & Stern,,,,,,,,,,,1,,Gessnerallee,52,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Löwenberg & Stern, Gessnerallee 52 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-361-042,1885,361,berufe,42,42,firma,,0,Mayer,,,,,,,,,,,1,,Bahnhofstr,88,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Mayer, Weismann & Cie., Bahnhofstr. 88 Z.",Zürich,,Zürich
 1885-berufe-361-043,1885,361,berufe,43,43,person,,0,Oeler,,,,Carl,,,,,,,1,,Löwenstr,54,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Oeler, Carl, Löwenstr. 54 Z.",Zürich,,Zürich
 1885-berufe-361-044,1885,361,berufe,44,44,person,,0,Ott,,Köchlin,,F,,,,,,,1,,Gartenhofstr,32,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Ott-Köchlin, F., Gartenhofstr. 32 A.",Zürich,,Aussersihl
 1885-berufe-361-045,1885,361,berufe,45,45,person,,0,Perelis,,,,Carl,,,,,,,1,,Schützeng,19,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Perelis, Carl, Schützeng. 19 Z.",Zürich,,Zürich
 1885-berufe-361-046,1885,361,berufe,46,46,person,,0,Rüegg,,Wegmann,,R,,,,,,,1,,Bleicherweg,38,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Rüegg-Wegmann, R., Bleicherweg 38 Z.",Zürich,,Zürich
-1885-berufe-361-047,1885,361,berufe,47,47,firma,,0,Schapfinger,,,,,,,,,,,1,,Bahnhofstr,77,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Schapfinger & Weil, Bahnhofstr. 77 Z. (Commission.)",Zürich,,Zürich
+1885-berufe-361-047,1885,361,berufe,47,47,firma,,0,Schapfinger & Weil,,,,,,,,,,,1,,Bahnhofstr,77,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Schapfinger & Weil, Bahnhofstr. 77 Z. (Commission.)",Zürich,,Zürich
 1885-berufe-361-048,1885,361,berufe,48,48,person,,0,Schellenberg,,,,J. R,,,,,,,1,,Werdmühleg,3,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Schellenberg, J. R., Werdmühleg. 3 Z.",Zürich,,Zürich
 1885-berufe-361-049,1885,361,berufe,49,49,person,,0,Stäger,,,,Peter,,,,,,,1,,Löwenstr,67,1,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"☎Stäger, Peter, Löwenstr. 67 Z.",Zürich,,Zürich
 1885-berufe-361-050,1885,361,berufe,50,50,person,,0,Stauber,,,,Herm,,,,,,,1,,Gessnerallee,38,,Getreidehandel.,"qwen3.8-27b, Bild 2x",high,,"Stauber, Herm., Gessnerallee 38 Z. (Agentur.)",Zürich,,Zürich
@@ -2329,7 +2329,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-361-056,1885,361,berufe,56,56,person,,0,Wüst,,,,Alb,,,,,,,1,,Löwenstr,66,,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Wüst, Alb., Löwenstr. 66 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-361-057,1885,361,berufe,57,57,person,,0,Acher mann,,,,Joh,,,,,,,1,,Landstr,26,1,Glaser.,"qwen3.8-27b, Bild 2x",high,,"☎Acher mann, Joh., Landstr. 26 R.",Zürich,,Riesbach
 1885-berufe-361-058,1885,361,berufe,58,58,person,,0,Beaa,,,,M,,,,,,,1,,Werdmühleg,8,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Beaa, M., Werdmühleg. 8 Z.",Zürich,,Zürich
-1885-berufe-361-059,1885,361,berufe,59,59,firma,,0,Brombeiss,,,,,,,,,,,1,,Reitg,4,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Brombeiss & Werner, Reitg. 4 R.",Zürich,,Riesbach
+1885-berufe-361-059,1885,361,berufe,59,59,firma,,0,Brombeiss & Werner,,,,,,,,,,,1,,Reitg,4,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Brombeiss & Werner, Reitg. 4 R.",Zürich,,Riesbach
 1885-berufe-361-060,1885,361,berufe,60,60,person,,0,Brunner,,,,Heinr,,,,,,,1,,Hofackerstr,20,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Brunner, Heinr., Hofackerstr. 20 II Hi.",Zürich,,Hirslanden
 1885-berufe-361-061,1885,361,berufe,61,61,person,,0,Bühler,,,,Joh,,,,,,,1,,Predigerg,9,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Bühler, Joh., Predigerg. 9 Z.",Zürich,,Zürich
 1885-berufe-361-062,1885,361,berufe,62,62,person,,0,Conzelmann,,,,Andr,,,,,,,1,,Rennweg,34,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Conzelmann, Andr., Rennweg 34 Z.",Zürich,,Zürich
@@ -2354,7 +2354,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-361-081,1885,361,berufe,81,81,person,,0,Schönholzer,,,,Joh,,,,,,,1,,Hinterdorf,220,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Schönholzer, Joh., Hinterdorf 220 W.",Zürich,,Wiedikon
 1885-berufe-361-082,1885,361,berufe,82,82,person,,0,Sturm,,,,Louis,,,,,,,1,,Schaffhauserstr,6,,Glaser.,"qwen3.8-27b, Bild 2x",high,,"Sturm, Louis, Schaffhauserstr. 6 U.",Zürich,,Unterstrass
 1885-berufe-361-083,1885,361,berufe,83,83,firma,,0,Lincke,,,,Gebrüder,,,,,,,1,,ob. Ilirschengr,20,1,Glaserkitt.,"qwen3.8-27b, Bild 2x",high,,"☎Lincke, Gebrüder, ob. Ilirschengr. 20 Z.",Zürich,,Zürich
-1885-berufe-361-084,1885,361,berufe,84,84,firma,,0,Streuli,,,,J,,,,,,,1,,Sihlhölzli,3,,Glaserkitt.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
+1885-berufe-361-084,1885,361,berufe,84,84,firma,,0,Streuli & Cie.,,,,J,,,,,,,1,,Sihlhölzli,3,,Glaserkitt.,"qwen3.8-27b, Bild 2x",high,,"Streuli & Cie., J., Sihlhölzli 3 Z.",Zürich,,Zürich
 1885-berufe-361-085,1885,361,berufe,85,85,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Glaserkitt.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
 1885-berufe-361-086,1885,361,berufe,86,86,person,,0,BenguereI,,Keller,,Alfr,,,,,,,1,,Gräblig,5,,Glas- & Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"BenguereI-Keller, Alfr., Gräblig. 5 Z.",Zürich,,Zürich
 1885-berufe-361-087,1885,361,berufe,87,87,person,,0,Brun,,,,Jac,,,,,,,1,,Rindermarkt,6,,Glas- & Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Brun, Jac., Rindermarkt 6 Z.",Zürich,,Zürich
@@ -2370,7 +2370,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-361-097,1885,361,berufe,97,97,person,,0,Kleiner,,,,"Sohn, Heinr",,,,,,,1,,Laterneng,3,,Glas- & Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Kleiner, Sohn, Heinr., Laterneng. 3 Z.",Zürich,,Zürich
 1885-berufe-361-098,1885,361,berufe,98,98,person,,0,Kurfiss,,,,G,,,,,,,1,,Badenerstr,327,,Glas- & Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Kurfiss, G., Badenerstr. 327 A.",Zürich,,Aussersihl
 1885-berufe-361-099,1885,361,berufe,99,99,person,,0,Mantel,,,,Ado,,,,,,,1,,Linthescherpl,4,,Glas- & Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Mantel, Ado., Linthescherpl. 4 Z.",Zürich,,Zürich
-1885-berufe-362-001,1885,362,berufe,1,1,firma,,0,Mantel,,,,L,,,,,,,1,,Rennweg,,,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Mantel & Sohn, L., Rennweg Z.",Zürich,,Zürich
+1885-berufe-362-001,1885,362,berufe,1,1,firma,,0,Mantel & Sohn,,,,L,,,,,,,1,,Rennweg,,,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Mantel & Sohn, L., Rennweg Z.",Zürich,,Zürich
 1885-berufe-362-002,1885,362,berufe,2,2,person,,0,Mantel,,Widmer,,A,,,,,,,1,,Münstererg,26,,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"Mantel-Widmer, A., Münstererg. 26 Z.",Zürich,,Zürich
 1885-berufe-362-003,1885,362,berufe,3,3,person,,0,Meyer,,Buck,,Th,,,,,,,1,,Kircherg,5,1,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Meyer-Buck, Th., Kircherg. 5 Z.",Zürich,,Zürich
 1885-berufe-362-004,1885,362,berufe,4,4,firma,,0,Meyer,,,,Sibler & Co,,,,,,,1,,Strehlg,2,1,Glas- und Steinguthandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Meyer, Sibler & Co., Strehlg. 2 Z.",Zürich,,Zürich
@@ -2636,7 +2636,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-364-101,1885,364,berufe,101,101,person,,0,Ohngemach,,,,Wilh,,,,,,,1,,Berglistr,25,,Holzhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Ohngemach, Wilh., Berglistr. 25 R.",Zürich,,Riesbach
 1885-berufe-364-102,1885,364,berufe,102,102,person,,0,Rast,,,,W,,,,,,,1,,Kirchg,50,,Holzhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Rast, W., Kirchg. 50 Z.",Zürich,,Zürich
 1885-berufe-364-103,1885,364,berufe,103,103,person,,0,Rebmann,,,,Sal,,,,,,,1,,Zeltweg,63,,Holzhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Rebmann, Sal., Zeltweg 63 Ho.",Zürich,,Hottingen
-1885-berufe-365-001,1885,365,berufe,1,1,firma,,0,Rellstab,,,,& Sohn,,,,Holzhändler,,,1,,Seestr. 16 E. u. Limmatquai 28,16 E,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Rellstab & Sohn, Seestr. 16 E. u. Limmatquai 28 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-001,1885,365,berufe,1,1,firma,,0,Rellstab & Sohn,,,,,,,,Holzhändler,,,1,,Seestr. 16 E. u. Limmatquai 28,16 E,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Rellstab & Sohn, Seestr. 16 E. u. Limmatquai 28 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-002,1885,365,berufe,2,2,person,,0,Schellenberg,,,,Heinr,,,,Holzhändler,,,1,,Häringspl.,3,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Schellenberg, Heinr., Häringspl. 3 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-003,1885,365,berufe,3,3,person,,0,Schenkel,,,,Heinr,,,,Holzhändler,,,1,,Rennweg,29,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Schenkel, Heinr., Rennweg 29 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-004,1885,365,berufe,4,4,person,,0,Schenkel,,,,Jac,,,,Holzhändler,,,1,,Rindermarkt,21,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Schenkel, Jac., Rindermarkt 21 Z.",Zürich,street_rare,Zürich
@@ -2645,14 +2645,14 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-365-007,1885,365,berufe,7,7,person,,0,Schmid,,,,Heinr,,,,Holzhändler,,,1,,Limmatquai,38,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Schmid, Heinr., Limmatquai 38 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-008,1885,365,berufe,8,8,person,,0,Schneeli,,,,Edu,,,,Holzhändler,,,1,,Münsterhof,16,1,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"§Schneeli, Edu., Münsterhof 16 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-009,1885,365,berufe,9,9,person,,0,Schneeli,,,,"jgr., Jac",,,,Holzhändler,,,1,,Ottenweg,29,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Schneeli, jgr., Jac., Ottenweg 29 R.",Zürich,street_rare,Riesbach
-1885-berufe-365-010,1885,365,berufe,10,10,firma,,0,Schulthess,,Schnorf,,&,,,,Holzhändler,,,1,,Tonhallestr.,6,1,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"§Schulthess & Schnorf, Tonhallestr. 6 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-010,1885,365,berufe,10,10,firma,,0,Schulthess & Schnorf,,Schnorf,,,,,,Holzhändler,,,1,,Tonhallestr.,6,1,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"§Schulthess & Schnorf, Tonhallestr. 6 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-011,1885,365,berufe,11,11,person,,0,Spinner,,,,Johs,,,,Holzhändler,,,1,,Eiseng.,4,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Spinner, Johs., Eiseng. 4 R.",Zürich,street_rare,Riesbach
 1885-berufe-365-012,1885,365,berufe,12,12,person,,0,Spörrí,,Kamer,,Heinr,,,,Holzhändler,,,1,,z. Falken,,,Holzhändler,"qwen3.8-27b, Bild 2x",high,,"Spörrí-Kamer, Heinr., z. Falken W.",Zürich,,Wiedikon
 1885-berufe-365-013,1885,365,berufe,13,13,person,,0,Städtisches Holzdepot,,,,,,,,Holzhändler,,,1,,Selnaustr.,24,1,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"§Städtisches Holzdepot, Selnaustr. 24 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-014,1885,365,berufe,14,14,person,,0,Sting,,,,Carl,,,,Holzhändler,,,1,,Mühleng.,3,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Sting, Carl, Mühleng. 3 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-015,1885,365,berufe,15,15,person,,0,Suter,,,,Conr,,,,Holzhändler,,,1,,ob. Schmalzgr.,10,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Suter, Conr., ob. Schmalzgr. 10 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-016,1885,365,berufe,16,16,person,,0,Temperli,,,,Joh,,,,Holzhändler,,,1,,Rolleng.,6,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Temperli, Joh., Rolleng. 6 Z.",Zürich,street_rare,Zürich
-1885-berufe-365-017,1885,365,berufe,17,17,firma,,0,Vontobel,,Egger,,&,,,,Holzhändler,,,1,,Rothwandstr.,70,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Vontobel & Egger, Rothwandstr. 70 A.",Zürich,street_rare,Aussersihl
+1885-berufe-365-017,1885,365,berufe,17,17,firma,,0,Vontobel & Egger,,Egger,,,,,,Holzhändler,,,1,,Rothwandstr.,70,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Vontobel & Egger, Rothwandstr. 70 A.",Zürich,street_rare,Aussersihl
 1885-berufe-365-018,1885,365,berufe,18,18,person,,0,Weber,,,,Rud,,,,Holzhändler,,,1,,Feldeggstr.,61,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Weber, Rud., Feldeggstr. 61 R.",Zürich,street_rare,Riesbach
 1885-berufe-365-019,1885,365,berufe,19,19,person,,0,Weber,,Knüsi,,Wwe,,Wwe.,,Holzhändler,,,1,,Dolderstr.,10,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Weber-Knüsi, Wwe., Dolderstr. 10 Ho.",Zürich,street_rare,Hottingen
 1885-berufe-365-020,1885,365,berufe,20,20,person,,0,Wegmann,,,,J. G,,,,Holzhändler,,,1,,Brauerg.,23,,Holzhändler,"qwen3.8-27b, Bild 2x",medium,,"Wegmann, J. G., Brauerg. 23 A. (Brennholz.)",Zürich,street_rare,Aussersihl
@@ -2710,12 +2710,12 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-365-072,1885,365,berufe,72,72,person,,0,Patrik,,,,Phil,,,,Hutfabrikation und -Handel,,,1,,Seefeldstr.,13,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Patrik, Phil., Seefeldstr. 13 R.",Zürich,street_rare,Riesbach
 1885-berufe-365-073,1885,365,berufe,73,73,person,,0,Preiser,,,,Traug,,,,Hutfabrikation und -Handel,,,1,,Rämistr.,1,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Preiser, Traug., Rämistr. 1 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-074,1885,365,berufe,74,74,person,,0,Schaps,,,,H,,,,Hutfabrikation und -Handel,,,1,,Linthescherg.,22,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Schaps, H., Linthescherg. 22 Z. (Agentur.)",Zürich,street_rare,Zürich
-1885-berufe-365-075,1885,365,berufe,75,75,firma,,0,Scherrer,,Söhne,,&,,,,Hutfabrikation und -Handel,,,1,,Niederdorfstrasse,29 u. 31,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Scherrer & Söhne, J. B., Niederdorfstrasse 29 u. 31 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-075,1885,365,berufe,75,75,firma,,0,Scherrer & Söhne,,Söhne,,,,,,Hutfabrikation und -Handel,,,1,,Niederdorfstrasse,29 u. 31,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Scherrer & Söhne, J. B., Niederdorfstrasse 29 u. 31 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-076,1885,365,berufe,76,76,person,,0,Weinmann,,,,J,,,,Hutfabrikation und -Handel,,,1,,Tiefenhöfe,4,,Hutfabrikation und -Handel,"qwen3.8-27b, Bild 2x",medium,,"Weinmann, J., Tiefenhöfe 4 Z.",Zürich,street_rare,Zürich
-1885-berufe-365-077,1885,365,berufe,77,77,firma,,0,Kiesling,,Cie.,,&,,,,Illuminationsartikel,,,1,,Rämistr.,3,,Illuminationsartikel,"qwen3.8-27b, Bild 2x",medium,,"Kiesling & Cie., A., Rämistr. 3 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-077,1885,365,berufe,77,77,firma,,0,Kiesling & Cie.,,Cie.,,,,,,Illuminationsartikel,,,1,,Rämistr.,3,,Illuminationsartikel,"qwen3.8-27b, Bild 2x",medium,,"Kiesling & Cie., A., Rämistr. 3 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-079,1885,365,berufe,79,79,person,,0,Arnold,,,,J. G,,,,Incasso,,,1,,Pelikanstr.,1,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Arnold, J. G., Pelikanstr. 1 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-080,1885,365,berufe,80,80,person,,0,Brändli,,,,M,,,,Incasso,,,1,,Waisenhausg.,11,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Brändli, M., Waisenhausg. 11 Z.",Zürich,street_rare,Zürich
-1885-berufe-365-081,1885,365,berufe,81,81,firma,,0,Ehrenspurger,,Eschmann,,&,,,,Incasso,,,1,,Bahnhofstr.,35,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Ehrenspurger & Eschmann, Bahnhofstr. 35 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-081,1885,365,berufe,81,81,firma,,0,Ehrenspurger & Eschmann,,Eschmann,,,,,,Incasso,,,1,,Bahnhofstr.,35,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Ehrenspurger & Eschmann, Bahnhofstr. 35 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-082,1885,365,berufe,82,82,person,,0,Güller,,,,Alb,,,,Incasso,,,1,,Universitätsstr.,91,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Güller, Alb., Universitätsstr. 91 O.",Zürich,street_rare,Oberstrass
 1885-berufe-365-083,1885,365,berufe,83,83,person,,0,Hartung,,,,M,,,,Incasso,,,1,,Zähringerstr.,1,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Hartung, M., Zähringerstr. 1 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-084,1885,365,berufe,84,84,person,,0,Heim,,,,J. C,,,,Incasso,,,1,,Sihlstr.,7,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Heim, J. C., Sihlstr. 7 Z.",Zürich,street_rare,Zürich
@@ -2726,7 +2726,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-365-090,1885,365,berufe,90,90,person,,0,Näf,,Wolf,,W,,,,Incasso,,,1,,Stampfenbachstr.,34,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Näf-Wolf, W., Stampfenbachstr. 34 U.",Zürich,street_rare,Unterstrass
 1885-berufe-365-091,1885,365,berufe,91,91,person,,0,Rütsche,,,,A,,,,Incasso,,,1,,Linthescherg.,24,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Rütsche, A., Linthescherg. 24 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-093,1885,365,berufe,93,93,person,,0,Schneider,,,,J,,,,Incasso,,,1,,Predigerg.,20,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Schneider, J., Predigerg. 20 Z.",Zürich,street_rare,Zürich
-1885-berufe-365-094,1885,365,berufe,94,94,firma,,0,Trüb,,Holder,,&,,,,Incasso,,,1,,Paradepl.,8,1,Incasso,"qwen3.8-27b, Bild 2x",medium,,"§Trüb & Holder, Paradepl. 8 Z.",Zürich,street_rare,Zürich
+1885-berufe-365-094,1885,365,berufe,94,94,firma,,0,Trüb & Holder,,Holder,,,,,,Incasso,,,1,,Paradepl.,8,1,Incasso,"qwen3.8-27b, Bild 2x",medium,,"§Trüb & Holder, Paradepl. 8 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-095,1885,365,berufe,95,95,person,,0,Waelde,,,,D,,,,Incasso,,,1,,Thalgr.,15,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Waelde, D., Thalgr. 15 Z.",Zürich,street_rare,Zürich
 1885-berufe-365-096,1885,365,berufe,96,96,person,,0,Wiederkehr,,,,H,,,,Incasso,,,1,,Bahnhofstr. 60 I,60,,Incasso,"qwen3.8-27b, Bild 2x",medium,,"Wiederkehr, H., Bahnhofstr. 60 I Z.",Zürich,street_rare,Zürich
 1885-berufe-366-001,1885,366,berufe,1,1,person,,0,Wyder,,,,Carl,,,,,,,1,,Schützen g,10,,,"qwen3.8-27b, Bild 2x",high,,"Wyder, Carl, Schützen g. 10 I Z.",Zürich,,Zürich
@@ -2774,7 +2774,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-366-045,1885,366,berufe,45,45,person,,0,Unmuth,,,,Aug,,,,Gemeinde-Ingenieur in Enge,,,1,,Seestr,15,,Ingenieure.,"qwen3.8-27b, Bild 2x",high,,"Unmuth, Aug., Gemeinde-Ingenieur in Enge, Seestr. 15 E.",Zürich,,Enge
 1885-berufe-366-046,1885,366,berufe,46,46,person,,0,Vögeli,,,,Alb,,,,Gemeinde-Ingenieur in Riesbach,,,1,,Clausstr,22,,Ingenieure.,"qwen3.8-27b, Bild 2x",high,,"Vögeli, Alb., Gemeinde-Ingenieur in Riesbach, Clausstr. 22 I R.",Zürich,,Riesbach
 1885-berufe-366-047,1885,366,berufe,47,47,person,,0,Waldner,,,,A,,,,,,,1,,Brandschenkestr,32,1,Ingenieure.,"qwen3.8-27b, Bild 2x",high,,"☎ Waldner, A., Brandschenkestr. 32 Z.",Zürich,,Zürich
-1885-berufe-366-048,1885,366,berufe,48,48,person,,0,Weber,,,,Jul,,,,Gemeinde-Ingenieur in Ausser-sihl,,,1,,Josefstr,22,1,,"qwen3.8-27b, Bild 2x",medium,,"☎ Weber, Jul., Gemeinde-Ingenieur in Ausser-sihl, Josefstr. 22 A.",Zürich,hyphen,Aussersihl
+1885-berufe-366-048,1885,366,berufe,48,48,person,,0,Weber,,,,Jul,,,,Gemeinde-Ingenieur in Aussersihl,,,1,,Josefstr,22,1,,"qwen3.8-27b, Bild 2x",medium,,"☎ Weber, Jul., Gemeinde-Ingenieur in Ausser-sihl, Josefstr. 22 A.",Zürich,hyphen,Aussersihl
 1885-berufe-366-049,1885,366,berufe,49,49,person,,0,Weiss,,,,Jul,,,,,,,1,,Schönbergg,5,,,"qwen3.8-27b, Bild 2x",high,,"Weiss, Jul., Schönbergg. 5 Z.",Zürich,,Zürich
 1885-berufe-366-050,1885,366,berufe,50,50,person,,0,Weiss,,,,Th,,,,Oberingenieur d. N.-O.-B.,,,1,,Vor-bahnhof,,,,"qwen3.8-27b, Bild 2x",high,,"Weiss, Th., Oberingenieur d. N.-O.-B., Vor-bahnhof A.",Zürich,street_rare hyphen,Aussersihl
 1885-berufe-366-051,1885,366,berufe,51,51,person,,0,Wetli,,,,Casp,,,,Kantons-Ingenieur,,,1,,Zeltweg,54,,,"qwen3.8-27b, Bild 2x",high,,"Wetli, Casp., Kantons-Ingenieur, Zeltweg 54 Ho.",Zürich,,Hottingen
@@ -2829,7 +2829,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-367-006,1885,367,berufe,6,6,person,,0,Wepfer,,,,Conr,,,,,,,1,,Schlosserg,6,,,"qwen3.8-27b, Bild 2x",high,,"Wepfer, Conr., Schlosserg. 6 Z.",Zürich,,Zürich
 1885-berufe-367-007,1885,367,berufe,7,7,person,,0,Widmer,,,,Heinr,,,,,,,1,,Dolderstr,22,,,"qwen3.8-27b, Bild 2x",high,,"Widmer, Heinr., Dolderstr. 22 Ho.",Zürich,,Hottingen
 1885-berufe-367-008,1885,367,berufe,8,8,person,,0,Wurster,,,,Theod,,,,,,,1,,Weing,10,,,"qwen3.8-27b, Bild 2x",high,,"Wurster, Theod., Weing. 10 A.",Zürich,,Aussersihl
-1885-berufe-367-009,1885,367,berufe,9,9,firma,,0,Schøller,,,,& Söhne,,,,,,,1,,Falkenburg,4,1,,"qwen3.8-27b, Bild 2x",high,,"§Schøller & Söhne, Falkenburg 4 Ho.",Zürich,,Hottingen
+1885-berufe-367-009,1885,367,berufe,9,9,firma,,0,Schøller & Söhne,,,,,,,,,,,1,,Falkenburg,4,1,,"qwen3.8-27b, Bild 2x",high,,"§Schøller & Söhne, Falkenburg 4 Ho.",Zürich,,Hottingen
 1885-berufe-367-010,1885,367,berufe,10,10,person,,0,Broghammer,,,,Joh,,,,,,,1,,Leonhardsg,7,,,"qwen3.8-27b, Bild 2x",high,,"Broghammer, Joh., Leonhardsg. 7 U.",Zürich,,Unterstrass
 1885-berufe-367-011,1885,367,berufe,11,11,person,,0,Volkmar,,,,F,,,,,,,1,,Rothwandstr,68,,,"qwen3.8-27b, Bild 2x",high,,"Volkmar, F., Rothwandstr. 68 A. (Harzer.)",Zürich,,Aussersihl
 1885-berufe-367-012,1885,367,berufe,12,12,person,,0,Affeltranger,,,,A,,,,,,,1,,Schaffhauserstr,6,,,"qwen3.8-27b, Bild 2x",high,,"Affeltranger, A., Schaffhauserstr. 6 U.",Zürich,,Unterstrass
@@ -2875,11 +2875,11 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-367-053,1885,367,berufe,53,53,person,,0,Krug,,,,F. R,,,,,,,1,,n. Beckenhofstr,202,,,"qwen3.8-27b, Bild 2x",high,,"Krug, F. R., n. Beckenhofstr. 202 U.",Zürich,,Unterstrass
 1885-berufe-367-054,1885,367,berufe,54,54,person,,0,Weber,,,,Joh,,,,,,,1,,Mainaust,39,,,"qwen3.8-27b, Bild 2x",high,,"Weber, Joh., Mainaust. 39 R.",Zürich,,Riesbach
 1885-berufe-367-055,1885,367,berufe,55,55,person,,0,Gaisser,,,,Carl,,,,,,,1,,Militärstr,62,,,"qwen3.8-27b, Bild 2x",high,,"Gaisser, Carl, Militärstr. 62 A.",Zürich,,Aussersihl
-1885-berufe-367-056,1885,367,berufe,56,56,firma,,0,Hüni,,,,& Hübert,,,,,,,1,,Neumühleweg,7,1,,"qwen3.8-27b, Bild 2x",high,,"§Hüni & Hübert, Neumühleweg 7 Z.",Zürich,,Zürich
-1885-berufe-367-057,1885,367,berufe,57,57,firma,,0,Rordorf,,,,"& Cie., C",,,,,,,1,,Gerechtigkeitsg,12,,,"qwen3.8-27b, Bild 2x",high,,"Rordorf & Cie., C., Gerechtigkeitsg. 12 Z.",Zürich,,Zürich
-1885-berufe-367-058,1885,367,berufe,58,58,firma,,0,Sprecher,,,,& Söhne,,,,,,,1,,Zeltweg,32,,,"qwen3.8-27b, Bild 2x",high,,"Sprecher & Söhne, Zeltweg 32 Ho.",Zürich,,Hottingen
+1885-berufe-367-056,1885,367,berufe,56,56,firma,,0,Hüni & Hübert,,,,,,,,,,,1,,Neumühleweg,7,1,,"qwen3.8-27b, Bild 2x",high,,"§Hüni & Hübert, Neumühleweg 7 Z.",Zürich,,Zürich
+1885-berufe-367-057,1885,367,berufe,57,57,firma,,0,Rordorf & Cie.,,,,C,,,,,,,1,,Gerechtigkeitsg,12,,,"qwen3.8-27b, Bild 2x",high,,"Rordorf & Cie., C., Gerechtigkeitsg. 12 Z.",Zürich,,Zürich
+1885-berufe-367-058,1885,367,berufe,58,58,firma,,0,Sprecher & Söhne,,,,,,,,,,,1,,Zeltweg,32,,,"qwen3.8-27b, Bild 2x",high,,"Sprecher & Söhne, Zeltweg 32 Ho.",Zürich,,Hottingen
 1885-berufe-367-059,1885,367,berufe,59,59,person,,0,Suter,,,,H,,,,,,,1,,Pianog,12,,,"qwen3.8-27b, Bild 2x",high,,"Suter, H., Pianog. 12 E.",Zürich,,Enge
-1885-berufe-367-060,1885,367,berufe,60,60,firma,,0,Trost,,,,"& Cie., J",,,,,,,1,,Bederstr,4,,,"qwen3.8-27b, Bild 2x",high,,"Trost & Cie., J., Bederstr. 4 E.",Zürich,,Enge
+1885-berufe-367-060,1885,367,berufe,60,60,firma,,0,Trost & Cie.,,,,J,,,,,,,1,,Bederstr,4,,,"qwen3.8-27b, Bild 2x",high,,"Trost & Cie., J., Bederstr. 4 E.",Zürich,,Enge
 1885-berufe-367-061,1885,367,berufe,61,61,person,,0,Bollier,,,,Gottl,,,,,,,1,,Stüssihofst,15,,,"qwen3.8-27b, Bild 2x",high,,"Bollier, Gottl., Stüssihofst. 15 Z.",Zürich,,Zürich
 1885-berufe-367-062,1885,367,berufe,62,62,person,,0,Bunn,,,,Carl,,,,,,,1,,Kirchg,33,,,"qwen3.8-27b, Bild 2x",high,,"Bunn, Carl, Kirchg. 33 Z.",Zürich,,Zürich
 1885-berufe-367-063,1885,367,berufe,63,63,person,,0,Hässner,,,,Carl,,,,,,,1,,Friedenstr,16,,,"qwen3.8-27b, Bild 2x",high,,"Hässner, Carl, Friedenstr. 16 O.",Zürich,,Oberstrass
@@ -3281,18 +3281,18 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-372-001,1885,372,berufe,1,1,person,,0,Stüssi,,,,Rud,,,,Kupferschmide,,,1,,Niederdorfstr,102,1,Kupferschmide.,"qwen3.8-27b, Bild 2x",high,,"☎Stüssi, Rud., Niederdorfstr. 102 Z.",Zürich,,Zürich
 1885-berufe-372-002,1885,372,berufe,2,2,person,,0,Trachsler,,,,Joh,,,,Kupferschmide,,,1,,Niederdorfstr,42,1,Kupferschmide.,"qwen3.8-27b, Bild 2x",high,,"☎Trachsler, Joh., Merkurstr. 22 Ho. u. Niederdorfstr. 42 Z.",Zürich,,Zürich
 1885-berufe-372-003,1885,372,berufe,3,3,person,,0,Wunderli,,,,Reinh,,,,Kupferschmide,,,1,,Frankeng,3,,Kupferschmide.,"qwen3.8-27b, Bild 2x",high,,"Wunderli, Reinh., Frankeng. 3 Z.; Laden unter'm Raben, Schifflände Z.",Zürich,,Zürich
-1885-berufe-372-004,1885,372,berufe,4,4,person,,0,Digelmann,,,,Bernh,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Kirchg,,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Digelmann, Bernh., Kirchg. Z.",Zürich,,Zürich
-1885-berufe-372-005,1885,372,berufe,5,5,firma,,0,Digelmann,,,,Gebr,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Marktg,20,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Digelmann, Gebr., Marktg. 20 Z.",Zürich,,Zürich
-1885-berufe-372-006,1885,372,berufe,6,6,person,,0,Fröschle,,,,Reg,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Storcheng,16,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Fröschle, Reg., Storcheng. 16 Z.",Zürich,,Zürich
-1885-berufe-372-007,1885,372,berufe,7,7,person,,0,Günther,,Danioth,,Aug,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Bahnhofstr,27,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Günther-Danioth, Aug., Bahnhofstr. 27 Z.",Zürich,,Zürich
-1885-berufe-372-008,1885,372,berufe,8,8,person,,0,Hanky,,,,Carl,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Rämistr,7,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Hanky, Carl, Rämistr. 7 Z.",Zürich,,Zürich
-1885-berufe-372-009,1885,372,berufe,9,9,person,,0,Heintze,,,,J,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Weinpl,1,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Heintze, J., Weinpl. 1 u. Storcheng. 18 Z.",Zürich,,Zürich
-1885-berufe-372-010,1885,372,berufe,10,10,person,,0,Klinke,,,,Emil,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Storcheng,12,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Klinke, Emil, Storcheng. 12 Z.",Zürich,,Zürich
-1885-berufe-372-011,1885,372,berufe,11,11,person,,0,Nägeli,,,,Ed,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Schützeng,25,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Nägeli, Ed., Schützeng. 25 Z.",Zürich,,Zürich
-1885-berufe-372-012,1885,372,berufe,12,12,person,,0,Naphtaly,,,,G,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Stüssihofstatt,6,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Naphtaly, G., Stüssihofstatt 6 Z.",Zürich,,Zürich
-1885-berufe-372-013,1885,372,berufe,13,13,person,,0,Reckewerth,,Hess,,Ernst,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Limmatquai,24,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Reckewerth-Hess, Ernst, Limmatquai 24 Z.",Zürich,,Zürich
-1885-berufe-372-014,1885,372,berufe,14,14,person,,0,Sander,,Hösel,,M,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Thalacker,24,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Sander-Hösel, M., Thalacker 24 Z.",Zürich,,Zürich
-1885-berufe-372-015,1885,372,berufe,15,15,person,,0,Suter,,,,Rud,,,,Kürschner und Pelzwaaren-handlungen,,,1,,Bahnhofstr,52,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Suter, Rud., Bahnhofstr. 52 Z.",Zürich,,Zürich
+1885-berufe-372-004,1885,372,berufe,4,4,person,,0,Digelmann,,,,Bernh,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Kirchg,,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Digelmann, Bernh., Kirchg. Z.",Zürich,,Zürich
+1885-berufe-372-005,1885,372,berufe,5,5,firma,,0,Digelmann,,,,Gebr,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Marktg,20,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Digelmann, Gebr., Marktg. 20 Z.",Zürich,,Zürich
+1885-berufe-372-006,1885,372,berufe,6,6,person,,0,Fröschle,,,,Reg,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Storcheng,16,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Fröschle, Reg., Storcheng. 16 Z.",Zürich,,Zürich
+1885-berufe-372-007,1885,372,berufe,7,7,person,,0,Günther,,Danioth,,Aug,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Bahnhofstr,27,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Günther-Danioth, Aug., Bahnhofstr. 27 Z.",Zürich,,Zürich
+1885-berufe-372-008,1885,372,berufe,8,8,person,,0,Hanky,,,,Carl,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Rämistr,7,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Hanky, Carl, Rämistr. 7 Z.",Zürich,,Zürich
+1885-berufe-372-009,1885,372,berufe,9,9,person,,0,Heintze,,,,J,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Weinpl,1,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Heintze, J., Weinpl. 1 u. Storcheng. 18 Z.",Zürich,,Zürich
+1885-berufe-372-010,1885,372,berufe,10,10,person,,0,Klinke,,,,Emil,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Storcheng,12,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Klinke, Emil, Storcheng. 12 Z.",Zürich,,Zürich
+1885-berufe-372-011,1885,372,berufe,11,11,person,,0,Nägeli,,,,Ed,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Schützeng,25,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Nägeli, Ed., Schützeng. 25 Z.",Zürich,,Zürich
+1885-berufe-372-012,1885,372,berufe,12,12,person,,0,Naphtaly,,,,G,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Stüssihofstatt,6,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Naphtaly, G., Stüssihofstatt 6 Z.",Zürich,,Zürich
+1885-berufe-372-013,1885,372,berufe,13,13,person,,0,Reckewerth,,Hess,,Ernst,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Limmatquai,24,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Reckewerth-Hess, Ernst, Limmatquai 24 Z.",Zürich,,Zürich
+1885-berufe-372-014,1885,372,berufe,14,14,person,,0,Sander,,Hösel,,M,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Thalacker,24,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Sander-Hösel, M., Thalacker 24 Z.",Zürich,,Zürich
+1885-berufe-372-015,1885,372,berufe,15,15,person,,0,Suter,,,,Rud,,,,Kürschner und Pelzwaarenhandlungen,,,1,,Bahnhofstr,52,,Kürschner und Pelzwaaren-handlungen.,"qwen3.8-27b, Bild 2x",high,,"Suter, Rud., Bahnhofstr. 52 Z.",Zürich,,Zürich
 1885-berufe-372-016,1885,372,berufe,16,16,person,,0,Central-Lagerhalle,,,,,,,,Lagerhaus,,,1,,Niederdorfstr,85,,Lagerhaus.,"qwen3.8-27b, Bild 2x",high,,"Central-Lagerhalle, Niederdorfstr. 85 Z.",Zürich,,Zürich
 1885-berufe-372-017,1885,372,berufe,17,17,firma,,0,Gossweiler & Gattiker,,,,,,,,Lagerhaus,,,1,,Brunneng,15,,Lagerhaus.,"qwen3.8-27b, Bild 2x",high,,"Gossweiler & Gattiker, Brunneng. 15 Z.",Zürich,,Zürich
 1885-berufe-372-018,1885,372,berufe,18,18,firma,,0,Bachofen,,,,Jac,,,,Lampendochtfabrikation,,,1,,Universitätstr,112,,Lampendochtfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Bachofen, Jac., Universitätstr. 112 O. (Fabrik in Horgen).",Zürich,,Oberstrass
@@ -3552,14 +3552,14 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-375-001,1885,375,berufe,1,1,person,,0,Bernheim,,,,H. J,,,,,,,1,,Bahnhofstr,76,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Bernheim, H. J., Bahnhofstr. 76 Z.",Zürich,,Zürich
 1885-berufe-375-002,1885,375,berufe,2,2,person,,0,Bloch,,,,"Söhne, J",,,,,,,1,,Strehlg,26,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Bloch, Söhne, J., Strehlg. 26 Z.",Zürich,,Zürich
 1885-berufe-375-003,1885,375,berufe,3,3,person,,0,Bollag,,,,Leop,,,,,,,1,,Schützeng,29,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Bollag, Leop., Schützeng. 29 Z.",Zürich,,Zürich
-1885-berufe-375-004,1885,375,berufe,4,4,firma,,0,Brunner,,,,"& Söhne, J",,,,,,,1,,In Gassen,18,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Brunner & Söhne, J., In Gassen 18 Z.",Zürich,,Zürich
+1885-berufe-375-004,1885,375,berufe,4,4,firma,,0,Brunner & Söhne,,,,J,,,,,,,1,,In Gassen,18,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Brunner & Söhne, J., In Gassen 18 Z.",Zürich,,Zürich
 1885-berufe-375-005,1885,375,berufe,5,5,person,,0,Bruppacher,,,,Salom,,,,,,,1,,Oberdorf g,27,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Bruppacher, Salom., Oberdorf g. 27 Z.",Zürich,,Zürich
 1885-berufe-375-006,1885,375,berufe,6,6,person,,0,Bruppacher,,Kaul,,Casp,,,,,,,1,,Zürichbergstr,17,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Bruppacher-Kaul, Casp., Zürichbergstr. 17 F.",Zürich,,Fluntern
-1885-berufe-375-007,1885,375,berufe,7,7,firma,,0,Ciolina,,,,& Cie,,,,,,,1,,Sonnenquai,10,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ciolina & Cie., Sonnenquai 10 Z.",Zürich,,Zürich
-1885-berufe-375-008,1885,375,berufe,8,8,firma,,0,Codelaghi,,,,& Wiedersheim,,,,,,,1,,Storcheng,2,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Codelaghi & Wiedersheim, Storcheng. 2 Z.",Zürich,,Zürich
+1885-berufe-375-007,1885,375,berufe,7,7,firma,,0,Ciolina & Cie.,,,,,,,,,,,1,,Sonnenquai,10,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ciolina & Cie., Sonnenquai 10 Z.",Zürich,,Zürich
+1885-berufe-375-008,1885,375,berufe,8,8,firma,,0,Codelaghi & Wiedersheim,,,,,,,,,,,1,,Storcheng,2,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Codelaghi & Wiedersheim, Storcheng. 2 Z.",Zürich,,Zürich
 1885-berufe-375-009,1885,375,berufe,9,9,firma,,0,Cramer,,,,Frey & Cie,,,,,,,1,,Fraumünsterstr,21,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Cramer, Frey & Cie., Fraumünsterstr. 21 (Centralhof) Z.",Zürich,,Zürich
 1885-berufe-375-010,1885,375,berufe,10,10,person,,0,Dreifuss,,Braunschweig,,,,,,,,,1,,Augustinerg,25,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Dreifuss-Braunschweig, Augustinerg. 25 Z.",Zürich,,Zürich
-1885-berufe-375-011,1885,375,berufe,11,11,firma,,0,Eidenbenz,,,,& Campiche,,,,,,,1,,Rämistr,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Eidenbenz & Campiche, Rämistr. 6 Z.",Zürich,,Zürich
+1885-berufe-375-011,1885,375,berufe,11,11,firma,,0,Eidenbenz & Campiche,,,,,,,,,,,1,,Rämistr,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Eidenbenz & Campiche, Rämistr. 6 Z.",Zürich,,Zürich
 1885-berufe-375-012,1885,375,berufe,12,12,person,,0,Fierz,,,,Heinr,,,,,,,1,,Zürichbergstr,8,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Fierz, Heinr., Zürichbergstr. 8 F. (en gros.)",Zürich,,Fluntern
 1885-berufe-375-013,1885,375,berufe,13,13,person,,0,Grosch,,,,Carl,,,,,,,1,,Asylstr,5,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Grosch, Carl, Asylstr. 5 Ho.",Zürich,,Hottingen
 1885-berufe-375-014,1885,375,berufe,14,14,person,,0,Guggenheim,,,,Leop,,,,,,,1,,Bahnhofstr,100,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Guggenheim, Leop., Bahnhofstr. 100 Z.",Zürich,,Zürich
@@ -3568,31 +3568,31 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-375-017,1885,375,berufe,17,17,person,,0,Hasler,,Funk,,K,,,,,,,1,,Limmatquai,48,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hasler-Funk, K., Limmatquai 48 Z.",Zürich,,Zürich
 1885-berufe-375-018,1885,375,berufe,18,18,person,,0,Hirsch's Waarenhalle,,,,,,,,,,,1,,Limmatquai,96,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hirsch's Waarenhalle, Limmatquai 96 Z.",Zürich,,Zürich
 1885-berufe-375-019,1885,375,berufe,19,19,person,,0,Huber,,,,H,,,,,,,1,,Mühleg,21,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Huber, H., Mühleg. 21 Z.",Zürich,,Zürich
-1885-berufe-375-020,1885,375,berufe,20,20,firma,,0,Jelmoli,,,,& Cie,,,,,,,1,,Münsterhof,17,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Jelmoli & Cie., Münsterhof 17 u. Bahnhofstr. 17 Z.",Zürich,,Zürich
+1885-berufe-375-020,1885,375,berufe,20,20,firma,,0,Jelmoli & Cie.,,,,,,,,,,,1,,Münsterhof,17,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Jelmoli & Cie., Münsterhof 17 u. Bahnhofstr. 17 Z.",Zürich,,Zürich
 1885-berufe-375-021,1885,375,berufe,21,21,person,,0,Keller,,,,Hans,,,,,,,1,,Rennweg,12,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Keller, Hans, Rennweg 12 Z.",Zürich,,Zürich
 1885-berufe-375-022,1885,375,berufe,22,22,person,,0,Knecht,,,,Friedr,,,,,,,1,,Rathausquai,24,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Knecht, Friedr., Rathausquai 24 Z.",Zürich,,Zürich
 1885-berufe-375-023,1885,375,berufe,23,23,person,,0,Kummer,,,,C,,,,,,,1,,Chorg,7,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Kummer, C., Chorg. 7 Z.",Zürich,,Zürich
 1885-berufe-375-024,1885,375,berufe,24,24,person,,0,Lang,,,,R,,,,,,,1,,In Gassen,10,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Lang, R., In Gassen 10 Z.",Zürich,,Zürich
-1885-berufe-375-025,1885,375,berufe,25,25,firma,,0,Lerch,,,,& Cie,,,,,,,1,,Widderg,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Lerch & Cie., Widderg. 6 Z.",Zürich,,Zürich
-1885-berufe-375-026,1885,375,berufe,26,26,firma,,0,Moser,,,,& Hochreutiner,,,,,,,1,,Limmatquai,66,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Moser & Hochreutiner, Limmatquai 66 Z.",Zürich,,Zürich
-1885-berufe-375-027,1885,375,berufe,27,27,firma,,0,Nägeli,,,,"& Cie., J. R",,,,,,,1,,Fraumünsterstr,27,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Nägeli & Cie., J. R., Fraumünsterstr. 27 I (Centralhof) Z. (Import & Export.)",Zürich,,Zürich
+1885-berufe-375-025,1885,375,berufe,25,25,firma,,0,Lerch & Cie.,,,,,,,,,,,1,,Widderg,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Lerch & Cie., Widderg. 6 Z.",Zürich,,Zürich
+1885-berufe-375-026,1885,375,berufe,26,26,firma,,0,Moser & Hochreutiner,,,,,,,,,,,1,,Limmatquai,66,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Moser & Hochreutiner, Limmatquai 66 Z.",Zürich,,Zürich
+1885-berufe-375-027,1885,375,berufe,27,27,firma,,0,Nägeli & Cie.,,,,J. R,,,,,,,1,,Fraumünsterstr,27,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Nägeli & Cie., J. R., Fraumünsterstr. 27 I (Centralhof) Z. (Import & Export.)",Zürich,,Zürich
 1885-berufe-375-028,1885,375,berufe,28,28,firma,,0,Netscher,,,,Gebr,,,,,,,1,,Poststr,3,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Netscher, Gebr., Poststr. 3 (Centralhof) Z.",Zürich,,Zürich
 1885-berufe-375-029,1885,375,berufe,29,29,person,,0,Oppenheim,,,,Th,,,,,,,1,,Mainastr,33,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Oppenheim, Th., Mainastr. 33 R.",Zürich,,Riesbach
 1885-berufe-375-030,1885,375,berufe,30,30,person,,0,Ott,,,,J,,,,,,,1,,Limmatquai,34,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Ott, J., Limmatquai 34 Z.",Zürich,,Zürich
 1885-berufe-375-031,1885,375,berufe,31,31,person,,0,Pünter,,,,J. Rud,,,,,,,1,,Limmatquai,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Pünter, J. Rud., Limmatquai 6 Z.",Zürich,,Zürich
-1885-berufe-375-032,1885,375,berufe,32,32,firma,,0,Rall,,,,& Leuze,,,,,,,1,,Rathausquai,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Leuze, Rathausquai 6 Z.",Zürich,,Zürich
+1885-berufe-375-032,1885,375,berufe,32,32,firma,,0,Rall & Leuze,,,,,,,,,,,1,,Rathausquai,6,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rall & Leuze, Rathausquai 6 Z.",Zürich,,Zürich
 1885-berufe-375-033,1885,375,berufe,33,33,person,,0,Reutlinger,,,,Marie,,,,,,,1,,Bahnhofstr,40,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Reutlinger, Marie, Bahnhofstr. 40 Z.",Zürich,,Zürich
 1885-berufe-375-034,1885,375,berufe,34,34,firma,,0,Rieter,,,,Ziegler & Cie,,,,,,,1,,Bahnhofstr,22,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Rieter, Ziegler & Cie., Bahnhofstr. 22, Centralhof Z. (Import u. Export.)",Zürich,,Zürich
-1885-berufe-375-035,1885,375,berufe,35,35,firma,,0,Roth,,,,"& Cie., M",,,,,,,1,,Strehlg,22,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Roth & Cie., M., Strehlg. 22 Z.",Zürich,,Zürich
+1885-berufe-375-035,1885,375,berufe,35,35,firma,,0,Roth & Cie.,,,,M,,,,,,,1,,Strehlg,22,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Roth & Cie., M., Strehlg. 22 Z.",Zürich,,Zürich
 1885-berufe-375-036,1885,375,berufe,36,36,person,,0,Scheller,,Bodmer,,,,,,,,,1,,Bahnhofstr,54,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scheller-Bodmer, Bahnhofstr. 54 Z.",Zürich,,Zürich
-1885-berufe-375-037,1885,375,berufe,37,37,firma,,0,Scherrer,,,,"& Söhne, J. B",,,,,,,1,,Niederdorfstr,31,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
+1885-berufe-375-037,1885,375,berufe,37,37,firma,,0,Scherrer & Söhne,,,,J. B,,,,,,,1,,Niederdorfstr,31,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
 1885-berufe-375-038,1885,375,berufe,38,38,person,,0,Schmutz,,,,Carl,,,,,,,1,,a. Beekenhofstr,1,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Schmutz, Carl, a. Beekenhofstr. 1 U.",Zürich,street_rare,Unterstrass
 1885-berufe-375-039,1885,375,berufe,39,39,person,,0,Schwab,,Ris,,B,,,,,,,1,,Conradstr,1,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schwab-Ris, B., Conradstr. 1 A.",Zürich,,Aussersihl
 1885-berufe-375-040,1885,375,berufe,40,40,person,,0,Spörri,,,,J,,,,,,,1,,Poststr,9,1,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Spörri, J., Poststr. 9 (Centralhof) Z.",Zürich,,Zürich
 1885-berufe-375-041,1885,375,berufe,41,41,person,,0,Städeli Sohn,,,,C,,,,,,,1,,Schanzengr,7,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Städeli Sohn, C., Schanzengr. 7 Z. (en gros.)",Zürich,,Zürich
 1885-berufe-375-042,1885,375,berufe,42,42,person,,0,Steffen,,,,J,,,,,,,1,,Zähringerstr,37,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Steffen, J., Zähringerstr. 37 Z.",Zürich,,Zürich
-1885-berufe-375-043,1885,375,berufe,43,43,firma,,0,Steiner,,,,& Briner,,,,,,,1,,Thal g,32,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Steiner & Briner, Thal g. 32 Z.",Zürich,,Zürich
-1885-berufe-375-044,1885,375,berufe,44,44,firma,,0,Thomann,,,,& Schuppisser,,,,,,,1,,Rennweg,59,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Thomann & Schuppisser, Rennweg 59 Z.",Zürich,,Zürich
+1885-berufe-375-043,1885,375,berufe,43,43,firma,,0,Steiner & Briner,,,,,,,,,,,1,,Thal g,32,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Steiner & Briner, Thal g. 32 Z.",Zürich,,Zürich
+1885-berufe-375-044,1885,375,berufe,44,44,firma,,0,Thomann & Schuppisser,,,,,,,,,,,1,,Rennweg,59,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Thomann & Schuppisser, Rennweg 59 Z.",Zürich,,Zürich
 1885-berufe-375-045,1885,375,berufe,45,45,person,,0,Volksmagazin,,,,,,,,,,,1,,Brunng,2,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Volksmagazin, Brunng. 2 Z.",Zürich,,Zürich
 1885-berufe-375-046,1885,375,berufe,46,46,person,,0,Wartmann,,Isler,,,,,,,,,1,,Augustinerg,19,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wartmann-Isler, Augustinerg. 19 Z.",Zürich,,Zürich
 1885-berufe-375-047,1885,375,berufe,47,47,firma,,0,Wyler,,,,M. & J,,,,,,,1,,Rindermarkt,17,,Manufacturwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wyler, M. & J., Rindermarkt 17 Z.",Zürich,,Zürich
@@ -3603,7 +3603,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-375-052,1885,375,berufe,52,52,person,,0,Vannini,,,,B,,,,,,,1,,Badenerstr,99,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Vannini, B., Badenerstr. 99 W.",Zürich,,Wiedikon
 1885-berufe-375-053,1885,375,berufe,53,53,person,,0,Wethli,,,,Heinr,,,,,,,1,,Kreuzpl,81,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wethli, Heinr., Kreuzpl. 81 Ho.",Zürich,,Hottingen
 1885-berufe-375-054,1885,375,berufe,54,54,person,,0,Wethli,,,,Louis,,,,,,,1,,Zeltweg,52,1,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Wethli, Louis, Zeltweg 52 Ho.",Zürich,,Hottingen
-1885-berufe-375-055,1885,375,berufe,55,55,firma,,0,Diener,,,,& Cie,,,,,,,1,,Limmatstr,,,Maschinenfabriken.,"qwen3.8-27b, Bild 2x",high,,"Diener & Cie., Limmatstr. (Hard) A.",Zürich,,Aussersihl
+1885-berufe-375-055,1885,375,berufe,55,55,firma,,0,Diener & Cie.,,,,,,,,,,,1,,Limmatstr,,,Maschinenfabriken.,"qwen3.8-27b, Bild 2x",high,,"Diener & Cie., Limmatstr. (Hard) A.",Zürich,,Aussersihl
 1885-berufe-375-056,1885,375,berufe,56,56,firma,,0,Escher,,,,Wyss & Cie,,,,,,,1,,Niederdorfstr,96,1,Maschinenfabriken.,"qwen3.8-27b, Bild 2x",high,,"§Escher, Wyss & Cie., z. Neumühle, Niederdorfstr. 96 Z.",Zürich,,Zürich
 1885-berufe-375-057,1885,375,berufe,57,57,firma,,0,Koch,,,,Gebr,,,,,,,1,,Brandschenkestr,6,1,Maschinenfabriken.,"qwen3.8-27b, Bild 2x",high,,"§Koch, Gebr., Brandschenkestr. 6 Z.",Zürich,,Zürich
 1885-berufe-375-058,1885,375,berufe,58,58,person,,0,Schmid,,,,Alb,,,,,,,1,,Sihlstr,65,1,Maschinenfabriken.,"qwen3.8-27b, Bild 2x",high,,"§Schmid, Alb., Sihlstr. 65 Z.",Zürich,,Zürich
@@ -3615,24 +3615,24 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-375-064,1885,375,berufe,64,64,person,,0,Blum,,,,E,,,,,,,1,,Linthescherg,15,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Blum, E., Linthescherg. 15 Z.",Zürich,,Zürich
 1885-berufe-375-065,1885,375,berufe,65,65,person,,0,Daverio,,,,G,,,,,,,1,,Leonhardstr,1,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Daverio, G., Leonhardstr. 1 Z.",Zürich,,Zürich
 1885-berufe-375-066,1885,375,berufe,66,66,person,,0,Erni,,,,Leone,,,,,,,1,,Fraumünsterstr,21,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Erni, Leonh., Fraumünsterstr. 21 (Centralhof) Z.",Zürich,,Zürich
-1885-berufe-375-067,1885,375,berufe,67,67,firma,,0,Giedion,,,,& Wildi,,,,,,,1,,Bleicherweg,28,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Giedion & Wildi, Bleicherweg 28 Z.",Zürich,,Zürich
+1885-berufe-375-067,1885,375,berufe,67,67,firma,,0,Giedion & Wildi,,,,,,,,,,,1,,Bleicherweg,28,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Giedion & Wildi, Bleicherweg 28 Z.",Zürich,,Zürich
 1885-berufe-375-068,1885,375,berufe,68,68,person,,0,Pfaff,,,,Richd,,,,,,,1,,Sihlstr,11,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Pfaff, Richd., Sihlstr. 11 Z. (für Brauereien.)",Zürich,,Zürich
-1885-berufe-375-069,1885,375,berufe,69,69,firma,,0,Schoch,,,,"& Cie., M",,,,,,,1,,Bäreng,7,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schoch & Cie., M., Bäreng. 7 Z.",Zürich,,Zürich
-1885-berufe-375-070,1885,375,berufe,70,70,firma,,0,Stirnenmann,,,,& Cie,,,,,,,1,,Tonhallestr,2,1,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"§Stirnenmann & Cie., Tonhallestr. 2, vom 1. April an Stadelhoferstr. 10 Z.",Zürich,,Zürich
+1885-berufe-375-069,1885,375,berufe,69,69,firma,,0,Schoch & Cie.,,,,M,,,,,,,1,,Bäreng,7,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schoch & Cie., M., Bäreng. 7 Z.",Zürich,,Zürich
+1885-berufe-375-070,1885,375,berufe,70,70,firma,,0,Stirnenmann & Cie.,,,,,,,,,,,1,,Tonhallestr,2,1,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"§Stirnenmann & Cie., Tonhallestr. 2, vom 1. April an Stadelhoferstr. 10 Z.",Zürich,,Zürich
 1885-berufe-375-071,1885,375,berufe,71,71,person,,0,Ulmann,,,,J. G,,,,,,,1,,Zeltweg,3,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Ulmann, J. G., Zeltweg 3 Z.",Zürich,,Zürich
 1885-berufe-375-072,1885,375,berufe,72,72,person,,0,Wegmann,,,,Fr,,,,,,,1,,Sihlhofg,2,1,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"§Wegmann, Fr., Sihlhofg. 2 Z.",Zürich,,Zürich
 1885-berufe-375-073,1885,375,berufe,73,73,firma,,0,Wenner,,,,Schwarz & Gutmann,,,,,,,1,,Niederdorfstr,96,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Wenner, Schwarz & Gutmann, Niederdorfstr. 96, vom 1. April an Schweizerg. 6 Z.",Zürich,,Zürich
-1885-berufe-375-074,1885,375,berufe,74,74,firma,,0,Wolf,,,,& Weiss,,,,,,,1,,Brandschenkestr,7,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Wolf & Weiss, Brandschenkestr. 7 Z.",Zürich,,Zürich
-1885-berufe-375-075,1885,375,berufe,75,75,firma,,0,Egli,,,,& Cie,,,,,,,1,,Kirch g,48,1,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Egli & Cie., Kirch g. 48 Z.",Zürich,,Zürich
+1885-berufe-375-074,1885,375,berufe,74,74,firma,,0,Wolf & Weiss,,,,,,,,,,,1,,Brandschenkestr,7,,Maschinenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Wolf & Weiss, Brandschenkestr. 7 Z.",Zürich,,Zürich
+1885-berufe-375-075,1885,375,berufe,75,75,firma,,0,Egli & Cie.,,,,,,,,,,,1,,Kirch g,48,1,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Egli & Cie., Kirch g. 48 Z.",Zürich,,Zürich
 1885-berufe-375-076,1885,375,berufe,76,76,person,,0,Finsler,,,,J,,,,,,,1,,Münster g,18,1,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Finsler, J., im Meiershof, Münster g. 18 Z.",Zürich,,Zürich
 1885-berufe-375-077,1885,375,berufe,77,77,person,,0,Fissler,,,,Sal,,,,,,,1,,Spiegelg,11,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Fissler, Sal., Spiegelg. 11 Z.",Zürich,,Zürich
-1885-berufe-375-078,1885,375,berufe,78,78,firma,,0,Hafner,,,,& Ritter,,,,,,,1,,Bahnhofstr,74,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hafner & Ritter, Bahnhofstr. 74 Z.",Zürich,,Zürich
+1885-berufe-375-078,1885,375,berufe,78,78,firma,,0,Hafner & Ritter,,,,,,,,,,,1,,Bahnhofstr,74,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hafner & Ritter, Bahnhofstr. 74 Z.",Zürich,,Zürich
 1885-berufe-375-079,1885,375,berufe,79,79,person,,0,Holzach,,,,Alfr,,,,,,,1,,unt. Kirch g,8,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Holzach, Alfr., unt. Kirch g. 8 Z.",Zürich,,Zürich
 1885-berufe-375-080,1885,375,berufe,80,80,firma,,0,Kammerer,,,,J. F,,,,,,,1,,Schützeng,24,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Kammerer, J. F., Schützeng. 24 Z. (Fabrik in Brunn.)",Zürich,,Zürich
 1885-berufe-375-081,1885,375,berufe,81,81,person,,0,Lavater,,,,Joh,,,,,,,1,,unt. Zäune,19,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Lavater, Joh., unt. Zäune 19 Z.",Zürich,,Zürich
 1885-berufe-375-082,1885,375,berufe,82,82,person,,0,Meyer,,Schaad,,H,,,,,,,1,,Schifflände,14,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Meyer-Schaad, H., Schifflände 14 Z.",Zürich,,Zürich
 1885-berufe-375-083,1885,375,berufe,83,83,person,,0,Nachmann,,,,Jos,,,,,,,1,,Linthescherg,20,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Nachmann, Jos., Linthescherg. 20 Z. (Agentur.)",Zürich,,Zürich
-1885-berufe-375-084,1885,375,berufe,84,84,firma,,0,Rebsamen,,,,& Naegely,,,,,,,1,,Gessnerallee,34,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessnerallee 34 Z.",Zürich,,Zürich
+1885-berufe-375-084,1885,375,berufe,84,84,firma,,0,Rebsamen & Naegely,,,,,,,,,,,1,,Gessnerallee,34,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rebsamen & Naegely, Gessnerallee 34 Z.",Zürich,,Zürich
 1885-berufe-375-085,1885,375,berufe,85,85,person,,0,Rümbeli,,,,Ulr,,,,,,,1,,Brunng,6,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Rümbeli, Ulr., Brunng. 6 Z.",Zürich,,Zürich
 1885-berufe-375-086,1885,375,berufe,86,86,person,,0,Scheffer,,,,Georg,,,,,,,1,,Bahnhofstr,69,1,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"§Scheffer, Georg, Bahnhofstr. 69 Z.",Zürich,,Zürich
 1885-berufe-375-087,1885,375,berufe,87,87,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Materialwaaren.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
@@ -4205,7 +4205,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-381-076,1885,381,berufe,76,76,person,,0,Aeberli,,,,Carl,,,,,,,1,,Hofacker,22,,Öfen und Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Aeberli, Carl, Hofacker 22 Hi.",Zürich,,Hirslanden
 1885-berufe-381-077,1885,381,berufe,77,77,person,,0,Benz,,,,Heinr,,,,,,,1,,Badenerstr,47,,Öfen und Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Benz, Heinr., Badenerstr. 47 A.",Zürich,,Aussersihl
 1885-berufe-382-001,1885,382,berufe,1,1,person,,0,Bodmer,,,,Carl,,,,,,,1,,Albisstr,310,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Bodmer, Carl, Albisstr. 310 W.",Zürich,,Wiedikon
-1885-berufe-382-002,1885,382,berufe,2,2,firma,,0,Bodmer,,,,,,,,,,,1,,Seefeldstr,11,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Bodmer & Biber, Seefeldstr. 11 R.",Zürich,,Riesbach
+1885-berufe-382-002,1885,382,berufe,2,2,firma,,0,Bodmer & Biber,,,,,,,,,,,1,,Seefeldstr,11,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Bodmer & Biber, Seefeldstr. 11 R.",Zürich,,Riesbach
 1885-berufe-382-003,1885,382,berufe,3,3,person,,0,Boller,,Wolf,,Adr,,,,,,,1,,Brandschenkestr,7,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Boller-Wolf, Adr., Brandschenkestr. 7 Z.",Zürich,,Zürich
 1885-berufe-382-004,1885,382,berufe,4,4,person,,0,Breitinger,,,,R,,,,,,,1,,Dreikönigstr,18,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Breitinger, R., Dreikönigstr. 18 Z.",Zürich,,Zürich
 1885-berufe-382-005,1885,382,berufe,5,5,person,,0,Busch,,,,L,,,,,,,1,,Froschaug,8,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Busch, L., Froschaug. 8 Z.",Zürich,,Zürich
@@ -4215,7 +4215,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-382-010,1885,382,berufe,10,10,person,,0,Girsberger,,,,Conr,,,,,,,1,,Merkurstr,25,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Girsberger, Conr., Merkurstr. 25 Ho.",Zürich,,Hottingen
 1885-berufe-382-011,1885,382,berufe,11,11,person,,0,Hartmann,,,,Wilh,,,,,,,1,,Gessneralle,40,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Hartmann, Wilh., Gessneralle 40 Z.",Zürich,,Zürich
 1885-berufe-382-012,1885,382,berufe,12,12,person,,0,Hess,,,,Wilh,,,,,,,1,,Schrägfußweg,79,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Hess, Wilh., Schrägfußweg 79 A.",Zürich,,Aussersihl
-1885-berufe-382-013,1885,382,berufe,13,13,firma,,0,Honegger,,,,,,,,,,,1,,Hofstr,7,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Honegger & Hollenweger, Hofstr. 7 Ho.",Zürich,,Hottingen
+1885-berufe-382-013,1885,382,berufe,13,13,firma,,0,Honegger & Hollenweger,,,,,,,,,,,1,,Hofstr,7,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Honegger & Hollenweger, Hofstr. 7 Ho.",Zürich,,Hottingen
 1885-berufe-382-014,1885,382,berufe,14,14,person,,0,Huber,,,,Wilh,,,,Petrol.,,,1,,Dufourstr,28,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Huber, Wilh. (Petrol.), Grossmünsterpl. 6 u. Dufourstr. 28 R.",Zürich,,Riesbach
 1885-berufe-382-015,1885,382,berufe,15,15,person,,0,Keller,,Trüb,,C,,,,,,,1,,Reiterg,1,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Keller-Trüb, C., Reiterg. 1 A.",Zürich,,Aussersihl
 1885-berufe-382-016,1885,382,berufe,16,16,person,,0,Kolb,,,,Fr,,,,,,,1,,Claridenstr,39,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Kolb, Fr., Claridenstr. 39 Z.",Zürich,,Zürich
@@ -4226,7 +4226,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-382-021,1885,382,berufe,21,21,person,,0,Müller,,,,Heinr,,,,,,,1,,Steinwiesstr,56,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Müller, Heinr., Steinwiesstr. 56 Ho.",Zürich,,Hottingen
 1885-berufe-382-022,1885,382,berufe,22,22,person,,0,Murbach,,,,G,,,,,,,1,,Niklausg,7 u. 9,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Murbach, G., Niklausg. 7 u. 9 U.",Zürich,,Unterstrass
 1885-berufe-382-023,1885,382,berufe,23,23,person,,0,Nothdurft,,,,Wilh,,,,,,,1,,Pfalzg,3,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Nothdurft, Wilh., Pfalzg. 3 Z.",Zürich,,Zürich
-1885-berufe-382-024,1885,382,berufe,24,24,firma,,0,Pünter,,,,Cie,,,,,,,1,,Niederdorfstr,102,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Pünter & Cie., a. Beckenhofstr. 10 U. u. Niederdorfstr. 102 Z.",Zürich,,Zürich
+1885-berufe-382-024,1885,382,berufe,24,24,firma,,0,Pünter & Cie.,,,,Cie,,,,,,,1,,Niederdorfstr,102,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Pünter & Cie., a. Beckenhofstr. 10 U. u. Niederdorfstr. 102 Z.",Zürich,,Zürich
 1885-berufe-382-025,1885,382,berufe,25,25,person,,0,Schötteldreyer,,,,Herm,,,,,,,1,,Spiegelg,13,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Schötteldreyer, Herm., Spiegelg. 13 Z.",Zürich,,Zürich
 1885-berufe-382-026,1885,382,berufe,26,26,person,,0,Schweizer,,,,Ed,,,,,,,1,,Limmatquai,44,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Schweizer, Ed., Limmatquai 44 Z.",Zürich,,Zürich
 1885-berufe-382-027,1885,382,berufe,27,27,person,,0,Spreng,,,,Emil,,,,,,,1,,Werdstr,25,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Spreng, Emil, Werdstr. 25 A.",Zürich,,Aussersihl
@@ -4234,11 +4234,11 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-382-029,1885,382,berufe,29,29,firma,,0,Zürcher Sparherdfabrik,,,,J. Müller,,,,,,,1,,Seideng,14,,Oefen u. Kochherde.,"qwen3.8-27b, Bild 2x",high,,"Zürcher Sparherdfabrik (J. Müller), Seideng 14 Z.",Zürich,,Zürich
 1885-berufe-382-030,1885,382,berufe,30,30,firma,,0,Baader,,,,Gebrüder,,,,Agentur.,,,1,,Löwenstr,54,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Baader, Gebrüder, Löwenstr. 54 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-382-031,1885,382,berufe,31,31,person,,0,Bareiss,,,,Arthur,,,,"Schmieröl, Agentur.",,,1,,Seideng,17,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Bareiss, Arthur, Seideng. 17 Z. (Schmieröl, Agentur.)",Zürich,,Zürich
-1885-berufe-382-032,1885,382,berufe,32,32,firma,,0,Bosch,,,,Denner,,,,Agentur.,,,1,,Sihlstr,95,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
+1885-berufe-382-032,1885,382,berufe,32,32,firma,,0,Bosch & Denner,,,,Denner,,,,Agentur.,,,1,,Sihlstr,95,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Bosch & Denner, Sihlstr. 95 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-382-033,1885,382,berufe,33,33,person,,0,Finsler,,,,J,,,,,,,1,,Müsterg,18,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Finsler im Meiershof, J., Müsterg. 18 Z.",Zürich,,Zürich
 1885-berufe-382-034,1885,382,berufe,34,34,person,,0,Fould,,,,B,,,,Agentur.,,,1,,Seefeldstr,1,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Fould, B., Seefeldstr. 1 R. (Agentur.)",Zürich,,Riesbach
 1885-berufe-382-035,1885,382,berufe,35,35,person,,0,Lützelberger,,,,Jos,,,,Aetherische Oele u. Essenzen.,,,1,,Conradstr,50 u. 52,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Lützelberger, Jos., Conradstr. 50 u. 52 (Industriequartier) A. (Aetherische Oele u. Essenzen.)",Zürich,,Aussersihl
-1885-berufe-382-036,1885,382,berufe,36,36,firma,,0,Maag,,,,"Cie., C",,,,Petroleum.,,,1,,Seilergr,47,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Maag & Cie., C., Seilergr. 47 Z. (Petroleum.)",Zürich,,Zürich
+1885-berufe-382-036,1885,382,berufe,36,36,firma,,0,Maag & Cie.,,,,"Cie., C",,,,Petroleum.,,,1,,Seilergr,47,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Maag & Cie., C., Seilergr. 47 Z. (Petroleum.)",Zürich,,Zürich
 1885-berufe-382-037,1885,382,berufe,37,37,person,,0,Nägeli,,,,"Sohn, Heinr",,,,,,,1,,Niederdorfstr,22,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Nägeli Sohn, Heinr., Niederdorfstr. 22 Z.",Zürich,,Zürich
 1885-berufe-382-038,1885,382,berufe,38,38,firma,,0,Petroleumlagergesellschaft,,,,,,,,,,,1,,im Ruhenstein,,,Oelhandel.,"qwen3.8-27b, Bild 2x",medium,,Petroleumlagergesellschaft im Ruhenstein A.,Zürich,street_rare,Aussersihl
 1885-berufe-382-039,1885,382,berufe,39,39,person,,0,Pfister,,Bleuler,,,,,,Speiseöle en gros.,,,1,,Leonhardsg,6,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Pfister-Bleuler, Leonhardsg. 6 Z. (Speiseöle en gros.)",Zürich,,Zürich
@@ -4248,14 +4248,14 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-382-043,1885,382,berufe,43,43,person,,0,Stäger,,,,Oeter,,,,,,,1,,Löwenstr,67,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Stäger, Oeter, Löwenstr. 67 Z.",Zürich,,Zürich
 1885-berufe-382-044,1885,382,berufe,44,44,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
 1885-berufe-382-045,1885,382,berufe,45,45,person,,0,Waser,,,,Conr. Gottl,,,,,,,1,,Bahnhofstr,46,,Oelhandel.,"qwen3.8-27b, Bild 2x",high,,"Waser, Conr. Gottl., Limmatquai 2 u. Bahnhofstr. 46 Z.",Zürich,,Zürich
-1885-berufe-382-046,1885,382,berufe,46,46,firma,,0,Dietrich,,,,"Cie., R",,,,,,,1,,Hohlstr,,,Oelraffinerie.,"qwen3.8-27b, Bild 2x",high,,"Dietrich & Cie., R., Hohlstr. A.",Zürich,,Aussersihl
+1885-berufe-382-046,1885,382,berufe,46,46,firma,,0,Dietrich & Cie.,,,,"Cie., R",,,,,,,1,,Hohlstr,,,Oelraffinerie.,"qwen3.8-27b, Bild 2x",high,,"Dietrich & Cie., R., Hohlstr. A.",Zürich,,Aussersihl
 1885-berufe-382-047,1885,382,berufe,47,47,person,,0,Baltzer,,,,E,,,,,,,1,,Sonnenquai,8,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Baltzer, E., Sonnenquai 8 Z.",Zürich,,Zürich
 1885-berufe-382-048,1885,382,berufe,48,48,person,,0,Brunswig,,Rachmühl,,,,,,,,,1,,Neumarkt,10,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Brunswig-Rachmühl, Neumarkt 10 Z.",Zürich,,Zürich
 1885-berufe-382-049,1885,382,berufe,49,49,person,,0,Ernst,,,,Theod,,,,,,,1,,Sonnenquai,14,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Ernst, Theod., Sonnenquai 14 Z.",Zürich,,Zürich
 1885-berufe-382-050,1885,382,berufe,50,50,person,,0,Goldschmid,,,,"Sohn, A",,,,,,,1,,Rämistr,1,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Goldschmid Sohn, A., Rämistr. 1 Z.",Zürich,,Zürich
 1885-berufe-382-051,1885,382,berufe,51,51,person,,0,Jäggi,,,,Matth,,,,,,,1,,Poststr,1,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Jäggi, Matth., Poststr. 1 Z.",Zürich,,Zürich
 1885-berufe-382-052,1885,382,berufe,52,52,person,,0,Kramer,,,,J. G,,,,,,,1,,Spiegelg,7,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Kramer, J. G., Spiegelg. 7 I Z.",Zürich,,Zürich
-1885-berufe-382-053,1885,382,berufe,53,53,firma,,0,Meister,,,,Kunz,,,,,,,1,,Rathausquai,22,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Meister & Kunz, Rathausquai 22 Z.",Zürich,,Zürich
+1885-berufe-382-053,1885,382,berufe,53,53,firma,,0,Meister & Kunz,,,,Kunz,,,,,,,1,,Rathausquai,22,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Meister & Kunz, Rathausquai 22 Z.",Zürich,,Zürich
 1885-berufe-382-054,1885,382,berufe,54,54,person,,0,Rachmühl,,,,E,,,,,,,1,,Spitalg,10,,Optiker.,"qwen3.8-27b, Bild 2x",high,,"Rachmühl, E. Spitalg. 10 Z.",Zürich,,Zürich
 1885-berufe-382-055,1885,382,berufe,55,55,person,,0,Knecht,,,,Arm,,,,,,,1,,Zürichbergstr,4,,Organisten.,"qwen3.8-27b, Bild 2x",high,,"Knecht, Arm., Zürichbergstr. 4 F. (St. Peter.)",Zürich,,Fluntern
 1885-berufe-382-056,1885,382,berufe,56,56,person,,0,Steinmetz,,,,Georg,,,,,,,1,,Schinluststr,1,,Organisten.,"qwen3.8-27b, Bild 2x",high,,"Steinmetz, Georg, Schinluststr. 1 II Z. (Frau-münster.)",Zürich,street_rare hyphen,Zürich
@@ -4270,7 +4270,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-382-065,1885,382,berufe,65,65,firma,,0,Cellulose- & Papierfabrik Balsthal,,,,,,,,,,,1,,Seideng,17,,Papierfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Cellulose- & Papierfabrik Balsthal, Depot Seideng. 17 Z.",Zürich,,Zürich
 1885-berufe-382-066,1885,382,berufe,66,66,firma,,0,Zürcher Papierfabrik,,,,,,,,,,,1,,Bahnhofbrücke,1,,Papierfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Zürcher Papierfabrik a. d. Sihl, Bahnhofbrücke 1 Z.",Zürich,,Zürich
 1885-berufe-382-067,1885,382,berufe,67,67,person,,0,Appenzeller,,,,H,,,,,,,1,,Rathauspl,26,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Appenzeller, H., Rathauspl. 26 Z.",Zürich,,Zürich
-1885-berufe-382-068,1885,382,berufe,68,68,firma,,0,Appenzeller,,,,Furrer,,,,,,,1,,Thalg,8,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Appenzeller & Furrer, Thalg. 8 Z.",Zürich,,Zürich
+1885-berufe-382-068,1885,382,berufe,68,68,firma,,0,Appenzeller & Furrer,,,,Furrer,,,,,,,1,,Thalg,8,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Appenzeller & Furrer, Thalg. 8 Z.",Zürich,,Zürich
 1885-berufe-382-069,1885,382,berufe,69,69,person,,0,Bareiss,,,,Arthur,,,,Agentur u. Export.,,,1,,Seideng,17,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Bareiss, Arthur, Seideng. 17 Z. (Agentur u. Export.)",Zürich,,Zürich
 1885-berufe-382-070,1885,382,berufe,70,70,firma,,0,Buff,,,,Hinden & Mettler,,,,en gros.,,,1,,Bahnhofstr,98,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Buff, Hinden & Mettler, Bahnhofstr. 98 Z. (en gros.)",Zürich,,Zürich
 1885-berufe-382-071,1885,382,berufe,71,71,person,,0,Carpentier,,,,Ferd,,,,,,,1,,Beateng,15,,Papierhandel.,"qwen3.8-27b, Bild 2x",high,,"Carpentier, Ferd., Beateng. 15 Z.",Zürich,,Zürich
@@ -4342,7 +4342,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-383-061,1885,383,berufe,61,61,person,,0,Ostertag,,,,C. A,,,,,,,1,,Stadthauspl,31,,Pharmaceutische Produkte.,"qwen3.8-27b, Bild 2x",high,,"Ostertag, C. A., Stadthauspl. 31 Z.",Zürich,,Zürich
 1885-berufe-383-062,1885,383,berufe,62,62,firma,,0,Bräm,,,,Gebrüder,,,,,,,1,,Rothwandstr,5,,Photographen.,"qwen3.8-27b, Bild 2x",high,,"Bräm, Gebrüder, Rothwandstr. 5 A.",Zürich,,Aussersihl
 1885-berufe-383-063,1885,383,berufe,63,63,person,,0,Ganz,,,,,,,,Photographie,,,1,,Bahnhofstr,40,1,Photographen.,"qwen3.8-27b, Bild 2x",high,,"☎Ganz, Photographie, Bahnhofstr. 40 Z.",Zürich,,Zürich
-1885-berufe-383-065,1885,383,berufe,65,65,firma,,0,Ganz & Cie.,,,,,,,,Projections-photographie,,,1,,Bahnhofstr,40,,Photographen.,"qwen3.8-27b, Bild 2x",medium,,"Ganz & Cie., Bahnhofstr. 40 Z. (Projections-photographie.)",Zürich,hyphen,Zürich
+1885-berufe-383-065,1885,383,berufe,65,65,firma,,0,Ganz & Cie.,,,,,,,,Projectionsphotographie,,,1,,Bahnhofstr,40,,Photographen.,"qwen3.8-27b, Bild 2x",medium,,"Ganz & Cie., Bahnhofstr. 40 Z. (Projections-photographie.)",Zürich,hyphen,Zürich
 1885-berufe-384-001,1885,384,berufe,1,1,person,,0,Guler,,,,R,,,,Photograph,,,1,,Feideggstr,19 R,,Photographen.,"qwen3.8-27b, Bild 2x",medium,,"Guler, R., Feideggstr. 19 R., Laden Bahnhofstr. 64 Z.",Zürich,street_rare,Zürich
 1885-berufe-384-002,1885,384,berufe,2,2,firma,,0,Gut & Co.,,,,J,,,,Photograph,,,1,,obere Zäune,19,,Photographen.,"qwen3.8-27b, Bild 2x",high,,"Gut & Co., J., obere Zäune 19 Z.",Zürich,,Zürich
 1885-berufe-384-003,1885,384,berufe,3,3,person,,0,Keller,,,,Fritz,,,,Photograph,,,1,,Militärstr,2,,Photographen.,"qwen3.8-27b, Bild 2x",high,,"Keller, Fritz, Militärstr. 2 A.",Zürich,,Aussersihl
@@ -4613,7 +4613,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-387-004,1885,387,berufe,4,4,person,,0,Letsche,,,,M,,,,,,,1,,Kirchg. 8 u. Schifflände 3,8,,Reiseartikel.,"qwen3.8-27b, Bild 2x",medium,,"Letsche, M., Kirchg. 8 u. Schifflände 3 Z.",Zürich,street_rare,Zürich
 1885-berufe-387-005,1885,387,berufe,5,5,person,,0,Locher,,Wolf,,J,,,,,,,1,,Münsterhof,19,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Locher-Wolf, J., Münsterhof 19 Z.",Zürich,,Zürich
 1885-berufe-387-006,1885,387,berufe,6,6,person,,0,Nauer,,,,Casp,,,,,,,1,,Stüssihofstatt,12,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Nauer, Casp., Stüssihofstatt 12 Z.",Zürich,,Zürich
-1885-berufe-387-007,1885,387,berufe,7,7,firma,,0,Scherrer,,,,J. B,,,,,,,1,,Niederdorfstr,31,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
+1885-berufe-387-007,1885,387,berufe,7,7,firma,,0,Scherrer & Söhne,,,,J. B,,,,,,,1,,Niederdorfstr,31,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
 1885-berufe-387-008,1885,387,berufe,8,8,person,,0,Specker,,,,Herm,,,,,,,1,,Bahnhofstr,90,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Specker, Herm., Bahnhofstr. 90 Z. (Celluloid.)",Zürich,,Zürich
 1885-berufe-387-009,1885,387,berufe,9,9,person,,0,Wölfer,,,,Louis,,,,,,,1,,Strehlg,3,,Reiseartikel.,"qwen3.8-27b, Bild 2x",high,,"Wölfer, Louis, Strehlg. 3 Z.",Zürich,,Zürich
 1885-berufe-387-010,1885,387,berufe,10,10,person,,0,Rheinhardt's Bureau National,,,,,,,,,,,1,,Scheitergasse,2,,Reisebureau.,"qwen3.8-27b, Bild 2x",high,,"Rheinhardt's Bureau National, Scheitergasse 2 I Z.",Zürich,,Zürich
@@ -4621,12 +4621,12 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-387-012,1885,387,berufe,12,12,person,,0,Wettstein,,Künzli,,R,,,,,,,1,,Baderg,2,,Riemenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Wettstein-Künzli, R., Baderg. 2 Z.",Zürich,,Zürich
 1885-berufe-387-013,1885,387,berufe,13,13,person,,0,Gauger,,,,Fritz,,,,,,,1,,Georgeng,4,,Rolladenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Gauger, Fritz, Georgeng. 4 U.",Zürich,,Unterstrass
 1885-berufe-387-014,1885,387,berufe,14,14,person,,0,Schoop,,Bürgin,,,,,,,,,1,,Pelikanstr,1—5,,Rosshaarhandel.,"qwen3.8-27b, Bild 2x",high,,"Schoop-Bürgin, Pelikanstr. 1—5 Z.",Zürich,,Zürich
-1885-berufe-387-015,1885,387,berufe,15,15,firma,,0,Süsstrunk,,,,,,,,,,,1,,Schweizerg,6,,Rosshaarhandel.,"qwen3.8-27b, Bild 2x",high,,"Süsstrunk & Pfister, Schweizerg. 6 (Linthescherpl.) Z.",Zürich,,Zürich
+1885-berufe-387-015,1885,387,berufe,15,15,firma,,0,Süsstrunk & Pfister,,,,,,,,,,,1,,Schweizerg,6,,Rosshaarhandel.,"qwen3.8-27b, Bild 2x",high,,"Süsstrunk & Pfister, Schweizerg. 6 (Linthescherpl.) Z.",Zürich,,Zürich
 1885-berufe-387-016,1885,387,berufe,16,16,person,,0,Dampfwäscherei Seefeld,,,,,,,,,,,1,,Kreuzstr,,1,Rosshaarwascherei.,"qwen3.8-27b, Bild 2x",high,,"☎Dampfwäscherei Seefeld, (A. Nüscheler), Kreuzstr. R.",Zürich,,Riesbach
 1885-berufe-387-017,1885,387,berufe,17,17,person,,0,Grüebler,,,,Theoph,,,,,,,1,,Bahnhofstr,66,,Rouleaux-Handel.,"qwen3.8-27b, Bild 2x",high,,"Grüebler, Theoph., Bahnhofstr. 66 Z.",Zürich,,Zürich
 1885-berufe-387-018,1885,387,berufe,18,18,person,,0,Stettbacher,,,,J,,,,,,,1,,Wiesenstr,14,,Rouleaux-Handel.,"qwen3.8-27b, Bild 2x",high,,"Stettbacher, J., Wiesenstr. 14 R.",Zürich,,Riesbach
 1885-berufe-387-019,1885,387,berufe,19,19,person,,0,Benz,,,,J,,,,,,,1,,Brandschenkestr,10,,Rouleaux-Malerei.,"qwen3.8-27b, Bild 2x",high,,"Benz, J., Brandschenkestr. 10 Z.",Zürich,,Zürich
-1885-berufe-387-020,1885,387,berufe,20,20,firma,,0,Hassberger,,,,,,,,,,,1,,Lindenhofg,15,1,Sackfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Hassberger & Dreschfeld, Lindenhofg. 15 Z.",Zürich,,Zürich
+1885-berufe-387-020,1885,387,berufe,20,20,firma,,0,Hassberger & Dreschfeld,,,,,,,,,,,1,,Lindenhofg,15,1,Sackfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Hassberger & Dreschfeld, Lindenhofg. 15 Z.",Zürich,,Zürich
 1885-berufe-387-021,1885,387,berufe,21,21,person,,0,Bossard,,,,H,,,,,,,1,,Plattenstr,17,,Sägerei.,"qwen3.8-27b, Bild 2x",high,,"Bossard, H., Plattenstr. 17 Ho.",Zürich,,Hottingen
 1885-berufe-387-022,1885,387,berufe,22,22,person,,0,Koch,,,,M,,,,,,,1,,Mühlebachstr,6,,Sägerei.,"qwen3.8-27b, Bild 2x",high,,"Koch, M., Mühlebachstr. 6 R.",Zürich,,Riesbach
 1885-berufe-387-023,1885,387,berufe,23,23,person,,0,Ulrich,,,,Jac,,,,,,,1,,Sägestr,,,Sägerei.,"qwen3.8-27b, Bild 2x",high,,"Ulrich, Jac., Sägestr. A.",Zürich,,Aussersihl
@@ -4684,11 +4684,11 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-387-075,1885,387,berufe,75,75,person,,0,Welti,,Nägeli,,Johs,,,,,,,1,,mittl. Leimbach,,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",medium,,"Welti-Nägeli, Johs., mittl. Leimbach E.",Zürich,street_rare,Enge
 1885-berufe-387-076,1885,387,berufe,76,76,person,,0,Würtz,,,,Mg,,,,,,,1,,Sihlstr,99,1,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎Würtz, Mg., Sihlstr. 99 Z.",Zürich,,Zürich
 1885-berufe-387-077,1885,387,berufe,77,77,person,,0,Dürr,,,,Emil,,,,,,,1,,Marktg,15,,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Dürr, Emil, Marktg. 15 Z.",Zürich,,Zürich
-1885-berufe-387-078,1885,387,berufe,78,78,firma,,0,Dürr,,,,Titus,,,,,,,1,,Bahnhofstr,104,1,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Dürr & Cie., Titus, Bahnhofstr. 104 Z.",Zürich,,Zürich
+1885-berufe-387-078,1885,387,berufe,78,78,firma,,0,Dürr & Cie.,,,,Titus,,,,,,,1,,Bahnhofstr,104,1,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Dürr & Cie., Titus, Bahnhofstr. 104 Z.",Zürich,,Zürich
 1885-berufe-387-079,1885,387,berufe,79,79,person,,0,Köchlin,,,,Arn,,,,,,,1,,Schiffländepl,2,,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Köchlin, Arn., Schiffländepl. 2 Z.",Zürich,,Zürich
 1885-berufe-387-080,1885,387,berufe,80,80,person,,0,Müller,,Köchlin,,Ed,,,,,,,1,,Storcheng,16,1,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"☎Müller-Köchlin, Ed., Storcheng. 16 Z.",Zürich,,Zürich
 1885-berufe-387-081,1885,387,berufe,81,81,person,,0,Traub,,,,Benno,,,,,,,1,,Beateng,15,,Samenhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Traub, Benno, Beateng. 15 II Z. (en gros.)",Zürich,,Zürich
-1885-berufe-387-082,1885,387,berufe,82,82,firma,,0,Aehly,,,,M,,,,,,,1,,Linthescherg,21,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"Aehly & Cie., M., Linthescherg. 21 Z.",Zürich,,Zürich
+1885-berufe-387-082,1885,387,berufe,82,82,firma,,0,Aehly & Cie.,,,,M,,,,,,,1,,Linthescherg,21,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"Aehly & Cie., M., Linthescherg. 21 Z.",Zürich,,Zürich
 1885-berufe-387-083,1885,387,berufe,83,83,person,,0,Bär,,,,H,,,,,,,1,,Tonhallestr,4,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"Bär, H., Tonhallestr. 4 Z.",Zürich,,Zürich
 1885-berufe-388-001,1885,388,berufe,1,1,person,,0,Baumgartner,,,,Friedr,,,,,,,1,,Venedigstr,72,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"Baumgartner, Friedr., Venedigstr. 72 E.",Zürich,,Enge
 1885-berufe-388-002,1885,388,berufe,2,2,person,,0,Bietenhader,,,,J. J. U,,,,,,,1,,Stapferstr,10,,Sattler u. Handel in Sattlerwaaren.,"qwen3.8-27b, Bild 2x",high,,"Bietenhader, J. J. U., Stapferstr. 10 O.",Zürich,,Oberstrass
@@ -6144,7 +6144,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-401-070,1885,401,berufe,70,70,person,,0,Grüebler,,,,Theoph,,,,,,,1,,Bahnhofstr,66,,Tapetenhandel.,"qwen3.8-27b, Bild 2x",high,,"Grüebler, Theoph., Bahnhofstr. 66 Z.",Zürich,,Zürich
 1885-berufe-402-001,1885,402,berufe,1,1,person,,0,Kramer,,,,Rud,,,,,,,1,,Bahnhofstr,38,,Tapetenhandel.,"qwen3.8-27b, Bild 2x",high,,"Kramer, Rud., Bahnhofstr. 38 Z.",Zürich,,Zürich
 1885-berufe-402-002,1885,402,berufe,2,2,person,,0,Letsch,,,,Alb,,,,,,,1,,Plattenstr,2,,Tapetenhandel.,"qwen3.8-27b, Bild 2x",high,,"Letsch, Alb., Plattenstr. 2 Ho.",Zürich,,Hottingen
-1885-berufe-402-003,1885,402,berufe,3,3,firma,,0,Aebly,,,,M,,,,,,,1,,Linthescherg,21,,Tapezierer u. Tapezirerartikel.,"qwen3.8-27b, Bild 2x",high,,"Aebly & Cie., M., Linthescherg. 21 Z.",Zürich,,Zürich
+1885-berufe-402-003,1885,402,berufe,3,3,firma,,0,Aebly & Cie.,,,,M,,,,,,,1,,Linthescherg,21,,Tapezierer u. Tapezirerartikel.,"qwen3.8-27b, Bild 2x",high,,"Aebly & Cie., M., Linthescherg. 21 Z.",Zürich,,Zürich
 1885-berufe-402-004,1885,402,berufe,4,4,person,,0,Arter,,,,Ludw,,,,,,,1,,Neumarkt,23,,Tapezierer u. Tapezirerartikel.,"qwen3.8-27b, Bild 2x",high,,"Arter, Ludw., Neumarkt 23 Z.",Zürich,,Zürich
 1885-berufe-402-005,1885,402,berufe,5,5,person,,0,Baumgartner,,,,Alb,,,,,,,1,,Schweizerg,20,1,Tapezierer u. Tapezirerartikel.,"qwen3.8-27b, Bild 2x",high,,"☎Baumgartner, Alb., Schweizerg. 20 Z.",Zürich,,Zürich
 1885-berufe-402-006,1885,402,berufe,6,6,person,,0,Bertschinger,,,,Jac,,,,,,,1,,Bleicherweg,22,,Tapezierer u. Tapezirerartikel.,"qwen3.8-27b, Bild 2x",high,,"Bertschinger, Jac., Bleicherweg 22 Z.",Zürich,,Zürich
@@ -6207,17 +6207,17 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-402-063,1885,402,berufe,63,63,person,,0,Brunco,,,,Fr,,,,,,,1,,Neumarkt,24,1,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"☎Brunco, Fr, Neumarkt 24 Z.",Zürich,,Zürich
 1885-berufe-402-064,1885,402,berufe,64,64,person,,0,Eckenfeller,,,,Friedr,,,,,,,1,,Krugg,4,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Eckenfeller, Friedr., Krugg. 4 Z.",Zürich,,Zürich
 1885-berufe-402-065,1885,402,berufe,65,65,person,,0,Grentz,,,,O,,,,,,,1,,Bleicherweg,24,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Grentz, O., Bleicherweg 24 I Z.",Zürich,,Zürich
-1885-berufe-402-066,1885,402,berufe,66,66,firma,,0,Müller,,,,,,,,,,,1,,Predigerg,7,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Müller & Koradi, Predigerg. 7 Z.",Zürich,,Zürich
+1885-berufe-402-066,1885,402,berufe,66,66,firma,,0,Müller & Koradi,,,,,,,,,,,1,,Predigerg,7,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Müller & Koradi, Predigerg. 7 Z.",Zürich,,Zürich
 1885-berufe-402-067,1885,402,berufe,67,67,person,,0,Reding,,,,Alois,Dr,,,,,,1,,Josefstr,51,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Reding, Dr Alois, Josefstr. 51 A.",Zürich,,Aussersihl
 1885-berufe-402-068,1885,402,berufe,68,68,person,,0,Rognon,,,,Fritz,,,,,,,1,,Seideng,18,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Rognon, Fritz, Seideng. 18 Z.",Zürich,,Zürich
 1885-berufe-402-069,1885,402,berufe,69,69,person,,0,Schmid,,,,W,,,,,,,1,,z. Schweizerhof,,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Schmid, W., z. Schweizerhof A.",Zürich,,Aussersihl
 1885-berufe-402-070,1885,402,berufe,70,70,firma,,0,Sprecher,,,,G,,,,,,,1,,z. Jacobsgut,,,Telegraphenfabrikation.,"qwen3.8-27b, Bild 2x",high,,"Sprecher, G., z. Jacobsgut A. (Fabrik in Bertschikon.)",Zürich,,Aussersihl
 1885-berufe-402-071,1885,402,berufe,71,71,firma,,0,Zürcher Telephongesellschaft,,,,,,,,,,,1,,Bahnhofstr,15,1,Telephonbau.,"qwen3.8-27b, Bild 2x",high,,"☎Zürcher Telephongesellschaft, Bahnhofstr. 15 Z.",Zürich,,Zürich
-1885-berufe-402-072,1885,402,berufe,72,72,firma,,0,Gattiker,,,,,,,,,,,1,,Bahnhofstr,44,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Gattiker & Morf, Bahnhofstr. 44 Z.",Zürich,,Zürich
+1885-berufe-402-072,1885,402,berufe,72,72,firma,,0,Gattiker & Morf,,,,,,,,,,,1,,Bahnhofstr,44,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Gattiker & Morf, Bahnhofstr. 44 Z.",Zürich,,Zürich
 1885-berufe-402-073,1885,402,berufe,73,73,person,,0,Hauser,,,,Rud,,,,,,,1,,Bahnhofstr,14,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Hauser, Rud, Bahnhofstr. 14 Z. (Oriental.)",Zürich,,Zürich
 1885-berufe-402-074,1885,402,berufe,74,74,person,,0,Ith,,,,J. G,,,,,,,1,,Poststr,1,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Ith, J. G., Poststr. 1 Z.",Zürich,,Zürich
 1885-berufe-402-075,1885,402,berufe,75,75,person,,0,Müller,,Zollinger,,Ulr,,,,,,,1,,Zähringerstr,23,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Müller-Zollinger, Ulr., Zähringerstr. 23 Z.",Zürich,,Zürich
-1885-berufe-402-076,1885,402,berufe,76,76,firma,,0,Scherer,,,,J. B,,,,,,,1,,Niederdorfstr,31,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
+1885-berufe-402-076,1885,402,berufe,76,76,firma,,0,Scherer & Söhne,,,,J. B,,,,,,,1,,Niederdorfstr,31,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Scherer & Söhne, J. B., Niederdorfstr. 31 Z.",Zürich,,Zürich
 1885-berufe-402-077,1885,402,berufe,77,77,firma,,0,Schönenberger,,,,G. & A,,,,,,,1,,Rennweg,59,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Schönenberger, G. & A., Rennweg 59 Z.",Zürich,,Zürich
 1885-berufe-402-078,1885,402,berufe,78,78,person,,0,Stahel,,,,,,Wwe.,,,,,1,,Hechtpl,1,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Stahel, Wwe., Hechtpl. 1 Z.",Zürich,,Zürich
 1885-berufe-402-079,1885,402,berufe,79,79,person,,0,Würth,,,,Wilh,,,,,,,1,,Sonnenquai,18,,Teppichhandlungen.,"qwen3.8-27b, Bild 2x",high,,"Würth, Wilh., Sonnenquai 18 Z.",Zürich,,Zürich
@@ -6228,7 +6228,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-402-084,1885,402,berufe,84,84,person,,0,Holzach,,,,Ed,,,,,,,1,,Rennweg,14,,Thee.,"qwen3.8-27b, Bild 2x",high,,"Holzach, Ed., Rennweg 14 Z. (gros et détail.)",Zürich,,Zürich
 1885-berufe-402-085,1885,402,berufe,85,85,person,,0,Kaufmann,,Wehrli,,E,,,,,,,1,,Weggeng,6,,Thee.,"qwen3.8-27b, Bild 2x",high,,"Kaufmann-Wehrli, E., Weggeng. 6 Z.",Zürich,,Zürich
 1885-berufe-402-086,1885,402,berufe,86,86,person,,0,Nägeli,,,,Alb,,,,,,,1,,Niederdorfstr,22,,Thee.,"qwen3.8-27b, Bild 2x",high,,"Nägeli, Alb., Niederdorfstr. 22 Z.",Zürich,,Zürich
-1885-berufe-402-087,1885,402,berufe,87,87,firma,,0,Sprüngli,,,,Dav,,,,,,,1,,Bahnhofstr,19,1,Thee.,"qwen3.8-27b, Bild 2x",high,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 19 Z.",Zürich,,Zürich
+1885-berufe-402-087,1885,402,berufe,87,87,firma,,0,Sprüngli & Sohn,,,,Dav,,,,,,,1,,Bahnhofstr,19,1,Thee.,"qwen3.8-27b, Bild 2x",high,,"☎Sprüngli & Sohn, Dav., Marktg. 5 u. Bahnhofstr. 19 Z.",Zürich,,Zürich
 1885-berufe-402-088,1885,402,berufe,88,88,person,,0,Volkart,,,,H,,,,,,,1,,Marktg,17,,Thee.,"qwen3.8-27b, Bild 2x",high,,"Volkart, H., Marktg. 17 Z.",Zürich,,Zürich
 1885-berufe-402-089,1885,402,berufe,89,89,person,,0,Waser,,,,Conr. Gottl,,,,,,,1,,Bahnhofstr,46,1,Thee.,"qwen3.8-27b, Bild 2x",high,,"☎Waser, Conr. Gottl., Limmatquai 2 u. Bahnhofstr. 46 Z.",Zürich,,Zürich
 1885-berufe-402-090,1885,402,berufe,90,90,person,,0,Bühler,,,,Jac,,,,,,,1,,Wyssg,14,,Thierärzte.,"qwen3.8-27b, Bild 2x",high,,"Bühler, Jac., Wyssg. 14 A.",Zürich,,Aussersihl
@@ -6433,12 +6433,12 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-406-002,1885,406,berufe,2,2,person,,0,Wyle,,,,Isak Abrah,,,,Viehändler,,,1,,Werdstr,49,,Viehändler,"qwen3.8-27b, Bild 2x",high,,"Wyle, Isak Abrah., Werdstr. 49 A.",Zürich,,Aussersihl
 1885-berufe-406-003,1885,406,berufe,3,3,person,,0,Wyle,,,,Marx,,,,Viehändler,,,1,,Birmensdorferstr,55,,Viehändler,"qwen3.8-27b, Bild 2x",high,,"Wyle, Marx, Birmensdorferstr. 55 W.",Zürich,,Wiedikon
 1885-berufe-406-004,1885,406,berufe,4,4,person,,0,Wyle,,,,Sim. Baruch,,,,Viehändler,,,1,,Krummg,2,,Viehändler,"qwen3.8-27b, Bild 2x",high,,"Wyle, Sim. Baruch, Krummg. 2 A.",Zürich,,Aussersihl
-1885-berufe-406-005,1885,406,berufe,5,5,firma,,0,Knecht,,,,& Cie,,,,Waffenhandel,,,1,,Bahnhofstr,106,,Waffenhandel,"qwen3.8-27b, Bild 2x",high,,"Knecht & Cie., Bahnhofstr. 106 Z.",Zürich,,Zürich
+1885-berufe-406-005,1885,406,berufe,5,5,firma,,0,Knecht & Cie.,,,,,,,,Waffenhandel,,,1,,Bahnhofstr,106,,Waffenhandel,"qwen3.8-27b, Bild 2x",high,,"Knecht & Cie., Bahnhofstr. 106 Z.",Zürich,,Zürich
 1885-berufe-406-006,1885,406,berufe,6,6,person,,0,Schefer,,,,K,,,,Waffenhandel,,,1,,Oetenbachg,13,,Waffenhandel,"qwen3.8-27b, Bild 2x",high,,"Schefer, K., Oetenbachg. 13 Z.",Zürich,,Zürich
 1885-berufe-406-007,1885,406,berufe,7,7,person,,0,Weber,,Ruesch,,,,,,Waffenhandel,,,1,,Bahnhofstr,102,,Waffenhandel,"qwen3.8-27b, Bild 2x",high,,"Weber-Ruesch, Bahnhofstr. 102 Z.",Zürich,,Zürich
 1885-berufe-406-008,1885,406,berufe,8,8,person,,0,Geissberger,,,,J. Casp,,,,Wagenbauer,,,1,,Wiesenstr,10,,Wagenbauer,"qwen3.8-27b, Bild 2x",high,,"Geissberger, J. Casp., Wiesenstr. 10 I R.",Zürich,,Riesbach
 1885-berufe-406-009,1885,406,berufe,9,9,person,,0,Keller,,,,Edu,,,,Wagenbauer,,,1,,Seideng,12,1,Wagenbauer,"qwen3.8-27b, Bild 2x",high,,"☎Keller, Edu., Seideng. 12 Z.",Zürich,,Zürich
-1885-berufe-406-010,1885,406,berufe,10,10,firma,,0,Vogel,,,,& Cie,,,,Wagenbauer,,,1,,Stadelhoferpl,9,,Wagenbauer,"qwen3.8-27b, Bild 2x",high,,"Vogel & Cie., Stadelhoferpl. 9 Z.",Zürich,,Zürich
+1885-berufe-406-010,1885,406,berufe,10,10,firma,,0,Vogel & Cie.,,,,,,,,Wagenbauer,,,1,,Stadelhoferpl,9,,Wagenbauer,"qwen3.8-27b, Bild 2x",high,,"Vogel & Cie., Stadelhoferpl. 9 Z.",Zürich,,Zürich
 1885-berufe-406-011,1885,406,berufe,11,11,person,,0,Armspach,,,,J,,,,Wagner,,,1,,Wagnerg,16,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Armspach, J., Wagnerg. 16 R.",Zürich,,Riesbach
 1885-berufe-406-012,1885,406,berufe,12,12,person,,0,Baur,,,,J,,,,Wagner,,,1,,Färberstr,27,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Baur, J., Färberstr. 27 R.",Zürich,,Riesbach
 1885-berufe-406-013,1885,406,berufe,13,13,person,,0,Bryner,,,,Casp,,,,Wagner,,,1,,Geissbergstr,6,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Bryner, Casp., Geissbergstr. 6 U.",Zürich,,Unterstrass
@@ -6451,7 +6451,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-406-020,1885,406,berufe,20,20,person,,0,Katz,,,,Jonath,,,,Wagner,,,1,,Steing,6,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Katz, Jonath., Steing. 6 R.",Zürich,,Riesbach
 1885-berufe-406-021,1885,406,berufe,21,21,person,,0,König,,,,Sam,,,,Wagner,,,1,,Seefeldstr,24,,Wagner,"qwen3.8-27b, Bild 2x",high,,"König, Sam., Seefeldstr. 24 R.",Zürich,,Riesbach
 1885-berufe-406-022,1885,406,berufe,22,22,person,,0,Kull,,,,Rud,,,,Wagner,,,1,,St. Annag,8,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Kull, Rud., St. Annag. 8 Z.",Zürich,,Zürich
-1885-berufe-406-023,1885,406,berufe,23,23,firma,,0,Leemann,,,,& Söhne,,,,Wagner,,,1,,Dorf,42,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Leemann & Söhne, Dorf 42 Hi.",Zürich,,Hirslanden
+1885-berufe-406-023,1885,406,berufe,23,23,firma,,0,Leemann & Söhne,,,,,,,,Wagner,,,1,,Dorf,42,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Leemann & Söhne, Dorf 42 Hi.",Zürich,,Hirslanden
 1885-berufe-406-024,1885,406,berufe,24,24,person,,0,Lüthi,,,,Heinr,,,,Wagner,,,1,,Uetlistr,19,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Lüthi, Heinr., Uetlistr. 19 W.",Zürich,,Wiedikon
 1885-berufe-406-025,1885,406,berufe,25,25,person,,0,Meier,,,,Heinr. u. Jac,,,,Wagner,,,1,,Vordendorf,44,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Meier, Heinr. u. Jac., Vordendorf 44 W.",Zürich,,Wiedikon
 1885-berufe-406-026,1885,406,berufe,26,26,person,,0,Peter,,,,Jac,,,,Wagner,,,1,,Schneckenmann,11,,Wagner,"qwen3.8-27b, Bild 2x",high,,"Peter, Jac., Schneckenmann 11 F.",Zürich,,Fluntern
@@ -6505,24 +6505,24 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-406-074,1885,406,berufe,74,74,person,,0,Lehmann,,,,Heinr,,,,Wattenfabrikation,,,1,,Schönbühlstr,18,,Wattenfabrikation,"qwen3.8-27b, Bild 2x",high,,"Lehmann, Heinr., Schönbühlstr. 18 I Ho.",Zürich,,Hottingen
 1885-berufe-406-075,1885,406,berufe,75,75,firma,,0,Verbandstoff-Fabrik,,,,Internation,,,,Wattenfabrikation,,,1,,Bahnhofstr,52,1,Wattenfabrikation,"qwen3.8-27b, Bild 2x",high,,"☎Verbandstoff-Fabrik, Internation., in Schaffhausen, Filiale Bahnhofstr. 52 Z.",Zürich,,Zürich
 1885-berufe-406-076,1885,406,berufe,76,76,person,,0,Abegg,,,,Alb,,,,Weberei- & Spinnerei-Requisiten,,,1,,Neumühleweg,7,,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"Abegg, Alb., Neumühleweg 7 Z.",Zürich,,Zürich
-1885-berufe-406-077,1885,406,berufe,77,77,firma,,0,Giedion,,,,& Wildi,,,,Weberei- & Spinnerei-Requisiten,,,1,,Bleicherweg,28,,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"Giedion & Wildi, Bleicherweg 28 Z.",Zürich,,Zürich
+1885-berufe-406-077,1885,406,berufe,77,77,firma,,0,Giedion & Wildi,,,,,,,,Weberei- & Spinnerei-Requisiten,,,1,,Bleicherweg,28,,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"Giedion & Wildi, Bleicherweg 28 Z.",Zürich,,Zürich
 1885-berufe-406-078,1885,406,berufe,78,78,person,,0,Goldschmid Sohn,,,,J. H,,,,Weberei- & Spinnerei-Requisiten,,,1,,Schanzengr,7,1,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"☎Goldschmid Sohn, J. H., Schanzengr. 7 Z.",Zürich,,Zürich
 1885-berufe-406-079,1885,406,berufe,79,79,person,,0,Keyser,,Pauly,,,,,,Weberei- & Spinnerei-Requisiten,,,1,,Tonhallestr,6,,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"Keyser-Pauly, Tonhallestr. 6 Z.",Zürich,,Zürich
 1885-berufe-406-080,1885,406,berufe,80,80,person,,0,Ulmann,,,,J. G,,,,Weberei- & Spinnerei-Requisiten,,,1,,Zeltweg,3,,Weberei- & Spinnerei-Requisiten,"qwen3.8-27b, Bild 2x",high,,"Ulmann, J. G., Zeltweg 3 Z.",Zürich,,Zürich
 1885-berufe-406-081,1885,406,berufe,81,81,person,,0,Amman,,,,"sen., A",,,,Wechsel- u. Effectenvermittlung,,,1,,Fraumünsterstr,19,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Amman sen., A., Fraumünsterstr. 19 I Z.",Zürich,,Zürich
 1885-berufe-406-082,1885,406,berufe,82,82,person,,0,Bernhard,,,,Jac,,,,Wechsel- u. Effectenvermittlung,,,1,,Bäregg,5,,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"Bernhard, Jac., Bäregg. 5 Z.",Zürich,,Zürich
-1885-berufe-406-083,1885,406,berufe,83,83,firma,,0,Binder,,,,& Cie,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,23,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Binder & Cie., Bahnhofstr. 23 Z.",Zürich,,Zürich
+1885-berufe-406-083,1885,406,berufe,83,83,firma,,0,Binder & Cie.,,,,,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,23,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Binder & Cie., Bahnhofstr. 23 Z.",Zürich,,Zürich
 1885-berufe-406-084,1885,406,berufe,84,84,person,,0,Brunner,,Brunner,,,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,25,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Brunner-Brunner, Bahnhofstr. 25 (Hintergebäude) Z.",Zürich,,Zürich
 1885-berufe-406-085,1885,406,berufe,85,85,person,,0,Dölly,,,,Reinh,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,25,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Dölly, Reinh., Bahnhofstr. 25 (Hintergebäude) Z.",Zürich,,Zürich
 1885-berufe-406-086,1885,406,berufe,86,86,person,,0,Ernst,,,,Arn,,,,Wechsel- u. Effectenvermittlung,,,1,,Tiefenhöfe,8,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Ernst, Arn., Tiefenhöfe 8 Z.",Zürich,,Zürich
 1885-berufe-406-087,1885,406,berufe,87,87,person,,0,Fehr,,,,Jul,,,,Wechsel- u. Effectenvermittlung,,,1,,Brandschenkestr,2,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Fehr, Jul., Brandschenkestr. 2 Z.",Zürich,,Zürich
-1885-berufe-406-088,1885,406,berufe,88,88,firma,,0,Forrer,,,,& Sibenmann,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,16,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Forrer & Sibenmann, Bahnhofstr. 16 Z.",Zürich,,Zürich
+1885-berufe-406-088,1885,406,berufe,88,88,firma,,0,Forrer & Sibenmann,,,,,,,,Wechsel- u. Effectenvermittlung,,,1,,Bahnhofstr,16,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Forrer & Sibenmann, Bahnhofstr. 16 Z.",Zürich,,Zürich
 1885-berufe-406-089,1885,406,berufe,89,89,person,,0,Frey,,Wehrli,,Casp,,,,Wechsel- u. Effectenvermittlung,,,1,,Bäregg,3,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Frey-Wehrli, Casp., Bäregg. 3 Z.",Zürich,,Zürich
 1885-berufe-406-090,1885,406,berufe,90,90,person,,0,Gamper,,,,A,,,,Wechsel- u. Effectenvermittlung,,,1,,Fraumünsterstr,19,1,Wechsel- u. Effectenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Gamper, A., Fraumünsterstr. 19 I Z.",Zürich,,Zürich
 1885-berufe-407-001,1885,407,berufe,1,1,person,,0,Hafner,,,,C. E,,,,,,,1,,Limmatquai,84,,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"Hafner, C. E., Limmatquai 84 Z.",Zürich,,Zürich
 1885-berufe-407-002,1885,407,berufe,2,2,person,,0,Hartmann,,,,E,,,,,,,1,,Bahnhofstr,35,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Hartmann, E., Bahnhofstr. 35 Z.",Zürich,,Zürich
 1885-berufe-407-003,1885,407,berufe,3,3,person,,0,Hess,,Zeller,,,,,,,,,1,,Bahnhofstr,25,,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"Hess-Zeller, Bahnhofstr. 25 (Hintergebäude) Z.",Zürich,,Zürich
-1885-berufe-407-004,1885,407,berufe,4,4,firma,,0,Kugler,,,,,,,,,,,1,,Poststr,2,,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"Kugler & Cie., Poststr. 2 Z.",Zürich,,Zürich
+1885-berufe-407-004,1885,407,berufe,4,4,firma,,0,Kugler & Cie.,,,,,,,,,,,1,,Poststr,2,,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"Kugler & Cie., Poststr. 2 Z.",Zürich,,Zürich
 1885-berufe-407-005,1885,407,berufe,5,5,person,,0,Labhardt,,,,A,,,,,,,1,,Wühre,5,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Labhardt, A., Wühre 5 Z.",Zürich,,Zürich
 1885-berufe-407-006,1885,407,berufe,6,6,person,,0,Nüssli,,,,J,,,,,,,1,,Schönbergg,5,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Nüssli, J., Schönbergg. 5 Z.",Zürich,,Zürich
 1885-berufe-407-007,1885,407,berufe,7,7,person,,0,Pfister,,,,E,,,,,,,1,,Bäreng,5,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Pfister, E., Bäreng. 5 Z.",Zürich,,Zürich
@@ -6532,7 +6532,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-407-011,1885,407,berufe,11,11,person,,0,Scholder,,,,H,,,,,,,1,,Bahnhofstr,48,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Scholder, H., Bahnhofstr. 48 Z.",Zürich,,Zürich
 1885-berufe-407-012,1885,407,berufe,12,12,person,,0,Steger,,,,Otto,,,,,,,1,,Bahnhofstr,25,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Steger, Otto, Bahnhofstr. 25 (Hintergebäude) Z.",Zürich,,Zürich
 1885-berufe-407-013,1885,407,berufe,13,13,person,,0,Suter,,,,E,,,,,,,1,,Bäreng,9,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Suter, E., Bäreng. 9 Z.",Zürich,,Zürich
-1885-berufe-407-014,1885,407,berufe,14,14,firma,,0,Zündel,,,,,,,,,,,1,,Augustinerhof,,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Zündel & Cie., Filiale Zürich, Augustinerhof Z.",Zürich,,Zürich
+1885-berufe-407-014,1885,407,berufe,14,14,firma,,0,Zündel & Cie.,,,,,,,,,,,1,,Augustinerhof,,1,Wechsel- u. Effektenvermittlung.,"qwen3.8-27b, Bild 2x",high,,"☎Zündel & Cie., Filiale Zürich, Augustinerhof Z.",Zürich,,Zürich
 1885-berufe-407-015,1885,407,berufe,15,15,firma,,0,Baader,,,,Gebr,,,,Agentur.,,,1,,Löwenstr,54,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Baader, Gebr., Löwenstr. 54 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-407-016,1885,407,berufe,16,16,person,,0,Bachmann,,,,Dav,,,,Flaschenweine.,,,1,,Poststr,4,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Bachmann, Dav., Poststr. 4 u. Bahnhofstr. 21 Z. (Flaschenweine.)",Zürich,,Zürich
 1885-berufe-407-017,1885,407,berufe,17,17,person,,0,Ballesta,,,,Ramon,,,,,,,1,,Rennweg,51,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Ballesta, Ramon, Rennweg 51 Z.",Zürich,,Zürich
@@ -6546,19 +6546,19 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-407-025,1885,407,berufe,25,25,person,,0,Bühler,,,,Jean,,,,,,,1,,Bahnhofstr,73,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Bühler, Jean, Bahnhofstr. 73 Z.",Zürich,,Zürich
 1885-berufe-407-026,1885,407,berufe,26,26,person,,0,Bürgi,,,,Aug,,,,"Vertret. v. P. Brugger, Schaffhausen",,,1,,Gessnerallee,52,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Bürgi, Aug. (Vertret. v. P. Brugger, Schaffhausen), Gessnerallee 52 Z.",Zürich,,Zürich
 1885-berufe-407-027,1885,407,berufe,27,27,person,,0,Cassinelli,,,,Cesare,,,,Italienische Weine en gros.,,,1,,Sihlstr,2,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Cassinelli, Cesare, Sihlstr. 2 Z. (Italienische Weine en gros.)",Zürich,,Zürich
-1885-berufe-407-028,1885,407,berufe,28,28,firma,,0,Conradin,,,,& Valer,,,,,,,1,,ob. Kirchg,40,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Conradin & Valer, ob. Kirchg. 40 Z.",Zürich,,Zürich
+1885-berufe-407-028,1885,407,berufe,28,28,firma,,0,Conradin & Valer,,,,,,,,,,,1,,ob. Kirchg,40,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Conradin & Valer, ob. Kirchg. 40 Z.",Zürich,,Zürich
 1885-berufe-407-029,1885,407,berufe,29,29,person,,0,Cotti,,,,Erminio,,,,,,,1,,Dolderstr,16,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Cotti, Erminio, Dolderstr. 16 Ho.",Zürich,,Hottingen
-1885-berufe-407-030,1885,407,berufe,30,30,firma,,0,Croce,,,,& Cie,,,,,,,1,,Roseng,10,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Croce & Cie., Roseng. 10 Z.",Zürich,,Zürich
+1885-berufe-407-030,1885,407,berufe,30,30,firma,,0,Croce & Cie.,,,,,,,,,,,1,,Roseng,10,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Croce & Cie., Roseng. 10 Z.",Zürich,,Zürich
 1885-berufe-407-031,1885,407,berufe,31,31,person,,0,Dietrich,,,,C. W,,,,Agentur in Dessertweinen.,,,1,,Bäreng,10,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Dietrich, C. W., Bäreng. 10 Z. (Agentur in Dessertweinen.)",Zürich,,Zürich
 1885-berufe-407-032,1885,407,berufe,32,32,person,,0,Dorta,,,,Fratelli,,,,Italien. Weine.,,,1,,Glockeng,9,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Dorta, Fratelli, Glockeng. 9 Z. (Italien. Weine.)",Zürich,,Zürich
 1885-berufe-407-033,1885,407,berufe,33,33,person,,0,Dürr,,,,Tit,,,,,,,1,,Marktg,15,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Dürr, Tit., Marktg. 15 Z.",Zürich,,Zürich
 1885-berufe-407-034,1885,407,berufe,34,34,person,,0,Ellenbogen,,,,U,,,,Agentur.,,,1,,Gessnerallee,48,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Ellenbogen, U., Gessnerallee 48 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-407-035,1885,407,berufe,35,35,person,,0,Enderlin,,,,E,,,,,,,1,,Steinwiesstr,8,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Enderlin, E., Steinwiesstr. 8 Ho.",Zürich,,Hottingen
-1885-berufe-407-036,1885,407,berufe,36,36,firma,,0,Fiez,,,,& Ochsner,,,,,,,1,,Badenerstr,14,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Fiez & Ochsner, Badenerstr. 14 A.",Zürich,,Aussersihl
+1885-berufe-407-036,1885,407,berufe,36,36,firma,,0,Fiez & Ochsner,,,,,,,,,,,1,,Badenerstr,14,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Fiez & Ochsner, Badenerstr. 14 A.",Zürich,,Aussersihl
 1885-berufe-407-037,1885,407,berufe,37,37,person,,0,Fould,,,,B,,,,Agentur.,,,1,,Seefeldstr,1,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Fould, B., Seefeldstr. 1 R. (Agentur.)",Zürich,,Riesbach
 1885-berufe-407-038,1885,407,berufe,38,38,person,,0,Frey,,Ade,,A,,,,Agentur.,,,1,,Eiermarkt,8,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Frey-Ade, A., Eiermarkt 8 Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-407-039,1885,407,berufe,39,39,person,,0,Friz,,,,Paul,,,,Agentur.,,,1,,Augustinerg,50,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Friz, Paul, Augustinerg. 50 Z. (Agentur.)",Zürich,,Zürich
-1885-berufe-407-040,1885,407,berufe,40,40,firma,,0,Geiger,,,,& Cie,,,,Spanische Weine.,,,1,,Ackerstrasse,A,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Geiger & Cie., Ackerstrasse A. (Spanische Weine.)",Zürich,,
+1885-berufe-407-040,1885,407,berufe,40,40,firma,,0,Geiger & Cie.,,,,,,,,Spanische Weine.,,,1,,Ackerstrasse,A,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Geiger & Cie., Ackerstrasse A. (Spanische Weine.)",Zürich,,
 1885-berufe-407-041,1885,407,berufe,41,41,person,,0,Gorgot,,,,Pedro,,,,,,,1,,Münstergr,30,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Gorgot, Pedro, Münstergr. 30 Z.",Zürich,,Zürich
 1885-berufe-407-042,1885,407,berufe,42,42,person,,0,Grenier,,,,Louis,,,,,,,1,,Wolfbachfussweg,1,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Grenier, Louis, Wolfbachfussweg 1 Ho.",Zürich,,Hottingen
 1885-berufe-407-043,1885,407,berufe,43,43,person,,0,Greuter,,,,G,,,,Agentur.,,,1,,Thalacker,32,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Greuter, G., Thalacker 32 Z. (Agentur.)",Zürich,,Zürich
@@ -6571,13 +6571,13 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-407-050,1885,407,berufe,50,50,person,,0,Hofmann,,Oertli,,,,,,Agentur.,,,1,,Centralhof,,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Hofmann-Oertli, Centralhof Z. (Agentur.)",Zürich,,Zürich
 1885-berufe-407-051,1885,407,berufe,51,51,person,,0,Holzhalf,,,,A,,,,,,,1,,Bahnhofstr,14,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Holzhalf, A., Bahnhofstr. 14 I Z.",Zürich,,Zürich
 1885-berufe-407-053,1885,407,berufe,53,53,person,,0,Huonder,,,,Dom,,,,Veltliner.,,,1,,Schlüsselg,8,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Huonder, Dom., Schlüsselg. 8 Z. (Veltliner.)",Zürich,,Zürich
-1885-berufe-407-055,1885,407,berufe,55,55,firma,,0,Imhof,,Amsler,,& Cie,,,,,,,1,,Landstr,22,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Imhof-Amsler & Cie., Landstr. 22 R.",Zürich,,Riesbach
+1885-berufe-407-055,1885,407,berufe,55,55,firma,,0,Imhof & Cie.,,Amsler,,,,,,,,,1,,Landstr,22,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Imhof-Amsler & Cie., Landstr. 22 R.",Zürich,,Riesbach
 1885-berufe-407-056,1885,407,berufe,56,56,person,,0,Jotter,,,,J,,,,,,,1,,Poststr,3,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Jotter, J., Poststr. 3 (Centralhof) Z.",Zürich,,Zürich
-1885-berufe-407-058,1885,407,berufe,58,58,firma,,0,Kuhn,,,,& Maag,,,,Flaschenweine.,,,1,,Rindermarkt,11,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Kuhn & Maag, Rindermarkt 11 Z. (Flaschenweine.)",Zürich,,Zürich
+1885-berufe-407-058,1885,407,berufe,58,58,firma,,0,Kuhn & Maag,,,,,,,,Flaschenweine.,,,1,,Rindermarkt,11,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Kuhn & Maag, Rindermarkt 11 Z. (Flaschenweine.)",Zürich,,Zürich
 1885-berufe-407-059,1885,407,berufe,59,59,person,,0,Lakenbacher,,,,P,,,,Ungar-Weine.,,,1,,Zähringerstr,11,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Lakenbacher, P., Zähringerstr. 11 I Z. (Ungar-Weine.)",Zürich,,Zürich
-1885-berufe-407-060,1885,407,berufe,60,60,firma,,0,Lardi,,,,"& Co., Pietro",,,,,,,1,,Dammstr,A,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Lardi & Co., Pietro, Dammstr. A.",Zürich,,
+1885-berufe-407-060,1885,407,berufe,60,60,firma,,0,Lardi & Co.,,,,Pietro,,,,,,,1,,Dammstr,A,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Lardi & Co., Pietro, Dammstr. A.",Zürich,,
 1885-berufe-407-061,1885,407,berufe,61,61,person,,0,Madrenas,,,,M,,,,,,,1,,Stüssihofst,6 u. 7,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Madrenas, M., Stüssihofst. 6 u. 7 u. Schöfelg. 8 Z.",Zürich,,Zürich
-1885-berufe-407-062,1885,407,berufe,62,62,firma,,0,Mart,,,,"& Cie., S",,,,Filiale.,,,1,,Bäreng,10,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Mart & Cie., S., Bäreng. 10 Z. (Filiale.)",Zürich,,Zürich
+1885-berufe-407-062,1885,407,berufe,62,62,firma,,0,Mart & Cie.,,,,S,,,,Filiale.,,,1,,Bäreng,10,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Mart & Cie., S., Bäreng. 10 Z. (Filiale.)",Zürich,,Zürich
 1885-berufe-407-063,1885,407,berufe,63,63,person,,0,Meier,,,,Jean,,,,,,,1,,Freig,5,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Meier, Jean, Freig. 5 R.",Zürich,,Riesbach
 1885-berufe-407-064,1885,407,berufe,64,64,person,,0,Meyer,,,,A,,,,,,,1,,Baderg,3,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Meyer, A., Baderg. 3 Z.",Zürich,,Zürich
 1885-berufe-407-065,1885,407,berufe,65,65,person,,0,Michel,,,,Casp,,,,Küferei.,,,1,,Augustinerg,24,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Michel, Casp., Augustinerg. 24 Z. (Küferei.)",Zürich,,Zürich
@@ -6586,7 +6586,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-407-068,1885,407,berufe,68,68,person,,0,Ottiker,,Lauper,,Aug,,,,,,,1,,Friedenstr,97,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Ottiker-Lauper, Aug., Friedenstr. 97 O.",Zürich,,Oberstrass
 1885-berufe-407-069,1885,407,berufe,69,69,person,,0,Reichenbach,,,,H. C,,,,,,,1,,Brandschenkestr,30,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Reichenbach, H. C., Brandschenkestr. 30 I Z.",Zürich,,Zürich
 1885-berufe-407-070,1885,407,berufe,70,70,person,,0,Reif,,,,J. J,,,,,,,1,,Claridenstr,35,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Reif, J. J., Claridenstr. 35 Z.",Zürich,,Zürich
-1885-berufe-407-071,1885,407,berufe,71,71,firma,,0,Renich,,,,& Cayenz,,,,,,,1,,Fraumünsterstr,29,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Renich & Cayenz, Fraumünsterstr. 29 Z.",Zürich,,Zürich
+1885-berufe-407-071,1885,407,berufe,71,71,firma,,0,Renich & Cayenz,,,,,,,,,,,1,,Fraumünsterstr,29,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Renich & Cayenz, Fraumünsterstr. 29 Z.",Zürich,,Zürich
 1885-berufe-407-072,1885,407,berufe,72,72,firma,,0,Rieser,,,,Gebrüder,,,,,,,1,,Mühlebachstr,6,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Rieser, Gebrüder, Mühlebachstr. 6 R.",Zürich,,Riesbach
 1885-berufe-407-073,1885,407,berufe,73,73,person,,0,Rordorf,,,,"Sohn, Carl",,,,Agentur.,,,1,,Flösserstr,15,,Weinhandel.,"qwen3.8-27b, Bild 2x",medium,,"Rordorf Sohn, Carl, Flösserstr. 15 I Z. (Agentur.)",Zürich,street_rare,Zürich
 1885-berufe-407-074,1885,407,berufe,74,74,person,,0,Schell,,,,G,,,,,,,1,,Wolfbach,23,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Schell, G., Wolfbach 23 Ho.",Zürich,,Hottingen
@@ -6599,8 +6599,8 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-407-081,1885,407,berufe,81,81,person,,0,Strasser,,,,Joh,,,,,,,1,,Röthelstr,5,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Strasser, Joh., Röthelstr. 5 Ü.",Zürich,,
 1885-berufe-407-082,1885,407,berufe,82,82,firma,,0,Streuli,,,,Gebrüder,,,,Vertreter von Clossmann & Cie. in Bordeaux.,,,1,,Gemeindestr,8,1,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Streuli, Gebrüder, Gemeindestr. 8 Ho. (Vertreter von Clossmann & Cie. in Bordeaux.)",Zürich,,Hottingen
 1885-berufe-407-083,1885,407,berufe,83,83,person,,0,Sulzberger,,,,Henri,,,,Agentur.,,,1,,Linthescherg,25,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Sulzberger, Henri, Linthescherg. 25 Z. (Agentur.)",Zürich,,Zürich
-1885-berufe-407-084,1885,407,berufe,84,84,firma,,0,Temperli,,,,"& Sohn, J",,,,,,,1,,Predigerpl,6,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Temperli & Sohn, J., Predigerpl. 6 Z.",Zürich,,Zürich
-1885-berufe-407-085,1885,407,berufe,85,85,firma,,0,Thaysen,,,,"& Co., H",,,,,,,1,,Werdmühleg,14,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Thaysen & Co., H., Werdmühleg. 14 Z.",Zürich,,Zürich
+1885-berufe-407-084,1885,407,berufe,84,84,firma,,0,Temperli & Sohn,,,,J,,,,,,,1,,Predigerpl,6,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Temperli & Sohn, J., Predigerpl. 6 Z.",Zürich,,Zürich
+1885-berufe-407-085,1885,407,berufe,85,85,firma,,0,Thaysen & Co.,,,,H,,,,,,,1,,Werdmühleg,14,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Thaysen & Co., H., Werdmühleg. 14 Z.",Zürich,,Zürich
 1885-berufe-407-086,1885,407,berufe,86,86,firma,,0,Thézet,,,,"fils & Cie., succ. de A. Nivoul",,,,,,,1,,Rennweg,30,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Thézet fils & Cie., succ. de A. Nivoul, Rennweg 30 Z.",Zürich,,Zürich
 1885-berufe-407-087,1885,407,berufe,87,87,person,,0,Thomann,,,,Rob,,,,"Vertreter von K. Frey, Schaffhausen.",,,1,,Strehlg,29,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Thomann, Rob., Strehlg. 29 III Z. (Vertreter von K. Frey, Schaffhausen.)",Zürich,,Zürich
 1885-berufe-407-088,1885,407,berufe,88,88,person,,0,Uehli,,,,Casp,,,,,,,1,,Universitätstr,15,,Weinhandel.,"qwen3.8-27b, Bild 2x",high,,"Uehli, Casp., Universitätstr. 15 O.",Zürich,,Oberstrass
@@ -6624,12 +6624,12 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-408-011,1885,408,berufe,11,11,person,,0,Egger,,Tanner,,Bertha,,,,,,,1,,Wühre,15,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Egger-Tanner, Bertha, Wühre 15 Z.",Zürich,surname_split,Zürich
 1885-berufe-408-012,1885,408,berufe,12,12,firma,,0,Frey,,,,"P., & B. Blickenstorfer",,,,,,,1,,Strehlg,12,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Frey, P., & B. Blickenstorfer, Strehlg. 12 Z.",Zürich,,Zürich
 1885-berufe-408-013,1885,408,berufe,13,13,firma,,0,Gassmann,,Mann,,,,,,,,,1,,Schanzengr,19,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Gassmann-Mann & Cie., Schanzengr. 19 u. Poststr. 7 Z.",Zürich,surname_split,Zürich
-1885-berufe-408-014,1885,408,berufe,14,14,firma,,0,Gassmann,,,,,,,,,,,1,,Poststr,12,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Gassmann & Widmer, Poststr. 12 Z.",Zürich,,Zürich
+1885-berufe-408-014,1885,408,berufe,14,14,firma,,0,Gassmann & Widmer,,,,,,,,,,,1,,Poststr,12,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Gassmann & Widmer, Poststr. 12 Z.",Zürich,,Zürich
 1885-berufe-408-015,1885,408,berufe,15,15,person,,0,Hirsch's Waarenhalle,,,,,,,,,,,1,,Niederdorfstr,96,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Hirsch's Waarenhalle, Niederdorfstr. 96 Z.",Zürich,,Zürich
 1885-berufe-408-016,1885,408,berufe,16,16,person,,0,Hofstetter,,,,Elis,,,,,,,1,,Dienerstr,15,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Hofstetter, Elis., Dienerstr. 15 A.",Zürich,,Aussersihl
-1885-berufe-408-017,1885,408,berufe,17,17,firma,,0,Hohl,,,,C,,,,,,,1,,Löwenstr,47,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Hohl & Cie., C., Löwenstr. 47 Z.",Zürich,,Zürich
+1885-berufe-408-017,1885,408,berufe,17,17,firma,,0,Hohl & Cie.,,,,C,,,,,,,1,,Löwenstr,47,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Hohl & Cie., C., Löwenstr. 47 Z.",Zürich,,Zürich
 1885-berufe-408-018,1885,408,berufe,18,18,person,,0,Hürlimann,,,,P,,Wwe.,,,,,1,,Rathausquai,2,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Hürlimann, P., Wwe., Rathausquai 2 Z.",Zürich,,Zürich
-1885-berufe-408-019,1885,408,berufe,19,19,firma,,0,Jacob,,,,Emil,,,,,,,1,,Stampfenbachstr,34,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Jacob & Cie., Emil, Stampfenbachstr. 34 U. (en gros.)",Zürich,,Unterstrass
+1885-berufe-408-019,1885,408,berufe,19,19,firma,,0,Jacob & Cie.,,,,Emil,,,,,,,1,,Stampfenbachstr,34,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Jacob & Cie., Emil, Stampfenbachstr. 34 U. (en gros.)",Zürich,,Unterstrass
 1885-berufe-408-020,1885,408,berufe,20,20,person,,0,Imbach,,,,Marie,,,,,,,1,,Mühleg,2,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Imbach, Marie, Mühleg. 2 Z.",Zürich,,Zürich
 1885-berufe-408-021,1885,408,berufe,21,21,person,,0,Kadisch,,,,J,,,,,,,1,,Limmatquai,66,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Kadisch, J., Limmatquai 66 Z.",Zürich,,Zürich
 1885-berufe-408-022,1885,408,berufe,22,22,person,,0,Kellenberger,,,,Heinr,,,,,,,1,,Fortunag,36,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Kellenberger, Heinr., Fortunag. 36 Z.",Zürich,,Zürich
@@ -6639,7 +6639,7 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-408-026,1885,408,berufe,26,26,person,,0,Knoertzer,,,,E,,,,,,,1,,Rennweg,55,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Knoertzer, E., Rennweg 55 Z.",Zürich,,Zürich
 1885-berufe-408-027,1885,408,berufe,27,27,person,,0,Korrodi,,,,F,,,,,,,1,,Seefeldstr,,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Korrodi, F., Seefeldstr. (beim Café Waldmann) R.",Zürich,,Riesbach
 1885-berufe-408-028,1885,408,berufe,28,28,person,,0,Liebeskind,,Altorfer,,Fr,,,,,,,1,,Oberdorf g,23,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Liebeskind-Altorfer, Fr., Oberdorf g. 23 Z.",Zürich,surname_split,Zürich
-1885-berufe-408-029,1885,408,berufe,29,29,firma,,0,Meili,,,,,,,,,,,1,,Fraumünsterstr,27,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 (Centralhof) Z.",Zürich,,Zürich
+1885-berufe-408-029,1885,408,berufe,29,29,firma,,0,Meili & Briner,,,,,,,,,,,1,,Fraumünsterstr,27,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Meili & Briner, Fraumünsterstr. 27 (Centralhof) Z.",Zürich,,Zürich
 1885-berufe-408-030,1885,408,berufe,30,30,person,,0,Moser,,,,Jos,,,,,,,1,,Niederdorfstr,55,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Moser, Jos., Niederdorfstr. 55 Z.",Zürich,,Zürich
 1885-berufe-408-031,1885,408,berufe,31,31,person,,0,Müller,,,,Jac,,,,,,,1,,Oberdorf g,3,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Müller, Jac., Oberdorf g. 3 Z.",Zürich,,Zürich
 1885-berufe-408-032,1885,408,berufe,32,32,person,,0,Müller,,,,Ida,,,,,,,1,,Kirch g,17,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Müller, Ida, Kirch g. 17 Z.",Zürich,,Zürich
@@ -6653,12 +6653,12 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-408-040,1885,408,berufe,40,40,person,,0,Stahel,,Kunz,,,,,,,,,1,,Linthescherg,25,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Stahel-Kunz, Linthescherg. 25 Z.",Zürich,surname_split,Zürich
 1885-berufe-408-041,1885,408,berufe,41,41,person,,0,Stähli,,,,Julie,,,,,,,1,,Seefeldstr,28,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Stähli, Julie, Seefeldstr. 28 R.",Zürich,,Riesbach
 1885-berufe-408-042,1885,408,berufe,42,42,person,,0,Susmann,,,,Ad,,,,,,,1,,Freigutstr,20,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Susmann, Ad., Freigutstr. 20 E. (Agentur.)",Zürich,,Enge
-1885-berufe-408-043,1885,408,berufe,43,43,firma,,0,Suter,,,,,,,,,,,1,,ob. Kirch g,22,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Suter & Isler, ob. Kirch g. 22 Z.",Zürich,street_rare,Zürich
+1885-berufe-408-043,1885,408,berufe,43,43,firma,,0,Suter & Isler,,,,,,,,,,,1,,ob. Kirch g,22,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Suter & Isler, ob. Kirch g. 22 Z.",Zürich,street_rare,Zürich
 1885-berufe-408-044,1885,408,berufe,44,44,person,,0,Triesselmann,,,,Anna,,,,,,,1,,Münster g,22,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Triesselmann, Anna, Münster g. 22 Z.",Zürich,,Zürich
 1885-berufe-408-045,1885,408,berufe,45,45,person,,0,Uster,,,,Jul,,,,,,,1,,Sonnenquai,14,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Uster, Jul., Sonnenquai 14 Z.",Zürich,,Zürich
 1885-berufe-408-046,1885,408,berufe,46,46,person,,0,Vögeli,,Ramsauer,,Emilie,,,,,,,1,,Bahnhofstrasse,36,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Vögeli-Ramsauer, Emilie, Bahnhofstrasse 36 Z.",Zürich,surname_split,Zürich
 1885-berufe-408-047,1885,408,berufe,47,47,person,,0,Weil,,,,Alb,,,,,,,1,,Bäreg,7,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Weil, Alb., Bäreg. 7 Z.",Zürich,,Zürich
-1885-berufe-408-048,1885,408,berufe,48,48,firma,,0,Weil,,,,,,,,,,,1,,Löwenstr,40,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Weil & Cie., Löwenstr. 40 Z.",Zürich,,Zürich
+1885-berufe-408-048,1885,408,berufe,48,48,firma,,0,Weil & Cie.,,,,,,,,,,,1,,Löwenstr,40,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Weil & Cie., Löwenstr. 40 Z.",Zürich,,Zürich
 1885-berufe-408-049,1885,408,berufe,49,49,person,,0,Weiss,,Sigg,,Elis,,,,,,,1,,Poststr,4,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Weiss-Sigg, Elis., Poststr. 4 Z.",Zürich,surname_split,Zürich
 1885-berufe-408-050,1885,408,berufe,50,50,person,,0,Wyder,,Wiesendanger,,Anna,,,,,,,1,,Froschaug,4,,Weisswaaren.,"qwen3.8-27b, Bild 2x",medium,,"Wyder-Wiesendanger, Anna, Froschaug. 4 Z.",Zürich,surname_split,Zürich
 1885-berufe-408-051,1885,408,berufe,51,51,person,,0,Zupfinger,,,,Ch,,,,,,,1,,Schifflände,9,,Weisswaaren.,"qwen3.8-27b, Bild 2x",high,,"Zupfinger, Ch., Schifflände 9 Z.",Zürich,,Zürich
@@ -7296,10 +7296,10 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-414-044,1885,414,berufe,44,44,person,,0,Grübler,,,,Theoph,,,,,,,1,,Bahnhofstr,66,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Grübler, Theoph., Bahnhofstr. 66 Z.",Zürich,,Zürich
 1885-berufe-414-045,1885,414,berufe,45,45,person,,0,Gujer,,,,D,,,,,,,1,,Limmatquai,2,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Gujer, D., Limmatquai 2 Z.",Zürich,,Zürich
 1885-berufe-414-046,1885,414,berufe,46,46,person,,0,Gutknecht,,,,Elis,,,,,,,1,,Thorg,4,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Gutknecht, Elis., Thorg. 4 Z.",Zürich,,Zürich
-1885-berufe-414-047,1885,414,berufe,47,47,firma,,0,Häfliger,,,,,,,,,,,1,,Bahnhofstr,94,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Häfliger & Cie., Bahnhofstr. 94 Z.",Zürich,,Zürich
+1885-berufe-414-047,1885,414,berufe,47,47,firma,,0,Häfliger & Cie.,,,,,,,,,,,1,,Bahnhofstr,94,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Häfliger & Cie., Bahnhofstr. 94 Z.",Zürich,,Zürich
 1885-berufe-414-048,1885,414,berufe,48,48,person,,0,Hasler,,,,Elis,,,,,,,1,,Marktg,20,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hasler, Elis., Marktg. 20 Z.",Zürich,,Zürich
 1885-berufe-414-049,1885,414,berufe,49,49,person,,0,Hepp,,,,J,,,,,,,1,,Oberdorf g,8,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Hepp, J., Oberdorf g. 8 Z.",Zürich,,Zürich
-1885-berufe-414-050,1885,414,berufe,50,50,firma,,0,Jäger,,,,J. G,,,,,,,1,,Sonnenquai,20,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Jäger & Söhne, J. G., Sonnenquai 20 Z.",Zürich,,Zürich
+1885-berufe-414-050,1885,414,berufe,50,50,firma,,0,Jäger & Söhne,,,,J. G,,,,,,,1,,Sonnenquai,20,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Jäger & Söhne, J. G., Sonnenquai 20 Z.",Zürich,,Zürich
 1885-berufe-414-051,1885,414,berufe,51,51,person,,0,Keller,,,,Hans,,,,,,,1,,Rennweg,12,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Keller, Hans, Rennweg 12 Z.",Zürich,,Zürich
 1885-berufe-414-052,1885,414,berufe,52,52,person,,0,Knüsli,,Seel,,B,,,,,,,1,,Neumarkt,2,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Knüsli-Seel, B., Neumarkt 2 Z.",Zürich,,Zürich
 1885-berufe-414-053,1885,414,berufe,53,53,person,,0,Leemann,,,,Reg,,,,,,,1,,Grossmünsterpl,6,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Leemann, Reg., Grossmünsterpl. 6 Z.",Zürich,,Zürich
@@ -7308,27 +7308,27 @@ entry_id,volume,page,section,line_from,line_to,entry_type,citizen_flag,dash_pref
 1885-berufe-414-056,1885,414,berufe,56,56,person,,0,Näf,,Isler,,Bertha,,,,,,,1,,Seefeldstr,35,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Näf-Isler, Bertha, Seefeldstr. 35 R.",Zürich,,Riesbach
 1885-berufe-414-057,1885,414,berufe,57,57,person,,0,Sax,,,,Iwan,,,,,,,1,,Schweizerg,2,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Sax, Iwan, Schweizerg. 2 Z.",Zürich,,Zürich
 1885-berufe-414-058,1885,414,berufe,58,58,person,,0,Scherer,,,,H. A,,,,,,,1,,Sihlstr,61,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherer, H. A. (a. d. Sihl), Sihlstr. 61 Z.",Zürich,,Zürich
-1885-berufe-414-059,1885,414,berufe,59,59,firma,,0,Scherrer,,,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
+1885-berufe-414-059,1885,414,berufe,59,59,firma,,0,Scherrer & Söhne,,,,J. B,,,,,,,1,,Niederdorfstr,29 u. 31,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Scherrer & Söhne, J. B., Niederdorfstr. 29 u. 31 Z.",Zürich,,Zürich
 1885-berufe-414-060,1885,414,berufe,60,60,person,,0,Schifferli,,,,Sophie,,,,,,,1,,Bahnhofstr,94,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schifferli, Sophie, Bahnhofstr. 94 Z.",Zürich,,Zürich
-1885-berufe-414-061,1885,414,berufe,61,61,firma,,0,Schneider,,,,,,,,,,,1,,Oberdorf g,19,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schneider & Rümmele, Oberdorf g. 19 Z.",Zürich,,Zürich
+1885-berufe-414-061,1885,414,berufe,61,61,firma,,0,Schneider & Rümmele,,,,,,,,,,,1,,Oberdorf g,19,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schneider & Rümmele, Oberdorf g. 19 Z.",Zürich,,Zürich
 1885-berufe-414-062,1885,414,berufe,62,62,person,,0,Schreiber,,,,Joh,,,,,,,1,,Kreuzpl,5,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Schreiber, Joh., Kreuzpl. 5 R.",Zürich,,Riesbach
 1885-berufe-414-063,1885,414,berufe,63,63,person,,0,Stahel,,Pfister,,Carol,,,,,,,1,,Usteristr,5,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Stahel-Pfister, Carol., Usteristr. 5 Z.",Zürich,,Zürich
 1885-berufe-414-064,1885,414,berufe,64,64,person,,0,Stierlin,,,,Ludw,,,,,,,1,,Strehlg,4,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Stierlin, Ludw., Strehlg. 4 Z.",Zürich,,Zürich
-1885-berufe-414-065,1885,414,berufe,65,65,firma,,0,Suter,,,,,,,,,,,1,,Kirch g,22,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Suter & Isler, Kirch g. 22 Z.",Zürich,,Zürich
-1885-berufe-414-066,1885,414,berufe,66,66,firma,,0,Wenny,,,,,,,,gros u. détail.,,,1,,Weinpl,3,1,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎Wenny & Cie., Weinpl. 3 u. Bahnhofstr. 46 Z. (gros u. détail.)",Zürich,,Zürich
+1885-berufe-414-065,1885,414,berufe,65,65,firma,,0,Suter & Isler,,,,,,,,,,,1,,Kirch g,22,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Suter & Isler, Kirch g. 22 Z.",Zürich,,Zürich
+1885-berufe-414-066,1885,414,berufe,66,66,firma,,0,Wenny & Cie.,,,,,,,,gros u. détail.,,,1,,Weinpl,3,1,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"☎Wenny & Cie., Weinpl. 3 u. Bahnhofstr. 46 Z. (gros u. détail.)",Zürich,,Zürich
 1885-berufe-414-067,1885,414,berufe,67,67,person,,0,Wichelhausen,,,,Joh,,,,,,,1,,Oberdorf g,5,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wichelhausen, Joh., Oberdorf g. 5 Z.",Zürich,,Zürich
 1885-berufe-414-068,1885,414,berufe,68,68,person,,0,Wyder,,Wiesendanger,,Anna,,,,,,,1,,Froschaug,4,,Wollenwaaren.,"qwen3.8-27b, Bild 2x",high,,"Wyder-Wiesendanger, Anna, Froschaug. 4 Z.",Zürich,,Zürich
 1885-berufe-414-069,1885,414,berufe,69,69,person,,0,Gujer,,,,H,,,,,,,1,,Napfg,6,1,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Gujer, H., Napfg. 6 u. Limmatquai 2 Z.",Zürich,,Zürich
 1885-berufe-414-070,1885,414,berufe,70,70,person,,0,Scherer,,,,H. A,,,,,,,1,,Sihlstr,61,,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"Scherer, a. d. Sihl, H. A., Sihlstr. 61 Z.",Zürich,,Zürich
-1885-berufe-414-071,1885,414,berufe,71,71,firma,,0,Schoeller,,,,,,,,,,,1,,Falkenburg,4,1,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Schoeller & Söhne, Falkenburg 4 Ho.",Zürich,,Hottingen
-1885-berufe-414-072,1885,414,berufe,72,72,firma,,0,Wenny,,,,,,,,gros u. détail.,,,1,,Weinpl,3,1,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Wenny & Cie., Weinpl. 3 u. Bahnhofstr. 46 Z. (gros u. détail.)",Zürich,,Zürich
+1885-berufe-414-071,1885,414,berufe,71,71,firma,,0,Schoeller & Söhne,,,,,,,,,,,1,,Falkenburg,4,1,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Schoeller & Söhne, Falkenburg 4 Ho.",Zürich,,Hottingen
+1885-berufe-414-072,1885,414,berufe,72,72,firma,,0,Wenny & Cie.,,,,,,,,gros u. détail.,,,1,,Weinpl,3,1,Wollhandel.,"qwen3.8-27b, Bild 2x",high,,"☎Wenny & Cie., Weinpl. 3 u. Bahnhofstr. 46 Z. (gros u. détail.)",Zürich,,Zürich
 1885-berufe-414-073,1885,414,berufe,73,73,person,,0,Bachmann,,,,Heinr,,,,,,,1,,Selnaustr,40,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Bachmann, Heinr., Selnaustr. 40 Z.",Zürich,,Zürich
 1885-berufe-414-074,1885,414,berufe,74,74,person,,0,Deus,,,,Jean,,,,,,,1,,Niederdorfstr,28,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Deus, Jean, Niederdorfstr. 28 Z.",Zürich,,Zürich
 1885-berufe-414-075,1885,414,berufe,75,75,person,,0,Fischer,,,,H,,,,,,,1,,Mühlebachstr,22,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Fischer, H., Mühlebachstr. 22 R.",Zürich,,Riesbach
 1885-berufe-414-076,1885,414,berufe,76,76,person,,0,Kunz,,,,Alb,,,,,,,1,,Predigerpl,38,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Kunz, Alb., Predigerpl. 38 Z.",Zürich,,Zürich
 1885-berufe-414-077,1885,414,berufe,77,77,person,,0,Müller,,,,J. R,,,,,,,1,,Grossmünsterpl,6,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Müller, J. R., Grossmünsterpl. 6 Z.",Zürich,,Zürich
 1885-berufe-414-078,1885,414,berufe,78,78,person,,0,Niedermann,,,,Alfr,,,,,,,1,,Stadelhoferpl,4,,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"Niedermann, Alfr., Stadelhoferpl. 4 Z.",Zürich,,Zürich
-1885-berufe-414-079,1885,414,berufe,79,79,firma,,0,Orell Füssli,,,,,,,,,,,1,,Bärgeng,6,1,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"☎Orell Füssli & Co., Bärgeng. 6 Z.",Zürich,,Zürich
+1885-berufe-414-079,1885,414,berufe,79,79,firma,,0,Orell Füssli & Co.,,,,,,,,,,,1,,Bärgeng,6,1,Xylographen.,"qwen3.8-27b, Bild 2x",high,,"☎Orell Füssli & Co., Bärgeng. 6 Z.",Zürich,,Zürich
 1885-berufe-414-081,1885,414,berufe,81,81,person,,0,Abegg,,,,Friedr,Dr.,,,,,,1,,Neumarkt,6,,Zahnärzte und Zahntechniker.,"qwen3.8-27b, Bild 2x",high,,"Abegg, Dr. Friedr., Neumarkt 6 Z.",Zürich,,Zürich
 1885-berufe-414-082,1885,414,berufe,82,82,person,,0,Bader,,Fossler,,Carl,,,,,,,1,,Kreuzpl,48,,Zahnärzte und Zahntechniker.,"qwen3.8-27b, Bild 2x",high,,"Bader-Fossler, Carl, Kreuzpl. 48 R.",Zürich,,Riesbach
 1885-berufe-414-083,1885,414,berufe,83,83,person,,0,Billetter,,,,Heinr. Jac,Dr.,,,,,,1,,Weinpl,3,,Zahnärzte und Zahntechniker.,"qwen3.8-27b, Bild 2x",high,,"Billetter, Dr. Heinr. Jac., Weinpl. 3 I Z.",Zürich,,Zürich
