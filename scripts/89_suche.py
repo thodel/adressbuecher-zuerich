@@ -56,7 +56,7 @@ CITY = {
     "page_note": "Seitenbilder von der Zentralbibliothek Zürich (Zurich Open Platform, CC0), über IIIF direkt von der ZB "
                  "geladen; «Seite» ist die Seite im PDF der ZB.",
     "parts": {k: label for k, label, *_ in K["TABS"]},
-    "volumes": K["VOLUMES"],
+    "volumes": {v: v for v in K["VOLUMES"]},  # kurz: das Jahr (die Titel stehen in der Kontrollseite)
 }
 KIND = {k: kind for k, _label, kind, _cols in K["TABS"]}
 FIELD_COLS = ["civil_status", "entry_type", "phone_flag", "municipality", "origin_canton", "relation", "parse_confidence",
